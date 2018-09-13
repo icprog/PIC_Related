@@ -1,0 +1,17 @@
+___awdiv: CODE, 1136 0 91
+_LCDByte: CODE, 846 0 58
+__stringtab: STRING, 1 0 6
+__stringdata: STRING, 7 0 2
+_ADCInit: CODE, 665 0 5
+___awmod: CODE, 979 0 77
+_LCDWriteInt: CODE, 1350 0 163
+_main: CODE, 1227 0 123
+_LCDInit: CODE, 1056 0 80
+__initialization: CODE, 2021 0 25
+_LCDWriteString: CODE, 790 0 56
+_ADCRead: CODE, 709 0 28
+_Init: CODE, 737 0 53
+_LCDGotoXY: CODE, 688 0 21
+_LCDBusyLoop: CODE, 904 0 75
+_WaterCheck: CODE, 1513 0 508
+Total: 1371

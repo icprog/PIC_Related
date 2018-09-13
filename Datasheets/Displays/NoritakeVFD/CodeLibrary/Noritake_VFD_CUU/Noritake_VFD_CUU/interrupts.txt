@@ -1,0 +1,102 @@
+YOU MUST AGREE THIS TERMS AND CONDITIONS. THIS SOFTWARE IS
+PROVIDED BY NORITAKE CO., INC "AS IS" AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR SORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+----------------------------------------------------------------
+ABOUT INTERRUPTS
+Peripheral devices may request the attention of the host system
+by triggering an interrupt. Interrupts break away from the
+currently running program and run an interrupt service routine
+(ISR).
+
+Interrupts may simplify the flow of programs using devices that
+receive data at times that are not determined by the host as
+well as when communicating with many devices. Many devices
+operate with interrupts including AVR's own USART.
+
+However, there are disadvantages to using interrupts. The
+primary disadvantage is that your program must be written
+carefully so that it may be interrupted between any two
+instructions and resumed without error.
+
+The code library was not written with this goal. The next
+sections will discuss the use of the library with interrupts
+and the rationale for not addressing them in the library.
+
+----------------------------------------------------------------
+USING THE LIBRARY WITH INTERRUPTS
+1)  Interrupts need not be disabled if no interrupt will be
+    fired when the library is transmitting or receiving.
+
+2)  The code that calls library methods should disable
+    interrupts before and re-enable interrupts after a call.
+    Interrupts need not be enabled between calls.
+
+3)  The basic methods that transmit or receive data can be
+    modified to disable and re-enable interrupts themselves.
+    However, doing so disqualifies the library from being used
+    in situations where interrupts must remain disabled such as
+    in interrupt service routines and critical sections.
+
+----------------------------------------------------------------
+THE EFFECTS OF INTERRUPTS
+Using the library with interrupts without taking precautions
+may cause sporatic errors.
+
+Asynchronous serial is critically dependant on timing. An
+interrupt being fired mid-transmission does not pause the
+receiver. As a result, the receiver will erroneously interpret
+the remaining bits as valid data. When the interrupt is
+finished, the remaining bits will be sent by the library, which
+will start another transmission.
+
+A similar situation arises from reads.
+
+Synchronous serial and parallel are less prone to delays, but
+may suffer from noise.
+
+----------------------------------------------------------------
+RATIONALE FOR NOT HANDLING INTERRUPTS
+The best approach for handling interrupts depends on the
+requirements of the application. Some application's requirements
+conflict.
+
+Disabling interrupts while inside of transmission calls and
+re-enabling them afterwards would disqualifies the library from
+being used in situations where interrupts must remain disabled
+such as in interrupt service routines and critical sections.
+
+The application also may not wish interrupts to be disabled at
+any given time. Hard real-time applications, for instance, may
+need to service an interrupt as quickly as possible. This
+application may not be able to tolorate the delay of waiting
+for the transmission to finish before servicing the interrupt.
+
+The library takes the most flexibile approach by allowing the
+developer to choose the strategy most appropriate for the
+application.
+
+----------------------------------------------------------------
+E-M-0111-00 06/12/2012
+----------------------------------------------------------------
+SUPPORT
+
+For further support, please contact:
+    Noritake Co., Inc.
+    2635 Clearbrook Dr 
+    Arlington Heights, IL 60005 
+    800-779-5846 
+    847-439-9020
+    support.ele@noritake.com
+
+All rights reserved. © Noritake Co., Inc.

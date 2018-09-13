@@ -1,0 +1,70 @@
+Pin Connections
+
+Pin #:  Chip Function       Connected to(on board)  Other Use:          I/O Usage:
+1       RE5                 LCD 12, DB5
+2       RE6                 LCD 13, DB6
+3       RE7                 LCD 14, DB7
+4       RG6                 LCD 15, CS1
+5       RG7                 LCD 16, CS2
+6       RG8                 LCD 17, RST
+7       _MCLR               _MCLR
+8       RG9                 In+ 4-10                                    Power Switch Input
+9       Vss                 Vss
+10      Vdd                 Vdd
+11      RB5                 In+ 4-8                 AN5                 Steam Switch Input
+12      RB4                 In+ 4-6                 AN4                 Brew Switch Input
+13      RB3                 In+ 4-4                 AN3                 Water Switch Input
+14      RB2                 In+ 4-2                 AN2
+15      RB1                 PGEC1                   AN1
+16      RB0                 PGED1                   AN0
+
+17      RB6                 In+ 3-10                AN6
+18      RB7                 In+ 3-8                 AN7
+19      AVdd                AVdd
+20      AVss                AVss
+21      RB8                 In+ 3-6                 AN8
+22      RB9                 In+ 3-4                 AN9
+23      RB10                In+ 3-2                 AN10
+24      RB11                In+ 2-4                 AN11                Group Head Temp
+25      Vss                 Vss
+26      Vdd                 Vdd
+27      RB12                In+ 2-2                 AN12                Steam Temp
+28      RB13                In+ 1-10                AN13                Boiler Temp
+29      RB14                In+ 1-8                 AN14, ZIF - 4       Touch Screen y+
+30      RB15                In+ 1-6                 AN15, ZIF - 1       Touch Screen x+
+31      RF4                 In+ 1-4                 ZIF - 3             Touch Screen x-
+32      RF5                 In+ 1-2                 ZIF - 2             Touch Screen y-
+
+
+33      RF3                 Out+ 1-9
+34      RF7                 Out+ 1-7
+35      VUSB                VUSB
+36      RG3                 Out+ 1-5
+37      RG2                 Out+ 1-3
+38      Vdd                 Vdd
+39      RC12                Out+ 1-1
+40      RC15                Out+ 2-9
+41      Vss                 Vss
+42      RD8                 LCD 4, D/I
+43      RD9                 LCD 5, R/W
+44      RD10                LCD 6, E
+45      RD11                Out+ 2-7
+46      RD0                 Out+ 2-5
+47      RC13                SOSCI
+48      RC14                SOSCO
+49      RD1                 Out+ 2-3
+50      RD2                 Out+ 2-1
+51      RD3                 Out+ 3-9
+52      RD4                 Out+ 3-7                
+53      RD5                 Out+ 3-5                
+54      RD6                 Out+ 3-1                OC4 (Q1)    Pit Viper PWM Output
+55      RD7                 OC5 (Q2)                OC5 (Q2)    Back-Light Intensity PWM Output
+56      VCap                VCap
+57      NC                  NC
+58      RF0                 OC6 (Q3)                OC6 (Q3)
+59      RF1                 Out+ 3-3                Piezo Out
+60      RE0                 LCD 7, DB0
+61      RE1                 LCD 8, DB1
+62      RE2                 LCD 9, DB2
+63      RE3                 LCD 10, DB3
+64      RE4                 LCD 11, DB4

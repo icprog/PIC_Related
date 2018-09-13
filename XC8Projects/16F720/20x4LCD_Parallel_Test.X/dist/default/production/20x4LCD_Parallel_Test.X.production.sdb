@@ -1,0 +1,246 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F720 ]
+[d frameptr 6 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"80 D:\PIC-Stuff\XC8Projects\16F720\20x4LCD_Parallel_Test.X\lcd_hd44780_pic16.c
+[v _LCDByte LCDByte `(v  1 e 1 0 ]
+"136
+[v _LCDBusyLoop LCDBusyLoop `(v  1 e 1 0 ]
+"200
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+"259
+[v _LCDWriteString LCDWriteString `(v  1 e 1 0 ]
+"315
+[v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
+"360
+[v _LCDGotoXY LCDGotoXY `(v  1 e 1 0 ]
+"15 D:\PIC-Stuff\XC8Projects\16F720\20x4LCD_Parallel_Test.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"19 D:\PIC-Stuff\XC8Projects\16F720\20x4LCD_Parallel_Test.X\system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 1 0 ]
+"23 D:\PIC-Stuff\XC8Projects\16F720\20x4LCD_Parallel_Test.X\user.c
+[v _Init Init `(v  1 e 1 0 ]
+"45
+[v _ADCInit ADCInit `(v  1 e 1 0 ]
+"49
+[v _ADCRead ADCRead `(uc  1 e 1 0 ]
+"55 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic16f720.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"158
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"207
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"245
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"849
+[v _ADRES ADRES `VEuc  1 e 1 @30 ]
+"868
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"995
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1039
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1077
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+[s S34 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1094
+[u S43 . 1 `S34 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES43  1 e 1 @135 ]
+"1347
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @145 ]
+"1761
+[v _FVRCON FVRCON `VEuc  1 e 1 @157 ]
+"1811
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"1982
+[v _ANSELA ANSELA `VEuc  1 e 1 @389 ]
+"2026
+[v _ANSELB ANSELB `VEuc  1 e 1 @390 ]
+"2052
+[v _ANSELC ANSELC `VEuc  1 e 1 @391 ]
+"2196
+[v _ADON ADON `VEb  1 e 0 @248 ]
+"2282
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @249 ]
+"2314
+[v _IRCF0 IRCF0 `VEb  1 e 0 @1156 ]
+"2316
+[v _IRCF1 IRCF1 `VEb  1 e 0 @1157 ]
+"2342
+[v _PS0 PS0 `VEb  1 e 0 @1032 ]
+"2344
+[v _PS1 PS1 `VEb  1 e 0 @1033 ]
+"2346
+[v _PS2 PS2 `VEb  1 e 0 @1034 ]
+"2348
+[v _PSA PSA `VEb  1 e 0 @1035 ]
+"2354
+[v _RA2 RA2 `VEb  1 e 0 @42 ]
+"2360
+[v _RA5 RA5 `VEb  1 e 0 @45 ]
+"2382
+[v _RC4 RC4 `VEb  1 e 0 @60 ]
+"2384
+[v _RC5 RC5 `VEb  1 e 0 @61 ]
+"2386
+[v _RC6 RC6 `VEb  1 e 0 @62 ]
+"2388
+[v _RC7 RC7 `VEb  1 e 0 @63 ]
+"2430
+[v _T0CS T0CS `VEb  1 e 0 @1037 ]
+"2432
+[v _T0SE T0SE `VEb  1 e 0 @1036 ]
+"2462
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"15 D:\PIC-Stuff\XC8Projects\16F720\20x4LCD_Parallel_Test.X\custom_char.h
+[v ___cgram __cgram `[8]uc  1 e 8 0 ]
+"12 D:\PIC-Stuff\XC8Projects\16F720\20x4LCD_Parallel_Test.X\main.c
+[v _hh hh `uc  1 e 1 0 ]
+[v _hl hl `uc  1 e 1 0 ]
+[v _mh mh `uc  1 e 1 0 ]
+[v _ml ml `uc  1 e 1 0 ]
+[v _sh sh `uc  1 e 1 0 ]
+[v _sl sl `uc  1 e 1 0 ]
+"15
+[v _main main `(v  1 e 1 0 ]
+{
+"28
+[v main@bres bres `ui  1 a 2 15 ]
+"29
+[v main@Toggle2 Toggle2 `uc  1 a 1 18 ]
+[v main@Toggle Toggle `uc  1 a 1 17 ]
+"210
+} 0
+"259 D:\PIC-Stuff\XC8Projects\16F720\20x4LCD_Parallel_Test.X\lcd_hd44780_pic16.c
+[v _LCDWriteString LCDWriteString `(v  1 e 1 0 ]
+{
+[v LCDWriteString@msg msg `*.24DCCuc  1 a 1 wreg ]
+"295
+[v LCDWriteString@cc cc `c  1 a 1 0 ]
+"259
+[v LCDWriteString@msg msg `*.24DCCuc  1 a 1 wreg ]
+[v LCDWriteString@msg msg `*.24DCCuc  1 a 1 1 ]
+"313
+} 0
+"315
+[v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
+{
+"328
+[v LCDWriteInt@str str `[5]uc  1 a 5 3 ]
+"329
+[v LCDWriteInt@i i `i  1 a 2 10 ]
+[v LCDWriteInt@j j `i  1 a 2 8 ]
+"315
+[v LCDWriteInt@val val `i  1 p 2 0 ]
+[v LCDWriteInt@field_length field_length `c  1 p 1 2 ]
+"316
+[v LCDWriteInt@F1073 F1073 `[5]uc  1 s 5 F1073 ]
+"354
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"35
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"42
+} 0
+"200 D:\PIC-Stuff\XC8Projects\16F720\20x4LCD_Parallel_Test.X\lcd_hd44780_pic16.c
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+{
+[v LCDInit@style style `uc  1 a 1 wreg ]
+"253
+[v LCDInit@__i __i `uc  1 a 1 1 ]
+"200
+[v LCDInit@style style `uc  1 a 1 wreg ]
+"216
+[v LCDInit@style style `uc  1 a 1 0 ]
+"258
+} 0
+"360
+[v _LCDGotoXY LCDGotoXY `(v  1 e 1 0 ]
+{
+[v LCDGotoXY@x x `uc  1 a 1 wreg ]
+[v LCDGotoXY@x x `uc  1 a 1 wreg ]
+[v LCDGotoXY@y y `uc  1 p 1 12 ]
+"362
+[v LCDGotoXY@x x `uc  1 a 1 0 ]
+"403
+} 0
+"80
+[v _LCDByte LCDByte `(v  1 e 1 0 ]
+{
+[v LCDByte@c c `uc  1 a 1 wreg ]
+"90
+[v LCDByte@temp temp `uc  1 a 1 11 ]
+"89
+[v LCDByte@ln ln `uc  1 a 1 9 ]
+[v LCDByte@hn hn `uc  1 a 1 8 ]
+"80
+[v LCDByte@c c `uc  1 a 1 wreg ]
+[v LCDByte@isdata isdata `uc  1 p 1 5 ]
+"92
+[v LCDByte@c c `uc  1 a 1 10 ]
+"134
+} 0
+"136
+[v _LCDBusyLoop LCDBusyLoop `(v  1 e 1 0 ]
+{
+"140
+[v LCDBusyLoop@status status `uc  1 a 1 4 ]
+[v LCDBusyLoop@temp temp `uc  1 a 1 3 ]
+[v LCDBusyLoop@busy busy `uc  1 a 1 2 ]
+"198
+} 0
+"23 D:\PIC-Stuff\XC8Projects\16F720\20x4LCD_Parallel_Test.X\user.c
+[v _Init Init `(v  1 e 1 0 ]
+{
+"43
+} 0
+"19 D:\PIC-Stuff\XC8Projects\16F720\20x4LCD_Parallel_Test.X\system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 1 0 ]
+{
+"32
+} 0
+"49 D:\PIC-Stuff\XC8Projects\16F720\20x4LCD_Parallel_Test.X\user.c
+[v _ADCRead ADCRead `(uc  1 e 1 0 ]
+{
+[v ADCRead@ch ch `uc  1 a 1 wreg ]
+[v ADCRead@ch ch `uc  1 a 1 wreg ]
+"52
+[v ADCRead@ch ch `uc  1 a 1 1 ]
+"60
+} 0

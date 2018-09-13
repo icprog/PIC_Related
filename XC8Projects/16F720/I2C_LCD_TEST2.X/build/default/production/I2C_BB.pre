@@ -1,0 +1,98 @@
+
+# 1 "I2C_BB.c"
+
+# 27 "I2C_BB.h"
+void Init_I2C(void);
+unsigned char I2C_IN(char NACK);
+char I2C_OUT(unsigned char data);
+void I2C_SP(void);
+void I2C_ST(void);
+
+void delay(unsigned int time);
+void delay2(unsigned int time);
+
+# 5 "I2C_BB.c"
+void I2C_ST(void) {
+(TRISCbits.TRISC1 = 1);
+(TRISCbits.TRISC0 = 1);
+(TRISCbits.TRISC1 = 0,PORTCbits.RC1=0);
+(TRISCbits.TRISC0 = 0,PORTCbits.RC0=0);
+}
+
+void I2C_SP(void) {
+(TRISCbits.TRISC1 = 0,PORTCbits.RC1=0);
+(TRISCbits.TRISC0 = 1);
+(TRISCbits.TRISC1 = 1);
+}
+
+char I2C_OUT(unsigned char data) {
+char bit_temp;
+
+(TRISCbits.TRISC0 = 0,PORTCbits.RC0=0);
+
+for (bit_temp = 0; bit_temp < 8; bit_temp++) {
+
+if (data & 0x80)
+(TRISCbits.TRISC1 = 1);
+else
+(TRISCbits.TRISC1 = 0,PORTCbits.RC1=0);
+
+(TRISCbits.TRISC0 = 1);
+data <<= 1;
+(TRISCbits.TRISC0 = 0,PORTCbits.RC0=0);
+}
+
+(TRISCbits.TRISC0 = 1);
+(TRISCbits.TRISC1 = 1);
+
+bit_temp = PORTCbits.RC1;
+
+(TRISCbits.TRISC0 = 0,PORTCbits.RC0=0);
+(TRISCbits.TRISC1 = 0,PORTCbits.RC1=0);
+
+return bit_temp;
+}
+
+unsigned char I2C_IN(char NACK) {
+char bit_temp;
+unsigned char data;
+
+(TRISCbits.TRISC1 = 1);
+
+for (bit_temp = 0; bit_temp < 8; bit_temp++) {
+data <<= 1;
+
+(TRISCbits.TRISC0 = 1);
+
+if (PORTCbits.RC1)
+data |= 1;
+
+(TRISCbits.TRISC0 = 0,PORTCbits.RC0=0);
+}
+
+if (NACK == 1)
+(TRISCbits.TRISC1 = 0,PORTCbits.RC1=0);
+else
+(TRISCbits.TRISC1 = 1);
+
+(TRISCbits.TRISC0 = 1);
+
+(TRISCbits.TRISC0 = 0,PORTCbits.RC0=0);
+(TRISCbits.TRISC1 = 0,PORTCbits.RC1=0);
+
+return data;
+}
+
+void delay(unsigned int time) {
+unsigned int t;
+for (t = 0; t < time; t++) {
+Nop();
+}
+}
+
+void delay2(unsigned int time) {
+unsigned int t;
+for (t = 0; t < time; t++) {
+Delay10KTCYx(1);
+}
+}

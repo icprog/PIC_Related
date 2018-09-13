@@ -1,0 +1,16 @@
+Setup Pin Manager                                                               
+Set up lead_acid.h (maybe add a agm.h)                                          Added lead_acid_agm.h
+Check direction of PWM Outputs                                                  It is backwards, Increases to dutyCycle cause decrease to Output Voltage
+Battery Charging State machine needs finishing
+Button menu interface
+Splash screen?
+Battery Fault needs to do something
+Fix switch inputs on Board & Schematic                                          Need re-work & new boards, for now, cut trace in 2 places, solder resistor across, & add jumper to R38 to R39
+power Buffers with higher voltage than rest of board                            Need re-work & new boards
+Add caps on output of PWM Pins
+Use different current sensor ideology (these suck!!)                            Need re-work & new boards,        
+move programming header                                                         Need re-work & new boards,
+Label Switches                                                                  Need re-work & new boards,
+Add cooling fan control                                                         Use a Temperature input, as PWM Output, drive N Channel FET
+Timer4 Not needed, just used to test different update frequencies
+If no Fan Feedback, decrease output

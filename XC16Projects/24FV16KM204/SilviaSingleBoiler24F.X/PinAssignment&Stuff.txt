@@ -1,0 +1,74 @@
+This is a work in progress, and as such, may have some errors or contradictions 
+between actual code and documentation, especially around the LCD, which is 
+getting moved to different pins to free up a few analogs.
+
+Project to control a Rancillo Silvia Espresso Machine.
+
+Project is built around a Microchip PIC24FV16KM204 microcontroller.
+
+To Preserve EEProm Data through a Program Cycle, the Project Configuration needs the PICKit3 Conf Item "Preserve EEPROM Memory" Box checked!!!
+
+Fix for the annoying ToolTips in MPLabX 3.20
+Goto Tools -> Options,
+Then select "Embedded"
+Select "Generic Settings" and disable "On mouse-over source lines in editor, evaluate break point status"
+
+
+
+BackLight Control   _LATA1
+
+Inputs: (Number in brackets is ANALOG Channel number)
+
+ADCRead(0),         Read Boiler Temperature
+ADCRead(4),         Read Switches[] Input state   
+ADCRead(5),         Read Grouphead Temperature
+ADCRead(7),         Read Touch "X" Input
+ADCRead(21),        Read Touch "Y" Input 
+
+
+Pins Used:
+
+1   AN21/_RB9   IP/OP   y+ Touchscreen (Both analog IP and Digital OP)
+2   _RC6        LCD     LCD REGISTER SELECT Bit
+3   _RC7        LCD     LCD ENABLE Bit
+4   _LATC8      OP      Boiler Output
+5   _LATC9      OP      Water Solenoid Output
+6   _LATA7      OP      Grouphead Output
+7   VCap        SYS     VCap
+8   _LATB10     OP      Air Pump Output   
+9   _LATB11     OP      
+10  AN12        IP      
+11  AN11        IP        
+12  _LATA10     OP      Tank Solenoid Output
+13  _LATA11     OP      
+14  AN10        IP      Water Tank level
+15  AN9/RB15    IP      PowerSwitch Input
+16  AVss        SYS     Analog Vss
+17  AVdd        SYS     Analog AVdd
+18  MCLR/Vpp    SYS     Master Clear/Programming Voltage
+19  AN0         IP      Read Boiler Temperature
+20  _LATA1      OP      Turn off BackLight after 60 seconds of no use
+21  PGED1       SYS     Programming Pin Data
+22  PGEC1       SYS     Programming Pin Clock
+23  AN4         IP      Read Digital Switch States
+24  AN5         IP      Read GroupHead Temperature
+25  AN6         IP      
+26  AN7/_RC1    IP/OP   x+ Touchscreen (Both Analog IP and Digital OP)
+27  _RC2        IP/OP   x- Touchscreen (Both High Impedance IP and Digital OP)
+28  Vdd         SYS Vdd
+29  Vss         SYS Vss
+30  _LATA2      OP  Water Pump Out
+31  _LATA3      OP  Piezo Out
+32  _RA8        IP/OP   y- Touchscreen (Both High Impedance IP and Digital OP)
+33  SOSCI       SYS Secondary Oscillator In
+34  SOSCO       SYS Secondary Oscillator Out
+35  RA9         LCD LCD Port D4
+36  RC3         LCD LCD Port D5
+37  RC4         LCD LCD Port D6
+38  RC5         LCD LCD Port D7
+39  Vss         SYS Vss
+40  Vdd         SYS Vdd
+41  AN17        IP  
+42  AN18        IP  
+43  AN19        IP  
+44  AN20        IP  

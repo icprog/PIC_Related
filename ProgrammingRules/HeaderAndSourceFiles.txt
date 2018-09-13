@@ -1,0 +1,39 @@
+Typically headers contain one or more of the following:
+    
+	Function declaration (except statics)
+    	Variable declaration (typically global)
+    	User defined type declaration (read struct, union etc.)
+    	Macro definition
+
+Source files on the other hand have:
+    	
+	Function/variable definition
+    	Static function declaration and definition (you don't want to expose these 	to your clients)
+    	Variable definition
+    	Some prefer to define inline functions (C99) in a header
+
+There is little fundamental difference between .c and .h files (though some compilers may refuse to compile a raw .h file). The difference is more by convention.
+
+Typically the .h file provides the API and the .c provides the implementation.
+
+Therefore the .h file would contain only things needed by other source files to access the facilities provided by your .c file. So the .h files would provide the function prototypes of global functions, declarations of global variables (if you really must have them), and the structures and other types used by them. (Don't expose a structure if the only a pointer to the structure is required by the API.)
+
+In-line functions are also often included in .h files but some coding guidelines prefer the use of a separate extension (e.g. .inl)
+
+All other function implementations, the definition and initialisation of variables and declarations of local (static) variables and functions would be in the .c file.
+
+
+
+There is no technical difference. The compiler will happily let you include a .c file, or compile a .h file directly, if you want to.
+
+There is, however, a huge cultural difference:
+
+    Declarations (prototypes) go in .h files. The .h file is the interface to whatever is implemented in the corresponding .c file.
+
+    Definitions go in .c files. They implement the interface specified in the .h file.
+
+The difference is that a .h file can (and usually will) be #included into multiple compilation units (.c files). If you define a function in a .h file, it will end up in multiple .o files, and the linker will complain about a multiply defined symbol. That's why definitions should not go in .h files. (Inline functions are the exception.)
+
+If a function is defined in a .c file, and you want to use it from other .c files, a declaration of that function needs to be available in each of those other .c files. That's why you put the declaration in a .h, and #include that in each of them. You could also repeat the declaration in each .c file, but that leads to lots of code duplication and an unmantainable mess.
+
+If a function is defined in a .c file, but you don't want to use it from other .c files, there's no need to declare it in the header. It's essentially an implementation detail of that .c file. In that case, make the 

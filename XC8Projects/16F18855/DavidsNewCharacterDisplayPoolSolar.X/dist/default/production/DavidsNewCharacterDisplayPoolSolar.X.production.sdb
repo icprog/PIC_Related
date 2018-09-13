@@ -1,0 +1,477 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"67 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\adcc.c
+[e E13559 . `uc
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR 63
+]
+"17
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"66
+[v _ADCRead ADCRead `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"254 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+[v _log log `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"29 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\lcd.c
+[v _InitCustomChars InitCustomChars `(v  1 e 1 0 ]
+"41
+[v _LCD_Port LCD_Port `(v  1 e 1 0 ]
+"65
+[v _LCD_Cmd LCD_Cmd `(v  1 e 1 0 ]
+"75
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+"82
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+"154
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"223
+[v _LCD_Write_Char LCD_Write_Char `(v  1 e 1 0 ]
+"239
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+"246
+[v _LCD_Write_Int LCD_Write_Int `(v  1 e 1 0 ]
+"19 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"5 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"3 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\pwm6.c
+[v _PWM6_Initialize PWM6_Initialize `(v  1 e 1 0 ]
+"14
+[v _PWM6_LoadDutyValue PWM6_LoadDutyValue `(v  1 e 1 0 ]
+"71 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"89
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"3 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"7 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\adcc.c
+[v _samples samples `[6][20]ui  1 e 240 @8960 ]
+"10
+[v _sampleIndex sampleIndex `ui  1 e 2 0 ]
+"12
+[v _totals totals `[6]l  1 e 24 0 ]
+"14
+[v _channels channels `[6]i  1 s 12 channels ]
+"572 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic16f18855.h
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"633
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"694
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"755
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+"816
+[v _LATB LATB `VEuc  1 e 1 @23 ]
+"877
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+"1508
+[v _ADRESL ADRESL `VEuc  1 e 1 @140 ]
+"1527
+[v _ADRESH ADRESH `VEuc  1 e 1 @141 ]
+"1821
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @147 ]
+[s S43 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"1852
+[s S51 . 1 `uc 1 DONE 1 0 :1:0 
+]
+[s S53 . 1 `uc 1 nDONE 1 0 :1:0 
+]
+[s S55 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+`uc 1 ADFM1 1 0 :1:3 
+]
+[s S60 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+]
+[u S62 . 1 `S43 1 . 1 0 `S51 1 . 1 0 `S53 1 . 1 0 `S55 1 . 1 0 `S60 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES62  1 e 1 @147 ]
+"1911
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @148 ]
+"1949
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @149 ]
+"2025
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @150 ]
+"2095
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @151 ]
+"2164
+[v _ADCLK ADCLK `VEuc  1 e 1 @152 ]
+"2221
+[v _ADACT ADACT `VEuc  1 e 1 @153 ]
+"2272
+[v _ADREF ADREF `VEuc  1 e 1 @154 ]
+"2312
+[v _ADCAP ADCAP `VEuc  1 e 1 @155 ]
+"2363
+[v _ADPRE ADPRE `VEuc  1 e 1 @156 ]
+"2432
+[v _ADACQ ADACQ `VEuc  1 e 1 @157 ]
+"2501
+[v _ADPCH ADPCH `VEuc  1 e 1 @158 ]
+"2627
+[v _ADRPT ADRPT `VEuc  1 e 1 @269 ]
+"2702
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @270 ]
+"2771
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @271 ]
+"2846
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @272 ]
+"2915
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @273 ]
+"2990
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @274 ]
+"3059
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @275 ]
+[s S211 . 1 `uc 1 C5TSEL 1 0 :2:0 
+`uc 1 P6TSEL 1 0 :2:2 
+`uc 1 P7TSEL 1 0 :2:4 
+]
+"7519
+[s S215 . 1 `uc 1 C5TSEL0 1 0 :1:0 
+`uc 1 C5TSEL1 1 0 :1:1 
+`uc 1 P6TSEL0 1 0 :1:2 
+`uc 1 P6TSEL1 1 0 :1:3 
+`uc 1 P7TSEL0 1 0 :1:4 
+`uc 1 P7TSEL1 1 0 :1:5 
+]
+[u S222 . 1 `S211 1 . 1 0 `S215 1 . 1 0 ]
+[v _CCPTMRS1bits CCPTMRS1bits `VES222  1 e 1 @543 ]
+"7568
+[v _T2TMR T2TMR `VEuc  1 e 1 @652 ]
+"7605
+[v _T2PR T2PR `VEuc  1 e 1 @653 ]
+"7642
+[v _T2CON T2CON `VEuc  1 e 1 @654 ]
+[s S305 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"7678
+[s S309 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S313 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+]
+[s S321 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S330 . 1 `S305 1 . 1 0 `S309 1 . 1 0 `S313 1 . 1 0 `S321 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES330  1 e 1 @654 ]
+"7787
+[v _T2HLT T2HLT `VEuc  1 e 1 @655 ]
+"7919
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @656 ]
+"8071
+[v _T2RST T2RST `VEuc  1 e 1 @657 ]
+"10540
+[v _PWM6DCL PWM6DCL `VEuc  1 e 1 @908 ]
+"10605
+[v _PWM6DCH PWM6DCH `VEuc  1 e 1 @909 ]
+"10774
+[v _PWM6CON PWM6CON `VEuc  1 e 1 @910 ]
+[s S288 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR3IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 TMR5IF 1 0 :1:4 
+`uc 1 TMR6IF 1 0 :1:5 
+]
+"19557
+[u S295 . 1 `S288 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES295  1 e 1 @1808 ]
+[s S178 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"19817
+[u S183 . 1 `S178 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES183  1 e 1 @1814 ]
+"21546
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"21684
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"21779
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"21829
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"21886
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"22252
+[v _FVRCON FVRCON `VEuc  1 e 1 @2316 ]
+"27917
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @3727 ]
+[s S193 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"27927
+[u S195 . 1 `S193 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES195  1 e 1 @3727 ]
+"30793
+[v _RC2PPS RC2PPS `VEuc  1 e 1 @3874 ]
+"31087
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"31148
+[v _WPUA WPUA `VEuc  1 e 1 @3897 ]
+"31697
+[v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
+"31758
+[v _WPUB WPUB `VEuc  1 e 1 @3908 ]
+"32307
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"32368
+[v _WPUC WPUC `VEuc  1 e 1 @3919 ]
+"32917
+[v _WPUE WPUE `VEuc  1 e 1 @3941 ]
+"34694
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"36142
+[v _RA0 RA0 `VEb  1 e 0 @96 ]
+"36170
+[v _RA2 RA2 `VEb  1 e 0 @98 ]
+"36226
+[v _RA6 RA6 `VEb  1 e 0 @102 ]
+"36240
+[v _RA7 RA7 `VEb  1 e 0 @103 ]
+"36366
+[v _RC0 RC0 `VEb  1 e 0 @112 ]
+"36380
+[v _RC1 RC1 `VEb  1 e 0 @113 ]
+"5 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\lcd.c
+[v ___cgram __cgram `[16]uc  1 e 16 0 ]
+"19 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"23
+[v main@analogs analogs `[6]ui  1 a 12 17 ]
+"46
+[v main@dutyCycle dutyCycle `ui  1 a 2 38 ]
+"37
+[v main@bCount bCount `ui  1 a 2 29 ]
+"43
+[v main@tPadCount tPadCount `uc  1 a 1 37 ]
+"41
+[v main@resetDelay resetDelay `uc  1 a 1 36 ]
+"39
+[v main@startDelay startDelay `uc  1 a 1 35 ]
+"35
+[v main@C_or_F C_or_F `uc  1 a 1 34 ]
+"33
+[v main@choice choice `uc  1 a 1 33 ]
+"31
+[v main@loop loop `uc  1 a 1 32 ]
+"29
+[v main@x x `uc  1 a 1 31 ]
+"21
+[v main@F13657 F13657 `[6]ui  1 s 12 F13657 ]
+"324
+} 0
+"71 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"87
+} 0
+"3 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"20
+} 0
+"3 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\pwm6.c
+[v _PWM6_Initialize PWM6_Initialize `(v  1 e 1 0 ]
+{
+"12
+} 0
+"5 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"26
+[v PIN_MANAGER_Initialize@state state `uc  1 a 1 0 ]
+"41
+} 0
+"89 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\system.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"96
+} 0
+"154 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\lcd.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+[v LCD_Init@style style `uc  1 a 1 wreg ]
+[v LCD_Init@style style `uc  1 a 1 wreg ]
+"156
+[v LCD_Init@style style `uc  1 a 1 7 ]
+"221
+} 0
+"75
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+{
+"79
+} 0
+"29
+[v _InitCustomChars InitCustomChars `(v  1 e 1 0 ]
+{
+"31
+[v InitCustomChars@i i `uc  1 a 1 6 ]
+"38
+} 0
+"17 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+{
+"63
+} 0
+"14 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\pwm6.c
+[v _PWM6_LoadDutyValue PWM6_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM6_LoadDutyValue@dutyCycle dutyCycle `ui  1 p 2 0 ]
+"19
+} 0
+"239 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\lcd.c
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+{
+"241
+[v LCD_Write_String@i i `i  1 a 2 8 ]
+"239
+[v LCD_Write_String@a a `*.25DCCuc  1 p 2 5 ]
+"244
+} 0
+"246
+[v _LCD_Write_Int LCD_Write_Int `(v  1 e 1 0 ]
+{
+"248
+[v LCD_Write_Int@str str `[5]uc  1 a 5 5 ]
+"249
+[v LCD_Write_Int@i i `i  1 a 2 12 ]
+[v LCD_Write_Int@j j `i  1 a 2 10 ]
+"246
+[v LCD_Write_Int@value value `i  1 p 2 9 ]
+[v LCD_Write_Int@fieldLength fieldLength `c  1 p 1 11 ]
+[v LCD_Write_Int@numPlaces numPlaces `c  1 p 1 12 ]
+[v LCD_Write_Int@sign sign `c  1 p 1 13 ]
+"247
+[v LCD_Write_Int@F13687 F13687 `[5]uc  1 s 5 F13687 ]
+"300
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"35
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"42
+} 0
+"223 D:\PIC-Stuff\XC8Projects\16F18855\DavidsNewCharacterDisplayPoolSolar.X\lcd.c
+[v _LCD_Write_Char LCD_Write_Char `(v  1 e 1 0 ]
+{
+[v LCD_Write_Char@a a `DCCuc  1 a 1 wreg ]
+"225
+[v LCD_Write_Char@y y `uc  1 a 1 3 ]
+[v LCD_Write_Char@temp temp `uc  1 a 1 2 ]
+"223
+[v LCD_Write_Char@a a `DCCuc  1 a 1 wreg ]
+"226
+[v LCD_Write_Char@a a `DCCuc  1 a 1 4 ]
+"237
+} 0
+"82
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+{
+[v LCD_Set_Cursor@x x `uc  1 a 1 wreg ]
+"86
+[v LCD_Set_Cursor@temp temp `uc  1 a 1 10 ]
+[v LCD_Set_Cursor@w w `uc  1 a 1 9 ]
+[v LCD_Set_Cursor@z z `uc  1 a 1 8 ]
+"82
+[v LCD_Set_Cursor@x x `uc  1 a 1 wreg ]
+[v LCD_Set_Cursor@y y `uc  1 p 1 4 ]
+"88
+[v LCD_Set_Cursor@x x `uc  1 a 1 7 ]
+"152
+} 0
+"65
+[v _LCD_Cmd LCD_Cmd `(v  1 e 1 0 ]
+{
+[v LCD_Cmd@a a `uc  1 a 1 wreg ]
+[v LCD_Cmd@a a `uc  1 a 1 wreg ]
+"67
+[v LCD_Cmd@a a `uc  1 a 1 3 ]
+"72
+} 0
+"41
+[v _LCD_Port LCD_Port `(v  1 e 1 0 ]
+{
+[v LCD_Port@a a `uc  1 a 1 wreg ]
+[v LCD_Port@a a `uc  1 a 1 wreg ]
+"43
+[v LCD_Port@a a `uc  1 a 1 0 ]
+"62
+} 0

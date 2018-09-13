@@ -1,0 +1,38 @@
+Amazon Image+Text
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=embeddlabora-21&marketplace=amazon&region=IN&placement=B010SIEKRM&asins=B010SIEKRM&linkId=ba8b1f0dff4ab8da6cc9b628fd374881&show_border=true&link_opens_in_new_window=true"></iframe>
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=embeddlabora-21&marketplace=amazon&region=IN&placement=B018XJ16F2&asins=B018XJ16F2&linkId=cd0a6db7580ca546adc1aa1111627050&show_border=true&link_opens_in_new_window=true"></iframe>
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=embeddlabora-21&marketplace=amazon&region=IN&placement=B018XG76SG&asins=B018XG76SG&linkId=f768f1d16e1828d0876257c8e0ac2b9f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=embeddlabora-21&marketplace=amazon&region=IN&placement=B019TNELNU&asins=B019TNELNU&linkId=43144158924fe5725d8f671c3d02011f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=embeddlabora-21&marketplace=amazon&region=IN&placement=B01G7JLGT6&asins=B01G7JLGT6&linkId=af921e2cffbff052292a5d3366a046a2&show_border=true&link_opens_in_new_window=true"></iframe>
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=embeddlabora-21&marketplace=amazon&region=IN&placement=B007SS2HHQ&asins=B007SS2HHQ&linkId=fdd0657c105d718ea87a25c4f918f1c9&show_border=true&link_opens_in_new_window=true"></iframe>
+
+Only Images
+
+<a href="http://www.amazon.in/128X64-GRAPHICAL-LCD-DISPLAY-GREEN/dp/B010SIEKRM/ref=as_li_ss_il?ie=UTF8&keywords=graphic lcd&qid=1467215979&ref_=sr_1_1&sr=8-1&linkCode=li2&tag=embeddlabora-21&linkId=be0ea5d1ad305d8a33c1970a37b74f52" target="_blank"><img border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B010SIEKRM&Format=_SL160_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=embeddlabora-21" ></a><img src="https://ir-in.amazon-adsystem.com/e/ir?t=embeddlabora-21&l=li2&o=31&a=B010SIEKRM" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+<a href="http://www.amazon.in/Explore-Embedded-Graphics-128x64-White/dp/B018XJ16F2/ref=as_li_ss_il?ie=UTF8&keywords=graphic lcd&qid=1467215979&ref_=sr_1_2&sr=8-2&linkCode=li2&tag=embeddlabora-21&linkId=4703b2af56cb96acc1135391c1d70819" target="_blank"><img border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B018XJ16F2&Format=_SL160_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=embeddlabora-21" ></a><img src="https://ir-in.amazon-adsystem.com/e/ir?t=embeddlabora-21&l=li2&o=31&a=B018XJ16F2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+<a href="http://www.amazon.in/Explore-Embedded-Graphics-128x64-White/dp/B018XG76SG/ref=as_li_ss_il?ie=UTF8&keywords=graphic lcd&qid=1467215979&ref_=sr_1_4&sr=8-4&linkCode=li2&tag=embeddlabora-21&linkId=fcd6f7a0d14b20b13d766093e5ba3fa5" target="_blank"><img border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B018XG76SG&Format=_SL160_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=embeddlabora-21" ></a><img src="https://ir-in.amazon-adsystem.com/e/ir?t=embeddlabora-21&l=li2&o=31&a=B018XG76SG" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+<a href="http://www.amazon.in/Robotlinking-Printer-Controller-Stepper-Heatsink/dp/B019TNELNU/ref=as_li_ss_il?ie=UTF8&keywords=graphic lcd&qid=1467215979&ref_=sr_1_5&sr=8-5&linkCode=li2&tag=embeddlabora-21&linkId=95431ccf43e19f6806c0b76261ddff41" target="_blank"><img border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B019TNELNU&Format=_SL160_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=embeddlabora-21" ></a><img src="https://ir-in.amazon-adsystem.com/e/ir?t=embeddlabora-21&l=li2&o=31&a=B019TNELNU" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+<a href="http://www.amazon.in/LCD12864-Graphic-Character-LCD-Display/dp/B01G7JLGT6/ref=as_li_ss_il?ie=UTF8&keywords=graphic lcd&qid=1467215979&ref_=sr_1_10&sr=8-10&linkCode=li2&tag=embeddlabora-21&linkId=99ef48eca31e923caee83a6da77e33f1" target="_blank"><img border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01G7JLGT6&Format=_SL160_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=embeddlabora-21" ></a><img src="https://ir-in.amazon-adsystem.com/e/ir?t=embeddlabora-21&l=li2&o=31&a=B01G7JLGT6" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+<a href="http://www.amazon.in/SainSmart-Backlight-Duemilanove-MEGA2560-MEGA1280/dp/B007SS2HHQ/ref=as_li_ss_il?ie=UTF8&keywords=graphic lcd&qid=1467216008&ref_=sr_1_17&sr=8-17&linkCode=li2&tag=embeddlabora-21&linkId=ddd039625eb5af34dba643ef7370ca28" target="_blank"><img border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B007SS2HHQ&Format=_SL160_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=embeddlabora-21" ></a><img src="https://ir-in.amazon-adsystem.com/e/ir?t=embeddlabora-21&l=li2&o=31&a=B007SS2HHQ" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+
+Flipkart Button
+
+<a href="http://dl.flipkart.com/dl//grab-em-128x64-graphic-lcd/p/itmehvzr3vag7vtz?pid=ETYEHVZR8TCDERVF&affid=arunsharm10"><img src="http://img6a.flixcart.com/www/prod/images/buy_btn_2-f780625c.png"></a>
+
+<a href="http://dl.flipkart.com/dl//explore-embedded-graphics-lcd-128x64-white-blue/p/itmeg2kahg7n7hvm?pid=ETYEG2KAAZHGSJTG&affid=arunsharm10"><img src="http://img6a.flixcart.com/www/prod/images/buy_btn_1-b05fffbb.png"></a>
+
+<a href="http://dl.flipkart.com/dl//explore-embedded-graphics-lcd-128x64-black-green/p/itme7kxvda2auggg?pid=ETYE7KXVFPFG25ZB&affid=arunsharm10"><img src="http://img5a.flixcart.com/www/prod/images/buy_btn_3-0b867813.png"></a>
+
+

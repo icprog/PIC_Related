@@ -1,0 +1,243 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"17 D:\PIC\X8Projects\16F18855\KS-0108.X\glcd.c
+[v _GoToXY GoToXY `(v  1 e 0 0 ]
+"38
+[v _LCDWriteChar LCDWriteChar `(v  1 e 0 0 ]
+"49
+[v _LCDWriteStringXY LCDWriteStringXY `(v  1 e 0 0 ]
+"59
+[v _LCDWriteIntXY LCDWriteIntXY `(v  1 e 0 0 ]
+"165
+[v _loadimg loadimg `(v  1 e 0 0 ]
+"212
+[v _busy busy `(v  1 e 0 0 ]
+"252
+[v _cmd_write cmd_write `(v  1 e 0 0 ]
+"260
+[v _data_write data_write `(v  1 e 0 0 ]
+"269
+[v _init_lcd init_lcd `(v  1 e 0 0 ]
+"280
+[v _e_togg e_togg `(v  1 e 0 0 ]
+"287
+[v _cls cls `(v  1 e 0 0 ]
+"6 D:\PIC\X8Projects\16F18855\KS-0108.X\main.c
+[v _main main `(v  1 e 0 0 ]
+"41 D:\PIC\X8Projects\16F18855\KS-0108.X\system.c
+[v _Init Init `(v  1 e 0 0 ]
+"369 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic16f18855.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"430
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"491
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+"572
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"633
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"694
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"755
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+"816
+[v _LATB LATB `VEuc  1 e 1 @23 ]
+[s S32 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"833
+[u S41 . 1 `S32 1 . 1 0 ]
+[v _LATBbits LATBbits `VES41  1 e 1 @23 ]
+"877
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+"29277
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"29887
+[v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
+"30497
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"4 D:\PIC\X8Projects\16F18855\KS-0108.X\fonts.h
+[v _toplogo_bmp toplogo_bmp `DCC[1024]uc  1 e 1024 0 ]
+"72
+[v _font font `DCC[303]uc  1 e 303 0 ]
+"6 D:\PIC\X8Projects\16F18855\KS-0108.X\main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"8
+[v main@mine mine `i  1 a 2 15 ]
+"51
+} 0
+"165 D:\PIC\X8Projects\16F18855\KS-0108.X\glcd.c
+[v _loadimg loadimg `(v  1 e 0 0 ]
+{
+"169
+[v loadimg@z z `i  1 a 2 11 ]
+"167
+[v loadimg@x x `uc  1 a 1 10 ]
+[v loadimg@i i `uc  1 a 1 9 ]
+[v loadimg@y y `uc  1 a 1 8 ]
+"165
+[v loadimg@image image `*.25DCCuc  1 p 2 3 ]
+[v loadimg@len len `ui  1 p 2 5 ]
+"210
+} 0
+"269
+[v _init_lcd init_lcd `(v  1 e 0 0 ]
+{
+"278
+} 0
+"287
+[v _cls cls `(v  1 e 0 0 ]
+{
+"289
+[v cls@y y `uc  1 a 1 5 ]
+[v cls@x x `uc  1 a 1 4 ]
+"300
+} 0
+"49
+[v _LCDWriteStringXY LCDWriteStringXY `(v  1 e 0 0 ]
+{
+[v LCDWriteStringXY@X X `uc  1 a 1 wreg ]
+"52
+[v LCDWriteStringXY@i i `i  1 a 2 2 ]
+"49
+[v LCDWriteStringXY@X X `uc  1 a 1 wreg ]
+[v LCDWriteStringXY@Y Y `uc  1 p 1 11 ]
+[v LCDWriteStringXY@string string `*.25DCCuc  1 p 2 12 ]
+"51
+[v LCDWriteStringXY@X X `uc  1 a 1 1 ]
+"57
+} 0
+"59
+[v _LCDWriteIntXY LCDWriteIntXY `(v  1 e 0 0 ]
+{
+[v LCDWriteIntXY@X X `uc  1 a 1 wreg ]
+"63
+[v LCDWriteIntXY@str str `[5]uc  1 a 5 4 ]
+"64
+[v LCDWriteIntXY@i i `uc  1 a 1 11 ]
+[v LCDWriteIntXY@j j `uc  1 a 1 10 ]
+"59
+[v LCDWriteIntXY@X X `uc  1 a 1 wreg ]
+[v LCDWriteIntXY@Y Y `uc  1 p 1 0 ]
+[v LCDWriteIntXY@value value `i  1 p 2 1 ]
+[v LCDWriteIntXY@fieldLength fieldLength `c  1 p 1 3 ]
+"61
+[v LCDWriteIntXY@F13023 F13023 `[5]uc  1 s 5 F13023 ]
+[v LCDWriteIntXY@X X `uc  1 a 1 9 ]
+"94
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"35
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"42
+} 0
+"38 D:\PIC\X8Projects\16F18855\KS-0108.X\glcd.c
+[v _LCDWriteChar LCDWriteChar `(v  1 e 0 0 ]
+{
+[v LCDWriteChar@c c `DCCuc  1 a 1 wreg ]
+"40
+[v LCDWriteChar@base base `ui  1 a 2 9 ]
+"38
+[v LCDWriteChar@c c `DCCuc  1 a 1 wreg ]
+"41
+[v LCDWriteChar@c c `DCCuc  1 a 1 8 ]
+"47
+} 0
+"260
+[v _data_write data_write `(v  1 e 0 0 ]
+{
+[v data_write@x x `uc  1 a 1 wreg ]
+[v data_write@x x `uc  1 a 1 wreg ]
+"262
+[v data_write@x x `uc  1 a 1 2 ]
+"267
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"17 D:\PIC\X8Projects\16F18855\KS-0108.X\glcd.c
+[v _GoToXY GoToXY `(v  1 e 0 0 ]
+{
+[v GoToXY@X X `uc  1 a 1 wreg ]
+"19
+[v GoToXY@position position `uc  1 a 1 9 ]
+[v GoToXY@page page `uc  1 a 1 8 ]
+"17
+[v GoToXY@X X `uc  1 a 1 wreg ]
+[v GoToXY@Y Y `uc  1 p 1 3 ]
+"20
+[v GoToXY@X X `uc  1 a 1 7 ]
+"36
+} 0
+"252
+[v _cmd_write cmd_write `(v  1 e 0 0 ]
+{
+[v cmd_write@x x `uc  1 a 1 wreg ]
+[v cmd_write@x x `uc  1 a 1 wreg ]
+"254
+[v cmd_write@x x `uc  1 a 1 2 ]
+"258
+} 0
+"280
+[v _e_togg e_togg `(v  1 e 0 0 ]
+{
+"285
+} 0
+"212
+[v _busy busy `(v  1 e 0 0 ]
+{
+"214
+[v busy@stat stat `uc  1 a 1 1 ]
+"250
+} 0
+"41 D:\PIC\X8Projects\16F18855\KS-0108.X\system.c
+[v _Init Init `(v  1 e 0 0 ]
+{
+"58
+} 0

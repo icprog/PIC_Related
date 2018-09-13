@@ -1,0 +1,71 @@
+
+Description:
+ 
+    This is IIC Serial 20X4 LCD module . With this I2C interface LCD module, you will be able to realize data display via only 2 wires. If you already has I2C devices in your project, this LCD module actually cost no more resources at all. It is fantastic for Arduino based project.
+
+  Download material
+
+ 
+
+  Specification:
+
+   Interface: I2C
+
+   I2C Address: 0x20
+
+   Sofware version :0022
+
+   SDA (DATA) -> analog input pin 4
+
+   SCL (CLOCK) -> analog input pin 5
+
+   Pin Definition : GND?VCC?SDA?SCL
+
+   Back lit (Blue with white char color)
+
+   Supply voltage: 5V
+
+   Pcb Size : 60mm×99mm
+
+   Contrast Adjust : Potentiometer
+
+   Backlight Adjust : Jumper
+
+   2004 LiquidCrystal_I2C
+ 
+
+  Arduino Test Code:
+
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd(0x27,16,2); //set the LCD address to 0x27 for a 16 chars and 2 line display
+
+void setup()
+{
+lcd.init();
+lcd.backlight();
+lcd.setCursor(0, 0);
+lcd.print(\"b2cqshop\");
+lcd.setCursor(0, 1);
+lcd.print(\"Voltage: \");
+lcd.setCursor(13, 1);
+lcd.print(\"V\");
+}
+void loop()
+{
+int val;
+float temp;
+val=analogRead(0);
+temp=val/4.092;
+val=(int)temp;//
+lcd.setCursor(9, 1);
+lcd.print(0x30+val/100,BYTE);
+lcd.print(0x30+(val%100)/10,BYTE);
+lcd.print(\'.\');
+lcd.print(0x30+val%10,BYTE);
+delay(100);
+}
+
+  Package:
+1 X Blue Display IIC/I2C/TWI/SP??I Serial Interface2004 20X4 Character LCD Module

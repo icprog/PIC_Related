@@ -1,0 +1,316 @@
+****************************************************************
+			CONFIGURATION
+****************************************************************
+
+YOU MUST AGREE THIS TERMS AND CONDITIONS. THIS SOFTWARE IS
+PROVIDED BY NORITAKE CO., INC "AS IS" AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR SORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+----------------------------------------------------------------
+ABOUT THIS DOCUMENT
+
+The Noritake_VFD_CUU code library can work in a variety of
+hardware settings. You must set the configuration options in
+config.h to match your host system's hardware, VFD module
+parameters, and the interface between the host and VFD module.
+
+When compiling the code library, you may compile all of the source
+files even if you do not intend to use that interface.
+Source files for interfaces that are not selected will
+disable themselves based on the settings in config.h. To set
+the configuration options, define a preprocessor varible
+with that name to one of the values indicated in the
+descriptions below. A default config.h is included in the
+code library download. You may modify this to change the
+configuration options.
+
+You can find information and purchasing options for Noritake
+VFDs at http://noritake-elec.com/uversion.htm
+
+There are a few mandatory options you must set regardless of
+which interface you are using.
+
+	F_CPU
+	  CPU frequency in Hertz
+
+	NORITAKE_VFD_RESET_DELAY
+	  Delay time between the Atmel starting and the CU-U
+	  VFD module being initialized. This is necessary to
+	  allow the module's controller to initialize.
+	  
+	  This value will vary depend on the power supply and
+	  hardware setup.
+	  
+	  500 ms is more than enough time for the module to
+	  start up.
+
+	NORITAKE_VFD_COLS
+	  The number of columns on the display
+
+	NORITAKE_VFD_LINES
+	  The number of lines on the display
+
+	NORITAKE_VFD_BRIGHTNESS_BOOST
+	  1: Using a CU-UX module that supports brightness boost:
+		CU*****-UX**
+
+		Example: CU20025-UX1J
+	  0: Does not support brightness boost
+
+	NORITAKE_VFD_CU20045_UW4J
+	  1: Using a CU20045-UW4J (different addresses
+		from other CU-U 20x4 models)
+	  0: Using any other model
+  
+    NORITAKE_VFD_BC
+      0: CU-U VFD Module
+      1: DS2045G VFD
+    
+    NORITAKE_VFD_FONT
+      1: 0x80-0xFF are Japanese Katakana (default)
+      0: 0x80-0xFF are European characters
+
+To select the serial interface, you must set NORITAKE_VFD_INTERFACE to 0.
+Please refer to the manual for your module on how to set the jumpers
+to use the serial interface.
+
+	NORITAKE_VFD_INTERFACE	0
+	SIO_PORT & SIO_PIN	port & pin# of the SIO/DAT line
+	SCK_PORT & SCK_PIN	port & pin# of the clock line
+	STB_PORT & STB_PIN	port & pin# of the strobe line
+
+To select a parallel interface, you must set NORITAKE_VFD_INTERFACE to 1.
+For all parallel modes, you must define:
+
+	NORITAKE_VFD_4BIT
+		If this value is 1, then only the four pins D4-D7
+		are used for data. If the value is 0, then all eight
+		pins are used for data.
+	
+	Data port & pin numbers:
+		D4_PORT & D4_PIN
+		D5_PORT & D5_PIN
+		D6_PORT & D6_PIN
+		D7_PORT & D7_PIN
+
+	These need to be defined only if NORITAKE_VFD_4BIT is 0:
+		D0_PORT & D0_PIN
+		D1_PORT & D1_PIN
+		D2_PORT & D2_PIN
+		D3_PORT & D3_PIN
+
+To select the parallel M68 interface, you must set
+NORITAKE_VFD_INTERFACE to 1 and NORITAKE_VFD_PARALLEL to 0. Please
+refer to the spec for your module on how to set the jumpers to
+use the M68 parallel interface. To configure the code library, you
+must define:
+
+	NORITAKE_VFD_INTERFACE	0
+	NORITAKE_VFD_PARALLEL	0
+
+	NORITAKE_VFD_NO_RW_LINE
+		Define to 1 if the R/W in M68 line is not used.
+		Any read will immediately return 0. If you have the
+		R/W line connected, set this value to 1.
+		This has no effect on I80 or serial interface.
+
+	RS_PORT & RS_PIN	port & pin# of RS line
+	RW_PORT & RW_PIN	port & pin# of R/W line
+	E_PORT & E_PIN		port & pin# of E line
+		
+To select the I80 parallel interface, you must set
+NORITAKE_VFD_INTERFACE to 1 and NORITAKE_VFD_PARALLEL to 1. Please
+refer to the spec for your module on how to set the jumpers to
+use the parallel I80 interface. To configure the code library, you
+must define:
+
+	NORITAKE_VFD_INTERFACE	0
+	NORITAKE_VFD_PARALLEL	1
+
+	RS_PORT & RS_PIN	port & pin# of RS line
+	WR_PORT & WR_PIN	port & pin# of WR line
+	RD_PORT & RD_PIN	port & pin# of RD line
+
+
+
+****************************************************************
+			OPTION INDEX
+****************************************************************
+	
+----------------------------------------------------------------
+D0_PIN
+D0_PORT
+D1_PIN
+D1_PORT
+D2_PIN
+D2_PORT
+D3_PIN
+D3_PORT
+D4_PIN
+D4_PORT
+D5_PIN
+D5_PORT
+D6_PIN
+D6_PORT
+D7_PIN
+D7_PORT
+The data lines (bits 0-7) for the parallel interfaces. If 4-bit
+mode is enabled with NORITAKE_VFD_4BIT as 1, then only D4-D7 need
+be defined.
+
+----------------------------------------------------------------
+F_CPU
+Processor speed in hertz.
+	Example:
+	16000000UL for 16MHz
+
+----------------------------------------------------------------
+NORITAKE_VFD_4BIT
+If this is set to 1, then the parallel connection is setup to use
+only four data pins (D4-D7). This option is for parallel
+interfaces only.
+
+----------------------------------------------------------------
+NORITAKE_VFD_BRIGHTNESS_BOOST
+Having this macro set to 1 allows you to correctly use CU-UX
+models that have brightness boost. 
+
+	Examples:
+	CU16025-UX6J
+	CU16025-UX6A
+	CU20025-UX1J
+
+----------------------------------------------------------------
+NORITAKE_VFD_COLS
+The number of columns that the display has. Also, see
+NORITAKE_VFD_LINES.
+
+----------------------------------------------------------------
+NORITAKE_VFD_CU20045_UW4J
+The CU20045-UW4J DD RAM memory is laid out differently from the
+other models. If you have this model, please set this to 1.
+
+----------------------------------------------------------------
+NORITAKE_VFD_INTERFACE
+This macro controls which type of interface is used: serial or
+parallel. Use the value 0 for serial, and 1 for parallel. After
+setting this, you must set the specific options for that
+interface.
+
+----------------------------------------------------------------
+NORITAKE_VFD_LINES
+The number of lines that the display has. Also, see
+NORITAKE_VFD_COLS.
+
+----------------------------------------------------------------
+NORITAKE_VFD_NO_RW_LINE
+If this is set to 1, then R/W is not implemented and any attempt
+to read from the VFD will immediately return 0. This option
+is for the M68 parallel interface only.
+
+----------------------------------------------------------------
+NORITAKE_VFD_PARALLEL
+This macro controls which type of parallel is used if
+NORITAKE_VFD_INTERFACE is defined as 1. Define as 1 for I80 and
+0 for M68. You must set the specific options for that interface.
+If NORITAKE_VFD_INTERFACE is 1,
+
+----------------------------------------------------------------
+E_PIN
+E_PORT
+The enable line (E) of M68 parallel interface.
+
+	Example:
+	E_PIN		0
+	E_PORT		PORTG
+
+----------------------------------------------------------------
+RW_PIN
+RW_PORT
+The read line (R/W) of M68 parallel interface.
+
+	Example:
+	RW_PIN		0
+	RW_PORT		PORTG
+
+----------------------------------------------------------------
+RD_PIN
+RD_PORT
+The read line (RD) of I80 parallel interface.
+
+	Example:
+	RD_PIN		0
+	RD_PORT		PORTG
+
+----------------------------------------------------------------
+RS_PIN
+RS_PORT
+The command/data (RS) of M68 and I80 parallel interfaces.
+
+	Example:
+	RS_PIN		0
+	RS_PORT		PORTG
+	
+----------------------------------------------------------------
+SIO_PIN
+SIO_PORT
+The I/O data pin (SIO/DAT) for the serial interface.
+
+	Example:
+	SIO_PIN		0
+	SIO_PORT	PORTG
+
+----------------------------------------------------------------
+SCK_PIN
+SCK_PORT
+The clock line (SCK/CLK) for the serial interface.
+
+	Example:
+	SCK_PIN		0
+	SCK_PORT	PORTG
+
+----------------------------------------------------------------
+STB_PIN
+STB_PORT
+The strobe line (STB) for the serial interface.
+
+	Example:
+	STB_PIN		0
+	STB_PORT	PORTG
+
+----------------------------------------------------------------
+WR_PIN
+WR_PORT
+The write line (WR) of I80 parallel interface.
+
+	Example:
+	WR_PIN		0
+	WR_PORT		PORTG
+
+
+----------------------------------------------------------------
+E-M-0052-01 08/27/2012
+----------------------------------------------------------------
+CHANGES
+Revision 1
+    Updated with information on DS2045G
+
+For further support, please contact:
+	Noritake Co., Inc.
+	2635 Clearbrook Dr 
+	Arlington Heights, IL 60005 
+	800-779-5846 
+	847-439-9020
+	support.ele@noritake.com
+
+All rights reserved. © Noritake Co., Inc.

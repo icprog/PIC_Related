@@ -1,0 +1,200 @@
+eeschema (2013-07-07 BZR 4022)-stable  >> Creation date: 06/03/2017 2:22:27 PM
+#Cmp ( order = Reference )
+| C1         C           490-3512-1-ND
+| C2         C           490-3512-1-ND
+| C3         C           490-3512-1-ND
+| C4         C           490-3512-1-ND
+| C5         C           490-3512-1-ND
+| C6         C           490-3512-1-ND
+| C7         C           478-1556-1-ND
+| C8         C           478-1556-1-ND
+| C9         C           478-1556-1-ND
+| C10        C           478-1556-1-ND
+| C11        C           478-1556-1-ND
+| C12        C           478-1556-1-ND
+| C13        C           490-3512-1-ND
+| C14        C           490-3512-1-ND
+| C15        C           490-3512-1-ND
+| C16        C           490-3512-1-ND
+| C17        C           490-3512-1-ND
+| C18        C           490-3512-1-ND
+| C19        C           478-1556-1-ND
+| C20        C           478-1556-1-ND
+| C21        C           478-1556-1-ND
+| C22        C           478-1556-1-ND
+| C23        C           478-1556-1-ND
+| C24        C           478-1556-1-ND
+| C25        C           478-10019-ND
+| C26        C           478-10019-ND
+| C27        C           478-10019-ND
+| C28        C           478-10019-ND
+| C29        C           490-3512-1-ND
+| C30        C           490-3512-1-ND
+| C31        C           490-3512-1-ND
+| C32        C           490-3512-1-ND
+| C33        C           490-3512-1-ND
+| C34        C           490-3512-1-ND
+| C35        C           478-1556-1-ND
+| C36        C           478-1556-1-ND
+| C37        C           478-1556-1-ND
+| C38        C           478-1556-1-ND
+| C39        C           478-1556-1-ND
+| C40        C           478-1556-1-ND
+| C41        C           490-3512-1-ND
+| C42        C           490-3512-1-ND
+| C43        C           490-3512-1-ND
+| C44        C           490-3512-1-ND
+| C45        C           490-3512-1-ND
+| C46        C           490-3512-1-ND
+| C47        C           478-1556-1-ND
+| C48        C           478-1556-1-ND
+| C49        C           478-1556-1-ND
+| C50        C           478-1556-1-ND
+| C51        C           478-1556-1-ND
+| C52        C           478-1556-1-ND
+| P1         CONN_12     A98075-ND
+| P2         CONN_12     A98075-ND
+| P3         CONN_11     STRAIGHT PIN
+| P4         CONN_6      PROGRAMING CONNECTOR
+| P5         CONN_12     A98075-ND
+| P6         CONN_12     A98075-ND
+| P7         CONN_2      A98333-ND
+| P8         CONN_6      PROGRAMING CONNECTOR
+| P9         CONN_2      A98333-ND
+| P10        CONN_1      STRAIGHT PIN
+| P11        CONN_1      STRAIGHT PIN
+| P12        CONN_1      STRAIGHT PIN
+| P13        CONN_1      STRAIGHT PIN
+| P14        CONN_1      STRAIGHT PIN
+| P15        CONN_1      STRAIGHT PIN
+| P16        CONN_1      STRAIGHT PIN
+| R1         R           ANY 1206 APPROXIMATELY 10K
+| R2         R           ANY 1206 APPROXIMATELY 10K
+| U1         MAX31855    MAX31855TASA+-ND 
+| U2         MAX31855    MAX31855TASA+-ND 
+| U3         MAX31855    MAX31855TASA+-ND 
+| U4         MAX31855    MAX31855TASA+-ND
+| U5         MAX31855    MAX31855TASA+-ND
+| U6         MAX31855    MAX31855TASA+-ND
+| U7         MAX31855    MAX31855TASA+-ND
+| U8         MAX31855    MAX31855TASA+-ND
+| U9         MAX31855    MAX31855TASA+-ND
+| U10        MAX31855    MAX31855TASA+-ND
+| U11        MAX31855    MAX31855TASA+-ND
+| U12        MAX31855    MAX31855TASA+-ND
+| U13        PIC16F720   
+| U14        MAX31855    MAX31855TASA+-ND
+| U15        MAX31855    MAX31855TASA+-ND
+| U16        MAX31855    MAX31855TASA+-ND
+| U17        MAX31855    MAX31855TASA+-ND
+| U18        MAX31855    MAX31855TASA+-ND
+| U19        MAX31855    MAX31855TASA+-ND
+| U20        MAX31855    MAX31855TASA+-ND
+| U21        MAX31855    MAX31855TASA+-ND
+| U22        MAX31855    MAX31855TASA+-ND
+| U23        MAX31855    MAX31855TASA+-ND
+| U24        MAX31855    MAX31855TASA+-ND
+| U25        MAX31855    MAX31855TASA+-ND
+| U26        PIC16F720   
+#End Cmp
+
+#Cmp ( order = Value )
+| C            C1        
+| C            C2        
+| C            C3        
+| C            C4        
+| C            C5        
+| C            C6        
+| C            C7        
+| C            C8        
+| C            C9        
+| C            C10       
+| C            C11       
+| C            C12       
+| C            C13       
+| C            C14       
+| C            C15       
+| C            C16       
+| C            C17       
+| C            C18       
+| C            C19       
+| C            C20       
+| C            C21       
+| C            C22       
+| C            C23       
+| C            C24       
+| C            C25       
+| C            C26       
+| C            C27       
+| C            C28       
+| C            C29       
+| C            C30       
+| C            C31       
+| C            C32       
+| C            C33       
+| C            C34       
+| C            C35       
+| C            C36       
+| C            C37       
+| C            C38       
+| C            C39       
+| C            C40       
+| C            C41       
+| C            C42       
+| C            C43       
+| C            C44       
+| C            C45       
+| C            C46       
+| C            C47       
+| C            C48       
+| C            C49       
+| C            C50       
+| C            C51       
+| C            C52       
+| CONN_12      P1        
+| CONN_12      P2        
+| CONN_11      P3        
+| CONN_6       P4        
+| CONN_12      P5        
+| CONN_12      P6        
+| CONN_2       P7        
+| CONN_6       P8        
+| CONN_2       P9        
+| CONN_1       P10       
+| CONN_1       P11       
+| CONN_1       P12       
+| CONN_1       P13       
+| CONN_1       P14       
+| CONN_1       P15       
+| CONN_1       P16       
+| R            R1        
+| R            R2        
+| MAX31855     U1        
+| MAX31855     U2        
+| MAX31855     U3        
+| MAX31855     U4        
+| MAX31855     U5        
+| MAX31855     U6        
+| MAX31855     U7        
+| MAX31855     U8        
+| MAX31855     U9        
+| MAX31855     U10       
+| MAX31855     U11       
+| MAX31855     U12       
+| PIC16F720    U13       
+| MAX31855     U14       
+| MAX31855     U15       
+| MAX31855     U16       
+| MAX31855     U17       
+| MAX31855     U18       
+| MAX31855     U19       
+| MAX31855     U20       
+| MAX31855     U21       
+| MAX31855     U22       
+| MAX31855     U23       
+| MAX31855     U24       
+| MAX31855     U25       
+| PIC16F720    U26       
+#End Cmp
+
+#End List

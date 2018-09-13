@@ -1,0 +1,10 @@
+_ADCInit: CODE, 802 0 5
+_ConfigureOscillator: CODE, 807 0 17
+_main: CODE, 966 0 171
+_MoistureCheck: CODE, 1137 0 902
+__initialization: CODE, 2039 0 7
+_ADCRead: CODE, 824 0 29
+_Init: CODE, 921 0 45
+___wmul: CODE, 886 0 35
+_Median: CODE, 853 0 33
+Total: 1244

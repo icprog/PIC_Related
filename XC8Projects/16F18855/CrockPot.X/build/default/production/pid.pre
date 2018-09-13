@@ -1,0 +1,70 @@
+
+# 1 "pid.c"
+
+# 12 "pid.h"
+void Init_PID(void);
+
+# 20
+float PID_Calculate(int const setpoint, float temp);
+
+# 5 "pid.c"
+float PID_Kp, PID_Ki;
+float PID_Kd;
+float pidIntegrated;
+float pidPrevInput = 0;
+int pidMinOutput, pidMaxOutput;
+
+
+void Init_PID(void)
+{
+PID_Kp = 50;
+PID_Ki = 1;
+PID_Kd = 300;
+pidMinOutput = 0;
+pidMaxOutput = 1023;
+pidIntegrated = 0;
+pidPrevInput = 0;
+}
+
+
+float PID_Calculate(int const setpoint, float temp)
+{
+float error, errorValue, derivativeValue = 0, pidPrevError = 0, Result;
+
+
+error = setpoint - temp;
+
+errorValue = error * PID_Kp;
+
+
+pidIntegrated = pidIntegrated + (error * PID_Ki);
+
+if (pidIntegrated< pidMinOutput)
+{
+pidIntegrated= pidMinOutput;
+}
+
+if (pidIntegrated> pidMaxOutput)
+{
+pidIntegrated= pidMaxOutput;
+}
+
+
+derivativeValue=(error-pidPrevError)*PID_Kd;
+pidPrevError = error;
+
+
+Result = errorValue + pidIntegrated+ derivativeValue;
+
+if (Result < pidMinOutput)
+{
+Result = pidMinOutput;
+}
+
+if (Result > pidMaxOutput)
+{
+Result = pidMaxOutput;
+}
+
+return (Result);
+}

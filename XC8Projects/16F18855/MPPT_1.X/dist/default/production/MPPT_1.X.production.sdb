@@ -1,0 +1,491 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"17 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\adc.c
+[e E14296 . `uc
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR 63
+]
+"16
+[v _ADCRead ADCRead `(ui  1 e 2 0 ]
+"34
+[v _readAnalog readAnalog `(ui  1 e 2 0 ]
+"60
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"124 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\lcd.c
+[v _gotoXY gotoXY `(v  1 e 1 0 ]
+"140
+[v _LCDWriteCharacter LCDWriteCharacter `(v  1 e 1 0 ]
+"182
+[v _LCDClear LCDClear `(v  1 e 1 0 ]
+"190
+[v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
+"247
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+"280
+[v _LCDWrite LCDWrite `(v  1 e 1 0 ]
+"21 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"5 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"3 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\pwm.c
+[v _PWM_Initialize PWM_Initialize `(v  1 e 1 0 ]
+"32
+[v _PWM7_LoadDutyValue PWM7_LoadDutyValue `(v  1 e 1 0 ]
+"37 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"68
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"3 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"7 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\adc.c
+[v _samples samples `[4][50]ui  1 e 400 @8800 ]
+"9
+[v _sampleIndex sampleIndex `ui  1 e 2 0 ]
+"11
+[v _totals totals `[4]ul  1 e 16 0 ]
+"13
+[v _channels channels `[4]uc  1 s 4 channels ]
+"589 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f18855.h
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+[s S168 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"606
+[u S177 . 1 `S168 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES177  1 e 1 @17 ]
+"651
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"713
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"775
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+[s S189 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"792
+[u S198 . 1 `S189 1 . 1 0 ]
+[v _LATAbits LATAbits `VES198  1 e 1 @22 ]
+"837
+[v _LATB LATB `VEuc  1 e 1 @23 ]
+"899
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+"1536
+[v _ADRESL ADRESL `VEuc  1 e 1 @140 ]
+"1556
+[v _ADRESH ADRESH `VEuc  1 e 1 @141 ]
+"1857
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @147 ]
+[s S67 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"1893
+[s S75 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM 1 0 :2:2 
+]
+[s S79 . 1 `uc 1 nDONE 1 0 :1:0 
+]
+[s S81 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+`uc 1 ADFM1 1 0 :1:3 
+]
+[s S86 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM0 1 0 :1:2 
+`uc 1 ADFRM1 1 0 :1:3 
+]
+[u S91 . 1 `S67 1 . 1 0 `S75 1 . 1 0 `S79 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES91  1 e 1 @147 ]
+"1968
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @148 ]
+"2007
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @149 ]
+"2084
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @150 ]
+"2155
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @151 ]
+"2225
+[v _ADCLK ADCLK `VEuc  1 e 1 @152 ]
+"2283
+[v _ADACT ADACT `VEuc  1 e 1 @153 ]
+"2335
+[v _ADREF ADREF `VEuc  1 e 1 @154 ]
+"2376
+[v _ADCAP ADCAP `VEuc  1 e 1 @155 ]
+"2428
+[v _ADPRE ADPRE `VEuc  1 e 1 @156 ]
+"2498
+[v _ADACQ ADACQ `VEuc  1 e 1 @157 ]
+"2568
+[v _ADPCH ADPCH `VEuc  1 e 1 @158 ]
+"2696
+[v _ADRPT ADRPT `VEuc  1 e 1 @269 ]
+"2773
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @270 ]
+"2843
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @271 ]
+"2920
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @272 ]
+"2990
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @273 ]
+"3067
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @274 ]
+"3137
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @275 ]
+[s S307 . 1 `uc 1 C5TSEL 1 0 :2:0 
+`uc 1 P6TSEL 1 0 :2:2 
+`uc 1 P7TSEL 1 0 :2:4 
+]
+"9031
+[s S311 . 1 `uc 1 C5TSEL0 1 0 :1:0 
+`uc 1 C5TSEL1 1 0 :1:1 
+`uc 1 P6TSEL0 1 0 :1:2 
+`uc 1 P6TSEL1 1 0 :1:3 
+`uc 1 P7TSEL0 1 0 :1:4 
+`uc 1 P7TSEL1 1 0 :1:5 
+]
+[u S318 . 1 `S307 1 . 1 0 `S311 1 . 1 0 ]
+[v _CCPTMRS1bits CCPTMRS1bits `VES318  1 e 1 @543 ]
+"9081
+[v _T2TMR T2TMR `VEuc  1 e 1 @652 ]
+"9119
+[v _T2PR T2PR `VEuc  1 e 1 @653 ]
+"9157
+[v _T2CON T2CON `VEuc  1 e 1 @654 ]
+[s S362 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"9193
+[s S366 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S370 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+]
+[s S378 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S387 . 1 `S362 1 . 1 0 `S366 1 . 1 0 `S370 1 . 1 0 `S378 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES387  1 e 1 @654 ]
+"9303
+[v _T2HLT T2HLT `VEuc  1 e 1 @655 ]
+"9431
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @656 ]
+"9589
+[v _T2RST T2RST `VEuc  1 e 1 @657 ]
+"12473
+[v _PWM7DCL PWM7DCL `VEuc  1 e 1 @912 ]
+"12539
+[v _PWM7DCH PWM7DCH `VEuc  1 e 1 @913 ]
+"12709
+[v _PWM7CON PWM7CON `VEuc  1 e 1 @914 ]
+[s S345 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR3IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 TMR5IF 1 0 :1:4 
+`uc 1 TMR6IF 1 0 :1:5 
+]
+"21299
+[u S352 . 1 `S345 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES352  1 e 1 @1808 ]
+[s S274 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"21564
+[u S279 . 1 `S274 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES279  1 e 1 @1814 ]
+"23324
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"23464
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"23561
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"23612
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"23670
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"24044
+[v _FVRCON FVRCON `VEuc  1 e 1 @2316 ]
+"29763
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @3727 ]
+[s S289 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"29773
+[u S291 . 1 `S289 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES291  1 e 1 @3727 ]
+"32791
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @3876 ]
+"32991
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"33053
+[v _WPUA WPUA `VEuc  1 e 1 @3897 ]
+"33611
+[v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
+"33673
+[v _WPUB WPUB `VEuc  1 e 1 @3908 ]
+"34231
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"34293
+[v _WPUC WPUC `VEuc  1 e 1 @3919 ]
+"34851
+[v _WPUE WPUE `VEuc  1 e 1 @3941 ]
+"36757
+"36757
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"17 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\lcd.c
+[v _fonts fonts `DC[303]uc  1 e 303 0 ]
+"18 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\main.c
+[v _call call `uc  1 e 1 0 ]
+"21
+[v _main main `(v  1 e 1 0 ]
+{
+"34
+[v main@analogs analogs `[4]ui  1 a 8 29 ]
+"25
+[v main@Batt_V Batt_V `ui  1 a 2 51 ]
+"26
+[v main@Batt_I Batt_I `ui  1 a 2 47 ]
+"29
+[v main@Batt_V_Old Batt_V_Old `ui  1 a 2 45 ]
+"32
+[v main@dutyCycle7 dutyCycle7 `ui  1 a 2 43 ]
+"31
+[v main@powerOutOld powerOutOld `ui  1 a 2 41 ]
+"24
+[v main@PV_I PV_I `ui  1 a 2 39 ]
+"23
+[v main@PV_V PV_V `ui  1 a 2 37 ]
+"33
+[v main@j j `uc  1 a 1 50 ]
+"35
+[v main@loopCount loopCount `uc  1 a 1 49 ]
+"33
+[v main@F14429 F14429 `[4]ui  1 s 8 F14429 ]
+"84
+} 0
+"34 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\adc.c
+[v _readAnalog readAnalog `(ui  1 e 2 0 ]
+{
+[v readAnalog@channel channel `uc  1 a 1 wreg ]
+"36
+[v readAnalog@value value `ui  1 a 2 23 ]
+"38
+[v readAnalog@analog_channel analog_channel `uc  1 a 1 22 ]
+"34
+[v readAnalog@channel channel `uc  1 a 1 wreg ]
+"38
+[v readAnalog@channel channel `uc  1 a 1 25 ]
+"57
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"6
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"31
+} 0
+"16 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\adc.c
+[v _ADCRead ADCRead `(ui  1 e 2 0 ]
+{
+[v ADCRead@channel channel `E14296  1 a 1 wreg ]
+[v ADCRead@channel channel `E14296  1 a 1 wreg ]
+"18
+[v ADCRead@channel channel `E14296  1 a 1 3 ]
+"31
+} 0
+"37 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"66
+} 0
+"3 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"20
+} 0
+"3 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\pwm.c
+[v _PWM_Initialize PWM_Initialize `(v  1 e 1 0 ]
+{
+"22
+} 0
+"5 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"43
+[v PIN_MANAGER_Initialize@state state `c  1 a 1 0 ]
+"58
+} 0
+"68 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\system.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"75
+} 0
+"247 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\lcd.c
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+{
+"277
+} 0
+"182
+[v _LCDClear LCDClear `(v  1 e 1 0 ]
+{
+"184
+[v LCDClear@index index `i  1 a 2 9 ]
+"188
+} 0
+"124
+[v _gotoXY gotoXY `(v  1 e 1 0 ]
+{
+[v gotoXY@x x `uc  1 a 1 wreg ]
+[v gotoXY@x x `uc  1 a 1 wreg ]
+[v gotoXY@y y `uc  1 p 1 5 ]
+"126
+[v gotoXY@x x `uc  1 a 1 7 ]
+"128
+} 0
+"60 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"107
+} 0
+"32 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\pwm.c
+[v _PWM7_LoadDutyValue PWM7_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM7_LoadDutyValue@dutyCycle7 dutyCycle7 `ui  1 p 2 0 ]
+"37
+} 0
+"190 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\lcd.c
+[v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
+{
+"192
+[v LCDWriteInt@str str `[5]uc  1 a 5 9 ]
+"193
+[v LCDWriteInt@i i `uc  1 a 1 15 ]
+[v LCDWriteInt@j j `uc  1 a 1 14 ]
+"190
+[v LCDWriteInt@value value `i  1 p 2 0 ]
+[v LCDWriteInt@fieldLength fieldLength `c  1 p 1 2 ]
+[v LCDWriteInt@numPlaces numPlaces `uc  1 p 1 3 ]
+[v LCDWriteInt@sign sign `uc  1 p 1 4 ]
+"191
+[v LCDWriteInt@F14376 F14376 `[5]uc  1 s 5 F14376 ]
+"244
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"42
+} 0
+"140 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\lcd.c
+[v _LCDWriteCharacter LCDWriteCharacter `(v  1 e 1 0 ]
+{
+[v LCDWriteCharacter@character character `DCuc  1 a 1 wreg ]
+"142
+[v LCDWriteCharacter@base base `ui  1 a 2 10 ]
+"140
+[v LCDWriteCharacter@character character `DCuc  1 a 1 wreg ]
+"143
+[v LCDWriteCharacter@character character `DCuc  1 a 1 9 ]
+"149
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"280 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_1.X\lcd.c
+[v _LCDWrite LCDWrite `(v  1 e 1 0 ]
+{
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 wreg ]
+"282
+[v LCDWrite@i i `uc  1 a 1 4 ]
+[v LCDWrite@d d `uc  1 a 1 3 ]
+"280
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 wreg ]
+[v LCDWrite@data data `uc  1 p 1 0 ]
+"284
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 2 ]
+"314
+} 0

@@ -1,0 +1,12 @@
+Line	MessageNo	File Name
+0	1	mikroCPIC1618.exe -MSF -DBG -pP12F683 -DL -O11111114 -fo4 -N"C:\Documents and Settings\Administrator\Desktop\Microcontroller Stuff\My mikroC Projects\PIC12F683\SerialLCD\SerialLcdTestforELab.mcppi" -SP"C:\Program Files\Mikroelektronika\mikroC PRO for PIC\defs\" -SP"C:\Program Files\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Documents and Settings\Administrator\Desktop\Microcontroller Stuff\My mikroC Projects\PIC12F683\SerialLCD\" "SerialLcdTestforELab.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_CString.mcl" "__Lib_CStdlib.mcl" "__Lib_CMath.mcl" "__Lib_Conversions.mcl" "__Lib_Sprinti.mcl" "__Lib_Sprintl.mcl" "__Lib_Time.mcl" "__Lib_Trigonometry.mcl" "__Lib_Button.mcl" "__Lib_Manchester.mcl" "__Lib_OneWire.mcl" "__Lib_PS2.mcl" "__Lib_Sound.mcl" "__Lib_SoftI2C.mcl" "__Lib_SoftSPI.mcl" "__Lib_SoftUART.mcl" "__Lib_ADC_A_E.mcl" "__Lib_EEPROM.mcl" "__Lib_PWM_gpio2.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl"	 
+diagnostics: 0	125	All files Preprocessed in 15 ms	 
+diagnostics: 0	121	Compilation Started	SerialLcdTestforELab.c
+diagnostics: 113	122	Compiled Successfully	SerialLcdTestforELab.c
+diagnostics: 0	126	All files Compiled in 141 ms	 
+hint: 0	1141	Used RAM (bytes): 41 (37%)  Free RAM (bytes): 71 (63%)	Used RAM (bytes): 41 (37%)  Free RAM (bytes): 71 (63%)
+hint: 0	1141	Used ROM (program words): 313 (15%)  Free ROM (program words): 1735 (85%)	Used ROM (program words): 313 (15%)  Free ROM (program words): 1735 (85%)
+diagnostics: 0	124	Project Linked Successfully	SerialLcdTestforELab.mcppi
+diagnostics: 0	127	Linked in 312 ms	 
+diagnostics: 0	128	Project 'SerialLcdTestforELab.mcppi' completed: 656 ms	 
+diagnostics: 0	103	Finished successfully: 26 Sep 2010, 17:04:06	SerialLcdTestforELab.mcppi

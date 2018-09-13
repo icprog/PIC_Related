@@ -1,0 +1,5 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F720 ]
+[d frameptr 6 ]

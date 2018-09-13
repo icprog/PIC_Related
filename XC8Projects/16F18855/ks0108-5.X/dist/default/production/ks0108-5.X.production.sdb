@@ -1,0 +1,394 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"24 D:\PIC\XC8\16F18855\ks0108-5.X\config.c
+[v _ISR_Code ISR_Code `II(v  1 e 1 0 ]
+"40
+[v _Timer0_Init Timer0_Init `(v  1 e 1 0 ]
+"57
+[v _millis millis `(ul  1 e 4 0 ]
+"23 D:\PIC\XC8\16F18855\ks0108-5.X\glcd_128x64.c
+[v _Glcd_Init Glcd_Init `(v  1 e 1 0 ]
+"57
+[v _Glcd_Set_Side Glcd_Set_Side `(v  1 e 1 0 ]
+"77
+[v _Glcd_Set_X Glcd_Set_X `(v  1 e 1 0 ]
+"95
+[v _Glcd_Set_Page Glcd_Set_Page `(v  1 e 1 0 ]
+"113
+[v _Glcd_Write_Data Glcd_Write_Data `(v  1 e 1 0 ]
+"130
+[v _Glcd_Read_Data Glcd_Read_Data `(uc  1 e 1 0 ]
+"160
+[v _Glcd_Fill Glcd_Fill `(v  1 e 1 0 ]
+"188
+[v _Glcd_Dot Glcd_Dot `(v  1 e 1 0 ]
+"232
+[v _Glcd_V_Line Glcd_V_Line `(v  1 e 1 0 ]
+"260
+[v _Glcd_H_Line Glcd_H_Line `(v  1 e 1 0 ]
+"293
+[v _Glcd_Rectangle Glcd_Rectangle `(v  1 e 1 0 ]
+"318
+[v _Glcd_Line Glcd_Line `(v  1 e 1 0 ]
+"421
+[v _Glcd_Image Glcd_Image `(v  1 e 1 0 ]
+"462
+[v _Glcd_Circle Glcd_Circle `(v  1 e 1 0 ]
+"545
+[v _Glcd_Write_Char Glcd_Write_Char `(v  1 e 1 0 ]
+"575
+[v _Glcd_Write_Text Glcd_Write_Text `(v  1 e 1 0 ]
+"595
+[v __glcd_enable_pulse _glcd_enable_pulse `(v  1 s 1 _glcd_enable_pulse ]
+"611
+[v __glcd_start_line _glcd_start_line `(v  1 s 1 _glcd_start_line ]
+"85 D:\PIC\XC8\16F18855\ks0108-5.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"491 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic16f18855.h
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+[s S141 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"650
+[u S150 . 1 `S141 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES150  1 e 1 @18 ]
+"694
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+[s S162 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"711
+[u S171 . 1 `S162 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES171  1 e 1 @19 ]
+[s S183 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"833
+[u S192 . 1 `S183 1 . 1 0 ]
+[v _LATBbits LATBbits `VES192  1 e 1 @23 ]
+"877
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+[s S204 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"894
+[u S213 . 1 `S204 1 . 1 0 ]
+[v _LATCbits LATCbits `VES213  1 e 1 @24 ]
+"938
+[v _TMR0L TMR0L `VEuc  1 e 1 @28 ]
+"1075
+[v _TMR0H TMR0H `VEuc  1 e 1 @29 ]
+"34694
+"34694
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"37772
+[v _TMR0IE TMR0IE `VEb  1 e 0 @14517 ]
+"37774
+[v _TMR0IF TMR0IF `VEb  1 e 0 @14437 ]
+"3 D:\PIC\XC8\16F18855\ks0108-5.X\config.c
+[v _t0_millis t0_millis `VEul  1 e 4 0 ]
+"14 D:\PIC\XC8\16F18855\ks0108-5.X\main.c
+[v _logo logo `DCC[1024]uc  1 e 1024 0 ]
+"85
+[v _main main `(v  1 e 1 0 ]
+{
+"88
+[v main@timestamp timestamp `ul  1 a 4 46 ]
+"87
+[v main@glcd_state glcd_state `uc  1 a 1 50 ]
+"206
+} 0
+"57 D:\PIC\XC8\16F18855\ks0108-5.X\config.c
+[v _millis millis `(ul  1 e 4 0 ]
+{
+"60
+} 0
+"40
+[v _Timer0_Init Timer0_Init `(v  1 e 1 0 ]
+{
+"47
+} 0
+"575 D:\PIC\XC8\16F18855\ks0108-5.X\glcd_128x64.c
+[v _Glcd_Write_Text Glcd_Write_Text `(v  1 e 1 0 ]
+{
+"580
+[v Glcd_Write_Text@temp temp `uc  1 a 1 12 ]
+"577
+[v Glcd_Write_Text@i i `uc  1 a 1 13 ]
+"575
+[v Glcd_Write_Text@text text `*.25uc  1 p 2 4 ]
+[v Glcd_Write_Text@x_pos x_pos `uc  1 p 1 6 ]
+[v Glcd_Write_Text@page_num page_num `uc  1 p 1 7 ]
+[v Glcd_Write_Text@color color `uc  1 p 1 8 ]
+"587
+} 0
+"545
+[v _Glcd_Write_Char Glcd_Write_Char `(v  1 e 1 0 ]
+{
+[v Glcd_Write_Char@chr chr `uc  1 a 1 wreg ]
+"555
+[v Glcd_Write_Char@temp temp `ui  1 a 2 1 ]
+"553
+[v Glcd_Write_Char@i i `uc  1 a 1 3 ]
+"545
+[v Glcd_Write_Char@chr chr `uc  1 a 1 wreg ]
+[v Glcd_Write_Char@x_pos x_pos `uc  1 p 1 3 ]
+[v Glcd_Write_Char@page_num page_num `uc  1 p 1 4 ]
+[v Glcd_Write_Char@color color `uc  1 p 1 5 ]
+"547
+[v Glcd_Write_Char@chr chr `uc  1 a 1 0 ]
+"562
+} 0
+"293
+[v _Glcd_Rectangle Glcd_Rectangle `(v  1 e 1 0 ]
+{
+[v Glcd_Rectangle@x_upper_left x_upper_left `uc  1 a 1 wreg ]
+[v Glcd_Rectangle@x_upper_left x_upper_left `uc  1 a 1 wreg ]
+[v Glcd_Rectangle@y_upper_left y_upper_left `uc  1 p 1 12 ]
+"294
+[v Glcd_Rectangle@x_bottom_right x_bottom_right `uc  1 p 1 13 ]
+[v Glcd_Rectangle@y_bottom_right y_bottom_right `uc  1 p 1 14 ]
+"295
+[v Glcd_Rectangle@color color `uc  1 p 1 15 ]
+"297
+[v Glcd_Rectangle@x_upper_left x_upper_left `uc  1 a 1 12 ]
+"301
+} 0
+"232
+[v _Glcd_V_Line Glcd_V_Line `(v  1 e 1 0 ]
+{
+[v Glcd_V_Line@y_start y_start `uc  1 a 1 wreg ]
+"234
+[v Glcd_V_Line@temp temp `uc  1 a 1 10 ]
+"232
+[v Glcd_V_Line@y_start y_start `uc  1 a 1 wreg ]
+[v Glcd_V_Line@y_end y_end `uc  1 p 1 5 ]
+[v Glcd_V_Line@x_pos x_pos `uc  1 p 1 6 ]
+[v Glcd_V_Line@color color `uc  1 p 1 7 ]
+"235
+[v Glcd_V_Line@y_start y_start `uc  1 a 1 11 ]
+"247
+} 0
+"260
+[v _Glcd_H_Line Glcd_H_Line `(v  1 e 1 0 ]
+{
+[v Glcd_H_Line@x_start x_start `uc  1 a 1 wreg ]
+"262
+[v Glcd_H_Line@temp temp `uc  1 a 1 10 ]
+"260
+[v Glcd_H_Line@x_start x_start `uc  1 a 1 wreg ]
+[v Glcd_H_Line@x_end x_end `uc  1 p 1 5 ]
+[v Glcd_H_Line@y_pos y_pos `uc  1 p 1 6 ]
+[v Glcd_H_Line@color color `uc  1 p 1 7 ]
+"263
+[v Glcd_H_Line@x_start x_start `uc  1 a 1 11 ]
+"275
+} 0
+"318
+[v _Glcd_Line Glcd_Line `(v  1 e 1 0 ]
+{
+"322
+[v Glcd_Line@P P `l  1 a 4 30 ]
+"321
+[v Glcd_Line@dy dy `i  1 a 2 40 ]
+[v Glcd_Line@dx dx `i  1 a 2 38 ]
+[v Glcd_Line@addy addy `i  1 a 2 36 ]
+[v Glcd_Line@addx addx `i  1 a 2 34 ]
+"323
+[v Glcd_Line@i i `i  1 a 2 28 ]
+"321
+[v Glcd_Line@y y `i  1 a 2 26 ]
+[v Glcd_Line@x x `i  1 a 2 24 ]
+"318
+[v Glcd_Line@x_start x_start `i  1 p 2 5 ]
+[v Glcd_Line@y_start y_start `i  1 p 2 7 ]
+"319
+[v Glcd_Line@x_end x_end `i  1 p 2 9 ]
+[v Glcd_Line@y_end y_end `i  1 p 2 11 ]
+[v Glcd_Line@color color `uc  1 p 1 13 ]
+"379
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 1 ]
+"9
+} 0
+"23 D:\PIC\XC8\16F18855\ks0108-5.X\glcd_128x64.c
+[v _Glcd_Init Glcd_Init `(v  1 e 1 0 ]
+{
+"47
+} 0
+"421
+[v _Glcd_Image Glcd_Image `(v  1 e 1 0 ]
+{
+"423
+[v Glcd_Image@j j `uc  1 a 1 1 ]
+[v Glcd_Image@i i `uc  1 a 1 0 ]
+"421
+[v Glcd_Image@image image `*.25DCCuc  1 p 2 3 ]
+"448
+} 0
+"160
+[v _Glcd_Fill Glcd_Fill `(v  1 e 1 0 ]
+{
+[v Glcd_Fill@pattern pattern `uc  1 a 1 wreg ]
+"162
+[v Glcd_Fill@j j `uc  1 a 1 6 ]
+[v Glcd_Fill@i i `uc  1 a 1 5 ]
+"160
+[v Glcd_Fill@pattern pattern `uc  1 a 1 wreg ]
+"163
+[v Glcd_Fill@pattern pattern `uc  1 a 1 4 ]
+"177
+} 0
+"611
+[v __glcd_start_line _glcd_start_line `(v  1 s 1 _glcd_start_line ]
+{
+[v __glcd_start_line@line line `uc  1 a 1 wreg ]
+[v __glcd_start_line@line line `uc  1 a 1 wreg ]
+"618
+[v __glcd_start_line@line line `uc  1 a 1 1 ]
+"630
+} 0
+"462
+[v _Glcd_Circle Glcd_Circle `(v  1 e 1 0 ]
+{
+[v Glcd_Circle@x_center x_center `c  1 a 1 wreg ]
+"467
+[v Glcd_Circle@temp2 temp2 `i  1 a 2 23 ]
+[v Glcd_Circle@temp1 temp1 `i  1 a 2 21 ]
+"464
+[v Glcd_Circle@x x `c  1 a 1 20 ]
+"465
+[v Glcd_Circle@y y `c  1 a 1 19 ]
+"466
+[v Glcd_Circle@err err `c  1 a 1 17 ]
+"462
+[v Glcd_Circle@x_center x_center `c  1 a 1 wreg ]
+[v Glcd_Circle@y_center y_center `c  1 p 1 5 ]
+[v Glcd_Circle@radius radius `uc  1 p 1 6 ]
+[v Glcd_Circle@color color `uc  1 p 1 7 ]
+"464
+[v Glcd_Circle@x_center x_center `c  1 a 1 18 ]
+"532
+} 0
+"188
+[v _Glcd_Dot Glcd_Dot `(v  1 e 1 0 ]
+{
+[v Glcd_Dot@x_pos x_pos `uc  1 a 1 wreg ]
+"190
+[v Glcd_Dot@data data `uc  1 a 1 3 ]
+"188
+[v Glcd_Dot@x_pos x_pos `uc  1 a 1 wreg ]
+[v Glcd_Dot@y_pos y_pos `uc  1 p 1 10 ]
+[v Glcd_Dot@color color `uc  1 p 1 11 ]
+"192
+[v Glcd_Dot@x_pos x_pos `uc  1 a 1 4 ]
+"219
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 8 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 7 ]
+[v ___awdiv@counter counter `uc  1 a 1 6 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 1 ]
+[v ___awdiv@dividend dividend `i  1 p 2 3 ]
+"42
+} 0
+"113 D:\PIC\XC8\16F18855\ks0108-5.X\glcd_128x64.c
+[v _Glcd_Write_Data Glcd_Write_Data `(v  1 e 1 0 ]
+{
+[v Glcd_Write_Data@data data `uc  1 a 1 wreg ]
+[v Glcd_Write_Data@data data `uc  1 a 1 wreg ]
+"115
+[v Glcd_Write_Data@data data `uc  1 a 1 1 ]
+"119
+} 0
+"77
+[v _Glcd_Set_X Glcd_Set_X `(v  1 e 1 0 ]
+{
+[v Glcd_Set_X@x_pos x_pos `uc  1 a 1 wreg ]
+[v Glcd_Set_X@x_pos x_pos `uc  1 a 1 wreg ]
+"80
+[v Glcd_Set_X@x_pos x_pos `uc  1 a 1 2 ]
+"88
+} 0
+"57
+[v _Glcd_Set_Side Glcd_Set_Side `(v  1 e 1 0 ]
+{
+[v Glcd_Set_Side@x_pos x_pos `uc  1 a 1 wreg ]
+[v Glcd_Set_Side@x_pos x_pos `uc  1 a 1 wreg ]
+"59
+[v Glcd_Set_Side@x_pos x_pos `uc  1 a 1 1 ]
+"69
+} 0
+"95
+[v _Glcd_Set_Page Glcd_Set_Page `(v  1 e 1 0 ]
+{
+[v Glcd_Set_Page@page page `uc  1 a 1 wreg ]
+[v Glcd_Set_Page@page page `uc  1 a 1 wreg ]
+"98
+[v Glcd_Set_Page@page page `uc  1 a 1 2 ]
+"105
+} 0
+"130
+[v _Glcd_Read_Data Glcd_Read_Data `(uc  1 e 1 0 ]
+{
+"132
+[v Glcd_Read_Data@read_data read_data `uc  1 a 1 2 ]
+"143
+} 0
+"595
+[v __glcd_enable_pulse _glcd_enable_pulse `(v  1 s 1 _glcd_enable_pulse ]
+{
+"601
+} 0
+"24 D:\PIC\XC8\16F18855\ks0108-5.X\config.c
+[v _ISR_Code ISR_Code `II(v  1 e 1 0 ]
+{
+"33
+} 0

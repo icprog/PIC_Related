@@ -1,0 +1,56 @@
+/*
+ * File:   newmain.c
+*/
+
+#define _XTAL_FREQ 800000
+#include <xc.h>                		// XC8 'C' Compiler Library
+#pragma config WDTE = OFF       		// Watchdog Timer Enable bit (WDT disabled)    
+
+void main(void)
+{
+  
+    TRISA = 0x00;                      		// RA as Output
+    TRISB = 0xFF;                       		// RB as Input
+    ANSELB  = 0    			// Set PORTB as Digital I/O
+
+    while(1)
+    {
+/*                                      test code here
+        LATA=0b10101010;               		// Turn on every other LED
+        __delay_ms(1000); 		// 1 second delay         
+        LATA=0b01010101;               		// Turn on every other LED
+        __delay_ms(1000); 		// 1 second delay         
+*/  
+
+        if (PORTBbits.RB0==1)          		//Get the value from PORT B BIT 0. If it is a one 
+        {
+        LATA = 0b00000001;              		// Turn on LED D2
+        __delay_ms(1000); 		// 1 second delay        
+        } 
+  
+        PORTAbits.RA5=0;                		// Turn off the user green LED
+        __delay_ms(1000); 		// 1 second delay        
+  
+        if (PORTBbits.RB1==1)          		//Get the value from PORT B BIT 1. If it is a one        
+        {
+        LATA = 0b00000010;              		// Turn on LED D3
+        __delay_ms(1000); 		// 1 second delay             
+        }
+
+        if (PORTBbits.RB2==1)          		//Get the value from PORT B BIT 2. If it is a one        
+        {
+        LATA = 0b00000100;             		// Turn on LED D4
+        __delay_ms(1000); 		// 1 second delay             
+        }
+
+        PORTAbits.RA5=1;                		// Turn on the user green LED
+        __delay_ms(1000); 		// 1 second delay      
+
+        if (PORTBbits.RB3==1)             	//Get the value from PORT B BIT 4. If it is a one        
+        {
+        LATA = 0b00001000;             		// Turn on LED D5
+        __delay_ms(1000); 		// 1 second delay             
+        }
+
+    }
+}

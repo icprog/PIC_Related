@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration device="PIC24FV16KM204" mcc_version="v2.25.2">
+    <managers>
+        <manager generated="true" name="Pin Manager" reloadPin="manual">
+            <setting name="package" option="QFN44"/>
+            <setting name="sorting" option="true"/>
+            <file checksum="296373047" modified="false" name="pin_manager.c" path="mcc_generated_files/pin_manager.c"/>
+            <file checksum="2154838944" modified="false" name="pin_manager.h" path="mcc_generated_files/pin_manager.h"/>
+        </manager>
+        <manager generated="true" name="Interrupt Manager" reloadPin="manual">
+            <resource name="RTCI" type="RTCC" value="1"/>
+            <interrupt module="RTCC" name="RTCI" priority="1"/>
+            <file checksum="2452657901" modified="false" name="interrupt_manager.c" path="mcc_generated_files/interrupt_manager.c"/>
+            <file checksum="3627155877" modified="false" name="interrupt_manager.h" path="mcc_generated_files/interrupt_manager.h"/>
+        </manager>
+        <manager generated="true" name="System" reloadPin="manual">
+            <initializer comment="" name="Initialize">
+                <setting name="DOZE" option="1:8" register="CLKDIV"/>
+                <setting name="DOZEN" option="disabled" register="CLKDIV"/>
+                <setting name="RCDIV" option="FRC/2" register="CLKDIV"/>
+                <setting name="ROI" option="disabled" register="CLKDIV"/>
+            </initializer>
+            <setting name="BSS" option="OFF"/>
+            <setting name="BWRP" option="OFF"/>
+            <setting name="GWRP" option="OFF"/>
+            <setting name="GCP" option="OFF"/>
+            <setting name="LPRCSEL" option="HP"/>
+            <setting name="IESO" option="ON"/>
+            <setting name="FNOSC" option="FRCDIV"/>
+            <setting name="SOSCSRC" option="ANA"/>
+            <setting name="POSCFREQ" option="HS"/>
+            <setting name="POSCMOD" option="NONE"/>
+            <setting name="SOSCSEL" option="SOSCHP"/>
+            <setting name="OSCIOFNC" option="CLKO"/>
+            <setting name="FCKSM" option="CSDCMD"/>
+            <setting name="WDTPS" option="PS32768"/>
+            <setting name="FWPSA" option="PR128"/>
+            <setting name="WINDIS" option="OFF"/>
+            <setting name="FWDTEN" option="ON"/>
+            <setting name="I2C1SEL" option="PRI"/>
+            <setting name="BOREN" option="BOR3"/>
+            <setting name="RETCFG" option="OFF"/>
+            <setting name="MCLRE" option="ON"/>
+            <setting name="BORV" option="V18"/>
+            <setting name="PWRTEN" option="ON"/>
+            <setting name="ICS" option="PGx1"/>
+            <setting name="Primary Oscillator" option="3500000"/>
+            <setting name="Secondary Oscillator" option="31000"/>
+            <setting name="generateConfigBits" option="true"/>
+            <file checksum="1087755802" modified="false" name="mcc.c" path="mcc_generated_files/mcc.c"/>
+            <file checksum="1382684471" modified="false" name="mcc.h" path="mcc_generated_files/mcc.h"/>
+        </manager>
+    </managers>
+    <modules>
+        <module generated="true" mode="RTCC" name="RTCC" order="0" reloadPin="auto" type="tmr_rtcc">
+            <initializer comment="" name="Initialize">
+                <setting name="ALRMVAL" option="0x0000" register="ALRMVAL"/>
+                <setting name="ALRMEN" option="disabled" register="ALCFGRPT"/>
+                <setting name="ARPT" option="0x0000" register="ALCFGRPT"/>
+                <setting name="AMASK" option="Every Half Second" register="ALCFGRPT"/>
+                <setting name="CHIME" option="disabled" register="ALCFGRPT"/>
+                <setting name="ALRMPTR" option="MIN_SEC" register="ALCFGRPT"/>
+                <setting name="RTCVAL" option="0x0000" register="RTCVAL"/>
+                <setting name="CAL" option="0x00" register="RCFGCAL"/>
+                <setting name="RTCWREN" option="disabled" register="RCFGCAL"/>
+                <setting name="RTCSYNC" option="disabled" register="RCFGCAL"/>
+                <setting name="RTCOE" option="disabled" register="RCFGCAL"/>
+                <setting name="RTCPTR" option="MIN_SEC" register="RCFGCAL"/>
+                <setting name="HALFSEC" option="disabled" register="RCFGCAL"/>
+                <setting name="RTCEN" option="enabled" register="RCFGCAL"/>
+                <setting name="PWCEN" option="disabled" register="RTCPWC"/>
+                <setting name="PWCPOL" option="disabled" register="RTCPWC"/>
+                <setting name="PWCPRE" option="disabled" register="RTCPWC"/>
+                <setting name="RTCLK" option="LPRC" register="RTCPWC"/>
+                <setting name="RTCOUT" option="Alarm Pulse" register="RTCPWC"/>
+                <setting name="PWSPRE" option="disabled" register="RTCPWC"/>
+                <additionalSetting name="timerFrequency" option="-1.0"/>
+                <additionalSetting name="RTCC_TIME" option="Wed Nov 25 11:45:36 CST 2015"/>
+                <additionalSetting name="RTCLK" option="SOSC"/>
+                <additionalSetting name="ALARM_TIME" option="Wed Nov 25 11:45:36 CST 2015"/>
+            </initializer>
+            <setting name="RTCI" option="true"/>
+            <file checksum="1923117193" modified="false" name="rtcc.c" path="mcc_generated_files/rtcc.c"/>
+            <file checksum="1906915214" modified="false" name="rtcc.h" path="mcc_generated_files/rtcc.h"/>
+        </module>
+    </modules>
+</configuration>

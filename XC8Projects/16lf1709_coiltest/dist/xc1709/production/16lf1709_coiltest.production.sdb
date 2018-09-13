@@ -1,0 +1,174 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F720 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"24 D:\PIC\X8Projects\16lf1709_coiltest\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+"29 D:\PIC\X8Projects\16lf1709_coiltest\main.c
+[v _main main `(v  1 e 1 0 ]
+"18 D:\PIC\X8Projects\16lf1709_coiltest\system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 1 0 ]
+"156 D:\PIC\X8Projects\16lf1709_coiltest\user.c
+[v _gotoXY gotoXY `(v  1 e 1 0 ]
+"171
+[v _LCDCharacter LCDCharacter `(v  1 e 1 0 ]
+"182
+[v _LCDString LCDString `(v  1 e 1 0 ]
+"188
+[v _LCDClear LCDClear `(v  1 e 1 0 ]
+"196
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+"233
+[v _LCDWrite LCDWrite `(v  1 e 1 0 ]
+"258
+[v _InitApp InitApp `(v  1 e 1 0 ]
+[s S19 . 1 `uc 1 RABIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RABIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"342 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic16f720.h
+[u S28 . 1 `S19 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES28  1 e 1 @11 ]
+"926
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"995
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1039
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1077
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+[s S100 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1094
+[u S109 . 1 `S100 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES109  1 e 1 @135 ]
+"1982
+[v _ANSELA ANSELA `VEuc  1 e 1 @389 ]
+"2026
+[v _ANSELB ANSELB `VEuc  1 e 1 @390 ]
+"2052
+[v _ANSELC ANSELC `VEuc  1 e 1 @391 ]
+"2280
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2370
+[v _RB6 RB6 `VEb  1 e 0 @54 ]
+"2380
+[v _RC3 RC3 `VEb  1 e 0 @59 ]
+"2382
+[v _RC4 RC4 `VEb  1 e 0 @60 ]
+"2384
+[v _RC5 RC5 `VEb  1 e 0 @61 ]
+"2386
+[v _RC6 RC6 `VEb  1 e 0 @62 ]
+"2388
+[v _RC7 RC7 `VEb  1 e 0 @63 ]
+"2460
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"21 D:\PIC\X8Projects\16lf1709_coiltest\main.c
+[v _spk_bit spk_bit `uc  1 e 1 0 ]
+[v _spk_enable spk_enable `uc  1 e 1 0 ]
+[v _spk_enable2 spk_enable2 `uc  1 e 1 0 ]
+[v _led_bit led_bit `uc  1 e 1 0 ]
+"22
+[v _led_counter led_counter `ui  1 e 2 0 ]
+"35 D:\PIC\X8Projects\16lf1709_coiltest\user.c
+[v _ASCII ASCII `DCC[95][5]uc  1 e 475 0 ]
+"29 D:\PIC\X8Projects\16lf1709_coiltest\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"56
+} 0
+"182 D:\PIC\X8Projects\16lf1709_coiltest\user.c
+[v _LCDString LCDString `(v  1 e 1 0 ]
+{
+[v LCDString@characters characters `*.25uc  1 p 2 13 ]
+"185
+} 0
+"171
+[v _LCDCharacter LCDCharacter `(v  1 e 1 0 ]
+{
+[v LCDCharacter@character character `uc  1 a 1 wreg ]
+"174
+[v LCDCharacter@index index `i  1 a 2 11 ]
+"171
+[v LCDCharacter@character character `uc  1 a 1 wreg ]
+[v LCDCharacter@character character `uc  1 a 1 10 ]
+"179
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 8 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 4 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 6 ]
+"53
+} 0
+"196 D:\PIC\X8Projects\16lf1709_coiltest\user.c
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+{
+"228
+} 0
+"188
+[v _LCDClear LCDClear `(v  1 e 1 0 ]
+{
+"189
+[v LCDClear@index index `i  1 a 2 10 ]
+"193
+} 0
+"156
+[v _gotoXY gotoXY `(v  1 e 1 0 ]
+{
+[v gotoXY@x x `i  1 p 2 5 ]
+[v gotoXY@y y `i  1 p 2 7 ]
+"159
+} 0
+"233
+[v _LCDWrite LCDWrite `(v  1 e 1 0 ]
+{
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 wreg ]
+"234
+[v LCDWrite@i i `uc  1 a 1 4 ]
+[v LCDWrite@d d `uc  1 a 1 3 ]
+"233
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 wreg ]
+[v LCDWrite@data data `uc  1 p 1 0 ]
+"236
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 2 ]
+"256
+} 0
+"258
+[v _InitApp InitApp `(v  1 e 1 0 ]
+{
+"271
+} 0
+"18 D:\PIC\X8Projects\16lf1709_coiltest\system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 1 0 ]
+{
+"25
+} 0
+"24 D:\PIC\X8Projects\16lf1709_coiltest\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"64
+} 0

@@ -1,0 +1,66 @@
+float iState = 0;
+float lastTemp = 0;
+
+#define PGAIN_ADR 0
+#define IGAIN_ADR 4
+#define DGAIN_ADR 8
+
+#define WINDUP_GUARD_GAIN 10
+
+
+float loadfloat(int address) {
+  // must be written
+  // this function return the float from EEPROM storage. 
+  // This is used for the P,I, and D_GAIN settings.
+  // These are three values that need to be tuned after 
+  // the machine up and running to make the PID loop 
+  // work right.
+}
+
+float UpdatePID(float targetTemp, float curTemp)
+{
+  // these can be cut out if memory is an issue, 
+  // but they make it more readable
+  float pTerm, iTerm, dTerm; 
+
+  float error;
+  float windupGaurd;
+
+  // determine how badly we are doing
+  error = targetTemp - curTemp;
+
+  // the pTerm is the view from now, the pgain judges 
+  // how much we care about error we are this instant.
+  pTerm = loadfloat(PGAIN_ADR) * error;
+
+  // iState keeps changing over time; it's 
+  // overall "performance" over time, or accumulated error
+  iState += error;
+
+  // to prevent the iTerm getting huge despite lots of 
+  //  error, we use a "windup guard" 
+  // (this happens when the machine is first turned on and
+  // it cant help be cold despite its best efforts)
+
+  // not necessary. this makes windup guard values 
+  // relative to the current iGain
+  windupGaurd = WINDUP_GUARD_GAIN / loadfloat(IGAIN_ADR);  
+
+  if (iState > windupGaurd) 
+    iState = windupGaurd;
+  else if (iState < -windupGaurd) 
+    iState = -windupGaurd;
+  iTerm = loadfloat(IGAIN_ADR) * iState;
+
+  // the dTerm, the difference between the temperature now
+  //  and our last reading, indicated the "speed," 
+  // how quickly the temp is changing. (aka. Differential)
+  dTerm = (loadfloat(DGAIN_ADR)* (curTemp - lastTemp));
+
+  // now that we've use lastTemp, put the current temp in
+  // our pocket until for the next round
+  lastTemp = curTemp;
+
+  // here comes the juicy magic feedback bit
+  return pTerm + iTerm - dTerm;
+}

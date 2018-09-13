@@ -1,0 +1,8 @@
+<map id="Glcd_Dot" name="Glcd_Dot">
+<area shape="rect" id="node2" href="$glcd__128x64_8h.html#a796e62c3be77392c5431d2481a032587" title="Glcd Vertical Line. " alt="" coords="129,30,225,56"/>
+<area shape="rect" id="node5" href="$glcd__128x64_8h.html#a7a0f672de7ebbce944202405b52ce06d" title="Glcd Horizontal Line. " alt="" coords="129,80,225,107"/>
+<area shape="rect" id="node6" href="$glcd__128x64_8h.html#a7615a158cbaf4f2cecbfab028a69e030" title="Draws a line on Glcd. " alt="" coords="291,131,371,158"/>
+<area shape="rect" id="node7" href="$glcd__128x64_8h.html#a9c666b1eb5a3cdd97f4e8224c4272216" title="Draws a Circle on Glcd. " alt="" coords="286,182,375,208"/>
+<area shape="rect" id="node3" href="$main_8c.html#acdef7a1fd863a6d3770c1268cb06add3" title="main" alt="" coords="436,80,487,107"/>
+<area shape="rect" id="node4" href="$glcd__128x64_8h.html#ad75741a8cca15be600838d6df3d9bf7d" title="Draws a rectangle on Glcd. " alt="" coords="273,30,388,56"/>
+</map>

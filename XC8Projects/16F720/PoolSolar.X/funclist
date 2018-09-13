@@ -1,0 +1,19 @@
+___awdiv: CODE, 750 0 91
+_LCDByte: CODE, 397 0 58
+__stringtab: STRCODE, 1280 0 18
+__stringdata: STRCODE, 1774 0 58
+_ADCInit: CODE, 311 0 5
+_TempCheck: CODE, 841 0 127
+___awmod: CODE, 593 0 77
+_ConfigureOscillator: CODE, 324 0 17
+_LCDWriteInt: CODE, 1832 0 163
+_main: CODE, 968 0 312
+_LCDInit: CODE, 670 0 80
+__initialization: CODE, 2024 0 22
+_LCDWriteString: CODE, 455 0 63
+_ADCRead: CODE, 1995 0 29
+_Init: CODE, 362 0 35
+_LCDGotoXY: CODE, 341 0 21
+_LCDBusyLoop: CODE, 518 0 75
+TempCheck@tempread: STRCODE, 1298 0 476
+Total: 1727

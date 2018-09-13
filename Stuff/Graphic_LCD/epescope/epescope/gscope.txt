@@ -1,0 +1,18 @@
+PIC Graphics LCD Scope by John Becker
+-------------------------------------
+
+Everyday Practical Electronics / ETI / EPE Online May 2001
+
+Long awaited, this is a PIC controlled graphics LCD signal monitor
+for your workshop. A self contained single channel unit catering
+nominally for the audio range. Displays the waveform, p-p voltage
+and frequency on a 64 x 128 graphics LCD.
+
+Simple design, battery powered, easy to build on a single PCB.
+
+The latest version of the software is available from the EPE Online Library at www.epemag.com
+
+Please refer to the EPE web site for details of ordering back issues, subscriptions etc.
+http://www.epemag.wimborne.co.uk
+
+Last updated 10th April 2001

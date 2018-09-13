@@ -1,0 +1,520 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\DAVE\AppData\Local\Temp\s1sk.obj
+end_init CODE 0 0 0 1 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\Plant_Water_Resistive.X.production.obj
+cinit CODE 0 7F7 7F7 9 2
+text7 CODE 0 327 327 11 2
+text6 CODE 0 399 399 2D 2
+text5 CODE 0 322 322 5 2
+text4 CODE 0 338 338 1D 2
+text3 CODE 0 355 355 21 2
+text2 CODE 0 376 376 23 2
+text1 CODE 0 471 471 386 2
+maintext CODE 0 3C6 3C6 AB 2
+cstackBANK0 BANK0 1 20 20 11 1
+cstackCOMMON COMMON 1 70 70 D 1
+dataBANK0 BANK0 1 37 37 1 1
+bssBANK0 BANK0 1 31 31 5 1
+bitnvBANK0 BANK0 1 1B0 36 1 1
+idataBANK0 CODE 0 321 321 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0038-006F 1
+BANK1 00A0-00BF 1
+CODE 0001-0320 2
+COMMON 007D-007D 1
+CONFIG 2008-2008 2
+CONST 0001-0320 2
+ENTRY 0001-0320 2
+IDLOC 2000-2003 2
+RAM 0038-006F 1
+RAM 00A0-00BF 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-016F 1
+SFR3 0180-01EF 1
+STACK 0038-006F 1
+STRCODE 0001-0320 2
+STRING 0001-0320 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Plant_Water_Resistive.X.production.obj
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":15 322 text5 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":17 322 text5 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":18 326 text5 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":18 327 text7 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":20 327 text7 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":21 32A text7 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":22 32B text7 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":24 32C text7 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":25 32F text7 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":26 332 text7 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":27 333 text7 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":28 334 text7 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":29 335 text7 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":30 336 text7 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":31 337 text7 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":26 338 text4 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":28 339 text4 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":29 33C text4 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":30 347 text4 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":31 348 text4 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":32 34D text4 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":33 350 text4 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":34 352 text4 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":35 353 text4 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":44 355 text3 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":48 356 text3 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":49 35A text3 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":52 35C text3 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":55 360 text3 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":56 364 text3 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":59 366 text3 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":62 36A text3 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":63 36E text3 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":66 370 text3 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\user.c":69 374 text3 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":15 376 text2 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":43 376 text2 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":45 378 text2 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":46 37A text2 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":47 380 text2 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":48 387 text2 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":49 38E text2 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":52 392 text2 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":37 399 text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":39 399 text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":40 39D text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":41 3A1 text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":46 3A5 text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":47 3A9 text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":48 3AD text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":53 3B1 text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":54 3B5 text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":55 3B9 text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":60 3BD text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":61 3C0 text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":62 3C1 text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":64 3C3 text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\system.c":66 3C5 text6 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":110 3C6 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":112 3C6 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":115 3C8 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":117 3CB maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":119 3CC maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":124 3CD maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":126 3CF maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":127 3D5 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":128 3D6 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":131 3D6 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":133 3DD maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":134 3E3 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":135 3E9 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":139 3EB maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":141 3F1 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":142 3F6 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":144 3FA maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":146 3FE maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":147 3FF maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":151 403 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":153 407 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":154 408 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":157 40C maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":159 410 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":160 411 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":163 415 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":165 419 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":166 41A maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":169 41E maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":171 426 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":172 427 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":175 428 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":177 42A maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":178 42B maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":179 42C maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":181 42C maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":188 42D maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":190 46F maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":121 470 maintext CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":199 471 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":211 471 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":223 472 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":225 4AD text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":226 4B0 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":233 4B1 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":235 4F7 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":237 4FD text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":238 501 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":239 508 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":242 509 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":243 50D text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":246 514 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":247 518 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":250 51F text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":251 523 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":254 52A text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":255 52E text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":258 535 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":259 539 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":262 540 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":263 544 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":266 54B text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":267 54F text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":270 556 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":271 55A text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":279 561 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":281 5A7 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":282 5AA text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":289 5AB text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":291 5F1 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":292 5F4 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":299 5F5 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":301 63B text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":302 63E text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":304 63F text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":306 64E text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":307 652 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":308 653 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":309 654 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":311 654 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":319 655 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":321 69B text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":322 69E text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":324 69F text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":331 6A0 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":333 6E6 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":334 6E9 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":336 6EA text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":338 6F9 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":340 6FD text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":341 6FE text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":342 6FF text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":344 6FF text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":352 700 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":354 746 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":355 749 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":357 74A text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":364 74B text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":366 791 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":367 794 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":369 795 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":371 7A4 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":372 7A8 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":373 7A9 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":374 7AA text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":376 7AA text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":384 7AB text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":386 7F1 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":387 7F4 text1 CODE
+"D:\PIC_Projects\XC8\Plant_Water_Resistive.X\main.c":389 7F5 text1 CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1sk.":613 7F7 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1sk.":616 7F7 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1sk.":647 7F7 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1sk.":648 7F8 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1sk.":649 7F9 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1sk.":650 7FA cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1sk.":651 7FB cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1sk.":656 7FC cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1sk.":657 7FD cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1sk.":663 7FE cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1sk.":664 7FE cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1sk.":665 7FF cinit CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_hh 31 0 BANK0 1 bssBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+_mh 32 0 BANK0 1 bssBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+_hl 37 0 BANK0 1 dataBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+_sh 34 0 BANK0 1 bssBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+_ml 33 0 BANK0 1 bssBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+_sl 35 0 BANK0 1 bssBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+_RC2 3A 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_RA5 2D 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_RC4 3C 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_RC5 3D 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_RB6 36 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_RB7 37 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_PS0 408 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_PS1 409 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_PS2 40A 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+_PSA 40B 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hintentry 0 0 CODE 0 intentry -
+__Lintentry 0 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_TMR0 1 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__size_of_MoistureCheck 0 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_T0SE 40C 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_T0CS 40D 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_ADON F8 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+MoistureCheck@a 20 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+_main 78C 0 CODE 0 maintext dist/default/production\Plant_Water_Resistive.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s1sk.obj
+_Init 732 0 CODE 0 text6 dist/default/production\Plant_Water_Resistive.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+start 0 0 CODE 0 init C:\Users\DAVE\AppData\Local\Temp\s1sk.obj
+_IRCF0 484 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+ADCRead@ch 71 0 COMMON 1 cstackCOMMON dist/default/production\Plant_Water_Resistive.X.production.obj
+_IRCF1 485 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_TRISC 87 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_PORTA 5 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\DAVE\AppData\Local\Temp\s1sk.obj
+_PORTB 6 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_PORTC 7 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_ADRES 1E 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+MoistureCheck@g 23 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+main@bres 7B 0 COMMON 1 cstackCOMMON dist/default/production\Plant_Water_Resistive.X.production.obj
+_ADCON0 1F 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_ADCON1 9F 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_TMR0IF 5A 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s1sk.obj
+_ANSELA 185 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+MoistureCheck@m 26 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+_ANSELB 186 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_ANSELC 187 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+_FVRCON 9D 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__end_of_ADCInit 64E 0 CODE 0 text5 dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+_Median 6AA 0 CODE 0 text3 dist/default/production\Plant_Water_Resistive.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s1sk.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__end_of_ConfigureOscillator 670 0 CODE 0 text7 dist/default/production\Plant_Water_Resistive.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+stacklo 0 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s1sk.obj
+__Hinit 0 0 CODE 0 init -
+__Linit 0 0 CODE 0 init -
+___wmul 6EC 0 CODE 0 text2 dist/default/production\Plant_Water_Resistive.X.production.obj
+__end_of_main 8E2 0 CODE 0 maintext dist/default/production\Plant_Water_Resistive.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\Plant_Water_Resistive.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__pdataBANK0 37 0 BANK0 1 dataBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+end_of_initialization FFC 0 CODE 0 cinit dist/default/production\Plant_Water_Resistive.X.production.obj
+___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\Plant_Water_Resistive.X.production.obj
+_MoistureCheck 8E2 0 CODE 0 text1 dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+_OSCTUNE 91 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 BANK2 1 bank2 -
+__Lbank2 0 0 BANK2 1 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Lbank3 0 0 BANK3 1 bank3 -
+___latbits 0 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__size_of_Init 0 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+main@Toggle 1B0 -17A BANK0 1 bitnvBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+MoistureCheck@e 22 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+__ptext1 8E2 0 CODE 0 text1 dist/default/production\Plant_Water_Resistive.X.production.obj
+__ptext2 6EC 0 CODE 0 text2 dist/default/production\Plant_Water_Resistive.X.production.obj
+__ptext3 6AA 0 CODE 0 text3 dist/default/production\Plant_Water_Resistive.X.production.obj
+__ptext4 670 0 CODE 0 text4 dist/default/production\Plant_Water_Resistive.X.production.obj
+__end_of_MoistureCheck FEE 0 CODE 0 text1 dist/default/production\Plant_Water_Resistive.X.production.obj
+__ptext5 644 0 CODE 0 text5 dist/default/production\Plant_Water_Resistive.X.production.obj
+__ptext6 732 0 CODE 0 text6 dist/default/production\Plant_Water_Resistive.X.production.obj
+__ptext7 64E 0 CODE 0 text7 dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+Median@a 74 0 COMMON 1 cstackCOMMON dist/default/production\Plant_Water_Resistive.X.production.obj
+Median@b 75 0 COMMON 1 cstackCOMMON dist/default/production\Plant_Water_Resistive.X.production.obj
+Median@c 70 0 COMMON 1 cstackCOMMON dist/default/production\Plant_Water_Resistive.X.production.obj
+Median@d 76 0 COMMON 1 cstackCOMMON dist/default/production\Plant_Water_Resistive.X.production.obj
+__end_of__initialization FFC 0 CODE 0 cinit dist/default/production\Plant_Water_Resistive.X.production.obj
+Median@e 71 0 COMMON 1 cstackCOMMON dist/default/production\Plant_Water_Resistive.X.production.obj
+Median@f 73 0 COMMON 1 cstackCOMMON dist/default/production\Plant_Water_Resistive.X.production.obj
+MoistureCheck@k 25 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+_ADCRead 670 0 CODE 0 text4 dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+MoistureCheck@q 28 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hspace_0 2008 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+_ADCInit 644 0 CODE 0 text5 dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hspace_1 1B1 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hcinit 1000 0 CODE 0 cinit -
+__Lcinit FEE 0 CODE 0 cinit -
+__size_of_ConfigureOscillator 0 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+MoistureCheck@t 2C 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__pidataBANK0 642 0 CODE 0 idataBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__pbssBANK0 31 0 BANK0 1 bssBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+__HbitnvBANK0 0 0 ABS 0 bitnvBANK0 -
+__LbitnvBANK0 0 0 ABS 0 bitnvBANK0 -
+__pbitnvBANK0 1B0 -17A BANK0 1 bitnvBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+__end_of_ADCRead 6AA 0 CODE 0 text4 dist/default/production\Plant_Water_Resistive.X.production.obj
+__end_of_Init 78C 0 CODE 0 text6 dist/default/production\Plant_Water_Resistive.X.production.obj
+MoistureCheck@c 21 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hend_init 2 0 CODE 0 end_init -
+__Lend_init 0 0 CODE 0 end_init -
+MoistureCheck@f 29 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+_GO_nDONE F9 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of_ADCRead 0 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+MoistureCheck@i 24 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s1sk.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s1sk.obj
+__size_of_Median 0 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+intlevel2 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s1sk.obj
+MoistureCheck@l 2A 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+intlevel3 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s1sk.obj
+intlevel4 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s1sk.obj
+__size_of_ADCInit 0 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+intlevel5 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s1sk.obj
+MoistureCheck@o 27 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Plant_Water_Resistive.X.production.obj
+__end_of___wmul 732 0 CODE 0 text2 dist/default/production\Plant_Water_Resistive.X.production.obj
+start_initialization FEE 0 CODE 0 cinit dist/default/production\Plant_Water_Resistive.X.production.obj
+MoistureCheck@r 2B 0 BANK0 1 cstackBANK0 dist/default/production\Plant_Water_Resistive.X.production.obj
+__end_of_Median 6EC 0 CODE 0 text3 dist/default/production\Plant_Water_Resistive.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext 78C 0 CODE 0 maintext dist/default/production\Plant_Water_Resistive.X.production.obj
+__CFG_FOSC$INTOSCIO 0 0 ABS 0 - dist/default/production\Plant_Water_Resistive.X.production.obj
+__initialization FEE 0 CODE 0 cinit dist/default/production\Plant_Water_Resistive.X.production.obj
+___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\Plant_Water_Resistive.X.production.obj
+_ConfigureOscillator 64E 0 CODE 0 text7 dist/default/production\Plant_Water_Resistive.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 1 2
+cinit 0 7F7 FEE 9 2
+config 0 2007 400E 1 2
+cstackCOMMON 1 70 70 D 1
+cstackBANK0 1 20 20 18 1
+text1 0 471 8E2 386 2
+maintext 0 3C6 78C AB 2
+text6 0 399 732 2D 2
+text2 0 376 6EC 23 2
+text3 0 355 6AA 21 2
+text4 0 338 670 1D 2
+text7 0 327 64E 11 2
+text5 0 322 644 5 2
+idataBANK0 0 321 642 1 2

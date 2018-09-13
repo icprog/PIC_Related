@@ -1,0 +1,68 @@
+# Created by Ultra Librarian Gold 8.1.385 Copyright © 1999-2017
+# Dequeue Server, Accelerated Designs
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit '282837-3.pac';
+Change Drill 50;
+Pad '1' Round 0 80 R0 (0 0);
+Change Drill 50;
+Pad '2' Round 0 80 R0 (200 0);
+Change Drill 50;
+Pad '3' Round 0 80 R0 (400 0);
+Layer 21;
+Wire 6 (-105 -166) (505 -166);
+Wire 6 (505 -166) (505 166);
+Wire 6 (505 166) (-105 166);
+Wire 6 (-105 166) (-105 -166);
+Wire 20 (-115 0) -180 (-145 0);
+Wire 20 (-145 0) -180 (-115 0);
+Layer 51;
+Wire 6 (-100 -161) (500 -161);
+Wire 6 (500 -161) (500 161);
+Wire 6 (500 161) (-100 161);
+Wire 6 (-100 161) (-100 -161);
+Wire 20 (15 75) -180 (-15 75);
+Wire 20 (-15 75) -180 (15 75);
+Layer 22;
+Wire 20 (-115 0) -180 (-145 0);
+Wire 20 (-145 0) -180 (-115 0);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (71 -25);
+Layer 27;
+
+Edit '282837-3.sym';
+Layer 94;
+Pin '1' Pas None Middle R0 Both 0 (100 0)
+Pin '2' Pas None Middle R180 Both 0 (1700 -100)
+Pin '3' Pas None Middle R180 Both 0 (1700 0)
+Wire 6 (300 200) (300 -300);
+Wire 6 (300 -300) (1500 -300);
+Wire 6 (1500 -300) (1500 200);
+Wire 6 (1500 200) (300 200);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (714 359);
+Layer 96;
+Change Size 82;
+Change Ratio 6;
+Text '>Value' SR0 (689 259);
+
+Edit '282837-3.dev';
+Prefix 'U';
+Description '';
+Value Off;
+Add 282837-3 'A' Next  0 (0 0);
+Package '282837-3';
+Technology '';
+Attribute Manufacturer_Part_Number '2828373';
+Attribute Vendor 'Tyco Electronics';
+Connect 'A.1' '1';
+Connect 'A.2' '2';
+Connect 'A.3' '3';

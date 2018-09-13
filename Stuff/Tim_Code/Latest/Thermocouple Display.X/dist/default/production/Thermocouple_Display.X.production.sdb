@@ -1,0 +1,438 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F726 ]
+[d frameptr 6 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"23 D:\PIC-Stuff\Stuff\Tim_Code\Latest\Thermocouple Display.X\Main V4.1.c
+[v _Init Init `(v  1 e 1 0 ]
+"64
+[v _spi_init spi_init `(v  1 e 1 0 ]
+"75
+[v _data_out data_out `(v  1 e 1 0 ]
+"104
+[v _comm_out comm_out `(v  1 e 1 0 ]
+"283
+[v _blank_image blank_image `(v  1 e 1 0 ]
+"337
+[v _location location `(v  1 e 1 0 ]
+"478
+[v _LCDWriteCharacter LCDWriteCharacter `(v  1 e 1 0 ]
+"521
+[v _String_test String_test `(v  1 e 1 0 ]
+"533
+[v _SPI_TRANSFER SPI_TRANSFER `(uc  1 e 1 0 ]
+"555
+[v _SPI_DATA_HANDLING SPI_DATA_HANDLING `(v  1 e 1 0 ]
+"581
+[v _chip_select chip_select `(v  1 e 1 0 ]
+"593
+[v _char_to_decimal_print char_to_decimal_print `(v  1 e 1 0 ]
+"659
+[v _get_temp_from_right_tcs get_temp_from_right_tcs `(v  1 e 1 0 ]
+"746
+[v _display_temps_to_screen display_temps_to_screen `(v  1 e 1 0 ]
+"944
+[v _move_temp_to_send move_temp_to_send `(v  1 e 1 0 ]
+"973
+[v _main main `(i  1 e 2 0 ]
+"160 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic16f726.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"221
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"282
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"719
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"1249
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1310
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1371
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"2772
+[v _ANSELA ANSELA `VEuc  1 e 1 @389 ]
+"2829
+[v _ANSELB ANSELB `VEuc  1 e 1 @390 ]
+"2965
+[v _BF BF `VEb  1 e 0 @1184 ]
+"3013
+[v _CKE CKE `VEb  1 e 0 @1190 ]
+"3015
+[v _CKP CKP `VEb  1 e 0 @164 ]
+"3123
+[v _IRCF0 IRCF0 `VEb  1 e 0 @1156 ]
+"3125
+[v _IRCF1 IRCF1 `VEb  1 e 0 @1157 ]
+"3145
+[v _RA1 RA1 `VEb  1 e 0 @41 ]
+"3147
+[v _RA2 RA2 `VEb  1 e 0 @42 ]
+"3169
+[v _RB5 RB5 `VEb  1 e 0 @53 ]
+"3179
+[v _RC0 RC0 `VEb  1 e 0 @56 ]
+"3181
+[v _RC1 RC1 `VEb  1 e 0 @57 ]
+"3183
+[v _RC2 RC2 `VEb  1 e 0 @58 ]
+"3185
+[v _RC3 RC3 `VEb  1 e 0 @59 ]
+"3191
+[v _RC6 RC6 `VEb  1 e 0 @62 ]
+"3193
+[v _RC7 RC7 `VEb  1 e 0 @63 ]
+"3229
+[v _SSPEN SSPEN `VEb  1 e 0 @165 ]
+"3235
+[v _SSPM0 SSPM0 `VEb  1 e 0 @160 ]
+"3237
+[v _SSPM1 SSPM1 `VEb  1 e 0 @161 ]
+"3239
+[v _SSPM2 SSPM2 `VEb  1 e 0 @162 ]
+"3241
+[v _SSPM3 SSPM3 `VEb  1 e 0 @163 ]
+"3333
+[v _TRISA3 TRISA3 `VEb  1 e 0 @1067 ]
+"3335
+[v _TRISA4 TRISA4 `VEb  1 e 0 @1068 ]
+"3367
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"3407
+[v _WCOL WCOL `VEb  1 e 0 @167 ]
+"20 D:\PIC-Stuff\Stuff\Tim_Code\Latest\Thermocouple Display.X\Main V4.1.c
+[v _thermocouple_temp thermocouple_temp `[12][3]i  1 e 72 0 ]
+"373
+[v _fonts fonts `DCC[303]uc  1 e 303 0 ]
+"973
+[v _main main `(i  1 e 2 0 ]
+{
+"977
+[v main@spi_data spi_data `[22]uc  1 a 22 40 ]
+"994
+[v main@position position `[2]i  1 a 4 62 ]
+"999
+[v main@count count `l  1 a 4 67 ]
+"998
+[v main@x x `i  1 a 2 38 ]
+"979
+[v main@data_pointer data_pointer `*.4uc  1 a 1 66 ]
+"1102
+} 0
+"64
+[v _spi_init spi_init `(v  1 e 1 0 ]
+{
+"74
+} 0
+"944
+[v _move_temp_to_send move_temp_to_send `(v  1 e 1 0 ]
+{
+[v move_temp_to_send@data_pointer data_pointer `*.4uc  1 a 1 wreg ]
+"945
+[v move_temp_to_send@x x `i  1 a 2 9 ]
+"947
+[v move_temp_to_send@working_register working_register `i  1 a 2 6 ]
+"946
+[v move_temp_to_send@reg reg `*.4uc  1 a 1 11 ]
+"948
+[v move_temp_to_send@byte_to_send byte_to_send `uc  1 a 1 8 ]
+"944
+[v move_temp_to_send@data_pointer data_pointer `*.4uc  1 a 1 wreg ]
+[v move_temp_to_send@data_pointer data_pointer `*.4uc  1 a 1 12 ]
+"972
+} 0
+"659
+[v _get_temp_from_right_tcs get_temp_from_right_tcs `(v  1 e 1 0 ]
+{
+"667
+[v get_temp_from_right_tcs@position position `[2]i  1 a 4 1 ]
+"666
+[v get_temp_from_right_tcs@x x `i  1 a 2 10 ]
+"660
+[v get_temp_from_right_tcs@byte_to_send byte_to_send `uc  1 a 1 9 ]
+"665
+[v get_temp_from_right_tcs@byte4 byte4 `uc  1 a 1 8 ]
+"664
+[v get_temp_from_right_tcs@byte3 byte3 `uc  1 a 1 7 ]
+"663
+[v get_temp_from_right_tcs@byte2 byte2 `uc  1 a 1 6 ]
+"662
+[v get_temp_from_right_tcs@byte1 byte1 `uc  1 a 1 5 ]
+"661
+[v get_temp_from_right_tcs@byte_received byte_received `uc  1 a 1 0 ]
+"744
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 2 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0
+"746 D:\PIC-Stuff\Stuff\Tim_Code\Latest\Thermocouple Display.X\Main V4.1.c
+[v _display_temps_to_screen display_temps_to_screen `(v  1 e 1 0 ]
+{
+"770
+[v display_temps_to_screen@fault_string fault_string `[15]uc  1 a 15 18 ]
+"761
+[v display_temps_to_screen@open_string open_string `[13]uc  1 a 13 33 ]
+"758
+[v display_temps_to_screen@celsius_string celsius_string `[12]uc  1 a 12 46 ]
+"767
+[v display_temps_to_screen@shortgnd_string shortgnd_string `[11]uc  1 a 11 69 ]
+"764
+[v display_temps_to_screen@shortvcc_string shortvcc_string `[11]uc  1 a 11 58 ]
+"755
+[v display_temps_to_screen@sensor_three_string sensor_three_string `[6]uc  1 a 6 12 ]
+"752
+[v display_temps_to_screen@sensor_two_string sensor_two_string `[6]uc  1 a 6 6 ]
+"749
+[v display_temps_to_screen@sensor_one_string sensor_one_string `[6]uc  1 a 6 0 ]
+"748
+[v display_temps_to_screen@working_register working_register `l  1 a 4 92 ]
+"747
+[v display_temps_to_screen@position position `[2]i  1 a 4 83 ]
+"771
+[v display_temps_to_screen@fault_string_pointer fault_string_pointer `*.5uc  1 a 1 91 ]
+"768
+[v display_temps_to_screen@shortgnd_string_pointer shortgnd_string_pointer `*.5uc  1 a 1 90 ]
+"765
+[v display_temps_to_screen@shortvcc_string_pointer shortvcc_string_pointer `*.5uc  1 a 1 89 ]
+"762
+[v display_temps_to_screen@open_string_pointer open_string_pointer `*.5uc  1 a 1 88 ]
+"759
+[v display_temps_to_screen@celsius_string_pointer celsius_string_pointer `*.5uc  1 a 1 87 ]
+"756
+[v display_temps_to_screen@sensor_three_string_pointer sensor_three_string_pointer `*.5uc  1 a 1 82 ]
+"753
+[v display_temps_to_screen@sensor_two_string_pointer sensor_two_string_pointer `*.5uc  1 a 1 81 ]
+"750
+[v display_temps_to_screen@sensor_one_string_pointer sensor_one_string_pointer `*.5uc  1 a 1 80 ]
+"748
+[v display_temps_to_screen@F1451 F1451 `[6]uc  1 s 6 F1451 ]
+"751
+[v display_temps_to_screen@F1454 F1454 `[6]uc  1 s 6 F1454 ]
+"754
+[v display_temps_to_screen@F1457 F1457 `[6]uc  1 s 6 F1457 ]
+"757
+[v display_temps_to_screen@F1460 F1460 `[12]uc  1 s 12 F1460 ]
+"760
+[v display_temps_to_screen@F1463 F1463 `[13]uc  1 s 13 F1463 ]
+"763
+[v display_temps_to_screen@F1466 F1466 `[11]uc  1 s 11 F1466 ]
+"766
+[v display_temps_to_screen@F1469 F1469 `[11]uc  1 s 11 F1469 ]
+"769
+[v display_temps_to_screen@F1472 F1472 `[15]uc  1 s 15 F1472 ]
+"943
+} 0
+"337
+[v _location location `(v  1 e 1 0 ]
+{
+"338
+[v location@i i `ui  1 a 2 9 ]
+[v location@k k `ui  1 a 2 7 ]
+"339
+[v location@q q `ui  1 a 2 5 ]
+"338
+[v location@j j `ui  1 a 2 0 ]
+"341
+[v location@page page `uc  1 a 1 4 ]
+"340
+[v location@upnib upnib `uc  1 a 1 3 ]
+[v location@lownib lownib `uc  1 a 1 2 ]
+"337
+[v location@position position `*.39i  1 p 2 3 ]
+"370
+} 0
+"593
+[v _char_to_decimal_print char_to_decimal_print `(v  1 e 1 0 ]
+{
+"594
+[v char_to_decimal_print@x x `uc  1 a 1 11 ]
+"593
+[v char_to_decimal_print@value value `i  1 p 2 8 ]
+"616
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 27 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 31 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 26 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 18 ]
+"73
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 13 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 17 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 16 ]
+[v ___ftmul@exp exp `uc  1 a 1 12 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 2 ]
+[v ___ftmul@f2 f2 `f  1 p 3 5 ]
+"157
+} 0
+"32 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 13 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"42 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+{
+"44
+[v ___altoft@sign sign `uc  1 a 1 1 ]
+[v ___altoft@exp exp `uc  1 a 1 0 ]
+"42
+[v ___altoft@c c `l  1 p 4 8 ]
+"57
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"581 D:\PIC-Stuff\Stuff\Tim_Code\Latest\Thermocouple Display.X\Main V4.1.c
+[v _chip_select chip_select `(v  1 e 1 0 ]
+{
+[v chip_select@chip chip `i  1 p 2 0 ]
+"590
+} 0
+"283
+[v _blank_image blank_image `(v  1 e 1 0 ]
+{
+"284
+[v blank_image@j j `ui  1 a 2 7 ]
+[v blank_image@i i `ui  1 a 2 5 ]
+"285
+[v blank_image@page page `uc  1 a 1 4 ]
+"298
+} 0
+"104
+[v _comm_out comm_out `(v  1 e 1 0 ]
+{
+[v comm_out@j j `uc  1 a 1 wreg ]
+[v comm_out@j j `uc  1 a 1 wreg ]
+"106
+[v comm_out@j j `uc  1 a 1 2 ]
+"112
+} 0
+"521
+[v _String_test String_test `(v  1 e 1 0 ]
+{
+"522
+[v String_test@test_string test_string `[13]uc  1 a 13 11 ]
+"523
+[v String_test@test_pointer test_pointer `*.4uc  1 a 1 24 ]
+"521
+[v String_test@F1411 F1411 `[13]uc  1 s 13 F1411 ]
+"531
+} 0
+"478
+[v _LCDWriteCharacter LCDWriteCharacter `(v  1 e 1 0 ]
+{
+[v LCDWriteCharacter@character character `DCCuc  1 a 1 wreg ]
+"480
+[v LCDWriteCharacter@after_swap after_swap `ui  1 a 2 9 ]
+[v LCDWriteCharacter@base base `ui  1 a 2 7 ]
+[v LCDWriteCharacter@j j `ui  1 a 2 5 ]
+[v LCDWriteCharacter@i i `ui  1 a 2 3 ]
+[v LCDWriteCharacter@before_swap before_swap `ui  1 a 2 1 ]
+"478
+[v LCDWriteCharacter@character character `DCCuc  1 a 1 wreg ]
+"481
+[v LCDWriteCharacter@character character `DCCuc  1 a 1 0 ]
+"497
+} 0
+"75
+[v _data_out data_out `(v  1 e 1 0 ]
+{
+[v data_out@i i `uc  1 a 1 wreg ]
+[v data_out@i i `uc  1 a 1 wreg ]
+"77
+[v data_out@i i `uc  1 a 1 2 ]
+"83
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"555 D:\PIC-Stuff\Stuff\Tim_Code\Latest\Thermocouple Display.X\Main V4.1.c
+[v _SPI_DATA_HANDLING SPI_DATA_HANDLING `(v  1 e 1 0 ]
+{
+[v SPI_DATA_HANDLING@data_pointer data_pointer `*.4uc  1 a 1 wreg ]
+"560
+[v SPI_DATA_HANDLING@offset_pointer offset_pointer `*.39uc  1 a 2 9 ]
+"559
+[v SPI_DATA_HANDLING@address address `uc  1 a 1 8 ]
+"558
+[v SPI_DATA_HANDLING@offset offset `uc  1 a 1 7 ]
+"557
+[v SPI_DATA_HANDLING@byte_received byte_received `uc  1 a 1 6 ]
+"556
+[v SPI_DATA_HANDLING@byte_to_send byte_to_send `uc  1 a 1 5 ]
+"555
+[v SPI_DATA_HANDLING@data_pointer data_pointer `*.4uc  1 a 1 wreg ]
+"562
+[v SPI_DATA_HANDLING@data_pointer data_pointer `*.4uc  1 a 1 11 ]
+"577
+} 0
+"533
+[v _SPI_TRANSFER SPI_TRANSFER `(uc  1 e 1 0 ]
+{
+[v SPI_TRANSFER@byte_to_send byte_to_send `uc  1 a 1 wreg ]
+"534
+[v SPI_TRANSFER@byte_recieved byte_recieved `uc  1 a 1 1 ]
+"533
+[v SPI_TRANSFER@byte_to_send byte_to_send `uc  1 a 1 wreg ]
+"535
+[v SPI_TRANSFER@byte_to_send byte_to_send `uc  1 a 1 2 ]
+"549
+} 0
+"23
+[v _Init Init `(v  1 e 1 0 ]
+{
+"63
+} 0

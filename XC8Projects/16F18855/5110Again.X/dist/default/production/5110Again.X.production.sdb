@@ -1,0 +1,343 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"52 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\adcc.c
+[e E13559 . `uc
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR 63
+]
+"9 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\buttons.c
+[e E13559 . `uc
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR 63
+]
+"47 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\main.c
+[e E13559 . `uc
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR 63
+]
+"4 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\adcc.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"51
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+"7 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\buttons.c
+[v _readButton readButton `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"224 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\lcd.c
+[v _gotoXY gotoXY `(v  1 e 1 0 ]
+"231
+[v _LCDBitmap LCDBitmap `(v  1 e 1 0 ]
+"243
+[v _LCD_Write_Character LCD_Write_Character `(v  1 e 1 0 ]
+"257
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+"264
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+"271
+[v _LCD_Write_Int LCD_Write_Int `(v  1 e 1 0 ]
+"328
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+"362
+[v _LCDWrite LCDWrite `(v  1 e 1 0 ]
+"392
+[v _drawBox drawBox `(v  1 e 1 0 ]
+"11 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"35 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\system.c
+[v _Init Init `(v  1 e 1 0 ]
+"54
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 1 0 ]
+"4 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\buttons.c
+[v _readButtons readButtons `ui  1 e 2 0 ]
+"5
+[v _button button `c  1 e 1 0 ]
+"572 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic16f18855.h
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"633
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"694
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+[s S106 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"711
+[u S115 . 1 `S106 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES115  1 e 1 @19 ]
+"755
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+"816
+[v _LATB LATB `VEuc  1 e 1 @23 ]
+"877
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+[s S127 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"894
+[u S136 . 1 `S127 1 . 1 0 ]
+[v _LATCbits LATCbits `VES136  1 e 1 @24 ]
+"1508
+[v _ADRESL ADRESL `VEuc  1 e 1 @140 ]
+"1527
+[v _ADRESH ADRESH `VEuc  1 e 1 @141 ]
+"1821
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @147 ]
+[s S43 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"1852
+[s S51 . 1 `uc 1 DONE 1 0 :1:0 
+]
+[s S53 . 1 `uc 1 nDONE 1 0 :1:0 
+]
+[s S55 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+`uc 1 ADFM1 1 0 :1:3 
+]
+[s S60 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+]
+[u S62 . 1 `S43 1 . 1 0 `S51 1 . 1 0 `S53 1 . 1 0 `S55 1 . 1 0 `S60 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES62  1 e 1 @147 ]
+"1911
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @148 ]
+"1949
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @149 ]
+"2025
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @150 ]
+"2095
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @151 ]
+"2164
+[v _ADCLK ADCLK `VEuc  1 e 1 @152 ]
+"2221
+[v _ADACT ADACT `VEuc  1 e 1 @153 ]
+"2272
+[v _ADREF ADREF `VEuc  1 e 1 @154 ]
+"2312
+[v _ADCAP ADCAP `VEuc  1 e 1 @155 ]
+"2363
+[v _ADPRE ADPRE `VEuc  1 e 1 @156 ]
+"2432
+[v _ADACQ ADACQ `VEuc  1 e 1 @157 ]
+"2501
+[v _ADPCH ADPCH `VEuc  1 e 1 @158 ]
+"2627
+[v _ADRPT ADRPT `VEuc  1 e 1 @269 ]
+"2702
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @270 ]
+"2771
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @271 ]
+"2846
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @272 ]
+"2915
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @273 ]
+"2990
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @274 ]
+"3059
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @275 ]
+"31087
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"31697
+[v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
+"32307
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"6 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\coffee.h
+[v _coffee coffee `DCC[504]uc  1 e 504 0 ]
+"18 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\lcd.c
+[v _fonts fonts `DCC[101][3]uc  1 e 303 0 ]
+"11 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"14
+[v main@count count `ui  1 a 2 27 ]
+"15
+[v main@b b `uc  1 a 1 29 ]
+"61
+} 0
+"7 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\buttons.c
+[v _readButton readButton `(uc  1 e 1 0 ]
+{
+"36
+} 0
+"51 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\adcc.c
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+{
+[v ADC_Read@channel channel `E13559  1 a 1 wreg ]
+[v ADC_Read@channel channel `E13559  1 a 1 wreg ]
+"54
+[v ADC_Read@channel channel `E13559  1 a 1 3 ]
+"72
+} 0
+"392 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\lcd.c
+[v _drawBox drawBox `(v  1 e 1 0 ]
+{
+"394
+[v drawBox@j j `i  1 a 2 1 ]
+"419
+} 0
+"257
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+{
+[v LCD_Write_String@characters characters `*.25DCCuc  1 p 2 5 ]
+"261
+} 0
+"271
+[v _LCD_Write_Int LCD_Write_Int `(v  1 e 1 0 ]
+{
+"273
+[v LCD_Write_Int@str str `[5]uc  1 a 5 15 ]
+"274
+[v LCD_Write_Int@i i `i  1 a 2 22 ]
+[v LCD_Write_Int@j j `i  1 a 2 20 ]
+"271
+[v LCD_Write_Int@value value `i  1 p 2 5 ]
+[v LCD_Write_Int@fieldLength fieldLength `c  1 p 1 7 ]
+[v LCD_Write_Int@numPlaces numPlaces `c  1 p 1 8 ]
+[v LCD_Write_Int@sign sign `c  1 p 1 9 ]
+"272
+[v LCD_Write_Int@F13665 F13665 `[5]uc  1 s 5 F13665 ]
+"325
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"35
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"42
+} 0
+"243 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\lcd.c
+[v _LCD_Write_Character LCD_Write_Character `(v  1 e 1 0 ]
+{
+[v LCD_Write_Character@character character `DCCuc  1 a 1 wreg ]
+"247
+[v LCD_Write_Character@index index `i  1 a 2 12 ]
+"243
+[v LCD_Write_Character@character character `DCCuc  1 a 1 wreg ]
+"247
+[v LCD_Write_Character@character character `DCCuc  1 a 1 11 ]
+"254
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"264 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\lcd.c
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+{
+"266
+[v LCD_Clear@index index `i  1 a 2 1 ]
+"269
+} 0
+"224
+[v _gotoXY gotoXY `(v  1 e 1 0 ]
+{
+"225
+[v gotoXY@x x `c  1 a 1 wreg ]
+[v gotoXY@x x `c  1 a 1 wreg ]
+[v gotoXY@y y `c  1 p 1 11 ]
+[v gotoXY@x x `c  1 a 1 13 ]
+"228
+} 0
+"328
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+{
+"356
+} 0
+"231
+[v _LCDBitmap LCDBitmap `(v  1 e 1 0 ]
+{
+"233
+[v LCDBitmap@index index `i  1 a 2 0 ]
+"231
+[v LCDBitmap@my_array my_array `*.25DCCuc  1 p 2 11 ]
+"235
+} 0
+"362
+[v _LCDWrite LCDWrite `(v  1 e 1 0 ]
+{
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 wreg ]
+"363
+[v LCDWrite@i i `uc  1 a 1 10 ]
+[v LCDWrite@d d `uc  1 a 1 9 ]
+"362
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 wreg ]
+[v LCDWrite@data data `uc  1 p 1 6 ]
+"364
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 8 ]
+"389
+} 0
+"35 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\system.c
+[v _Init Init `(v  1 e 1 0 ]
+{
+"52
+} 0
+"54
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 1 0 ]
+{
+"57
+} 0
+"4 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\adcc.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"48
+} 0

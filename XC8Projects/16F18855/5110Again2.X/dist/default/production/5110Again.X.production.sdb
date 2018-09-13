@@ -1,0 +1,142 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"221 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\5110lcd.c
+[v _gotoXY gotoXY `(v  1 e 1 0 ]
+"239
+[v _LCDCharacter LCDCharacter `(v  1 e 1 0 ]
+"252
+[v _LCDString LCDString `(v  1 e 1 0 ]
+"257
+[v _LCDClear LCDClear `(v  1 e 1 0 ]
+"263
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+"286
+[v _LCDWrite LCDWrite `(v  1 e 1 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"9 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"16 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\5110lcd.c
+[v _fonts fonts `DCC[101][3]uc  1 e 303 0 ]
+"572 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic16f18855.h
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"633
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"694
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+[s S51 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"711
+[u S60 . 1 `S51 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES60  1 e 1 @19 ]
+"755
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+"816
+[v _LATB LATB `VEuc  1 e 1 @23 ]
+"877
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+[s S72 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"894
+[u S81 . 1 `S72 1 . 1 0 ]
+[v _LATCbits LATCbits `VES81  1 e 1 @24 ]
+"31087
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"31697
+[v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
+"32307
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"9 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"35
+} 0
+"252 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\5110lcd.c
+[v _LCDString LCDString `(v  1 e 1 0 ]
+{
+[v LCDString@characters characters `*.25uc  1 p 2 5 ]
+"255
+} 0
+"239
+[v _LCDCharacter LCDCharacter `(v  1 e 1 0 ]
+{
+[v LCDCharacter@character character `uc  1 a 1 wreg ]
+"243
+[v LCDCharacter@index index `i  1 a 2 12 ]
+"239
+[v LCDCharacter@character character `uc  1 a 1 wreg ]
+"243
+[v LCDCharacter@character character `uc  1 a 1 11 ]
+"250
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"263 D:\PIC-Stuff\XC8Projects\16F18855\5110Again.X\5110lcd.c
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+{
+"282
+} 0
+"257
+[v _LCDClear LCDClear `(v  1 e 1 0 ]
+{
+"258
+[v LCDClear@index index `i  1 a 2 1 ]
+"261
+} 0
+"221
+[v _gotoXY gotoXY `(v  1 e 1 0 ]
+{
+"222
+[v gotoXY@x x `c  1 a 1 wreg ]
+[v gotoXY@x x `c  1 a 1 wreg ]
+[v gotoXY@y y `c  1 p 1 11 ]
+[v gotoXY@x x `c  1 a 1 13 ]
+"225
+} 0
+"286
+[v _LCDWrite LCDWrite `(v  1 e 1 0 ]
+{
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 wreg ]
+"287
+[v LCDWrite@i i `uc  1 a 1 10 ]
+[v LCDWrite@d d `uc  1 a 1 9 ]
+"286
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 wreg ]
+[v LCDWrite@data data `uc  1 p 1 6 ]
+"288
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 8 ]
+"313
+} 0

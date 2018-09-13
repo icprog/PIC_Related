@@ -1,0 +1,119 @@
+# Created by Ultra Librarian Gold 8.1.385 Copyright © 1999-2017
+# Dequeue Server, Accelerated Designs
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'CZRU.pac';
+Layer 1;
+Smd '1' 26 28 -0 R0 (-34.5 0);
+Layer 1;
+Smd '2' 26 28 -0 R0 (34.5 0);
+Layer 21;
+Wire 6 (-14 -24) (14 -24);
+Wire 6 (14 24) (-14 24);
+Layer 51;
+Wire 6 (-36 -20) (36 -20);
+Wire 6 (36 -20) (36 20);
+Wire 6 (36 20) (-36 20);
+Wire 6 (-36 20) (-36 -20);
+Wire 6 (-18 0) -180 (-24 0);
+Wire 6 (-24 0) -180 (-18 0);
+Wire 6 (12 20) -180 (-12 19);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (-129 -25);
+Layer 27;
+
+Edit 'CZRU-M.pac';
+Layer 1;
+Smd '1' 30 28 -0 R0 (-36.5 0);
+Layer 1;
+Smd '2' 30 28 -0 R0 (36.5 0);
+Layer 21;
+Wire 6 (-14 -24) (14 -24);
+Wire 6 (14 24) (-14 24);
+Layer 51;
+Wire 6 (-36 -20) (36 -20);
+Wire 6 (36 -20) (36 20);
+Wire 6 (36 20) (-36 20);
+Wire 6 (-36 20) (-36 -20);
+Wire 6 (-18 0) -180 (-24 0);
+Wire 6 (-24 0) -180 (-18 0);
+Wire 6 (12 20) -180 (-12 19);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (-129 -25);
+Layer 27;
+
+Edit 'CZRU-L.pac';
+Layer 1;
+Smd '1' 22 28 -0 R0 (-32.5 0);
+Layer 1;
+Smd '2' 22 28 -0 R0 (32.5 0);
+Layer 21;
+Wire 6 (-14 -24) (14 -24);
+Wire 6 (14 24) (-14 24);
+Layer 51;
+Wire 6 (-36 -20) (36 -20);
+Wire 6 (36 -20) (36 20);
+Wire 6 (36 20) (-36 20);
+Wire 6 (-36 20) (-36 -20);
+Wire 6 (-18 0) -180 (-24 0);
+Wire 6 (-24 0) -180 (-18 0);
+Wire 6 (12 20) -180 (-12 19);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (-129 -25);
+Layer 27;
+
+Edit 'DIODE_ZENER.sym';
+Layer 94;
+Pin '22' Pas None Short R0 Off 0 (0 0)
+Pin '11' Pas None Short R180 Off 0 (400 0)
+Wire 8 (100 0) (137 0);
+Wire 8 (125 0) (150 0);
+Wire 8 (150 -75) (250 0);
+Wire 8 (250 -75) (225 -75);
+Wire 8 (250 75) (275 75);
+Wire 8 (150 75) (150 -75);
+Wire 8 (250 -75) (250 75);
+Wire 8 (250 0) (150 75);
+Wire 8 (250 0) (300 0);
+Layer 97;
+Layer 96;
+Change Size 137;
+Change Ratio 10;
+Text '>Value' SR0 (-153 -218);
+Layer 95;
+Change Size 137;
+Change Ratio 10;
+Text '>Name' SR0 (-111 106);
+
+Edit 'CZRU52C3V3.dev';
+Prefix 'U';
+Description '';
+Value Off;
+Add DIODE_ZENER 'A' Next  0 (0 0);
+Package 'CZRU';
+Technology '';
+Attribute Vendor 'Comchip';
+Attribute Manufacturer_Part_Number 'CZRU52C3V3';
+Connect 'A.11' '1';
+Connect 'A.22' '2';
+Package 'CZRU-M' 'CZRU-M';
+Technology '';
+Attribute Vendor 'Comchip';
+Attribute Manufacturer_Part_Number 'CZRU52C3V3';
+Connect 'A.11' '1';
+Connect 'A.22' '2';
+Package 'CZRU-L' 'CZRU-L';
+Technology '';
+Attribute Vendor 'Comchip';
+Attribute Manufacturer_Part_Number 'CZRU52C3V3';
+Connect 'A.11' '1';
+Connect 'A.22' '2';

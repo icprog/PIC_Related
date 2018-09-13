@@ -1,0 +1,70 @@
+﻿****************************************************************
+			INITIALIZATION
+****************************************************************
+
+YOU MUST AGREE THIS TERMS AND CONDITIONS. THIS SOFTWARE IS
+PROVIDED BY NORITAKE CO., INC "AS IS" AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR SORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Unlike many other Noritake Vacuum Fluorescent Display (VFD)
+modules, the CU-U modules require initialization. The
+sequences differ for 4-bit and 8-bit mode.
+
+4-BIT INITIALIZATION
+	COMMAND		MEANING
+	0x33		8-bit mode, 8-bit mode
+	wait 10 ms
+	0x32		8-bit mode, 4-bit function set
+	wait 10 ms
+	Now in 4-bit mode.
+	0x08		Turn the display off
+	0x01		Clear the display
+	wait 200 µs
+	0x06		Set entry mode to left-to-right
+	0x0C		Turn the display on
+
+
+8-BIT INITIALIZATION
+	COMMAND		MEANING
+	0x30		8-bit mode
+	wait 1 µs
+	0x30		8-bit mode
+	wait 1 µs
+	0x30		8-bit mode
+	wait 1 µs
+	0x30		8-bit mode
+	wait 1 µs
+	0x08		display off
+	wait 1 µs
+	0x01		display clear
+	wait 200 µs
+	0x06		left-to-right entry mode
+	wait 1 µs
+	0x0C		display on
+	wait 1 µs
+
+
+----------------------------------------------------------------
+E-M-0053-00 06/28/2011
+----------------------------------------------------------------
+SUPPORT
+
+For further support, please contact:
+	Noritake Co., Inc.
+	2635 Clearbrook Dr 
+	Arlington Heights, IL 60005 
+	800-779-5846 
+	847-439-9020
+	support.ele@noritake.com
+
+All rights reserved. © Noritake Co., Inc.

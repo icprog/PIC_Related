@@ -1,0 +1,32 @@
+
+
+There are a few things you need be aware of here.
+
+Dirty connections: I have found that one of my units would randomly stop working or flicker, or alternate between being too dim or being too dark, and this was clearly
+ a physical problem (pressing on the board made the problem change). The problem, as I discovered, was dirty contacts on the board and screen itself. I unclipped the 
+board and found dust particles on the contacts. Cleaned both sets of contacts with cotton swabs and rubbing alcohol, and the problem was resolved.
+
+Contrast setting: I think most of the difficulties people are having here stem from trying random hardcoded contrast settings. The proper way to do this is to allow for 
+adjustable contrast settings by the end user. The acceptable range is between 0x80 (being a contrast value of 0) and 0xFF (being a contrast value of 127). The ideal 
+contrast setting will change with ambient temperature. This is why I suggest making your contrast setting changeable on-the-fly, through your microcontroller software. 
+Whether by a trimmer, or buttons, or whatever. For typical room temperature, a good value is likely to be around 0xBF. That?s where mine is at. If it?s too dark, decrease 
+by increments of 1 until you find the ideal value, if too light increase by increments of 1. I have buttons on my device that do this and I save the user-selected 
+contrast setting to EEPROM. The code for changing the contrast on the fly is easy. Set the SCE pin to low to enable the serial interface. Set the D/C pin to low 
+(which tells the LCD you are sending commands, not pixel data), then send byte 0x21 which enables the extended instruction set, then send the contrast byte, then send 
+byte 0x20 which returns to the basic instruction set. You do not need to reset the panel or anything like that.
+
+Hardware SPI: use it. It makes the display so much more responsive. For this, connect the MOSI line to the microcontroller?s MOSI pin, and the SCK line to the 
+microcontroller?s SCK pin. Then, avoid using the MISO and SS lines of the microcontroller unless you know what you?re doing. On a ATMega328 chip, as found in Arduino 
+UNO, Pro, and Pro mini, the MOSI and SCK lines are digital pins 11 and 13, respectively. Then you want your library to communicate with the LCD using SPI. Easy to do. 
+The LCD?s speed is 4Mhz, data is sent most significant bit first (MSBFIRST), the data clock is idle when low (Clock Polarity/CPOL = 0), and samples are taken on the 
+rising/positive edge of clock pulses (Clock Phase/CPHA = 0). So for Arduino SPI, that means using SPI_MODE0. It?s all downhill from there and you can chain multiple 
+devices to SPI. It?s wonderful.
+
+I have a working library for this LCD that uses hardware SPI that I?m pretty happy with, and plan to release under MIT license on github sooner or later. If there is 
+demand I can rush that process.
+
+
+ The address arrangement of memory that is shown on LCD Display (DDRAM) is Matrix that consists of 6 rows (Y Address) from  Y-Address 0 to  Y-Address  5  and  84  
+columns  (X  Address)  from X-Address 0 to X-Address 83. If user wants to access to the position of displaying result on LCD Display, must refer to the relationship 
+between X-Address and Y-Address. Data that will  be  sent  to  display  is  8  bit  (1  Byte)  and  it  will  be  arranged as vertical line; in this case, MSB Bit will 
+be lower and LCB Bit will be upper.

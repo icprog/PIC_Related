@@ -1,0 +1,136 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+PSIMIO	R:\HOME\WilkieC\tests\src\simio.h	75;"	t	line:75
+SIMCLOSE	R:\HOME\WilkieC\tests\src\simio.h	25;"	t	line:25
+SIMIO	R:\HOME\WilkieC\tests\src\simio.h	75;"	t	line:75
+SIMLSEEK	R:\HOME\WilkieC\tests\src\simio.h	46;"	t	line:46
+SIMMETHOD	R:\HOME\WilkieC\tests\src\simio.h	12;"	t	line:12
+SIMOPEN	R:\HOME\WilkieC\tests\src\simio.h	20;"	t	line:20
+SIMREAD	R:\HOME\WilkieC\tests\src\simio.h	32;"	t	line:32
+SIMRENAME	R:\HOME\WilkieC\tests\src\simio.h	59;"	t	line:59
+SIMUNLINK	R:\HOME\WilkieC\tests\src\simio.h	52;"	t	line:52
+SIMWRITE	R:\HOME\WilkieC\tests\src\simio.h	39;"	t	line:39
+SIM_CLOSE	R:\HOME\WilkieC\tests\src\simio.h	5;"	e	line:5
+SIM_LSEEK	R:\HOME\WilkieC\tests\src\simio.h	8;"	e	line:8
+SIM_OPEN	R:\HOME\WilkieC\tests\src\simio.h	4;"	e	line:4
+SIM_READ	R:\HOME\WilkieC\tests\src\simio.h	6;"	e	line:6
+SIM_RENAME	R:\HOME\WilkieC\tests\src\simio.h	10;"	e	line:10
+SIM_UNLINK	R:\HOME\WilkieC\tests\src\simio.h	9;"	e	line:9
+SIM_WRITE	R:\HOME\WilkieC\tests\src\simio.h	7;"	e	line:7
+SPEN::0x8000u	R:\HOME\WilkieC\tests\src\_exit.c	3;"	d	line:3	file:
+T2ON::0x8000u	R:\HOME\WilkieC\tests\src\time.c	4;"	d	line:4	file:
+T32::0x0008u	R:\HOME\WilkieC\tests\src\time.c	5;"	d	line:5	file:
+TRMT::0x0100u	R:\HOME\WilkieC\tests\src\_exit.c	5;"	d	line:5	file:
+TXEN::0x0400u	R:\HOME\WilkieC\tests\src\_exit.c	4;"	d	line:4	file:
+_Foprep	R:\HOME\WilkieC\tests\src\attach.c	29;"	p	line:29	file:	signature:(const char *name, const char *mods, FILE *, int)
+__C30_UART	R:\HOME\WilkieC\tests\src\c30_uart.c	5;"	v	line:5
+___delay32	R:\HOME\WilkieC\tests\src\delay32.s	14;"	l	line:14
+__attach_input_file	R:\HOME\WilkieC\tests\src\attach.c	31;"	f	line:31	signature:(const char *f)
+__close_input_file	R:\HOME\WilkieC\tests\src\attach.c	42;"	f	line:42	signature:(void)
+__curbrk	R:\HOME\WilkieC\tests\src\brk.c	32;"	v	line:32
+__eedata_helper1	R:\HOME\WilkieC\tests\src\eedata_helper.s	25;"	l	line:25
+__eedata_helper2	R:\HOME\WilkieC\tests\src\eedata_helper.s	62;"	l	line:62
+__eedata_helper3	R:\HOME\WilkieC\tests\src\eedata_helper.s	78;"	l	line:78
+__eedata_helper4	R:\HOME\WilkieC\tests\src\eedata_helper.s	98;"	l	line:98
+__eedata_helper5	R:\HOME\WilkieC\tests\src\eedata_helper2.s	25;"	l	line:25
+__eedata_helper6	R:\HOME\WilkieC\tests\src\eedata_helper2.s	65;"	l	line:65
+__eedata_helper7	R:\HOME\WilkieC\tests\src\eedata_helper2.s	81;"	l	line:81
+__flash_helper1	R:\HOME\WilkieC\tests\src\flash_helper.s	41;"	l	line:41
+__flash_helper2	R:\HOME\WilkieC\tests\src\flash_helper.s	69;"	l	line:69
+__flash_helper3	R:\HOME\WilkieC\tests\src\flash_helper.s	85;"	l	line:85
+__flash_helper4	R:\HOME\WilkieC\tests\src\flash_helper.s	129;"	l	line:129
+__flash_helper5	R:\HOME\WilkieC\tests\src\flash_helper.s	143;"	l	line:143
+__flash_helper6	R:\HOME\WilkieC\tests\src\flash_helper.s	164;"	l	line:164
+__flash_helper7	R:\HOME\WilkieC\tests\src\flash_helper2.s	25;"	l	line:25
+__flash_helper8	R:\HOME\WilkieC\tests\src\flash_helper2.s	69;"	l	line:69
+__flash_helper9	R:\HOME\WilkieC\tests\src\flash_helper2.s	85;"	l	line:85
+__memcpy_helper	R:\HOME\WilkieC\tests\src\memcpy_helper.s	7;"	l	line:7
+_exit	R:\HOME\WilkieC\tests\src\_exit.c	16;"	f	line:16	signature:(int status __attribute__((unused)))
+access	R:\HOME\WilkieC\tests\src\simio.h	16;"	m	line:16	struct:tagSIMOPEN
+brg	R:\HOME\WilkieC\tests\src\read.c	25;"	l	line:25
+brg	R:\HOME\WilkieC\tests\src\write.c	23;"	l	line:23
+brk	R:\HOME\WilkieC\tests\src\brk.c	35;"	f	line:35	signature:(void *endds)
+buffer	R:\HOME\WilkieC\tests\src\simio.h	29;"	m	line:29	struct:tagSIMREAD
+buffer	R:\HOME\WilkieC\tests\src\simio.h	36;"	m	line:36	struct:tagSIMWRITE
+close	R:\HOME\WilkieC\tests\src\attach.c	28;"	p	line:28	file:	signature:(int handle)
+close	R:\HOME\WilkieC\tests\src\close.c	9;"	f	line:9	signature:(int handle)
+close	R:\HOME\WilkieC\tests\src\simio.h	66;"	m	line:66	union:tagSIMIO::<anonymous>
+doclose	R:\HOME\WilkieC\tests\src\close.c	4;"	f	line:4	file:	signature:(PSIMIO psimio)
+dolseek	R:\HOME\WilkieC\tests\src\lseek.c	4;"	f	line:4	file:	signature:(PSIMIO psimio)
+doopen	R:\HOME\WilkieC\tests\src\open.c	4;"	f	line:4	file:	signature:(PSIMIO psimio)
+doread	R:\HOME\WilkieC\tests\src\read.c	6;"	f	line:6	file:	signature:(PSIMIO psimio)
+doremove	R:\HOME\WilkieC\tests\src\remove.c	3;"	f	line:3	file:	signature:(PSIMIO psimio)
+dorename	R:\HOME\WilkieC\tests\src\rename.c	3;"	f	line:3	file:	signature:(PSIMIO psimio)
+dowrite	R:\HOME\WilkieC\tests\src\write.c	13;"	f	line:13	file:	signature:(PSIMIO psimio)
+error	R:\HOME\WilkieC\tests\src\attach.c	32;"	l	line:32
+filename	R:\HOME\WilkieC\tests\src\simio.h	49;"	m	line:49	struct:tagSIMUNLINK
+finish	R:\HOME\WilkieC\tests\src\eedata_helper.s	51;"	l	line:51
+finish	R:\HOME\WilkieC\tests\src\eedata_helper2.s	54;"	l	line:54
+finish	R:\HOME\WilkieC\tests\src\flash_helper.s	58;"	l	line:58
+finish	R:\HOME\WilkieC\tests\src\flash_helper2.s	58;"	l	line:58
+getenv	R:\HOME\WilkieC\tests\src\getenv.c	2;"	f	line:2	signature:(const char * s)
+handle	R:\HOME\WilkieC\tests\src\simio.h	18;"	m	line:18	struct:tagSIMOPEN
+handle	R:\HOME\WilkieC\tests\src\simio.h	23;"	m	line:23	struct:tagSIMCLOSE
+handle	R:\HOME\WilkieC\tests\src\simio.h	28;"	m	line:28	struct:tagSIMREAD
+handle	R:\HOME\WilkieC\tests\src\simio.h	35;"	m	line:35	struct:tagSIMWRITE
+handle	R:\HOME\WilkieC\tests\src\simio.h	42;"	m	line:42	struct:tagSIMLSEEK
+i	R:\HOME\WilkieC\tests\src\read.c	21;"	l	line:21
+i	R:\HOME\WilkieC\tests\src\write.c	19;"	l	line:19
+len	R:\HOME\WilkieC\tests\src\simio.h	30;"	m	line:30	struct:tagSIMREAD
+len	R:\HOME\WilkieC\tests\src\simio.h	37;"	m	line:37	struct:tagSIMWRITE
+lseek	R:\HOME\WilkieC\tests\src\lseek.c	9;"	f	line:9	signature:(int handle, long offset, int origin)
+lseek	R:\HOME\WilkieC\tests\src\simio.h	69;"	m	line:69	union:tagSIMIO::<anonymous>
+method	R:\HOME\WilkieC\tests\src\simio.h	62;"	m	line:62	struct:tagSIMIO
+mode	R:\HOME\WilkieC\tests\src\simio.h	17;"	m	line:17	struct:tagSIMOPEN
+nTimeout	R:\HOME\WilkieC\tests\src\read.c	46;"	l	line:46
+name	R:\HOME\WilkieC\tests\src\simio.h	15;"	m	line:15	struct:tagSIMOPEN
+newname	R:\HOME\WilkieC\tests\src\simio.h	56;"	m	line:56	struct:tagSIMRENAME
+offset	R:\HOME\WilkieC\tests\src\simio.h	43;"	m	line:43	struct:tagSIMLSEEK
+oldbrk	R:\HOME\WilkieC\tests\src\sbrk.c	35;"	l	line:35
+oldname	R:\HOME\WilkieC\tests\src\simio.h	55;"	m	line:55	struct:tagSIMRENAME
+open	R:\HOME\WilkieC\tests\src\open.c	9;"	f	line:9	signature:(const char *name, int access, int mode)
+open	R:\HOME\WilkieC\tests\src\simio.h	65;"	m	line:65	union:tagSIMIO::<anonymous>
+origin	R:\HOME\WilkieC\tests\src\simio.h	44;"	m	line:44	struct:tagSIMLSEEK
+rc	R:\HOME\WilkieC\tests\src\brk.c	37;"	l	line:37
+rc	R:\HOME\WilkieC\tests\src\simio.h	50;"	m	line:50	struct:tagSIMUNLINK
+rc	R:\HOME\WilkieC\tests\src\simio.h	57;"	m	line:57	struct:tagSIMRENAME
+read	R:\HOME\WilkieC\tests\src\read.c	19;"	f	line:19	signature:(int handle, void *buffer, unsigned int len)
+read	R:\HOME\WilkieC\tests\src\simio.h	67;"	m	line:67	union:tagSIMIO::<anonymous>
+remove	R:\HOME\WilkieC\tests\src\remove.c	8;"	f	line:8	signature:(const char *filename)
+rename	R:\HOME\WilkieC\tests\src\rename.c	8;"	f	line:8	signature:(const char *oldname, const char *newname)
+rename	R:\HOME\WilkieC\tests\src\simio.h	71;"	m	line:71	union:tagSIMIO::<anonymous>
+rxreg	R:\HOME\WilkieC\tests\src\read.c	24;"	l	line:24
+sbrk	R:\HOME\WilkieC\tests\src\sbrk.c	33;"	f	line:33	signature:(int incr)
+simio	R:\HOME\WilkieC\tests\src\close.c	11;"	l	line:11
+simio	R:\HOME\WilkieC\tests\src\lseek.c	10;"	l	line:10
+simio	R:\HOME\WilkieC\tests\src\open.c	11;"	l	line:11
+simio	R:\HOME\WilkieC\tests\src\read.c	61;"	l	line:61
+simio	R:\HOME\WilkieC\tests\src\remove.c	9;"	l	line:9
+simio	R:\HOME\WilkieC\tests\src\rename.c	9;"	l	line:9
+simio	R:\HOME\WilkieC\tests\src\write.c	53;"	l	line:53
+system	R:\HOME\WilkieC\tests\src\system.c	4;"	f	line:4	signature:(const char * s)
+t	R:\HOME\WilkieC\tests\src\time.c	10;"	l	line:10
+tagSIMCLOSE	R:\HOME\WilkieC\tests\src\simio.h	21;"	s	line:21
+tagSIMIO	R:\HOME\WilkieC\tests\src\simio.h	60;"	s	line:60
+tagSIMLSEEK	R:\HOME\WilkieC\tests\src\simio.h	40;"	s	line:40
+tagSIMOPEN	R:\HOME\WilkieC\tests\src\simio.h	13;"	s	line:13
+tagSIMREAD	R:\HOME\WilkieC\tests\src\simio.h	26;"	s	line:26
+tagSIMRENAME	R:\HOME\WilkieC\tests\src\simio.h	53;"	s	line:53
+tagSIMUNLINK	R:\HOME\WilkieC\tests\src\simio.h	47;"	s	line:47
+tagSIMWRITE	R:\HOME\WilkieC\tests\src\simio.h	33;"	s	line:33
+time	R:\HOME\WilkieC\tests\src\time.c	8;"	f	line:8	signature:(time_t *pt)
+txreg	R:\HOME\WilkieC\tests\src\write.c	22;"	l	line:22
+u	R:\HOME\WilkieC\tests\src\simio.h	73;"	m	line:73	struct:tagSIMIO
+umode	R:\HOME\WilkieC\tests\src\read.c	22;"	l	line:22
+umode	R:\HOME\WilkieC\tests\src\write.c	20;"	l	line:20
+unlink	R:\HOME\WilkieC\tests\src\simio.h	70;"	m	line:70	union:tagSIMIO::<anonymous>
+ustatus	R:\HOME\WilkieC\tests\src\read.c	23;"	l	line:23
+ustatus	R:\HOME\WilkieC\tests\src\write.c	21;"	l	line:21
+write	R:\HOME\WilkieC\tests\src\simio.h	68;"	m	line:68	union:tagSIMIO::<anonymous>
+write	R:\HOME\WilkieC\tests\src\write.c	18;"	f	line:18	signature:(int handle, void *buffer, unsigned int len)

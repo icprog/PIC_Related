@@ -1,0 +1,140 @@
+eeschema (2013-07-07 BZR 4022)-stable  >> Creation date: 06/03/2017 11:25:56 AM
+#Cmp ( order = Reference )
+| C1         C           445-1423-1-ND
+| C2         C           445-1423-1-ND
+| C3         C           445-1423-1-ND
+| C4         C           445-1423-1-ND
+| C5         C           445-1423-1-ND
+| C6         C           445-1423-1-ND
+| C7         C           445-1423-1-ND
+| C8         C           445-1423-1-ND
+| C9         C           1276-2728-1-ND
+| C10        C           1276-2728-1-ND
+| D1         LED         Any 1206 LED
+| D2         LTC-4627JR  160-1550-5-ND
+| K1         G6L-1F_DC3  Z1230-ND
+| L1         INDUCTOR    535-11661-1-ND
+| L2         INDUCTOR    535-11661-1-ND
+| P1         CONN_2      A98333-ND
+| P2         CONN_12     STRAIGHT PINS 
+| P3         CONN_6      PROGRAM HEADER
+| P4         CONN_2      A98333-ND
+| P5         CONN_1     
+| P6         CONN_1      
+| P7         CONN_1   
+| P8         CONN_1      
+| P9         CONN_6      PROGRAM HEADER
+| P10        CONN_1      STRAIGHT PINS
+| P11        CONN_1      STRAIGHT PINS
+| P12        CONN_1      STRAIGHT PINS
+| P13        CONN_1      STRAIGHT PINS
+| P14        CONN_1      STRAIGHT PINS
+| P15        CONN_1      STRAIGHT PINS
+| P16        CONN_1      STRAIGHT PINS
+| P17        CONN_2      A98333-ND
+| Q1         NPN         MMBT2222ALT1GOSCT-ND
+| Q2         NPN         MMBT2222ALT1GOSCT-ND
+| Q3         NPN         MMBT2222ALT1GOSCT-ND
+| Q4         NPN         MMBT2222ALT1GOSCT-ND
+| Q5         NPN         MMBT2222ALT1GOSCT-ND
+| Q6         NPN         MMBT2222ALT1GOSCT-ND
+| Q7         NPN         MMBT2222ALT1GOSCT-ND 
+| R1         R           ANY 1206 APPROXIMATELY 300
+| R2         R           ANY 1206 APPROXIMATELY 300
+| R3         R           ANY 1206 APPROXIMATELY 300
+| R4         R           ANY 1206 APPROXIMATELY 300
+| R5         R           ANY 1206 APPROXIMATELY 300
+| R6         R           MAYBE ZERO. DISPLAY PROBABLY HAS INTERNAL RES
+| R7         R           ANY 1206 APPROXIMATELY 10K
+| R8         R           ANY 1206 APPROXIMATELY 180
+| R9         R           ANY 1206 APPROXIMATELY 10K
+| R10        R           ANY 1206 APPROXIMATELY 150
+| R11        R           ANY 1206 APPROXIMATELY 150
+| R12        R           ANY 1206 APPROXIMATELY 150
+| R13        R           ANY 1206 APPROXIMATELY 150
+| R14        R           ANY 1206 APPROXIMATELY 150
+| R15        R           ANY 1206 APPROXIMATELY 150
+| R16        R           ANY 1206 APPROXIMATELY 150
+| R17        R           ANY 1206 APPROXIMATELY 150
+| SW1        SW_PUSH_SMALL CKN9112CT-ND
+| SW2        SW_PUSH_SMALL CKN9112CT-ND
+| SW3        SW_PUSH_SMALL CKN9112CT-ND
+| SW4        SW_PUSH_SMALL CKN9112CT-ND
+| SW5        SW_PUSH_SMALL CKN9112CT-ND
+| U1         NHD-C12832A1Z-FSB-FBW-3V3 NHD-C12832A1Z-FSB-FBW-3V3 
+| U2         16F726      
+| U3         SC189_3.3   SC189ZSKCT-ND
+| U4         SC189_3.3   SC189ZSKCT-ND
+| U5         16F726      
+#End Cmp
+
+#Cmp ( order = Value )
+| C            C1        
+| C            C2        
+| C            C3        
+| C            C4        
+| C            C5        
+| C            C6        
+| C            C7        
+| C            C8        
+| C            C9        
+| C            C10       
+| LED          D1        
+| LTC-4627JR   D2        
+| C6L-1F_DC3   K1        
+| INDUCTOR     L1        
+| INDUCTOR     L2        
+| CONN_2       P1        
+| CONN_12      P2        
+| CONN_6       P3        
+| CONN_2       P4        
+| CONN_1       P5        
+| CONN_1       P6        
+| CONN_1       P7        
+| CONN_1       P8        
+| CONN_6       P9        
+| CONN_1       P10       
+| CONN_1       P11       
+| CONN_1       P12       
+| CONN_1       P13       
+| CONN_1       P14       
+| CONN_1       P15       
+| CONN_1       P16       
+| CONN_2       P17       
+| NPN          Q1        
+| NPN          Q2        
+| NPN          Q3        
+| NPN          Q4        
+| NPN          Q5        
+| NPN          Q6        
+| NPN          Q7        
+| R            R1        
+| R            R2        
+| R            R3        
+| R            R4        
+| R            R5        
+| R            R6        
+| R            R7        
+| R            R8        
+| R            R9        
+| R            R10       
+| R            R11       
+| R            R12       
+| R            R13       
+| R            R14       
+| R            R15       
+| R            R16       
+| R            R17       
+| SW_PUSH_SMALL SW1       
+| SW_PUSH_SMALL SW2       
+| SW_PUSH_SMALL SW3       
+| SW_PUSH_SMALL SW4       
+| SW_PUSH_SMALL SW5       
+| NHD-C12832A1Z-FSB-FBW-3V3 U1        
+| 16F726       U2        
+| SC189_3.3    U3        
+| SC189_3.3    U4        
+| 16F726       U5        
+#End Cmp
+
+#End List

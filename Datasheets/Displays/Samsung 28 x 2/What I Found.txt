@@ -1,0 +1,35 @@
+I have the same LCD (UC242908 SamSung) and I've found this infos.
+
+On the back there is M38067 mcu and the 16 pins connector of the board is wired like this:
+
+16 - pin 74 mcu (P67 / AN7)
+15 - pin 30 mcu (Vss)
+14 - pin 75 mcu (P66 / AN6)
+13 - connected to R7 on the board
+12 - pin 76 mcu (P65 / AN5)
+11 - pin 71 mcu (Vcc)
+10 - pin 77 mcu (P64 / AN4)
+9 - connected to R3 on the board
+8 - pin 78 mcu (P63 / AN3)
+7 - pin 26 mcu (P41)
+6 - pin 79 mcu (P62 / AN2)
+5 - pin 27 mcu (P40)
+4 - pin 80 mcu (P61 / AN1)
+3 - pin 23 mcu (P42 / INT0)
+2 - pin 1 mcu (P60 / AN0)
+1 - pin 22 mcu (P43 / INT1)
+
+I think that data bus is:
+2 - 4 - 6 - 8 - 10 - 12 - 14 - 16
+D0 D1 D2 D3 D4 D5 D6 D7
+
+MCU power:
+11 = + 5v
+15 = gnd
+
+But for 7, 5, 3, 1 I do not understand fonctionnality and
+
+pins 13 and 9 are connected like this (I think that is LCD power but I dont know how to connect):
+
+
+Code: ____R________________________________________ | | | | | | 13 ------- R -------------------------- TR | | | | - ------- T | | | ___ pin 10 mcu (P57 / DA2) | | | + -------------------------- ------------- | | 9 -------- R ----------------- T | GNDWhere R = resistor and T = transistor (npn, pnp ???)

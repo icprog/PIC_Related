@@ -1,0 +1,15 @@
+___awdiv: CODE, 1123 0 93
+_LCDByte: CODE, 841 0 58
+_ADCInit: CODE, 664 0 5
+___awmod: CODE, 1046 0 77
+_LCDWriteInt: CODE, 1216 0 165
+_main: CODE, 1606 0 373
+_LCDInit: CODE, 899 0 72
+__initialization: CODE, 1979 0 67
+_ADCRead: CODE, 725 0 28
+_Init: CODE, 788 0 53
+_LCDGotoXY: CODE, 704 0 21
+_LCDBusyLoop: CODE, 971 0 75
+___wmul: CODE, 753 0 35
+_PID_Calculate: CODE, 1381 0 225
+Total: 1347

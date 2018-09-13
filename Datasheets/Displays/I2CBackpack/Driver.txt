@@ -1,0 +1,42 @@
+
+//////////////////////////////////////////. ////////////////////////////////////
+// This is The Simple CCS Program for I2C (PCF8574T) LCD. Module
+// Auther: Pumrin S.
+// Pin Map:
+// PCF8574T> 20x4 LCD
+// P0> RS
+// P1> R / W
+// P2> E
+// P3> NC
+// P4> D4
+// P5>. D5
+// P6> D6
+// P7> D7
+// Note: The SCL and SDA Pins should be pull-up resister Allway.
+//////////////////////. ////////////////////////////////////////////////// ////// #include <18f4520.h> #include <stdio.h> #include <stdlib.h> #include "Lcd20x4.h" #fuses XT, NOWDT, NOPROTECT, NOLVP #use Delay (Clock = 4000000. ) #use I2C (Master, sda = PIN_C4, SCL = PIN_C3) #define LCDADDR // Default Slave address 0x70 0x08 #define ON OFF 0x00 #define #define LCD_SET_BIT (x) Fetch_data (x) = LCD_ADDR byte 0x4E; // I2C. Slave address for Funduino LCD Module Data Transmittion // void transceiver (unsigned char Data)    {         I2c_start ();         I2c_write (LCD_ADDR); // The Slave addresse         I2c_write (Data);            I2c_stop ();    } // Enable Pin during Clocking The LCD's. Data transmit void Fetch_data (unsigned char Data)    {         Data = Data | 0b00000100; // Set Pin E is a 1         transceiver (Data);         delay_ms (1);         Data = Data-4; // Toggle E back to 0         transceiver (Data. );         delay_ms (1);    } void Lcd_init () {    // Request Works on The Command Set by The RS = 0 R / W = 0 write         LCD_SET_BIT (0x00);         LCD_SET_BIT (0x10);         LCD_SET_BIT (0x00);         LCD_SET_BIT (0x00. );         LCD_SET_BIT (0x10);            // First State in 8 bit Mode         LCD_SET_BIT (0x30);         LCD_SET_BIT (0x30);            // Then Set to 4-bit Mode         LCD_SET_BIT (0x30);         LCD_SET_BIT (0x20);            // Mode 4 Bits,. 2 Lines, characters 5 x 7 (28 h)         LCD_SET_BIT (0x20);         LCD_SET_BIT (0x80);            // Need no cursor on (0Ch)         LCD_SET_BIT (0x00);         LCD_SET_BIT (0xc0);            // The Moves cursor to The left (06. h)         LCD_SET_BIT (0x00);         LCD_SET_BIT (0x60);            // Clears The display         LCD_SET_BIT (0x00);         LCD_SET_BIT (0x10); } void Lcd_clear () {     LCD_SET_BIT (0x00);     LCD_SET_BIT (0x10); } // Need The Backlight lid. . void Lcd_backlight (byte State) {   LCD_SET_BIT (0x00);   LCD_SET_BIT (State); } // Display The Character on LCD Screen. void display (char In_data) {         char Data;         Data = In_data & 0xf0;         Data = Data + 1; //. RS Pin Set to 1         Fetch_data (Data);         Data = In_data & 0x0F;         Data = Data << 4;         Data = Data + 1; // Set RS Pin to 1         Fetch_data (Data); } // Make The x / Y Pointer Lcd_goto_xy void. (byte x, byte Y) {   byte Ptr1, Ptr2;   Fetch_data (0x10);   Fetch_data (0x00);   Switch (Y)   {    Case 1:           Ptr1 = Line_1 [x] & 0xf0; // stamp The High bit           Ptr2 = Line_1 [x. ] & 0x0F; // stamp The Low bit      Break;    Case 2:            Ptr1 = Line_2 [x] & 0xf0;           Ptr2 = Line_2 [x] & 0x0F;      Break;    Case 3:           Ptr1 = Line_3 [x] & 0xf0;           Ptr2 = Line_3 [x] & 0x0F. ;      Break;    Case 4:            Ptr1 = Line_4 [x] & 0xf0;           Ptr2 = Line_4 [x] & 0x0F;      Break;    Default:           Fetch_data (0x80);           Fetch_data (0x00);      Break;   }           Ptr2 = Ptr2 << 4;           Fetch_data (Ptr1). ;           Fetch_data (Ptr2);          } void main () {   char LED = 0;   delay_ms (20);   Lcd_init ();         Lcd_goto_xy (0,1);         display ("ABCDEFGHIJKLMNOPQRST");         Lcd_goto_xy (0,2);         display (". 12345678901234567890 ");         Lcd_goto_xy (0,3);         display ("aaaaaaaaaaaaaaaaaaaa");         Lcd_goto_xy (6,4);         display ("It's Work. !!!");         Lcd_backlight (ON);      while (1); }.
+
+
+
+Lcd20x4.h file details
+// *** *** START LCD Command
+LCD_CLEAR_SCREEN 0B00000001 #define
+#define LCD_RETURN_HOME 0B00000010 // Entry Mode Set (BIT2 = 1) #define LCD_ENTRY_MODE 0B00000100 INCREMENTS_LCD 0B00000010 #define #define DECREMENTS_LCD 0B00000000 NO_SCROLL_LCD 0B00000000 #define #define SCROLL_LCD 0B00000001 /. / Display ON / OFF (BIT3 = 1) #define DISPLAY_LCD 0B00001000 LCD_ON 0B00000100 #define #define LCD_OFF 0B00000000 LCD_CURSOR_ON 0B00000010 #define #define LCD_CURSOR_OFF 0B00000000 LCD_BLINK_ON 0B00000001 #define #define LCD_BLINK_OFF 0B00000000 // Scroll Display / Cursor Shift (BIT4 = 1). #define LCD_SCROLL_SHIFT 0B00010000 LCD_SHIFT_CURSOR 0B00000000 #define #define LCD_SHIFT_DISPLAY 0B00001000 LCD_SHIFT_LEFT 0B00000000 #define #define LCD_SHIFT_RIGHT 0B00000100 // Function Set (BIT5 = 1) #define LCD_FUNCTION_SET 0B00100000 LCD4BIT_MODE 0B00000000 #define #define LCD8BIT_MODE 0B00010000 LCD_LINE1 0B00000000 #define #define LCD_LINE2 0B00001000 #. LCD_FONT_5X7 0B00000000 define #define LCD_FONT_5X10 0B00000100 // Move To CGRAM Address (BIT6 = 1) #define LCD_CGRAM_ADDRESS 0B01000000 // Move To DDRAM Address (BIT7 = 1) #define LCD_DDRAM_ADDRESS 0B10000000 LCD Command *** END *** // //. Prepare x, Y address byte // line1 = 80H, 94H = Line2 = C0H line3, line4 = D4h // 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 80 81 82 // 1. 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F 90 91 92 93 C0 C1 C2 C3 C4 C5 // 2 C6 C7 C8 C9 CA CB CC CD D0 D1 D2 D3 CE CF // 3 94 95 96 97 98 99 9A. 9B 9C 9D 9E 9F A0 A1 A2 A3 A4 A5 A6 A7 D4 D5 D6 D7 D8 D9 // 4 DA DB DC DE E0 E1 E2 E3 E4 E5 DF E6 E7 E8 byte. line_1[20]={0x80,0x81,0x82,0x83,0x84,                  0x85,0x86,0x87,0x88,0x89,                  0x8A,0x8B,0x8C,0x8D,0x8E,                  0x8F,0x90,0x91,0x92,0x93}; byte line_2[20]={0xC0,0xC1,0xC2,0xC3,0xC4,                  0xC5,0xC6,0xC7,0xC8,0xC9,                  0xCA,0xCB,0xCC,0xCD,0xCE,                  0xCF,0xD0,0xD1,0xD2,0xD3}; byte line_3[20]={0x94,0x95,0x96,0x97,0x98,                  0x99,0x9A,0x9B,0x9C,0x9D,                  0x9E,0x9F,0xA0,0xA1,0xA2,                  0xA3,0xA4,0xA5,0xA6,0xA7};  byte line_4[20]={0xD4,0xD5,0xD6,0xD7,0xD8,                  0xD9,0xDA,0xDB,0xDC,0xDE,                  0xDF,0xE0,0xE1,0xE2,0xE3,                  0xE4,0xE5,0xE6,0xE7,0xE8};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

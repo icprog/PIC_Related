@@ -1,0 +1,1057 @@
+;GSCOP350.ASM 02MAR01 - JOHN BECKER - EPE GRAPHICS LCD SCOPE
+	list p = 16f877
+	include <p16f877.inc>
+;PIC16F876-20, 5MHz, WDT OFF, POR ON, XTAL XS
+
+;Config register bits (all PIC TOOLKIT MK2 defaults except for oscillator)
+; CP1 CP0 DBG NIL WRT CPD LVP BOR CP1 CP0 POR WDT OS1 OS0
+;  1   1   1   1   1   1   0   0   1   1   0   0   1   0
+;N.B. Logic 1/0 do NOT necessarily mean that the function is On/Off
+;respectively - refer to PIC '87 data sheet.
+
+#DEFINE PAGE0   BCF $03,5   ;STATUS bit 5
+#DEFINE PAGE1   BSF $03,5   ;STATUS bit 5
+#DEFINE BLOCK0  BCF $03,7   ;STATUS bit 7
+#DEFINE BLOCK1  BSF $03,7   ;STATUS bit 7
+;BLOCK0 used for indirect addressing to BANKS 0 & 1, clearing IRP bit
+;BLOCK1 used for indirect addressing to BANKS 2 & 3, setting  IRP bit
+
+INDF:    .EQU $00  ;page 0, 1, 2, 3
+OPTION:  .EQU $01  ;page 1, 3
+PCL:     .EQU $02  ;page 0, 1, 2, 3
+STATUS:  .EQU $03  ;page 0, 1, 2, 3
+FSR:     .EQU $04  ;page 0, 1, 2, 3
+
+PORTA:   .EQU $05  ;page 0
+TRISA:   .EQU $05  ;page 1
+PORTB:   .EQU $06  ;page 0, 2
+TRISB:   .EQU $06  ;page 1, 3
+PORTC:   .EQU $07  ;page 0
+TRISC:   .EQU $07  ;page 1
+PORTD:   .EQU $08  ;page 0
+TRISD:   .EQU $08  ;page 1
+PORTE:   .EQU $09  ;page 0
+TRISE:   .EQU $09  ;page 1
+INTCON:  .EQU $0B  ;page 0, 1, 2, 3
+ADRESH:  .EQU $1E  ;page 0
+ADRESL:  .EQU $1E  ;page 1
+ADCON0:  .EQU $1F  ;page 0
+ADCON1:  .EQU $1F  ;page 1
+
+;*** VARIABLES ONLY ACCESSABLE THROUGH BLOCK 0, PAGE 0 *******
+
+ADC0:    .EQU $20  ; ADC storage set, extends to $5F (64 samples)
+
+TIMOUT0: .EQU $60  ; sync time-out counter LSB
+TIMOUT1: .EQU $61  ; sync time-out counter MSB
+FOSC:    .EQU $62  ; ADC sampling rate value
+FRQCNT1: .EQU $63  ; freq counter LSB
+FRQCNT2: .EQU $64  ; freq counter MSB
+STORE:   .EQU $65  ; general store used in freq counter
+STORE1:  .EQU $66  ; general store used in freq counter
+STORE2:  .EQU $67  ; general store used in freq counter
+MARK1:   .EQU $68  ; hi-lo flag for freq counter
+MARK2:   .EQU $69  ; hi-lo flag for freq counter
+MIN:     .EQU $6A  ; min val store for volts calc
+MAX:     .EQU $6B  ; max val store for volts calc
+ADCTEMP: .EQU $6C  ; temp val used during data config for LCD
+SWITCH:  .EQU $6D  ; switch status flags
+spare6E: .EQU $6E  ; spare
+spare6F: .EQU $6F  ; spare
+
+;******** VARIABLES ACCESSED THROUGH ALL PAGES & BLOCKS ********
+
+LOOPA:   .EQU $70   ; waveform byte sample counter
+LOOPB:   .EQU $71   ; general loop used in SETUP
+LOOPC:   .EQU $72   ; general loop used in SETUP
+LOOPD:   .EQU $73   ; column counter
+LOOPE:   .EQU $74   ; sample/line counter
+ADCADR:  .EQU $75   ; ADC block address
+CLKCNT:  .EQU $76   ; counter for PAUSE val
+ADRLSB:  .EQU $77   ; LCD low address
+ADRMSB:  .EQU $78   ; LCD high address
+ATTRIB:  .EQU $79   ; temp store used in LCD output routines
+TEMPA:   .EQU $7A   ; temp store used in LCD output routines
+COLUMN:  .EQU $7B   ; column length holder
+PEAKLO:  .EQU $7C   ; waveform sample min for graph
+PEAKHI:  .EQU $7D   ; waveform sample max for graph
+LOBIT:   .EQU $7E   ; rotating bit for 8-bit column
+spare7F: .EQU $7F   ; spare
+
+;******* variables in BLOCK 0, PAGE 1 ********
+
+ADC1:    .EQU $A0   ; ADC storage set for 2nd SET of 64 samples
+                    ; extends to $EF
+
+;******* variables in BLOCK 2, PAGE 2 ********
+
+MEM0:    .EQU $20   ; start of memory for 64 screen line samples
+                    ; extends to $5F
+
+;******* variables in BLOCK 2, PAGE 3 ********
+
+COUNTER1: .EQU $20      ;counter used in decimalisation
+COUNTER2: .EQU $21      ;counter used in decimalisation
+COUNT0: .EQU $22        ;holds bin val to be decimalised LSB
+COUNT1: .EQU $23        ;holds bin val to be decimalised NSB
+COUNT2: .EQU $24        ;holds bin val to be decimalised MSB
+DIGIT1: .EQU $25        ;decimalised digit 1
+DIGIT2: .EQU $26        ;decimalised digit 2
+DIGIT3: .EQU $27        ;decimalised digit 3
+DIGIT4: .EQU $28        ;decimalised digit 4
+DIGIT5: .EQU $29        ;decimalised digit 5
+DIGIT6: .EQU $2A        ;decimalised digit 6
+DIGIT7: .EQU $2B        ;decimalised digit 7
+DIGIT8: .EQU $2C        ;decimalised digit 8
+
+;******* FIXED VALUES FOR COMMANDS *********
+
+TXHOME: .EQU $40   ; text home address command
+TXAREA: .EQU $41   ; text area (columns) address command
+GRHOME: .EQU $42   ; graphics home address command
+GRAREA: .EQU $43   ; graphic area (columns) address command
+AWRON:  .EQU $B0   ; autowrite on command
+AWROFF: .EQU $B2   ; autowrite off command
+OFFSET: .EQU $22   ; offset command
+ADPSET: .EQU $24   ; address set command
+PEEK:   .EQU $E0   ; screen peek command
+CSRPOS: .EQU $21   ; set cursor position command
+
+;******* BIT VALUES ******
+
+W:      .EQU 0          ; working reg
+F:      .EQU 1          ; file reg
+Z:      .EQU 2          ; ZERO status
+C:      .EQU 0          ; CARRY status
+DC:     .EQU 1          ; DIGIT CARRY status
+RP0:    .EQU 5          ; STATUS BLOCK0 (BANKS0/1) reg
+RP1:    .EQU 6          ; STATUS BLOCK1 (BANKS2/3) reg
+
+GIE:    .EQU 7          ; INTCON reg
+GO:     .EQU 2          ; ADCON0 reg
+FS:     .EQU %00000000  ; FS mode set by bit 5: 1 = 6x8, 0 = 8x8
+                        ; 8x8 needed for EPE demos
+
+;..........
+
+;        .ORG 0
+;        goto 5
+;        nop
+;        nop
+;        nop
+        .ORG $0004      ; Interrupt vector address
+        GOTO GIEOFF     ; Jump to interrupt routine on interrupt
+        .ORG $0005      ; Start of program memory
+
+GIEOFF: BCF INTCON,GIE  ; turn off global interrupts
+        BTFSC INTCON,GIE
+        goto GIEOFF
+        goto START
+
+FREQVAL: movf FOSC,W
+        addwf PCL,F     ;table for freq factor routing
+        goto GETFREQ0
+        goto GETFREQ1
+        goto GETFREQ2
+
+TABLE1: ADDWF PCL,F
+        retlw 'G'
+        retlw '-'
+        retlw 'S'
+        retlw 'C'
+        retlw 'O'
+        retlw 'P'
+        retlw 'E'
+        retlw ' '
+        retlw ' '
+        retlw ' '
+        retlw 'R'
+        retlw 'A'
+        retlw 'T'
+        retlw 'E'
+        retlw ' '
+        retlw ' '
+
+        retlw 'V'
+        retlw 'p'
+        retlw '-'
+        retlw 'p'
+        retlw ' '
+        retlw ' '
+        retlw ' '
+        retlw ' '
+        retlw ' '
+        retlw ' '
+        retlw ' '
+        retlw 'H'
+        retlw 'z'
+
+;**************
+
+START:  bcf STATUS,RP0
+        bcf STATUS,RP1
+        BLOCK0
+        clrf PORTA
+        clrf PORTB
+        movlw %00001111     ; FS low, RST low, CD CE RD WR high
+        movwf PORTC
+        clrf PORTD
+        clrf PORTE
+        PAGE1
+        movlw 255
+        movwf TRISA         ; PORTA as input
+        movwf TRISB         ; PORTB as input
+        movlw FS
+        movwf TRISC         ; PORTC as output GRAPHIC LCD control/FS
+        clrf TRISD          ; PORTD as output GRAPHIC LCD D0-D7
+        clrf TRISE          ; PORTE as output
+        movlw %00000110     ; pull-up Rs on (bit 7 lo), timer 1/25 sec
+        movwf OPTION        ; (for 3.2768MHz xtal)
+        movlw %00000100     ; set LHS justify, RA0, RA1, RA3 as analog inputs
+        movwf ADCON1        ; with RA, RE digital, ref to +VE and 0V
+        PAGE0
+        movlw %00011111     ; FS low,  RST CD CE RD WR high
+        movwf PORTC
+
+        movlw %00000001     ; set AD on, Fosc/2
+        movwf ADCON0
+
+        call PAUSIT         ; 1/5th sec pause
+
+        movlw 16
+        movwf COLUMN      ; set column length
+        call SETUP
+
+        movlw %10011100   ; text on, graphic on, cursor & blink off
+        call SENDCMD      ; send command
+
+WORDS:  clrf ADRMSB       ; SHOW TEXT
+        movlw 0           ; set column
+        call LINE0        ; set cell number for line stated
+        movlw 16          ; character quantity
+        movwf LOOPC       ;
+        clrf LOOPB        ; clear table loop counter
+        call SHWTXT       ;
+
+        clrf ADRMSB
+        movlw 3           ; set column
+        call LINE7        ; set cell number for line stated
+        movlw 13          ; character quantity
+        movwf LOOPC       ;
+        call SHWTXT       ;
+        call GETRATE
+
+        movlw %10000000
+        movwf SWITCH
+
+;............................
+
+MAIN:    bsf ADCON0,GO     ; start data conversion
+         btfsc PORTB,1     ; is sync needed?
+         goto SAMPLE1      ; no
+         clrf TIMOUT0      ; yes, clear timeout counters
+         clrf TIMOUT1
+
+;.........get sync
+
+WAITS1:  btfsc ADCON0,GO
+         goto WAITS1 
+         movf ADRESH,W     ;get ADC val
+;         comf ADRESH,W     ;get  & invert ADC val
+         bsf ADCON0,GO     ;start data conversion for next sample
+         decfsz TIMOUT0,F
+         decfsz TIMOUT1,F
+         goto WAITS1A
+         goto SAMPLE1
+WAITS1A: addlw 114
+         btfss STATUS,C
+         goto WAITS1
+
+WAITS2:  btfsc ADCON0,GO
+         goto WAITS2 
+         movlw 120
+         subwf ADRESH,W    ;sub 120 from ADC val
+         bsf ADCON0,GO     ;start data conversion for next sample
+         decfsz TIMOUT0,F
+         decfsz TIMOUT1,F
+         goto WAITS2A
+         goto SAMPLE1
+WAITS2A: btfsc STATUS,C
+         goto WAITS2
+
+WAITS3:  btfsc ADCON0,GO
+         goto WAITS3 
+;         movf ADRESH,W     ;get ADC val
+         comf ADRESH,W     ;get & invert ADC val
+         bsf ADCON0,GO     ;start data conversion for next sample
+         decfsz TIMOUT0,F
+         decfsz TIMOUT1,F
+         goto WAITS3A
+         goto SAMPLE1
+WAITS3A: addlw 128
+         btfss STATUS,C
+         goto WAITS3
+
+;....... get 2 consecutive 64-byte data blocks from ADC
+
+SAMPLE1: movlw ADC0        ;set store address at ADC0 BLOCK0
+         movwf FSR
+         movlw 64
+         movwf LOOPE
+
+WAITAD0: btfsc ADCON0,GO
+         goto WAITAD0
+;         movf ADRESH,W     ;get ADC val
+         comf ADRESH,W     ;get & invert ADC val
+         bsf ADCON0,GO     ;start data conversion for next sample
+         movwf INDF        ;put it out to mem
+         incf FSR,F        ;inc store address
+         decfsz LOOPE,F
+         goto WAITAD0
+
+         movlw ADC1        ;set store address at ADC1 BLOCK0
+         movwf FSR
+         bsf LOOPE,6
+
+WAITAD1: btfsc ADCON0,GO
+         goto WAITAD1
+;         movf ADRESH,W     ; get ADC val
+         comf ADRESH,W     ;get & invert ADC val
+         bsf ADCON0,GO     ;start data conversion for next sample
+         movwf INDF        ;put it out to mem
+         incf FSR,F        ;inc store address
+         decfsz LOOPE,F
+         goto WAITAD1
+
+         clrf LOOPA
+         clrf LOOPD
+
+;...........
+
+         movlw ADC0        ; config & send data ADC0 BLOCK 0 to screen
+         movwf ADCADR      ; samples need limiting to value of 63 max
+         movwf FSR
+
+         rrf INDF,W        ; divide by 2
+         movwf ADCTEMP
+         rrf ADCTEMP,W     ; divide by 2 again and clear bits 6&7
+         andlw %00111111
+         movwf PEAKLO      ; move into PEAKLO (setting screen start val)
+
+BLK0:    movlw %10000000   ; indicates which bit of column is affected
+         movwf LOBIT
+         call SCOPE1       ; config & send to LCD
+         incf LOOPD,F      ; inc to next column
+         btfss LOOPD,3     ; has column 8 been reached?
+         goto BLK0         ; no
+
+         movlw ADC1        ; config & send data ADC1 BLOCK 0 to screen
+         movwf ADCADR
+BLK1:    movlw %10000000   ; indicates which bit of column is affected
+         movwf LOBIT
+         call SCOPE1       ; config & send to LCD
+         incf LOOPD,F      ; inc to next column
+         btfss LOOPD,4     ; has column 16 been reached?
+         goto BLK1         ; no
+
+         btfsc SWITCH,7    ; is text off?
+         call FREQVAL      ; no, show freq & volts
+         call TESTIT       ; get switches status
+         goto MAIN         ; start again at screen left
+
+;********** START OF SCOPE SUB-ROUTINES ***************
+
+SCOPE1: movf LOOPA,W      ; copy ADC loop val into PEAKHI
+        addwf ADCADR,W
+        movwf FSR         ;
+        rrf INDF,W        ; divide by 2
+        movwf ADCTEMP
+        rrf ADCTEMP,W     ; divide by 2 again and clear bits 6&7
+        andlw %00111111
+        movwf ADCTEMP     ; store for later use
+        movwf PEAKHI      ; and move into PEAKHI
+        subwf PEAKLO,W    ; is PEAKHI > PEAKLO ? (subtract hi from lo)
+        btfss STATUS,C    ; is there a borrow?
+        goto SCOPE2       ; yes
+
+        movf PEAKLO,W     ; no, so swap lo & hi
+        movwf PEAKHI
+        movf ADCTEMP,W
+        movwf PEAKLO
+
+SCOPE2: call SETMEM       ; config LCD memory store
+        movf ADCTEMP,W    ; store current val into PEAKLO
+        movwf PEAKLO
+        incf LOOPA,F      ; inc wavform counter
+        bcf LOOPA,6       ; limit to 64 max
+
+        bcf STATUS,C
+        rrf LOBIT,F       ; shift right bitting setting val
+        btfss STATUS,C    ; is CARRY set? (stating all 8 bits of col done)
+        goto SCOPE1       ; no
+        call SHOWMEM      ; display results on screen
+        return
+
+;************ config LCD memory store
+
+SETMEM: BLOCK1
+        movlw MEM0        ; set address for 1st affected LCD store memory
+        addwf PEAKLO,W
+        movwf FSR         ;
+        movf PEAKLO,W     ; set loop to val of PEAKLO
+        movwf LOOPE
+        movf LOBIT,W
+        iorwf INDF,F      ; (MEM0) set new bit
+
+SCOPE3: movf LOOPE,W      ; is loop = peakhi?
+        xorwf PEAKHI,W
+        btfsc STATUS,Z
+        goto SCOPE4
+        movf LOBIT,W      ; no
+        iorwf INDF,F      ; (MEM0) set new bit
+        incf LOOPE,F
+        btfsc LOOPE,6
+        goto SCOPE4
+        incf FSR,F
+        goto SCOPE3
+SCOPE4: BLOCK0
+        return
+
+;************ send 8-bit column to screen
+
+SHOWMEM: movlw MEM0
+        addlw 63
+        movwf FSR
+        movlw 64
+        movwf LOOPE       ; set loop val (number of lines)
+        movlw 2           ; set graphic base address ($02xx)
+        movwf ADRMSB
+        movf LOOPD,W      ; set column
+        movwf ADRLSB
+
+SCOPE5: call SCREENADR    ; set screen write address
+        movlw AWRON       ; AUTO WRITE ON
+        call SENDCMD      ; send command
+        call CHECK3       ; read status for DA0/DA1 = 3
+        BLOCK1
+        movf INDF,W       ; get value, clear store
+        clrf INDF,F
+        BLOCK0
+        decf FSR,F
+        call OUTDATA      ;
+        movlw AWROFF      ; AUTO WRITE OFF
+        call SENDCMD      ; send command
+
+        decf LOOPE,F
+        btfsc STATUS,Z
+        return
+        movf COLUMN,W     ; set for next line
+        addwf ADRLSB,F
+        btfsc STATUS,0    ; add CARRY (if any) to MSB
+        incf ADRMSB,F
+        goto SCOPE5       ; repeat until done
+
+;.......Frequency & Volts get & display
+
+   ;Prototype values (LSB/MSB) set with freq gen at 4000Hz, counter at 4000Hz
+   ;Fosc=0 ...70/85  Approx best max - Gen at 17007Hz counter showed 16984Hz
+   ;Fosc=1 ...110/77 Approx best max - Gen at 17007Hz counter showed 16998Hz
+   ;Fosc=2 ...128/24 Approx best max - Gen at 5827Hz counter showed 5812Hz
+
+GETFREQ0: movlw 70         ;freq factor lsb ... for Fosc=0 ...70/85
+         movwf STORE       ;sample counter lsb
+         movlw 85          ;freq factor msb
+         movwf STORE1      ;sample counter msb
+         goto GF0
+
+GETFREQ1: movlw 110        ;freq factor lsb ... for Fosc=1 ...110/77
+         movwf STORE       ;sample counter lsb
+         movlw 77          ;freq factor msb
+         movwf STORE1      ;sample counter msb
+         goto GF0
+
+GETFREQ2: movlw 128        ;freq factor lsb ... for Fosc=2 ...128/24
+         movwf STORE       ;sample counter lsb
+         movlw 24          ;freq factor msb
+         movwf STORE1      ;sample counter msb
+
+GF0:     bsf ADCON0,GO     ;start data conversion for next sample
+         clrf FRQCNT1      ;freq counter lsb
+         clrf FRQCNT2      ;freq counter msb
+
+GF1:     btfsc ADCON0,GO
+         goto GF1
+
+;         movf ADRESH,W     ;get ADC val
+         comf ADRESH,W     ;get & invert ADC val
+         movwf STORE2
+         bsf ADCON0,GO     ;start data conversion for next sample
+CHKPOS:  movlw 120         ;is ADC >136
+         addwf STORE2,W
+         btfss STATUS,C
+         goto CPOS1
+         bsf MARK2,0
+         goto CHKNEG
+
+CPOS1:   bcf MARK2,7       ;dummy action to maintain timing
+
+CHKNEG:  movlw 136
+         addwf STORE2,W
+         btfsc STATUS,C
+         goto CNEG1
+         bcf MARK2,0
+         goto MARKIT
+
+CNEG1:   bcf MARK2,7       ;dummy action to maintain timing
+
+MARKIT:  movf MARK2,W      ;compare MARK1 & 2, add result (1 or 0) to count
+         xorwf MARK1,W
+         addwf FRQCNT1,F
+         movf STATUS,W
+         andlw 1
+         addwf FRQCNT2,F
+
+GF4:     movf MARK2,W
+         movwf MARK1
+         decfsz STORE,F    ;dec counter
+         goto GF1          
+         decfsz STORE1,F   ;dec counter
+         goto GF1          
+
+GETVOLTS: movlw ADC0
+         movwf FSR
+         movlw 255
+         movwf MIN
+         clrf MAX
+
+         BLOCK0
+         call GV1
+         movlw ADC1
+         movwf FSR
+         call GV1
+         goto GV5
+
+;...........
+
+GV1:     movlw 64
+         movwf LOOPE
+
+GV2:     movf INDF,W       ;is ADC < MIN ? (sub ADC from MIN)
+         subwf MIN,W
+         btfss STATUS,C    ;is there a borrow
+         goto GV3          ;yes
+         movf INDF,W
+         movwf MIN
+GV3:     movf MAX,W        ;is ADC > MAX ? (sub MAX from ADC)
+         subwf INDF,W    
+         btfss STATUS,C    ;is there a borrow
+         goto GV4          ;no
+         movf INDF,W
+         movwf MAX
+GV4:     incf FSR,F
+         decfsz LOOPE,F
+         goto GV2
+         return
+
+;.........
+
+GV5:     movf MIN,W       ; sub MIN from MAX
+         subwf MAX,W
+
+         PAGE1            ; decimalisation variables held in BANK3
+         bsf STATUS,RP1
+         movwf COUNT0     ; move MAX-MIN val into COUNT0
+         clrf COUNT2
+         clrf COUNT1
+         bcf STATUS,C
+         rlf COUNT0,F      ; multiply by 2
+         rlf COUNT1,F
+         call DECIMAL
+         bcf STATUS,RP1
+         PAGE0
+
+SHOWVOLTS:
+        clrf ADRMSB
+        movlw 0            ; set column
+        call LINE7         ; set line
+        call SCREENADR     ; set screen write address
+        movlw AWRON        ; AUTO WRITE ON
+        call SENDCMD       ; send command
+
+        movlw DIGIT3,W
+        iorlw %10000000
+        movwf FSR
+
+        BLOCK1
+        movf INDF,W        ; decimal values held in BLOCK1
+        BLOCK0
+        iorlw 16
+        call AUTOWRITE     ; auto write and increment
+        movlw '.'
+        addlw 224
+        call AUTOWRITE     ; auto write and increment
+        decf FSR,F
+        BLOCK1
+        movf INDF,W        ; decimal values held in BLOCK1
+        BLOCK0
+        iorlw 16
+        call AUTOWRITE     ; auto write and increment
+
+        movlw AWROFF       ; AUTO WRITE OFF
+        call SENDCMD       ; send command
+
+SHOWFREQ: movf FRQCNT1,W   ; BANK0 get freq val LSB
+         PAGE1
+         bsf STATUS,RP1
+         movwf COUNT0      ; BANK3
+         bcf STATUS,RP1
+         PAGE0
+
+         movf FRQCNT2,W    ; BANK0 get freq val MSB
+         PAGE1
+         bsf STATUS,RP1
+         movwf COUNT1      ; BANK3
+         clrf COUNT2       ; BANK3
+
+         call DECIMAL      ; BANK3
+         bcf STATUS,RP1
+         PAGE0
+
+        clrf ADRMSB
+        movlw 9            ; set column
+        call LINE7         ; set line
+        call SCREENADR     ; set screen write address
+        movlw AWRON        ; AUTO WRITE ON
+        call SENDCMD       ; send command
+
+        movlw DIGIT5,W
+        iorlw %10000000
+        movwf FSR
+        movlw 5
+        movwf LOOPE
+SD1:    BLOCK1
+        movf INDF,W        ; decimal values held in BLOCK1
+        BLOCK0
+        call AUTOWRITE     ; auto write and increment
+        decf FSR,F
+        decfsz LOOPE,F
+        goto SD1
+        movlw AWROFF       ; AUTO WRITE OFF
+        call SENDCMD       ; send command
+        return
+
+
+;............. Modified BIN-DEC ROUTINE from Peter Hemsley 07JUN00
+;              converts 24-bit binary (3 bytes) to decimal
+
+DECIMAL:                  ;decimalise binary number ALL VALS IN BANK3
+                          ;on entry COUNT0-2 holds number to be decimalised
+                          ;answer goes into DIGIT1-8
+        BLOCK1
+        call BINDEC
+        call BLANK0       ;blank leading zeros
+        BLOCK0
+        return
+
+BINDEC: call CLRDIG       ;reset DIGITs
+        movlw 24          ;24 bits to do
+        movwf COUNTER1
+        goto SHIFT1
+
+ADJBCD  movlw DIGIT1
+        iorlw %10000000
+        movwf FSR         ;pointer to digits
+        movlw 7           ;7 digits to do (Digit 8 never >4)
+        movwf COUNTER2    ;if Digit > 4 then digit = digit + 3
+        movlw 3           ;check for Digit > 4 by adding 3 to it
+ADJLOOP: addwf INDF,F     ;and test bit 3 of result
+        btfss INDF,3      ;is it greater than 7?
+        subwf INDF,F      ;restore to original
+        incf FSR,F        ;next digit
+        decfsz COUNTER2,F
+        goto ADJLOOP
+
+SHIFT1: call SLCNT        ;shift MSB into Carry
+
+SLDEC:  movlw DIGIT1      ;shift Carry and Digits 1 bit left
+        iorlw %10000000
+        movwf FSR         ;pointer to digits
+        movlw 8           ;8 Digits to do
+        movwf COUNTER2
+
+SLDLOOP:                  ;after RLF if bit 4 is set then shift 1
+        rlf INDF,F        ;into LSB of next Digit else shift 0
+        btfsc INDF,4      ;test for BCD carry
+        bsf STATUS,C      ;set Carry for next Digit (cleared by RLF)
+        bcf INDF,4        ;clear BCD overflow (if any)
+        incf FSR,F        ;next Digit
+        decfsz COUNTER2,F
+        goto SLDLOOP
+
+        decfsz COUNTER1,F ;next bit
+        goto ADJBCD
+        return
+
+SLCNT:  rlf COUNT0,F      ;LSB
+        rlf COUNT1,F      ;shift left count 0-2
+        rlf COUNT2,F      ;MSB
+        return
+
+CLRDIG: clrf DIGIT1       ;lsd
+        clrf DIGIT2
+        clrf DIGIT3
+        clrf DIGIT4
+        clrf DIGIT5
+        clrf DIGIT6
+        clrf DIGIT7
+        clrf DIGIT8       ;msd
+        return
+
+BLANK0: movlw 8           ; blank leading zeros
+        movwf LOOPA
+        movlw DIGIT8
+        iorlw %10000000
+        movwf FSR
+BLANK1: movf INDF,W
+        btfss STATUS,Z
+        goto BLANK2
+        movlw ' '
+        addlw 224
+        movwf INDF
+        decf FSR,F
+        decfsz LOOPA,F
+        goto BLANK1
+        movlw 16
+        iorwf DIGIT1,F
+        return
+
+BLANK2: movlw 16
+        iorwf INDF,F
+        decf FSR,F
+        decfsz LOOPA,F
+        goto BLANK2
+        return
+
+;..........
+
+TESTIT: btfss PORTB,0     ; test bit 0 of Port B, is it high?
+        goto TSTPRV       ; no, it's = 0 so go to TSTPRV
+        bcf SWITCH,0      ; clear bit 0 of SWITCH
+        btfss PORTB,2     ; test bit 2 of Port B, is it high?
+        goto TSTPRV2      ; no, it's = 0 so go to TSTPRV
+        bcf SWITCH,2      ; clear bit 2 of SWITCH
+        return            ; return
+TSTPRV: btfsc SWITCH,0    ; test bit 0 of SWITCH, is it clear?
+        return            ; no, it's = 1 so return
+        movlw %01000000   ; yes, it's = 0 so inc ADCON0 rate count
+        addwf ADCON0,F    ;
+        movf ADCON0,W     ; get COUNT
+        andlw %11000000
+        xorlw %11000000
+        btfss STATUS,Z
+        goto TP2
+        bcf ADCON0,6
+        bcf ADCON0,7
+
+TP2:    bsf SWITCH,0      ; set bit 0 of SWITCH
+
+GETRATE: swapf ADCON0,W   ; set ADC sampling rate
+         andlw %00001100
+         movwf FOSC
+         bcf STATUS,C 
+         rrf FOSC,F
+         rrf FOSC,F
+
+         clrf ADRMSB
+         movlw 15          ; set column
+         call LINE0        ; set line
+         movf FOSC,W
+         addlw 16
+         call ONEWRITE
+         return
+
+TSTPRV2: btfsc SWITCH,2    ; test bit 2 of SWITCH, is it clear?
+        return             ; no, it's = 1 so return
+        movlw 128          ; set toggle flag for text on/off
+        addwf SWITCH,F
+
+        movlw %10011000    ; text off, graphic on, cursor & blink off
+        btfsc SWITCH,7
+        movlw %10011100    ; text on, graphic on, cursor & blink off
+        call SENDCMD       ; send command
+        bsf SWITCH,2       ; set bit 2 of SWITCH
+        return
+
+;********** START OF LCD SUB-ROUTINES ***************
+
+ONEWRITE: ;  ** WRITE SINGLE BYTE **
+        movwf ATTRIB      ; temp store val brought in on W
+        call SCREENADR    ; set screen write address - vals preset at call
+        movlw AWRON       ; AUTO WRITE ON
+        call SENDCMD      ; send command
+        call CHECK3       ; read status for DA0/DA1 = 3
+        movf ATTRIB,W
+        call OUTDATA      ;
+        movlw AWROFF      ; AUTO WRITE OFF
+        call SENDCMD      ; send command
+        return
+;............
+
+AUTOWRITE: ; ** AUTO WRITE ROUTINE **
+        movwf TEMPA       ; temp store value brought in on W
+        call CHECK8       ; read status for DA3 = 8
+        movf TEMPA,W      ; WRITE DATA
+        call OUTDATA      ;
+        return            ;
+
+;..............
+
+CMDADR: ; ** SET ADDRESS FOR COMMAND SENDING **
+        call CHECK3       ; read status for DA0/DA1 = 3
+        movf ADRLSB,W     ; WRITE DATA D1
+        call OUTDATA      ;
+        call CHECK3       ; read status for DA0/DA1 = 3
+        movf ADRMSB,W     ; WRITE DATA D2
+        call OUTDATA      ;
+        return            ;
+
+;.........
+
+SCREENADR: ; ** SET ADDRESS FOR WRITE/READ TO/FROM SCREEN
+        call CHECK3       ; read status for DA0/DA1 = 3
+        movf ADRLSB,W     ; WRITE ADDRESS LSB
+        call OUTDATA      ;
+        call CHECK3       ; read status for DA0/DA1 = 3
+        movf ADRMSB,W     ; WRITE ADDRESS MSB
+        call OUTDATA      ;
+        movlw ADPSET      ; SET ADDRESS POINTER
+        call SENDCMD      ; send command
+        return            ;
+
+;.............
+
+TEXTHOME: ; ** SET TEXT HOME ADDRESS **
+        clrf ADRMSB       ; TEXT HOME ADDRESS $0000
+        clrf ADRLSB       ;
+        call CMDADR       ; send command address
+        movlw TXHOME      ;
+        call SENDCMD      ; send command
+        return
+
+;...........
+
+GRAPHHOME: ;  ** SET GRAPHIC HOME ADDRESS **
+        movlw $02         ; GRAPHIC HOME ADDRESS $0200
+        movwf ADRMSB
+        clrf ADRLSB
+        call CMDADR       ; send command address
+        movlw GRHOME      ;
+        call SENDCMD      ; send command
+        return
+
+;...........
+
+TEXTAREA: ; ** SET TEXT AREA **
+        clrf ADRMSB       ;
+        movf COLUMN,W     ; columns length
+        movwf ADRLSB      ;
+        call CMDADR       ; send command address
+        movlw TXAREA      ; text area command
+        call SENDCMD      ; send command
+        return
+
+;...........
+
+GRAPHAREA: ; ** SET GRAPHIC AREA **
+        clrf ADRMSB       ;
+        movf COLUMN,W     ; columns length
+        movwf ADRLSB      ;
+        call CMDADR       ; send command address
+        movlw GRAREA      ; graphic area command
+        call SENDCMD      ; send command
+        return
+
+;...........
+
+SETMODE: ;  ** SET MODE **
+       movlw %10000000   ; (OR mode, Internal CG mode)
+       call SENDCMD       ; send command
+       return
+
+;...........
+
+SETDISPLAY:  ;  ** DISPLAY MODE **
+        movlw %10011100   ; text on, graphic on, cursor & blink off
+        call SENDCMD      ; send command
+        return
+
+;...........
+
+CLRTXT  ;  ** CLEAR TEXT AREA ($0000) **
+        clrf ADRMSB       ; clear all text screen lines, length as set
+        clrf ADRLSB       ;
+        call SCREENADR    ; set screen write address
+        movlw AWRON       ; AUTO WRITE ON
+        call SENDCMD      ; send command
+        movlw 8           ; number of lines
+        movwf LOOPC
+CLR2:   movf COLUMN,W     ; column length
+        movwf LOOPB       ;
+CLR3:   movlw 0           ; write 0
+        call AUTOWRITE    ; auto write and increment
+        decfsz LOOPB,F    ;
+        goto CLR3         ;
+        decfsz LOOPC,F    ;
+        goto CLR2         ;
+        movlw AWROFF      ; AUTO WRITE OFF
+        call SENDCMD      ; send command
+        return
+
+;............
+
+CLRGRAPH: ; ** CLEAR GRAPH AREA ($0200) **
+        movlw $02
+        movwf ADRMSB      ;
+        clrf ADRLSB       ;
+        call SCREENADR    ; set screen write address
+        movlw AWRON       ; AUTO WRITE ON
+        call SENDCMD      ; send command
+        movlw 64          ; number of lines
+        movwf LOOPC
+CLRG2:  movf COLUMN,W     ; column length
+        movwf LOOPB       ;
+CLRG3:  movlw 0           ; write 0
+        call AUTOWRITE    ; auto write and increment
+        decfsz LOOPB,F    ;
+        goto CLRG3        ;
+        decfsz LOOPC,F    ;
+        goto CLRG2        ;
+        movlw AWROFF      ; AUTO RESET OFF
+        call SENDCMD      ; send command
+        return
+;............
+
+CHECK3: PAGE1             ; STATUS CHECK for DA0/DA1 = 3
+        movlw 255         ;
+        movwf TRISD       ; set PORTD as inputs
+        PAGE0             ; RST  CD  CE  RD  WR  
+        movlw %00011001   ;  1   1   0   0   1  
+        movwf PORTC       ; set CE, RD low
+        nop
+CK3:    btfss PORTD,0     ; PORTD bit 0 set?
+        goto CK3          ; no
+CK3A:   btfss PORTD,1     ; PORTD bit 1 set?
+        goto CK3A         ; no  RST  CD  CE  RD  WR  
+        movlw %00011111   ;      1   1   1   1   1
+        movwf PORTC       ; set controls
+        nop
+        PAGE1             ;
+        clrf TRISD        ; set PORTD as outputs
+        PAGE0             ;
+        return
+
+;............
+
+CHECK8: PAGE1             ; STATUS CHECK for DA3 = 8
+        bsf PORTD,3       ; set PORTD bit 3 as input
+        PAGE0             ; RST  CD  CE  RD  WR
+        movlw %00011001   ;  1   1   0   0   1
+        movwf PORTC       ; set CE, RD low
+        nop
+CK8:    btfss PORTD,3     ; is PORTD,3 high?
+        goto CK8          ; no  RST  CD  CE  RD  WR
+        movlw %00011111   ;      1   1   1   1   1
+        movwf PORTC       ; set controls
+        nop
+        PAGE1             ;
+        bcf TRISD,3       ; set PORTD bit 3 as output
+        PAGE0             ;
+        return
+
+;........
+
+OUTDATA:  ; ** SEND DATA ROUTINE **
+        movwf TEMPA       ; temp store val brought in on W
+                          ; RST  CD  CE  RD  WR
+        movlw %00010111   ;  1   0   1   1   1
+        movwf PORTC       ; set CD low
+        movf TEMPA,W      ; get stored data
+        movwf PORTD       ; send data
+        nop               ; RST  CD  CE  RD  WR
+        movlw %00010010   ;  1   0   0   1   0
+        movwf PORTC       ; set CD, CE, WR low
+        nop               ; RST  CD  CE  RD  WR
+        movlw %00010111   ;  1   0   1   1   1
+        movwf PORTC       ; set CE, WR high
+        nop               ; RST  CD  CE  RD  WR
+        movlw %00011111   ;  1   1   1   1   1
+        movwf PORTC       ; set CD high
+        return
+
+;..........
+
+SENDCMD: ;  ** COMMAND WRITE ROUTINE **
+        movwf TEMPA       ; temp store val brought in on W
+        call CHECK3       ; read status for DA0/DA1 = 3
+        movf TEMPA,W      ; WRITE COMMAND
+        movwf PORTD       ; send stored data
+        nop               ; RST  CD  CE  RD  WR
+        movlw %00011010   ;  1   1   0   1   0
+        movwf PORTC       ; set CE, WR low
+        nop               ; RST  CD  CE  RD  WR
+        movlw %00011111   ;  1   1   1   1   1
+        movwf PORTC       ; set all high
+        return
+
+;...........
+
+SHWTXT: ;  ** SHOW TEXT HELD IN TABLE **
+        call SCREENADR    ; set screen write address - vals preset at call
+        movlw AWRON       ; SET AUTO WRITE ON
+        call SENDCMD      ; send command
+SHTXT1: movf LOOPB,W      ; LOOPB val specified by calling routine
+        call TABLE1       ; get table data and convert to graphic LCD val
+        addlw 224         ; +224 is same as -32 for conversion from ASCII
+        call AUTOWRITE    ; auto write and increment
+        incf LOOPB,F      ;
+        decfsz LOOPC,F    ; LOOPC val specified by calling routine
+        goto SHTXT1       ;
+        movlw AWROFF      ; AUTO WRITE OFF
+        call SENDCMD      ; send command
+        return
+
+;............. sets line addresses for text screen
+
+LINE7:  addlw 112         ; COLUMN set for 16 cells per line during SETUP
+LINE0:  movwf ADRLSB      ;
+        return            ; ADRMSB is set/cleared before routine called
+
+;..............
+
+PAUSIT: movlw 5           ; pause routine, 1/5th sec
+        movwf CLKCNT
+        clrf INTCON
+PAUSE:  btfss INTCON,2
+        goto PAUSE
+        BCF INTCON,2
+        decfsz CLKCNT,F
+        goto PAUSE
+        return
+
+;................
+
+SETUP:                    ; RST  CD  CE  RD  WR  GENERAL SETUP
+        movlw %00011111   ;  1   1   1   1   1
+        movwf PORTC       ; set controls high (off)
+        call TEXTHOME     ; SET TEXT HOME ADDRESS
+        call GRAPHHOME    ; SET GRAPHIC HOME ADDRESS
+        call TEXTAREA     ; SET TEXT AREA
+        call GRAPHAREA    ; SET GRAPHIC AREA
+        call SETMODE      ; SET MODE (INT/EXT/AND-OR-XOR etc)
+        call SETDISPLAY   ; DISPLAY MODE (text, graph on/off etc)
+        call CLRTXT       ; clear text screen
+        call CLRGRAPH     ; clear graph screen
+        return
+
+         .END
+

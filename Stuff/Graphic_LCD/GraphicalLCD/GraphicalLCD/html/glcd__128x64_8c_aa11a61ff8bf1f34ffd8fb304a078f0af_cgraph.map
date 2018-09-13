@@ -1,0 +1,7 @@
+<map id="Glcd_Write_Text" name="Glcd_Write_Text">
+<area shape="rect" id="node2" href="$glcd__128x64_8c.html#a0a3c03b6f025e9d7c574ff7ca479b588" title="Write character on Glcd. " alt="" coords="172,81,293,108"/>
+<area shape="rect" id="node3" href="$glcd__128x64_8c.html#a2ba7a2fb015c454b1e8b3b787de299c9" title="Glcd Set Side. " alt="" coords="347,5,457,32"/>
+<area shape="rect" id="node4" href="$glcd__128x64_8c.html#a8eea4130318b6b71dabc08bb21d1656e" title="Glcd Set Page. Selects the page on Glcd. " alt="" coords="345,56,459,83"/>
+<area shape="rect" id="node5" href="$glcd__128x64_8c.html#a6c26f9ffbce919ec145075c671826c9f" title="Glcd Set X Position. Sets x&#45;axis position to x_pos dots from the left border of Glcd within the selec..." alt="" coords="357,107,447,133"/>
+<area shape="rect" id="node6" href="$glcd__128x64_8c.html#a92e18769e68abfdf9256f312c5e59cc4" title="Glcd Write Data. Writes one byte to the current location in Glcd memory and moves to the next locatio..." alt="" coords="341,157,463,184"/>
+</map>

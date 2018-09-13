@@ -1,0 +1,27 @@
+_fonts: STRCODE, 4114 0 303
+__stringtab: STRCODE, 4096 0 18
+_String_test: CODE, 2430 0 49
+___ftpack: CODE, 2702 0 104
+_main: CODE, 3726 0 370
+_move_temp_to_send: CODE, 3197 0 147
+_SPI_DATA_HANDLING: CODE, 2543 0 78
+_SPI_TRANSFER: CODE, 2382 0 48
+_blank_image: CODE, 9 0 93
+__initialization: CODE, 1996 0 48
+_spi_init: CODE, 2181 0 14
+_data_out: CODE, 2229 0 20
+_comm_out: CODE, 2249 0 20
+_char_to_decimal_print: CODE, 2806 0 108
+_LCDWriteCharacter: CODE, 2914 0 141
+_location: CODE, 3344 0 171
+_display_temps_to_screen: CODE, 565 0 1431
+_Init: CODE, 2337 0 45
+___ftmul: CODE, 3515 0 211
+___awtoft: CODE, 2269 0 33
+___wmul: CODE, 2302 0 35
+___altoft: CODE, 2479 0 64
+___fttol: CODE, 3055 0 142
+_chip_select: CODE, 2169 0 12
+_get_temp_from_right_tcs: CODE, 102 0 463
+___bmul: CODE, 2195 0 17
+Total: 4185

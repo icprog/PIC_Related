@@ -1,0 +1,242 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"82 D:\PIC\X8Projects\16F18855\ks0108Test2.X\GLCD.c
+[v _GLCD_ClearPage GLCD_ClearPage `(v  1 e 0 0 ]
+"90
+[v _GLCD_ClearScreen GLCD_ClearScreen `(v  1 e 0 0 ]
+"149
+[v _GLCD_DrawRect GLCD_DrawRect `(v  1 e 0 0 ]
+"193
+[v _GLCD_FillRect GLCD_FillRect `(v  1 e 0 0 ]
+"250
+[v _GLCD_InvertRect GLCD_InvertRect `(v  1 e 0 0 ]
+"306
+[v _GLCD_SetDot GLCD_SetDot `(v  1 e 0 0 ]
+"325
+[v _ReadPgmData ReadPgmData `(uc  1 e 1 0 ]
+"337
+[v _GLCD_PrintNumber GLCD_PrintNumber `(v  1 e 0 0 ]
+"407
+[v _GLCD_PutChar GLCD_PutChar `(i  1 e 2 0 ]
+"771
+[v _GLCD_CharWidth GLCD_CharWidth `(uc  1 e 1 0 ]
+"803
+[v _GLCD_GotoXY GLCD_GotoXY `(v  1 e 0 0 ]
+"825
+[v _GLCD_Init GLCD_Init `(v  1 e 0 0 ]
+"884
+[v _GLCD_DoReadData GLCD_DoReadData `(uc  1 e 1 0 ]
+"912
+[v _GLCD_WriteData GLCD_WriteData `(v  1 e 0 0 ]
+"8 D:\PIC\X8Projects\16F18855\ks0108Test2.X\main.c
+[v _main main `(v  1 e 0 0 ]
+"42 D:\PIC\X8Projects\16F18855\ks0108Test2.X\system.c
+[v _Init Init `(v  1 e 0 0 ]
+"369 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic16f18855.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"430
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+[s S74 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"447
+[u S83 . 1 `S74 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES83  1 e 1 @13 ]
+"491
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+"572
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"633
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"694
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"755
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+"816
+[v _LATB LATB `VEuc  1 e 1 @23 ]
+"877
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+"29277
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"29887
+[v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
+"30497
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"34350
+[v _RA3 RA3 `VEb  1 e 0 @99 ]
+[s S32 . 3 `uc 1 x 1 0 `uc 1 y 1 1 `uc 1 page 1 2 ]
+"70 D:\PIC\X8Projects\16F18855\ks0108Test2.X\GLCD.c
+[v _GLCD_Coord GLCD_Coord `S32  1 s 3 GLCD_Coord ]
+"71
+[v _GLCD_Inverted GLCD_Inverted `uc  1 s 1 GLCD_Inverted ]
+"72
+[v _GLCD_FontRead GLCD_FontRead `*.37(uc  1 s 2 GLCD_FontRead ]
+"73
+[v _GLCD_FontColor GLCD_FontColor `uc  1 s 1 GLCD_FontColor ]
+"74
+[v _GLCD_Font GLCD_Font `*.25DCCuc  1 s 2 GLCD_Font ]
+"8 D:\PIC\X8Projects\16F18855\ks0108Test2.X\main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"36
+} 0
+"42 D:\PIC\X8Projects\16F18855\ks0108Test2.X\system.c
+[v _Init Init `(v  1 e 0 0 ]
+{
+"59
+} 0
+"825 D:\PIC\X8Projects\16F18855\ks0108Test2.X\GLCD.c
+[v _GLCD_Init GLCD_Init `(v  1 e 0 0 ]
+{
+[v GLCD_Init@invert invert `uc  1 a 1 wreg ]
+"864
+[v GLCD_Init@chip chip `uc  1 a 1 29 ]
+"825
+[v GLCD_Init@invert invert `uc  1 a 1 wreg ]
+"829
+[v GLCD_Init@invert invert `uc  1 a 1 28 ]
+"882
+} 0
+"90
+[v _GLCD_ClearScreen GLCD_ClearScreen `(v  1 e 0 0 ]
+{
+[v GLCD_ClearScreen@color color `uc  1 a 1 wreg ]
+"92
+[v GLCD_ClearScreen@page page `uc  1 a 1 23 ]
+"90
+[v GLCD_ClearScreen@color color `uc  1 a 1 wreg ]
+"93
+[v GLCD_ClearScreen@color color `uc  1 a 1 22 ]
+"97
+} 0
+"82
+[v _GLCD_ClearPage GLCD_ClearPage `(v  1 e 0 0 ]
+{
+[v GLCD_ClearPage@page page `uc  1 a 1 wreg ]
+"84
+[v GLCD_ClearPage@x x `uc  1 a 1 19 ]
+"82
+[v GLCD_ClearPage@page page `uc  1 a 1 wreg ]
+[v GLCD_ClearPage@color color `uc  1 p 1 13 ]
+"84
+[v GLCD_ClearPage@page page `uc  1 a 1 18 ]
+"88
+} 0
+"149
+[v _GLCD_DrawRect GLCD_DrawRect `(v  1 e 0 0 ]
+{
+[v GLCD_DrawRect@x x `uc  1 a 1 wreg ]
+[v GLCD_DrawRect@x x `uc  1 a 1 wreg ]
+[v GLCD_DrawRect@y y `uc  1 p 1 30 ]
+[v GLCD_DrawRect@width width `uc  1 p 1 31 ]
+[v GLCD_DrawRect@height height `uc  1 p 1 32 ]
+[v GLCD_DrawRect@color color `uc  1 p 1 33 ]
+"151
+[v GLCD_DrawRect@x x `uc  1 a 1 13 ]
+"155
+} 0
+"193
+[v _GLCD_FillRect GLCD_FillRect `(v  1 e 0 0 ]
+{
+[v GLCD_FillRect@x x `uc  1 a 1 wreg ]
+"195
+[v GLCD_FillRect@mask mask `uc  1 a 1 29 ]
+[v GLCD_FillRect@i i `uc  1 a 1 28 ]
+[v GLCD_FillRect@pageOffset pageOffset `uc  1 a 1 27 ]
+[v GLCD_FillRect@h h `uc  1 a 1 26 ]
+[v GLCD_FillRect@data data `uc  1 a 1 25 ]
+"193
+[v GLCD_FillRect@x x `uc  1 a 1 wreg ]
+[v GLCD_FillRect@y y `uc  1 p 1 16 ]
+[v GLCD_FillRect@width width `uc  1 p 1 17 ]
+[v GLCD_FillRect@height height `uc  1 p 1 18 ]
+[v GLCD_FillRect@color color `uc  1 p 1 19 ]
+"196
+[v GLCD_FillRect@x x `uc  1 a 1 24 ]
+"248
+} 0
+"912
+[v _GLCD_WriteData GLCD_WriteData `(v  1 e 0 0 ]
+{
+[v GLCD_WriteData@data data `uc  1 a 1 wreg ]
+"914
+[v GLCD_WriteData@chip chip `uc  1 a 1 15 ]
+[v GLCD_WriteData@displayData displayData `uc  1 a 1 14 ]
+[v GLCD_WriteData@yOffset yOffset `uc  1 a 1 12 ]
+"912
+[v GLCD_WriteData@data data `uc  1 a 1 wreg ]
+"927
+[v GLCD_WriteData@data data `uc  1 a 1 13 ]
+"995
+} 0
+"884
+[v _GLCD_DoReadData GLCD_DoReadData `(uc  1 e 1 0 ]
+{
+[v GLCD_DoReadData@first first `uc  1 a 1 wreg ]
+"886
+[v GLCD_DoReadData@chip chip `uc  1 a 1 8 ]
+[v GLCD_DoReadData@data data `uc  1 a 1 7 ]
+"884
+[v GLCD_DoReadData@first first `uc  1 a 1 wreg ]
+"888
+[v GLCD_DoReadData@first first `uc  1 a 1 6 ]
+"910
+} 0
+"803
+[v _GLCD_GotoXY GLCD_GotoXY `(v  1 e 0 0 ]
+{
+[v GLCD_GotoXY@x x `uc  1 a 1 wreg ]
+"805
+[v GLCD_GotoXY@chip chip `uc  1 a 1 2 ]
+[v GLCD_GotoXY@cmd cmd `uc  1 a 1 0 ]
+"803
+[v GLCD_GotoXY@x x `uc  1 a 1 wreg ]
+[v GLCD_GotoXY@y y `uc  1 p 1 9 ]
+"807
+[v GLCD_GotoXY@x x `uc  1 a 1 1 ]
+"823
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"42
+} 0

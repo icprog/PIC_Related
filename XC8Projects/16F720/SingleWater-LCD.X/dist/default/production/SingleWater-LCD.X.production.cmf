@@ -1,0 +1,724 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\DAVE\AppData\Local\Temp\s1ak.obj
+end_init CODE 0 0 0 1 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\SingleWater-LCD.X.production.obj
+cinit CODE 0 7E5 7E5 1B 2
+text12 CODE 0 2E1 2E1 35 2
+text11 CODE 0 388 388 4B 2
+text10 CODE 0 34E 34E 3A 2
+text9 CODE 0 420 420 50 2
+text8 CODE 0 299 299 5 2
+text7 CODE 0 2C5 2C5 1C 2
+text6 CODE 0 2B0 2B0 15 2
+text5 CODE 0 470 470 5B 2
+text4 CODE 0 3D3 3D3 4D 2
+text3 CODE 0 546 546 A3 2
+text2 CODE 0 316 316 38 2
+text1 CODE 0 5E9 5E9 1FC 2
+maintext CODE 0 4CB 4CB 7B 2
+cstackBANK0 BANK0 1 20 20 25 1
+cstackCOMMON COMMON 1 70 70 E 1
+clrtext CODE 0 29E 29E 8 2
+dataBANK0 BANK0 1 51 51 A 1
+bssBANK0 BANK0 1 45 45 C 1
+strings STRING 0 1 1 8 2
+idataBANK0 CODE 0 2A6 2A6 A 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 005B-006F 1
+BANK1 00A0-00BF 1
+CODE 0009-0298 2
+CONFIG 2008-2008 2
+CONST 0009-0298 2
+ENTRY 0009-0298 2
+IDLOC 2000-2003 2
+RAM 005B-006F 1
+RAM 00A0-00BF 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-016F 1
+SFR3 0180-01EF 1
+STACK 00A0-00BF 1
+STRCODE 0009-0298 2
+STRING 0009-0298 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\SingleWater-LCD.X.production.obj
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":46 299 text8 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":48 299 text8 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":49 29D text8 CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":835 29E clrtext CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":836 29E clrtext CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":837 29F clrtext CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":838 29F clrtext CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":839 2A0 clrtext CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":840 2A1 clrtext CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":841 2A2 clrtext CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":842 2A3 clrtext CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":843 2A4 clrtext CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":844 2A5 clrtext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":303 2B0 text6 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":308 2B1 text6 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":314 2B6 text6 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":315 2B6 text6 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":317 2B7 text6 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":310 2B8 text6 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":317 2C0 text6 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":384 2C0 text6 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":385 2C1 text6 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":386 2C4 text6 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":51 2C5 text7 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":53 2C6 text7 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":54 2C9 text7 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":55 2D4 text7 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":56 2D5 text7 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":57 2D9 text7 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":58 2DC text7 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":59 2DE text7 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":60 2DF text7 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":12 2E1 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":15 2E1 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":16 2E5 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":17 2E9 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":19 2ED text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":20 2F1 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":21 2F5 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":23 2F9 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":24 2FC text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":25 2FF text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":27 303 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":28 306 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":29 307 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":31 308 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":32 30B text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":33 30E text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":34 30F text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":35 310 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":36 311 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":37 312 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":39 313 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\user.c":43 315 text12 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":202 316 text2 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":232 319 text2 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":235 31F text2 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":237 325 text2 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":238 329 text2 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":240 330 text2 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":242 337 text2 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":246 33B text2 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":252 33F text2 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":254 347 text2 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":232 34D text2 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":31 34E text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":43 34F text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":44 35B text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":46 360 text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":47 363 text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":48 367 text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":49 367 text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":53 36A text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":57 36D text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":58 373 text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":64 375 text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":69 378 text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":71 37B text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":73 381 text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":80 383 text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":84 386 text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":85 387 text10 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":87 388 text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":91 388 text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":94 389 text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":97 38F text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":98 392 text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":107 393 text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":112 396 text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":113 39C text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":118 3A9 text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":121 3AC text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":124 3AF text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":125 3B5 text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":127 3B9 text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":129 3BE text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":133 3C3 text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":135 3C6 text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":137 3C9 text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":140 3CC text11 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":142 3D2 text11 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":6 3D3 text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":13 3D3 text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":14 3D4 text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":15 3D6 text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":16 3DB text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":18 3DD text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":19 3DF text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":20 3E4 text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":21 3E8 text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":22 3EA text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":23 3EC text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":24 3F3 text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":22 3F7 text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":27 3F8 text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":28 400 text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":29 406 text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":30 40D text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":32 411 text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":33 414 text4 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c":34 419 text4 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":144 420 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":160 421 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":163 430 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":165 438 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":166 439 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":167 43A text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":169 43B text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":171 441 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":172 442 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":173 443 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":176 444 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":178 446 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":179 449 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":180 44A text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":181 44C text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":182 44F text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":185 451 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":190 452 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":191 455 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":194 459 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":197 45C text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":198 461 text9 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":197 469 text9 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":6 470 text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":14 470 text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":15 471 text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":16 473 text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":17 478 text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":19 47A text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":20 47C text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":21 481 text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":23 485 text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":24 487 text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":25 48B text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":26 48D text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":27 48F text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":28 496 text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":26 49A text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":31 49B text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":32 4A2 text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":33 4AA text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":34 4B0 text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":36 4B1 text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":37 4B8 text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":39 4BC text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":40 4BF text5 CODE
+"D:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c":41 4C4 text5 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":18 4CB maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":20 4CB maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":22 4CC maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":23 4DB maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":24 4DD maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":28 4E0 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":30 4E2 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":31 4EA maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":32 4EB maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":35 4EB maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":36 4F4 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":37 4FA maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":38 4FE maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":40 504 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":41 508 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":42 509 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":45 50D maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":46 511 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":47 512 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":50 516 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":55 517 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":56 51D maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":57 51E maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":60 522 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":61 526 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":62 527 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":65 52B maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":66 52F maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":67 530 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":70 534 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":71 53C maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":72 53D maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":75 53E maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":76 542 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":77 543 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":78 544 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":79 544 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":26 545 maintext CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":258 546 text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":271 546 text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":272 559 text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":275 55F text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":277 561 text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":278 565 text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":281 56C text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":283 570 text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":284 585 text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":285 598 text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":281 59E text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":287 59F text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":288 5A4 text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":290 5B2 text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":293 5C4 text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":295 5D5 text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\lcd_hd44780_pic16.c":293 5E0 text3 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":87 5E9 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":90 5E9 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":94 5EA text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":95 5FB text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":96 60C text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":97 61D text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":99 62E text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":100 640 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":101 652 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":102 664 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":103 674 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":104 67A text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":105 68A text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":106 69A text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":107 6B0 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":136 6C6 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":137 6CB text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":138 6CC text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":141 6CD text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":142 6D4 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":144 6D8 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":146 6DC text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":147 6E3 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":150 6E4 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":152 6E8 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":155 6EF text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":157 6F3 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":160 6FA text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":162 6FE text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":165 705 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":167 709 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":170 710 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":172 714 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":175 71B text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":177 71F text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":180 726 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":182 72A text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":185 731 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":187 735 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":192 73C text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":194 744 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":195 745 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":198 746 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":200 74E text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":201 752 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":202 756 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":203 761 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":206 762 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":207 766 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":210 771 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":211 775 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":214 780 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":215 784 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":218 78F text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":219 793 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":222 79E text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":223 7A2 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":226 7AD text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":227 7B1 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":230 7BC text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":231 7C0 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":234 7CB text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":236 7CF text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":240 7DA text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":242 7E2 text1 CODE
+"D:\PIC_Projects\XC8\SingleWater-LCD.X\LCDTest.c":243 7E3 text1 CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":781 7E5 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":784 7E5 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":848 7E5 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":849 7E6 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":850 7E7 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":851 7E8 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":852 7E9 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":857 7EA cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":858 7EB cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":859 7EC cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":860 7ED cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":861 7EE cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":862 7EF cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":863 7F0 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":864 7F1 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":865 7F2 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":866 7F3 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":867 7F4 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":868 7F5 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":869 7F6 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":870 7F7 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":871 7F8 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":872 7F9 cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":873 7FA cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":874 7FB cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":875 7FC cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":876 7FD cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":882 7FE cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":883 7FE cinit CODE
+"C:\Users\DAVE\AppData\Local\Temp\s1ak.":884 7FF cinit CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_LCDGotoXY 560 0 CODE 0 text6 dist/default/production\SingleWater-LCD.X.production.obj
+___awdiv@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@g 3C 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+_hh 4C 0 BANK0 1 bssBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+_mh 4D 0 BANK0 1 bssBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+_hl 5A 0 BANK0 1 dataBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+_sh 4F 0 BANK0 1 bssBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+_ml 4E 0 BANK0 1 bssBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+_sl 50 0 BANK0 1 bssBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+_RA2 2A 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_RA5 2D 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_RC4 3C 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_RC5 3D 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_RC6 3E 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_RC7 3F 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_PS0 408 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_PS1 409 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_PS2 40A 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+_PSA 40B 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__Hintentry 0 0 CODE 0 intentry -
+__Lintentry 0 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__end_of___awdiv 996 0 CODE 0 text5 dist/default/production\SingleWater-LCD.X.production.obj
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_TMR0 1 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_T0SE 40C 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_T0CS 40D 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_ADON F8 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@h 32 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+_main 996 0 CODE 0 maintext dist/default/production\SingleWater-LCD.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s1ak.obj
+_Init 5C2 0 CODE 0 text12 dist/default/production\SingleWater-LCD.X.production.obj
+_bres 4A 0 BANK0 1 bssBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+start 0 0 CODE 0 init C:\Users\DAVE\AppData\Local\Temp\s1ak.obj
+_IRCF0 484 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+ADCRead@ch 71 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+_IRCF1 485 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_TRISC 87 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_PORTA 5 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\DAVE\AppData\Local\Temp\s1ak.obj
+_PORTB 6 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_PORTC 7 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@i 40 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+_ADRES 1E 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+__end_of_LCDByte 710 0 CODE 0 text10 dist/default/production\SingleWater-LCD.X.production.obj
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+__end_of__stringtab E 0 STRING 0 strings dist/default/production\SingleWater-LCD.X.production.obj
+__size_of_LCDInit 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__end_of__stringdata 12 0 STRING 0 strings dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@j 33 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+_ADCON0 1F 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_ADCON1 9F 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_TMR0IF 5A 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s1ak.obj
+WaterCheck@k 3D 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+_ANSELA 185 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_ANSELB 186 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+LCDByte@hn 78 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+_ANSELC 187 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+?___awdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+_FVRCON 9D 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+LCDByte@ln 79 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+LCDByte@isdata 75 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+__end_of_ADCInit 53C 0 CODE 0 text8 dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@l 34 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+LCDInit@__i 7D 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+LCDInit@style 7C 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+_LCDWriteInt A8C 0 CODE 0 text3 dist/default/production\SingleWater-LCD.X.production.obj
+__end_of___awmod 840 0 CODE 0 text4 dist/default/production\SingleWater-LCD.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+LCDGotoXY@x 7D 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@m 3E 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s1ak.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__size_of_LCDByte 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+__size_of_LCDBusyLoop 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+stacklo 0 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s1ak.obj
+LCDGotoXY@y 7C 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+__Hinit 0 0 CODE 0 init -
+__Linit 0 0 CODE 0 init -
+__end_of_LCDWriteInt BD2 0 CODE 0 text3 dist/default/production\SingleWater-LCD.X.production.obj
+__end_of_main A8C 0 CODE 0 maintext dist/default/production\SingleWater-LCD.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__pdataBANK0 51 0 BANK0 1 dataBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@n 35 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+LCDByte@temp 7B 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+end_of_initialization FFC 0 CODE 0 cinit dist/default/production\SingleWater-LCD.X.production.obj
+___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+__stringtab 2 0 STRING 0 strings dist/default/production\SingleWater-LCD.X.production.obj
+LCDBusyLoop@temp 73 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@o 36 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+LCDWriteInt@val 20 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__end_of_LCDInit 8E0 0 CODE 0 text9 dist/default/production\SingleWater-LCD.X.production.obj
+_TRISCbits 87 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__pstrings 2 0 STRING 0 strings dist/default/production\SingleWater-LCD.X.production.obj
+_OSCTUNE 91 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@p 37 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+_LCDBusyLoop 710 0 CODE 0 text11 dist/default/production\SingleWater-LCD.X.production.obj
+LCDWriteString@msg 21 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+_Toggle2 59 0 BANK0 1 dataBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+LCDWriteInt@i 2A 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__Hbank2 0 0 BANK2 1 bank2 -
+__Lbank2 0 0 BANK2 1 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Lbank3 0 0 BANK3 1 bank3 -
+___latbits 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__size_of_Init 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+_WaterCheck BD2 0 CODE 0 text1 dist/default/production\SingleWater-LCD.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__ptext1 BD2 0 CODE 0 text1 dist/default/production\SingleWater-LCD.X.production.obj
+LCDWriteInt@str 23 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__ptext2 62C 0 CODE 0 text2 dist/default/production\SingleWater-LCD.X.production.obj
+__ptext3 A8C 0 CODE 0 text3 dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@q 3F 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__ptext4 7A6 0 CODE 0 text4 dist/default/production\SingleWater-LCD.X.production.obj
+__ptext5 8E0 0 CODE 0 text5 dist/default/production\SingleWater-LCD.X.production.obj
+__ptext6 560 0 CODE 0 text6 dist/default/production\SingleWater-LCD.X.production.obj
+__ptext7 58A 0 CODE 0 text7 dist/default/production\SingleWater-LCD.X.production.obj
+__ptext8 532 0 CODE 0 text8 dist/default/production\SingleWater-LCD.X.production.obj
+__ptext9 840 0 CODE 0 text9 dist/default/production\SingleWater-LCD.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+LCDBusyLoop@status 74 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+__size_of_LCDWriteString 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@r 38 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+LCDWriteInt@F1067 45 0 BANK0 1 bssBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__end_of__initialization FFC 0 CODE 0 cinit dist/default/production\SingleWater-LCD.X.production.obj
+LCDWriteInt@j 28 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+_ADCRead 58A 0 CODE 0 text7 dist/default/production\SingleWater-LCD.X.production.obj
+LCDWriteString@cc 20 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__end_of_LCDWriteString 69C 0 CODE 0 text2 dist/default/production\SingleWater-LCD.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+_LCDByte 69C 0 CODE 0 text10 dist/default/production\SingleWater-LCD.X.production.obj
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+___awmod 7A6 0 CODE 0 text4 dist/default/production\SingleWater-LCD.X.production.obj
+___cgram 51 0 BANK0 1 dataBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__Hspace_0 2008 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+_ADCInit 532 0 CODE 0 text8 dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@t 41 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+_LCDInit 840 0 CODE 0 text9 dist/default/production\SingleWater-LCD.X.production.obj
+__Hspace_1 7E 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Hcinit 1000 0 CODE 0 cinit -
+__Lcinit FCA 0 CODE 0 cinit -
+___awdiv 8E0 0 CODE 0 text5 dist/default/production\SingleWater-LCD.X.production.obj
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__pidataBANK0 54C 0 CODE 0 idataBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+clear_ram0 53C 0 CODE 0 clrtext dist/default/production\SingleWater-LCD.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__pbssBANK0 45 0 BANK0 1 bssBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__end_of_ADCRead 5C2 0 CODE 0 text7 dist/default/production\SingleWater-LCD.X.production.obj
+__ptext10 69C 0 CODE 0 text10 dist/default/production\SingleWater-LCD.X.production.obj
+__ptext11 710 0 CODE 0 text11 dist/default/production\SingleWater-LCD.X.production.obj
+__end_of_Init 62C 0 CODE 0 text12 dist/default/production\SingleWater-LCD.X.production.obj
+__ptext12 5C2 0 CODE 0 text12 dist/default/production\SingleWater-LCD.X.production.obj
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__size_of_LCDGotoXY 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__end_of_LCDGotoXY 58A 0 CODE 0 text6 dist/default/production\SingleWater-LCD.X.production.obj
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@a 39 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__Hend_init 2 0 CODE 0 end_init -
+__Lend_init 0 0 CODE 0 end_init -
+___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+_LCDWriteString 62C 0 CODE 0 text2 dist/default/production\SingleWater-LCD.X.production.obj
+_GO_nDONE F9 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+WaterCheck@b 2F 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__size_of_ADCRead 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+LCDBusyLoop@busy 72 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+__stringdata E 0 STRING 0 strings dist/default/production\SingleWater-LCD.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s1ak.obj
+LCDWriteInt@field_length 22 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s1ak.obj
+WaterCheck@c 3A 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+intlevel2 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s1ak.obj
+intlevel3 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s1ak.obj
+intlevel4 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s1ak.obj
+__size_of_ADCInit 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+intlevel5 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s1ak.obj
+__size_of_WaterCheck 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__end_of_LCDBusyLoop 7A6 0 CODE 0 text11 dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@d 30 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+start_initialization FCA 0 CODE 0 cinit dist/default/production\SingleWater-LCD.X.production.obj
+___awdiv@quotient 77 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext 996 0 CODE 0 maintext dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@e 3B 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+__size_of___awmod 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__CFG_FOSC$INTOSCIO 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+__initialization FCA 0 CODE 0 cinit dist/default/production\SingleWater-LCD.X.production.obj
+__stringbase C 0 STRING 0 strings dist/default/production\SingleWater-LCD.X.production.obj
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+WaterCheck@f 31 0 BANK0 1 cstackBANK0 dist/default/production\SingleWater-LCD.X.production.obj
+___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+__end_of_WaterCheck FCA 0 CODE 0 text1 dist/default/production\SingleWater-LCD.X.production.obj
+LCDByte@c 7A 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+__size_of_LCDWriteInt 0 0 ABS 0 - dist/default/production\SingleWater-LCD.X.production.obj
+___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\SingleWater-LCD.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 1 2
+cinit 0 7E5 FCA 1B 2
+config 0 2007 400E 1 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 3B 1
+text1 0 5E9 BD2 1FC 2
+text3 0 546 A8C A3 2
+maintext 0 4CB 996 7B 2
+text5 0 470 8E0 5B 2
+text9 0 420 840 50 2
+text4 0 3D3 7A6 4D 2
+text11 0 388 710 4B 2
+text10 0 34E 69C 3A 2
+text2 0 316 62C 38 2
+text12 0 2E1 5C2 35 2
+text7 0 2C5 58A 1C 2
+text6 0 2B0 560 15 2
+idataBANK0 0 2A6 54C A 2
+strings 0 1 2 8 2
+clrtext 0 29E 53C 8 2
+text8 0 299 532 5 2

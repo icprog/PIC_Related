@@ -1,0 +1,19 @@
+Rancilio Silvia Espresso Machine controlled with PIC24FV16KM204                 Date started?       Date Finished
+
+Will control pump to control flow (PI), with programable flow curves
+
+Boiler Temp (PID), with On/Off if more than deadband degrees away from Setpoint
+
+Tank Water level Indication
+
+Grouphead Temperature control, using PID and PTC heaters (On/Off control        
+ until close to Setpoint)
+
+Countersink Screw holding Shower screen to Grouphead                            May-06/16           May 06/16
+
+switch all variables in PID Module to ints                                      July-13/16          July-13/16
+
+I2C module addition to run LCD?
+
+This is copied from another project, much will change over time,                May 06/16
+ it currently compiles and loads, but does pretty much nothing.

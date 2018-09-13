@@ -1,0 +1,929 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"22 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\adc.c
+[e E14315 . `uc
+POT 4
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR 63
+]
+"20 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\battery_charger.c
+[e E14324 charge_states `uc
+IDLE 0
+FAULT 1
+FINISHED 2
+PRECHARGE 3
+CHARGE 4
+FLOAT 5
+]
+"10 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\buttons.c
+[e E14259 . `uc
+POT 4
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR 63
+]
+"214 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\main.c
+[e E14324 charge_states `uc
+IDLE 0
+FAULT 1
+FINISHED 2
+PRECHARGE 3
+CHARGE 4
+FLOAT 5
+]
+"221
+[e E14259 . `uc
+POT 4
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR 63
+]
+"21 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\adc.c
+[v _ADCRead ADCRead `(i  1 e 2 0 ]
+"77
+[v _readIAnalog readIAnalog `(i  1 e 2 0 ]
+"103
+[v _readVAnalog readVAnalog `(i  1 e 2 0 ]
+"138
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"18 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\battery_charger.c
+[v _Init_Battery_State_Machine Init_Battery_State_Machine `(v  1 e 1 0 ]
+"28
+[v _Battery_State_Machine Battery_State_Machine `(v  1 e 1 0 ]
+"83
+[v _cc_cv_mode cc_cv_mode `(v  1 e 1 0 ]
+"8 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\buttons.c
+[v _readButton readButton `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"254 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+[v _log log `(d  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"124 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\lcd.c
+[v _gotoXY gotoXY `(v  1 e 1 0 ]
+"140
+[v _LCDWriteCharacter LCDWriteCharacter `(v  1 e 1 0 ]
+"176
+[v _LCDWriteString LCDWriteString `(v  1 e 1 0 ]
+"182
+[v _LCDClear LCDClear `(v  1 e 1 0 ]
+"190
+[v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
+"247
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+"281
+[v _LCDWrite LCDWrite `(v  1 e 1 0 ]
+"33 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"388
+[v _calculateCurrent0 calculateCurrent0 `(v  1 e 1 0 ]
+"400
+[v _calculateCurrent1 calculateCurrent1 `(v  1 e 1 0 ]
+"412
+[v _calculateCurrent2 calculateCurrent2 `(v  1 e 1 0 ]
+"424
+[v _calculateCurrent3 calculateCurrent3 `(v  1 e 1 0 ]
+"3 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"3 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\pwm.c
+[v _PWM_Initialize PWM_Initialize `(v  1 e 1 0 ]
+"30
+[v _PWM6_LoadDutyValue PWM6_LoadDutyValue `(v  1 e 1 0 ]
+"37
+[v _PWM7_LoadDutyValue PWM7_LoadDutyValue `(v  1 e 1 0 ]
+"44
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+"35 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"53
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"4 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\tempCalc.c
+[v _tempCalc tempCalc `(i  1 e 2 0 ]
+"3 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\tmr.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"25
+[v _TMR4_Initialize TMR4_Initialize `(v  1 e 1 0 ]
+"8 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\adc.c
+[v _Isamples Isamples `[4][50]i  1 e 400 @8680 ]
+"9
+[v _Vsamples Vsamples `[4][15]i  1 e 120 @9080 ]
+"11
+[v _IsampleIndex IsampleIndex `ui  1 s 2 IsampleIndex ]
+"12
+[v _VsampleIndex VsampleIndex `ui  1 s 2 VsampleIndex ]
+"14
+[v _Itotals Itotals `[4]l  1 s 16 Itotals ]
+"15
+[v _Vtotals Vtotals `[4]l  1 s 16 Vtotals ]
+"17
+[v _Ichannels Ichannels `[4]ui  1 s 8 Ichannels ]
+"18
+[v _Vchannels Vchannels `[4]ui  1 s 8 Vchannels ]
+"3 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\battery_charger.c
+[v _batteryState batteryState `[2]uc  1 e 2 0 ]
+"4
+[v _cc_cv cc_cv `[2]uc  1 e 2 0 ]
+"5
+[v _current current `[4]i  1 e 8 0 ]
+"6
+[v _Imin Imin `[2]i  1 e 4 0 ]
+"7
+[v _IminCount IminCount `[2]ui  1 e 4 0 ]
+"8
+[v _Imode Imode `[2]c  1 e 2 0 ]
+"10
+[v _Iref Iref `[2]i  1 e 4 0 ]
+"11
+[v _stateCounter stateCounter `[2]i  1 e 4 0 ]
+"12
+[v _VHoldMode VHoldMode `[2]c  1 e 2 0 ]
+"13
+[v _voltage voltage `[4]i  1 e 8 0 ]
+"14
+[v _Vref Vref `[2]i  1 e 4 0 ]
+"3 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\buttons.c
+[v _readButtons readButtons `i  1 e 2 0 ]
+"4
+[v _button button `uc  1 e 1 0 ]
+"5
+[v _lastButton lastButton `uc  1 e 1 0 ]
+"6
+[v _j j `c  1 e 1 0 ]
+"589 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f18855.h
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+[s S182 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"606
+[u S191 . 1 `S182 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES191  1 e 1 @17 ]
+"651
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"713
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"775
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+[s S203 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"792
+[u S212 . 1 `S203 1 . 1 0 ]
+[v _LATAbits LATAbits `VES212  1 e 1 @22 ]
+"837
+[v _LATB LATB `VEuc  1 e 1 @23 ]
+"899
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+"1536
+[v _ADRESL ADRESL `VEuc  1 e 1 @140 ]
+"1556
+[v _ADRESH ADRESH `VEuc  1 e 1 @141 ]
+"1857
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @147 ]
+[s S26 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"1893
+[s S34 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM 1 0 :2:2 
+]
+[s S38 . 1 `uc 1 nDONE 1 0 :1:0 
+]
+[s S40 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+`uc 1 ADFM1 1 0 :1:3 
+]
+[s S45 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM0 1 0 :1:2 
+`uc 1 ADFRM1 1 0 :1:3 
+]
+[u S50 . 1 `S26 1 . 1 0 `S34 1 . 1 0 `S38 1 . 1 0 `S40 1 . 1 0 `S45 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES50  1 e 1 @147 ]
+"1968
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @148 ]
+"2007
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @149 ]
+"2084
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @150 ]
+"2155
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @151 ]
+"2225
+[v _ADCLK ADCLK `VEuc  1 e 1 @152 ]
+"2283
+[v _ADACT ADACT `VEuc  1 e 1 @153 ]
+"2335
+[v _ADREF ADREF `VEuc  1 e 1 @154 ]
+"2376
+[v _ADCAP ADCAP `VEuc  1 e 1 @155 ]
+"2428
+[v _ADPRE ADPRE `VEuc  1 e 1 @156 ]
+"2498
+[v _ADACQ ADACQ `VEuc  1 e 1 @157 ]
+"2568
+[v _ADPCH ADPCH `VEuc  1 e 1 @158 ]
+"2696
+[v _ADRPT ADRPT `VEuc  1 e 1 @269 ]
+"2773
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @270 ]
+"2843
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @271 ]
+"2920
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @272 ]
+"2990
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @273 ]
+"3067
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @274 ]
+"3137
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @275 ]
+[s S404 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+"8946
+[s S409 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 C3TSEL0 1 0 :1:4 
+`uc 1 C3TSEL1 1 0 :1:5 
+`uc 1 C4TSEL0 1 0 :1:6 
+`uc 1 C4TSEL1 1 0 :1:7 
+]
+[u S418 . 1 `S404 1 . 1 0 `S409 1 . 1 0 ]
+[v _CCPTMRS0bits CCPTMRS0bits `VES418  1 e 1 @542 ]
+[s S316 . 1 `uc 1 C5TSEL 1 0 :2:0 
+`uc 1 P6TSEL 1 0 :2:2 
+`uc 1 P7TSEL 1 0 :2:4 
+]
+"9031
+[s S320 . 1 `uc 1 C5TSEL0 1 0 :1:0 
+`uc 1 C5TSEL1 1 0 :1:1 
+`uc 1 P6TSEL0 1 0 :1:2 
+`uc 1 P6TSEL1 1 0 :1:3 
+`uc 1 P7TSEL0 1 0 :1:4 
+`uc 1 P7TSEL1 1 0 :1:5 
+]
+[u S327 . 1 `S316 1 . 1 0 `S320 1 . 1 0 ]
+[v _CCPTMRS1bits CCPTMRS1bits `VES327  1 e 1 @543 ]
+"9081
+[v _T2TMR T2TMR `VEuc  1 e 1 @652 ]
+"9119
+[v _T2PR T2PR `VEuc  1 e 1 @653 ]
+"9157
+[v _T2CON T2CON `VEuc  1 e 1 @654 ]
+[s S522 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"9193
+[s S526 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S530 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+]
+[s S538 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S547 . 1 `S522 1 . 1 0 `S526 1 . 1 0 `S530 1 . 1 0 `S538 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES547  1 e 1 @654 ]
+"9303
+[v _T2HLT T2HLT `VEuc  1 e 1 @655 ]
+"9431
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @656 ]
+"9589
+[v _T2RST T2RST `VEuc  1 e 1 @657 ]
+"9681
+[v _T4TMR T4TMR `VEuc  1 e 1 @658 ]
+"9719
+[v _T4PR T4PR `VEuc  1 e 1 @659 ]
+"9757
+[v _T4CON T4CON `VEuc  1 e 1 @660 ]
+"9793
+[s S588 . 1 `uc 1 T4OUTPS 1 0 :4:0 
+`uc 1 T4CKPS 1 0 :3:4 
+`uc 1 T4ON 1 0 :1:7 
+]
+[s S592 . 1 `uc 1 T4OUTPS0 1 0 :1:0 
+`uc 1 T4OUTPS1 1 0 :1:1 
+`uc 1 T4OUTPS2 1 0 :1:2 
+`uc 1 T4OUTPS3 1 0 :1:3 
+`uc 1 T4CKPS0 1 0 :1:4 
+`uc 1 T4CKPS1 1 0 :1:5 
+`uc 1 T4CKPS2 1 0 :1:6 
+]
+[s S600 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR4ON 1 0 :1:7 
+]
+[u S609 . 1 `S522 1 . 1 0 `S588 1 . 1 0 `S592 1 . 1 0 `S600 1 . 1 0 ]
+[v _T4CONbits T4CONbits `VES609  1 e 1 @660 ]
+"9903
+[v _T4HLT T4HLT `VEuc  1 e 1 @661 ]
+"10031
+[v _T4CLKCON T4CLKCON `VEuc  1 e 1 @662 ]
+"10189
+[v _T4RST T4RST `VEuc  1 e 1 @663 ]
+"10888
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @780 ]
+"10908
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @781 ]
+[s S345 . 1 `uc 1 MODE 1 0 :4:0 
+`uc 1 FMT 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 OE 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"10966
+[s S351 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+]
+[s S356 . 1 `uc 1 CCP1MODE 1 0 :4:0 
+`uc 1 CCP1FMT 1 0 :1:4 
+`uc 1 CCP1OUT 1 0 :1:5 
+`uc 1 CCP1OE 1 0 :1:6 
+`uc 1 CCP1EN 1 0 :1:7 
+]
+[s S362 . 1 `uc 1 CCP1MODE0 1 0 :1:0 
+`uc 1 CCP1MODE1 1 0 :1:1 
+`uc 1 CCP1MODE2 1 0 :1:2 
+`uc 1 CCP1MODE3 1 0 :1:3 
+]
+[s S367 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 P1M0 1 0 :1:6 
+`uc 1 P1M1 1 0 :1:7 
+]
+[u S371 . 1 `S345 1 . 1 0 `S351 1 . 1 0 `S356 1 . 1 0 `S362 1 . 1 0 `S367 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES371  1 e 1 @782 ]
+"12171
+[v _PWM6DCL PWM6DCL `VEuc  1 e 1 @908 ]
+"12237
+[v _PWM6DCH PWM6DCH `VEuc  1 e 1 @909 ]
+"12407
+[v _PWM6CON PWM6CON `VEuc  1 e 1 @910 ]
+"12473
+[v _PWM7DCL PWM7DCL `VEuc  1 e 1 @912 ]
+"12539
+[v _PWM7DCH PWM7DCH `VEuc  1 e 1 @913 ]
+"12709
+[v _PWM7CON PWM7CON `VEuc  1 e 1 @914 ]
+[s S505 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR3IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 TMR5IF 1 0 :1:4 
+`uc 1 TMR6IF 1 0 :1:5 
+]
+"21299
+[u S512 . 1 `S505 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES512  1 e 1 @1808 ]
+[s S281 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"21564
+[u S286 . 1 `S281 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES286  1 e 1 @1814 ]
+"23324
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"23464
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"23561
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"23612
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"23670
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"24044
+[v _FVRCON FVRCON `VEuc  1 e 1 @2316 ]
+"29763
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @3727 ]
+[s S296 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"29773
+[u S298 . 1 `S296 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES298  1 e 1 @3727 ]
+"32091
+[v _RA6PPS RA6PPS `VEuc  1 e 1 @3862 ]
+"32141
+[v _RA7PPS RA7PPS `VEuc  1 e 1 @3863 ]
+"32191
+[v _RB0PPS RB0PPS `VEuc  1 e 1 @3864 ]
+"32991
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"33053
+[v _WPUA WPUA `VEuc  1 e 1 @3897 ]
+"33611
+[v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
+"33673
+[v _WPUB WPUB `VEuc  1 e 1 @3908 ]
+"34231
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"34293
+[v _WPUC WPUC `VEuc  1 e 1 @3919 ]
+"34851
+[v _WPUE WPUE `VEuc  1 e 1 @3941 ]
+"36757
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"37095
+[v _LATA5 LATA5 `VEb  1 e 0 @181 ]
+"38413
+[v _RB2 RB2 `VEb  1 e 0 @106 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+"17 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\lcd.c
+[v _fonts fonts `DC[303]uc  1 e 303 0 ]
+"26 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\main.c
+[v _Vanalogs Vanalogs `[4]i  1 e 8 0 ]
+"27
+[v _Ianalogs Ianalogs `[4]i  1 e 8 0 ]
+"30
+[v _batteryTemp batteryTemp `i  1 e 2 0 ]
+"33
+[v _main main `(v  1 e 1 0 ]
+{
+"43
+[v main@efficiency efficiency `f  1 a 3 0 ]
+"41
+[v main@dutyCycle7 dutyCycle7 `ui  1 a 2 23 ]
+"40
+[v main@dutyCycle6 dutyCycle6 `ui  1 a 2 21 ]
+"54
+[v main@tempFanOutput tempFanOutput `ui  1 a 2 19 ]
+"42
+[v main@dutyCycle1 dutyCycle1 `ui  1 a 2 17 ]
+"48
+[v main@largerIOut largerIOut `i  1 a 2 14 ]
+"35
+[v main@MPPT0 MPPT0 `i  1 a 2 12 ]
+"36
+[v main@MPPT1 MPPT1 `i  1 a 2 10 ]
+"45
+[v main@faultNotReset faultNotReset `ui  1 a 2 5 ]
+"44
+[v main@faultCount faultCount `ui  1 a 2 3 ]
+"50
+[v main@j j `uc  1 a 1 25 ]
+"51
+[v main@menuButton menuButton `uc  1 a 1 16 ]
+"53
+[v main@slowLoop slowLoop `uc  1 a 1 9 ]
+"52
+[v main@fastLoop fastLoop `uc  1 a 1 8 ]
+"39
+[v main@displayRefresh displayRefresh `uc  1 a 1 7 ]
+"385
+} 0
+"4 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\tempCalc.c
+[v _tempCalc tempCalc `(i  1 e 2 0 ]
+{
+"6
+[v tempCalc@steinhart steinhart `f  1 a 3 53 ]
+[v tempCalc@R R `f  1 a 3 47 ]
+"4
+[v tempCalc@analogValue analogValue `i  1 p 2 45 ]
+"19
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\log.c
+[v _log log `(d  1 e 3 0 ]
+{
+"7
+[v log@exponent exponent `i  1 a 2 43 ]
+"5
+[v log@x x `d  1 p 3 39 ]
+"9
+[v log@coeff coeff `DC[9]d  1 s 27 coeff ]
+"36
+} 0
+"254 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\frexp.c
+[v _frexp frexp `(d  1 e 3 0 ]
+{
+[v frexp@value value `d  1 p 3 0 ]
+[v frexp@eptr eptr `*.4i  1 p 1 3 ]
+"274
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\evalpoly.c
+[v _eval_poly eval_poly `(d  1 e 3 0 ]
+{
+"6
+[v eval_poly@res res `d  1 a 3 36 ]
+"4
+[v eval_poly@x x `d  1 p 3 29 ]
+[v eval_poly@d d `*.25DCd  1 p 2 32 ]
+[v eval_poly@n n `i  1 p 2 34 ]
+"12
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"18 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f2 f2 `f  1 p 3 29 ]
+[v ___ftsub@f1 f1 `f  1 p 3 32 ]
+"27
+} 0
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 28 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 27 ]
+[v ___ftadd@sign sign `uc  1 a 1 26 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 16 ]
+[v ___ftadd@f2 f2 `f  1 p 3 19 ]
+"148
+} 0
+"103 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\adc.c
+[v _readVAnalog readVAnalog `(i  1 e 2 0 ]
+{
+"105
+[v readVAnalog@value value `i  1 a 2 11 ]
+"107
+[v readVAnalog@analog_channel analog_channel `ui  1 a 2 9 ]
+"103
+[v readVAnalog@channel channel `ui  1 p 2 6 ]
+"126
+} 0
+"77
+[v _readIAnalog readIAnalog `(i  1 e 2 0 ]
+{
+"79
+[v readIAnalog@value value `i  1 a 2 11 ]
+"81
+[v readIAnalog@analog_channel analog_channel `ui  1 a 2 9 ]
+"77
+[v readIAnalog@channel channel `ui  1 p 2 6 ]
+"100
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"11
+[v ___aldiv@quotient quotient `l  1 a 4 2 ]
+"12
+[v ___aldiv@sign sign `uc  1 a 1 1 ]
+[v ___aldiv@counter counter `uc  1 a 1 0 ]
+"6
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"42
+} 0
+"8 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\buttons.c
+[v _readButton readButton `(uc  1 e 1 0 ]
+{
+"63
+} 0
+"21 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\adc.c
+[v _ADCRead ADCRead `(i  1 e 2 0 ]
+{
+[v ADCRead@channel channel `E14315  1 a 1 wreg ]
+[v ADCRead@channel channel `E14315  1 a 1 wreg ]
+"23
+[v ADCRead@channel channel `E14315  1 a 1 3 ]
+"48
+} 0
+"83 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\battery_charger.c
+[v _cc_cv_mode cc_cv_mode `(v  1 e 1 0 ]
+{
+[v cc_cv_mode@z z `uc  1 a 1 wreg ]
+[v cc_cv_mode@z z `uc  1 a 1 wreg ]
+"85
+[v cc_cv_mode@z z `uc  1 a 1 37 ]
+"130
+} 0
+"424 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\main.c
+[v _calculateCurrent3 calculateCurrent3 `(v  1 e 1 0 ]
+{
+"434
+} 0
+"412
+[v _calculateCurrent2 calculateCurrent2 `(v  1 e 1 0 ]
+{
+"422
+} 0
+"400
+[v _calculateCurrent1 calculateCurrent1 `(v  1 e 1 0 ]
+{
+"410
+} 0
+"388
+[v _calculateCurrent0 calculateCurrent0 `(v  1 e 1 0 ]
+{
+"398
+} 0
+"56 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 11 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 15 ]
+[v ___ftdiv@exp exp `uc  1 a 1 14 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 10 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 0 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 3 ]
+"86
+} 0
+"35 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"51
+} 0
+"25 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\tmr.c
+[v _TMR4_Initialize TMR4_Initialize `(v  1 e 1 0 ]
+{
+"44
+} 0
+"3
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"23
+} 0
+"3 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\pwm.c
+[v _PWM_Initialize PWM_Initialize `(v  1 e 1 0 ]
+{
+"27
+} 0
+"3 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"24
+[v PIN_MANAGER_Initialize@state state `c  1 a 1 0 ]
+"37
+} 0
+"53 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\system.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"60
+} 0
+"247 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\lcd.c
+[v _LCDInit LCDInit `(v  1 e 1 0 ]
+{
+"278
+} 0
+"182
+[v _LCDClear LCDClear `(v  1 e 1 0 ]
+{
+"184
+[v LCDClear@index index `i  1 a 2 9 ]
+"188
+} 0
+"124
+[v _gotoXY gotoXY `(v  1 e 1 0 ]
+{
+[v gotoXY@x x `uc  1 a 1 wreg ]
+[v gotoXY@x x `uc  1 a 1 wreg ]
+[v gotoXY@y y `uc  1 p 1 5 ]
+"126
+[v gotoXY@x x `uc  1 a 1 7 ]
+"128
+} 0
+"18 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\battery_charger.c
+[v _Init_Battery_State_Machine Init_Battery_State_Machine `(v  1 e 1 0 ]
+{
+[v Init_Battery_State_Machine@z z `uc  1 a 1 wreg ]
+[v Init_Battery_State_Machine@z z `uc  1 a 1 wreg ]
+"20
+[v Init_Battery_State_Machine@z z `uc  1 a 1 34 ]
+"26
+} 0
+"138 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"185
+} 0
+"37 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\pwm.c
+[v _PWM7_LoadDutyValue PWM7_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM7_LoadDutyValue@dutyCycle7 dutyCycle7 `ui  1 p 2 0 ]
+"42
+} 0
+"30
+[v _PWM6_LoadDutyValue PWM6_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM6_LoadDutyValue@dutyCycle6 dutyCycle6 `ui  1 p 2 0 ]
+"35
+} 0
+"44
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM1_LoadDutyValue@dutyCycle1 dutyCycle1 `ui  1 p 2 0 ]
+"48
+} 0
+"176 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\lcd.c
+[v _LCDWriteString LCDWriteString `(v  1 e 1 0 ]
+{
+[v LCDWriteString@characters characters `*.25DCuc  1 p 2 12 ]
+"180
+} 0
+"190
+[v _LCDWriteInt LCDWriteInt `(v  1 e 1 0 ]
+{
+"192
+[v LCDWriteInt@str str `[5]uc  1 a 5 9 ]
+"193
+[v LCDWriteInt@i i `uc  1 a 1 15 ]
+[v LCDWriteInt@j j `uc  1 a 1 14 ]
+"190
+[v LCDWriteInt@value value `i  1 p 2 0 ]
+[v LCDWriteInt@fieldLength fieldLength `c  1 p 1 2 ]
+[v LCDWriteInt@numPlaces numPlaces `uc  1 p 1 3 ]
+[v LCDWriteInt@sign sign `uc  1 p 1 4 ]
+"191
+[v LCDWriteInt@F14392 F14392 `[5]uc  1 s 5 F14392 ]
+"244
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"42
+} 0
+"140 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\lcd.c
+[v _LCDWriteCharacter LCDWriteCharacter `(v  1 e 1 0 ]
+{
+[v LCDWriteCharacter@character character `DCuc  1 a 1 wreg ]
+"142
+[v LCDWriteCharacter@base base `ui  1 a 2 10 ]
+"140
+[v LCDWriteCharacter@character character `DCuc  1 a 1 wreg ]
+"143
+[v LCDWriteCharacter@character character `DCuc  1 a 1 9 ]
+"149
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"281 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\lcd.c
+[v _LCDWrite LCDWrite `(v  1 e 1 0 ]
+{
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 wreg ]
+"283
+[v LCDWrite@i i `uc  1 a 1 4 ]
+[v LCDWrite@d d `uc  1 a 1 3 ]
+"281
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 wreg ]
+[v LCDWrite@data data `uc  1 p 1 0 ]
+"285
+[v LCDWrite@data_or_command data_or_command `uc  1 a 1 2 ]
+"315
+} 0
+"28 D:\PIC-Stuff\XC8Projects\16F18855\MPPT_Charger_24V.X\battery_charger.c
+[v _Battery_State_Machine Battery_State_Machine `(v  1 e 1 0 ]
+{
+[v Battery_State_Machine@z z `uc  1 a 1 wreg ]
+[v Battery_State_Machine@z z `uc  1 a 1 wreg ]
+"30
+[v Battery_State_Machine@z z `uc  1 a 1 35 ]
+"81
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 25 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 29 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 24 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 16 ]
+"73
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 11 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 15 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 14 ]
+[v ___ftmul@exp exp `uc  1 a 1 10 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 0 ]
+[v ___ftmul@f2 f2 `f  1 p 3 3 ]
+"157
+} 0
+"32 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 13 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0

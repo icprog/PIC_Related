@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+
+
+char s[number of char in a line ie: 20];
+
+
+
+
+sprintf(s,"%d",variableName);
+LCD_Set_Cursor(0,0);
+LCD_Write_String(s);
+
+
+or
+
+
+
+sprintf(s,"%d",variableName);
+LCD_Write_StringXY(0,0,"s");

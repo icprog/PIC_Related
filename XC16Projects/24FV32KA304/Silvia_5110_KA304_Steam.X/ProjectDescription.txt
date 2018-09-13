@@ -1,0 +1,60 @@
+                                                                                Date started?       Date Finished
+Rancilio Silvia Espresso Machine controlled with PIC24FV32KA304                 Oct 09/2017
+
+At current processor speed & current code level, runs through 208 cycles/second Nov 30/2017
+(Use this info for timing purposes)
+
+Will control pump to control flow (PI), with programable flow curves            
+Set Up with Timer 1 as Sync source, 4Hz PWM, 8 bits of resolution               May 12/2017         May 13/2017
+
+Still need to setup Programmable Pump Outputs                                                       Nov 30/2017
+
+Set Up Timer 2 as Brew Timer, accurate to 1/100th second                        May 13/2017         May 13/2107
+
+Boiler Temp (PID), with On/Off if more than set degrees(dead-band) away from                        Dec 17/2017
+Setpoint (Removed On/Off, can do with Derivative Tuning)
+
+Tank Water level Indication using 0-10" Pressure sensor and 5V air pump to
+ measure level                                                                  ?? Done
+
+Grouphead Temperature control, using PID and PTC heaters (On/Off control until                      Dec 17/2017
+close to Setpoint) (Also, removed On/Off control)                                                              ?? Done
+
+Countersink Screw holding Shower screen to Grouphead                            May-06/16           May 06/16
+
+Graphical Nokia 5110 LCD                                                        April 2017          ?? Apr/17
+
+Still need to add ESC Key to user settings menus                                                    
+
+Need to add EEPROM storage for user selectable coffee profiles (Temp setpoints, pre-infusion time, soak time, etc...)
+
+
+Tuning Group Settings Gain .4, Integral 0.0, Derivative 1.5                                         Dec 17/2017
+Tuning Boiler Settings Gain 3.0, Integral 1.0, Derivative 30.0
+
+
+Add tuning Screen, with User interface, to see all variables                    Dec 17/2017
+
+Setup Start/stop times to use Array, similar to setTime()
+
+Wire in Brew solenoid and do software control                                   Dec 16/2017         Dec 16/2017
+
+Tune Brew pump settings                                                         Dec 17/2017
+
+Add pulsation Dampener to Pump circuit
+
+Output Indicators for both Steam and Water boilers
+
+Add Clock output to OFF screen
+
+Add Backup Battery and Reset for processor
+
+Setup User programmable Coffee profiles
+
+Re-Enable Weak Pullups on Digital ins?                                          Dec 17/2017         Dec 17/2017   Tested, seems to work fine (better)   
+
+Use do or while to set bits rather than if(count>1)   ??     
+
+Draw Schematic of Board
+
+Add second boiler for Steam                                                     Dec 15/2017

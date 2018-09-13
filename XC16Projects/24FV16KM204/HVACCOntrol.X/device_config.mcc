@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration device="PIC24FV16KM204" mcc_version="v2.25.2">
+    <managers>
+        <manager generated="true" name="Pin Manager" reloadPin="manual">
+            <setting name="package" option="QFN44"/>
+            <setting name="sorting" option="true"/>
+            <file checksum="2993768861" modified="false" name="pin_manager.c" path="mcc_generated_files/pin_manager.c"/>
+            <file checksum="688011727" modified="false" name="pin_manager.h" path="mcc_generated_files/pin_manager.h"/>
+        </manager>
+        <manager generated="true" name="System" reloadPin="manual">
+            <initializer comment="" name="Initialize">
+                <setting name="DOZE" option="1:8" register="CLKDIV"/>
+                <setting name="DOZEN" option="disabled" register="CLKDIV"/>
+                <setting name="RCDIV" option="FRC/2" register="CLKDIV"/>
+                <setting name="ROI" option="disabled" register="CLKDIV"/>
+                <additionalSetting name="soscEnable" option="OSCCONbits.SOSCEN = 1;"/>
+            </initializer>
+            <setting name="BSS" option="OFF"/>
+            <setting name="BWRP" option="OFF"/>
+            <setting name="GWRP" option="OFF"/>
+            <setting name="GCP" option="OFF"/>
+            <setting name="LPRCSEL" option="HP"/>
+            <setting name="IESO" option="ON"/>
+            <setting name="FNOSC" option="FRCDIV"/>
+            <setting name="SOSCSRC" option="ANA"/>
+            <setting name="POSCFREQ" option="HS"/>
+            <setting name="POSCMOD" option="NONE"/>
+            <setting name="SOSCSEL" option="SOSCHP"/>
+            <setting name="OSCIOFNC" option="IO"/>
+            <setting name="FCKSM" option="CSECMD"/>
+            <setting name="WDTPS" option="PS32768"/>
+            <setting name="FWPSA" option="PR128"/>
+            <setting name="WINDIS" option="OFF"/>
+            <setting name="FWDTEN" option="OFF"/>
+            <setting name="I2C1SEL" option="PRI"/>
+            <setting name="BOREN" option="BOR3"/>
+            <setting name="RETCFG" option="OFF"/>
+            <setting name="MCLRE" option="ON"/>
+            <setting name="BORV" option="V18"/>
+            <setting name="PWRTEN" option="ON"/>
+            <setting name="ICS" option="PGx1"/>
+            <setting name="Primary Oscillator" option="3500000"/>
+            <setting name="Secondary Oscillator" option="31000"/>
+            <setting name="generateConfigBits" option="true"/>
+            <file checksum="2010435767" modified="false" name="mcc.c" path="mcc_generated_files/mcc.c"/>
+            <file checksum="279118211" modified="false" name="mcc.h" path="mcc_generated_files/mcc.h"/>
+        </manager>
+    </managers>
+</configuration>

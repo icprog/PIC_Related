@@ -1,0 +1,71 @@
+This is a work in progress, and as such, may have some errors or contradictions 
+between actual code and documentation, especially around the LCD, which is 
+getting changed out from a Character LCD to a Graphical LCD
+
+Project to control a Rancillo Silvia Espresso Machine.
+
+Project is built around a Microchip PIC24FV32KA304 microcontroller.
+
+To Preserve EEProm Data through a Program Cycle, the Project Configuration needs the PICKit3 Conf Item "Preserve EEPROM Memory" Box checked!!!
+
+Fix for the annoying ToolTips in MPLabX 3.20
+Goto Tools -> Options,
+Then select "Embedded"
+Select "Generic Settings" and disable "On mouse-over source lines in editor, evaluate break point status"
+
+
+Inputs: (Number in brackets is ANALOG Channel number)
+
+                   ADCRead(0)       Read Steam Boiler Temperature
+                   ADCRead(4)       Read Grouphead Temperature
+                   ADCRead(6)       Read Water Level Transmitter 
+                   ADCRead(7)       Read Menu Button Inputs
+                   ADCRead(9)       Read Water Boiler Temperature
+
+
+Pins Used: (for Nokia 5110 Graphical Display)
+
+1   _LATB9              OP      
+    2   _RC6                IP/OP   LCD Reset                                              
+    3   _RC7                IP/OP   LCD CE                                          
+    4   OC2                 OP      Water Boiler Hardware PID PWM Output
+    5   _RC9                IP      Water Switch Input                                                         
+    6   _RA7                IP      Steam Switch Input
+    7   VCap                SYS     VCap                               
+    8   _RB10               IP      Brew Switch Input
+    9   _RB11               IP      Power Switch Input  
+10  _LATB12             OP           
+11  _LATB13             OP          
+    12  OC3                 OP      Steam Boiler Hardware PID PWM Output
+    13  _LATA11             OP      Air Pump      
+14.  AN10        IP     
+    15  AN9                 IP      Water Boiler Temperature
+    16  AVss                SYS     Analog Vss
+    17  AVdd                SYS     Analog AVdd                                     
+    18  MCLR/Vpp            SYS     Master Clear/Programming Voltage         
+    19  AN0                 IP      Steam Boiler Temperature
+    20  _LATA1              OP      Turn On Piezo Alarm after seconds of not shutting OFF Brew Switch
+    21  PGED1               SYS     Programming Pin Data                            
+    22  PGEC1               SYS     Programming Pin Clock                           
+    23  AN4                 IP      Group Head Temperature                                
+24  _RB3/AN5           IP      
+    25  AN6                 IP      Level transmitter Input       
+    26  AN7                 IP      ADCRead(7) Reads Menu Button Presses 
+27  _RC2       IP/OP   
+    28  Vdd                 SYS Vdd                                                 
+    29  Vss                 SYS Vss                                                 
+    30  _LATA2              OP      Steam Solenoid Output  
+    31  _LATA3              OP      Water Solenoid Output
+32 _RA8        IP/OP   
+    33  SOSCI               SYS     Secondary Oscillator In                         
+    34  SOSCO               SYS     Secondary Oscillator Out                        
+    35  _LATA9              OP      LCD BackLight             
+    36  _RC3                IP/OP   LCD D/C                                   
+    37  _RC4                IP/OP   LCD DIN                                       
+    38  _RC5                IP/OP   LCD CLK                                         
+    39  Vss                 SYS     Vss                                             
+    40  Vdd                 SYS     Vdd                                             
+41 _RB5        IP  
+42 _Rb6        IP  
+    43  OC1                 OP      Water Pump PWM Output                                                                    
+    44  _LATB8              OP      Group Head Software PID PWM Output        

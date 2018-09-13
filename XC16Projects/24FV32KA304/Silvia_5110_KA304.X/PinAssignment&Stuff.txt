@@ -1,0 +1,120 @@
+This is a work in progress, and as such, may have some errors or contradictions 
+between actual code and documentation, especially around the LCD, which is 
+getting changed out from a Character LCD to a Graphical LCD
+
+Project to control a Rancillo Silvia Espresso Machine.
+
+Project is built around a Microchip PIC24FV32KA304 microcontroller.
+
+To Preserve EEProm Data through a Program Cycle, the Project Configuration needs the PICKit3 Conf Item "Preserve EEPROM Memory" Box checked!!!
+
+Fix for the annoying ToolTips in MPLabX 3.20
+Goto Tools -> Options,
+Then select "Embedded"
+Select "Generic Settings" and disable "On mouse-over source lines in editor, evaluate break point status"
+
+
+Inputs: (Number in brackets is ANALOG Channel number)
+
+.                   ADCRead(0),         Read Boiler Temperature
+.                   ADCRead(4),         Read Switches[] Input state   
+.                   ADCRead(5),         Read Grouphead Temperature
+.                   ADCRead(13),        Read Touch "X" Input
+.                   ADCRead(14),        Read Touch "Y" Input 
+
+
+Pins Used: (for Nokia 5110 Graphical Display)
+
+1   _LATB9              OP      
+D2   _RC6               IP/OP   LCD Reset                                              
+D3   _RC7               IP/OP   LCD CE                                          
+4.                                                          _LATC8              OP      Boiler Output
+D5   _RC9               IP      Water Switch Input                                                         _LATC9              OP      Water Solenoid Output
+D6   _RA7               IP      Steam Switch Input
+D7   VCap               SYS     VCap                               
+D8   _RB10              IP      Brew Switch Input                                  Air Pump Output   
+D9   _RB11              IP      Power Switch Input  
+10  _LATB12             OP      LCD Enable bit     
+11  _LATB13             OP      LCD Reset    
+12.                                                         _LATA10             OP      Tank Solenoid Output
+13  _TRISA11/_LATA11    IP/OP   y- Touchscreen (Both High Impedance IP and Digital OP)
+14.                                                          AN10        IP      Water Tank level
+D15  _RB15/AN9          IP      Water Boiler Temperature
+D16  AVss               SYS     Analog Vss                                      D
+D17  AVdd               SYS     Analog AVdd                                     D
+D18  MCLR/Vpp           SYS     Master Clear/Programming Voltage         
+D19  _RA0/AN0           IP      Steam Boiler Temperature                                                              AN0         IP      Read Boiler Temperature
+D20  _LATA1             OP      Turn On Piezo Alarm after seconds of not shutting OFF Brew Switch
+D21  PGED1              SYS     Programming Pin Data                            D
+D22  PGEC1              SYS     Programming Pin Clock                           D
+D23  _RB2/AN4           IP      Group Head Temperature                                
+24  _RB3/AN5           IP      
+25  _RC0/AN6           IP             
+D26  _RC1/AN7           IP      ADCRead Button Press 
+27  _PORTC2             IP/OP   LCD Data Port 2 
+D28  Vdd                SYS Vdd                                                 D
+D29  Vss                SYS Vss                                                 D
+30  TRISA2/_LATA2       IP/OP   x+ Touchscreen (Both Analog IP and Digital OP)  
+31  TRISA3/_LATA3       OP      y+ Touchscreen (Both analog IP and Digital OP)
+32.                                                                      _RA8        IP/OP   
+D33  SOSCI               SYS     Secondary Oscillator In                         D
+D34  SOSCO               SYS     Secondary Oscillator Out                        D
+D35  _LATA9              OP      LCD BackLight             
+D36  _RC3                IP/OP   LCD D/C                                   
+D37  _RC4                IP/OP   LCD DIN                                       
+D38  _RC5                IP/OP   LCD CLK                                         
+D39  Vss                 SYS     Vss                                             D
+D40  Vdd                 SYS     Vdd                                             D
+41.                                                                      AN17        IP  
+42.                                                                         AN18        IP  
+43.                                                                         AN19        IP  
+44  _LATB8              OP      LCD Chip Select 1  
+
+Piezo Out
+
+Old Pin Usage(for Char Display)
+
+1   AN21/_RB9   IP/OP   y+ Touchscreen (Both analog IP and Digital OP)
+2   _RC6        LCD     LCD REGISTER SELECT Bit
+3   _RC7        LCD     LCD ENABLE Bit
+4   _LATC8      OP      Boiler Output
+5   _LATC9      OP      Water Solenoid Output
+6   _LATA7      OP      Grouphead Output
+7   VCap        SYS     VCap
+8   _LATB10     OP      Air Pump Output   
+9   _LATB11     OP      
+10  AN12        IP      
+11  AN11        IP        
+12  _LATA10     OP      Tank Solenoid Output
+13  _LATA11     OP      
+14  AN10        IP      Water Tank level
+15  AN9/RB15    IP      PowerSwitch Input
+16  AVss        SYS     Analog Vss
+17  AVdd        SYS     Analog AVdd
+18  MCLR/Vpp    SYS     Master Clear/Programming Voltage
+19  AN0         IP      Read Boiler Temperature
+20  _LATA1      OP      Turn off BackLight after 60 seconds of no use
+21  PGED1       SYS     Programming Pin Data
+22  PGEC1       SYS     Programming Pin Clock
+23  AN4         IP      Read Digital Switch States
+24  AN5         IP      Read GroupHead Temperature
+25  AN6         IP      
+26  AN7/_RC1    IP/OP   x+ Touchscreen (Both Analog IP and Digital OP)
+27  _RC2        IP/OP   x- Touchscreen (Both High Impedance IP and Digital OP)
+28  Vdd         SYS Vdd
+29  Vss         SYS Vss
+30  _LATA2      OP  Water Pump Out
+31  _LATA3      OP  Piezo Out
+32  _RA8        IP/OP   y- Touchscreen (Both High Impedance IP and Digital OP)
+33  SOSCI       SYS Secondary Oscillator In
+34  SOSCO       SYS Secondary Oscillator Out
+35  RA9         LCD LCD Port D4
+36  RC3         LCD LCD Port D5
+37  RC4         LCD LCD Port D6
+38  RC5         LCD LCD Port D7
+39  Vss         SYS Vss
+40  Vdd         SYS Vdd
+41  AN17        IP  
+42  AN18        IP  
+43  AN19        IP  
+44  AN20        IP  

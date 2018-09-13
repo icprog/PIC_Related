@@ -1,0 +1,31 @@
+                                                                                Date started?       Date Finished
+Rancilio Silvia Espresso Machine controlled with PIC24FV32KA304                 Oct 09/2017
+
+At current processor speed & current code level, runs through 208 cycles/second Nov 30/2017
+(Use this info for timing purposes)
+
+Will control pump to control flow (PI), with programable flow curves            
+Set Up with Timer 1 as Sync source, 4Hz PWM, 8 bits of resolution               May 12/2017         May 13/2017
+Still need to setup Programmable Pump Outputs                                                       Nov 30/2017
+
+Set Up Timer 2 as Brew Timer, accurate to 1/100th second                        May 13/2017         May 13/2107
+
+Boiler Temp (PID), with On/Off if more than set degrees(dead-band) away from 
+Setpoint (Removed On/Off, can do with Derivative Tuning)
+
+Tank Water level Indication using 0-10" Pressure sensor and 5V air pump to
+ measure level                                                                  ?? Done
+
+Grouphead Temperature control, using PID and PTC heaters (On/Off control until 
+close to Setpoint) (Also, removed On/Off control)                                                              ?? Done
+
+Countersink Screw holding Shower screen to Grouphead                            May-06/16           May 06/16
+
+Graphical Nokia 5110 LCD                                                        April 2017          ?? Apr/17
+
+This is copied from another project, much will change over time,                Oct 09/2017
+ it currently compiles and loads, but does pretty much nothing.
+
+Still need to add ESC Key to user settings menus
+
+Need to add EEPROM storage for user selectable coffee profiles (Temp setpoints, pre-infusion time, soak time, etc...)

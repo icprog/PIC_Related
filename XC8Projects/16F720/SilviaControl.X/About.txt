@@ -1,0 +1,4 @@
+This is my very first PIC project, and indeed my very first "C" Program, so, 
+take it easy on the author.
+
+Hardware wise, the input switches are connected through 

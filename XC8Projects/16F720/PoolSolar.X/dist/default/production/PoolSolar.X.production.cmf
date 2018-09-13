@@ -1,0 +1,639 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\DAVE\AppData\Local\Temp\s4c0.obj
+end_init CODE 0 0 0 1 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\PoolSolar.X.production.obj
+cinit CODE 0 7E8 7E8 18 2
+text1 CODE 0 34D 34D 7B 2
+text2 CODE 0 1CF 1CF 3F 2
+text3 CODE 0 728 728 9A 2
+text4 CODE 0 259 259 4B 2
+text5 CODE 0 2F4 2F4 59 2
+text6 CODE 0 163 163 15 2
+text7 CODE 0 178 178 1D 2
+text8 CODE 0 145 145 5 2
+text9 CODE 0 2A4 2A4 50 2
+text10 CODE 0 195 195 3A 2
+text11 CODE 0 20E 20E 4B 2
+text12 CODE 0 7C2 7C2 23 2
+text13 CODE 0 152 152 11 2
+maintext CODE 0 3C8 3C8 138 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 15 1
+bssBANK0 BANK0 1 3D 3D 6 1
+stringtext STRCODE 0 500 500 228 2
+idataBANK0 CODE 0 14A 14A 8 2
+dataBANK0 BANK0 1 35 35 8 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 43-6F 1
+RAM A0-BF 1
+BANK0 43-6F 1
+BANK1 A0-BF 1
+CONST 1-144 2
+CONST 7E5-7E7 2
+ENTRY 1-144 2
+ENTRY 7E5-7E7 2
+IDLOC 2000-2003 2
+STACK 43-6F 1
+CODE 1-144 2
+CODE 7E5-7E7 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-16F 1
+SFR3 180-1EF 1
+CONFIG 2008-2008 2
+STRCODE 1-144 2
+STRCODE 7E5-7E7 2
+STRING 1-144 2
+STRING 7E5-7E7 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\PoolSolar.X.production.obj
+7E8 cinit CODE >1583:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7E8 cinit CODE >1586:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7E8 cinit CODE >1608:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7E9 cinit CODE >1609:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7EA cinit CODE >1610:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7EB cinit CODE >1611:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7EC cinit CODE >1612:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7ED cinit CODE >1613:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7EE cinit CODE >1618:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7EF cinit CODE >1619:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7F0 cinit CODE >1620:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7F1 cinit CODE >1621:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7F2 cinit CODE >1622:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7F3 cinit CODE >1623:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7F4 cinit CODE >1624:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7F5 cinit CODE >1625:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7F6 cinit CODE >1626:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7F7 cinit CODE >1627:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7F8 cinit CODE >1628:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7F9 cinit CODE >1629:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7FA cinit CODE >1630:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7FB cinit CODE >1631:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7FC cinit CODE >1632:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7FD cinit CODE >1633:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7FE cinit CODE >1639:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7FE cinit CODE >1641:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+7FF cinit CODE >1642:C:\Users\DAVE\AppData\Local\Temp\s4c0.
+152 text13 CODE >9:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\system.c
+152 text13 CODE >11:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\system.c
+155 text13 CODE >12:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\system.c
+156 text13 CODE >13:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\system.c
+157 text13 CODE >15:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\system.c
+15A text13 CODE >16:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\system.c
+15D text13 CODE >17:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\system.c
+15E text13 CODE >18:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\system.c
+15F text13 CODE >19:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\system.c
+160 text13 CODE >20:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\system.c
+161 text13 CODE >21:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\system.c
+162 text13 CODE >22:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\system.c
+7C2 text12 CODE >12:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+7C2 text12 CODE >15:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+7C6 text12 CODE >16:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+7CA text12 CODE >17:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+7CD text12 CODE >19:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+7D0 text12 CODE >20:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+7D3 text12 CODE >21:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+7D6 text12 CODE >23:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+7D9 text12 CODE >24:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+7DC text12 CODE >25:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+7E0 text12 CODE >28:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+7E4 text12 CODE >30:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+20E text11 CODE >87:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+20E text11 CODE >91:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+20F text11 CODE >94:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+215 text11 CODE >97:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+218 text11 CODE >98:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+219 text11 CODE >107:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+21C text11 CODE >112:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+222 text11 CODE >113:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+22F text11 CODE >118:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+232 text11 CODE >121:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+235 text11 CODE >124:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+23B text11 CODE >125:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+23F text11 CODE >127:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+244 text11 CODE >129:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+249 text11 CODE >133:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+24C text11 CODE >135:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+24F text11 CODE >137:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+252 text11 CODE >140:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+258 text11 CODE >142:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+195 text10 CODE >31:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+196 text10 CODE >43:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1A2 text10 CODE >44:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1A7 text10 CODE >46:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1AA text10 CODE >47:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1AE text10 CODE >48:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1AE text10 CODE >49:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1B1 text10 CODE >53:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1B4 text10 CODE >57:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1BA text10 CODE >58:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1BC text10 CODE >64:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1BF text10 CODE >69:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1C2 text10 CODE >71:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1C8 text10 CODE >73:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1CA text10 CODE >80:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1CD text10 CODE >84:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1CE text10 CODE >85:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2A4 text9 CODE >144:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2A5 text9 CODE >160:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2B4 text9 CODE >163:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2BC text9 CODE >165:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2BD text9 CODE >166:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2BE text9 CODE >167:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2BF text9 CODE >169:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2C5 text9 CODE >171:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2C6 text9 CODE >172:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2C7 text9 CODE >173:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2C8 text9 CODE >176:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2CA text9 CODE >178:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2CD text9 CODE >179:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2CE text9 CODE >180:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2D0 text9 CODE >181:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2D3 text9 CODE >182:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2D5 text9 CODE >185:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2D6 text9 CODE >190:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2D9 text9 CODE >191:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2DD text9 CODE >194:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2E0 text9 CODE >197:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2E5 text9 CODE >198:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2ED text9 CODE >197:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+145 text8 CODE >32:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+145 text8 CODE >33:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+149 text8 CODE >34:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+178 text7 CODE >35:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+179 text7 CODE >38:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+17C text7 CODE >39:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+187 text7 CODE >40:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+188 text7 CODE >41:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+18D text7 CODE >42:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+190 text7 CODE >43:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+192 text7 CODE >44:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+193 text7 CODE >45:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\user.c
+163 text6 CODE >303:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+164 text6 CODE >308:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+169 text6 CODE >314:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+169 text6 CODE >315:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+16A text6 CODE >317:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+16B text6 CODE >310:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+173 text6 CODE >317:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+173 text6 CODE >384:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+174 text6 CODE >385:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+177 text6 CODE >386:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+2F4 text5 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+2F4 text5 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+2F5 text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+2F7 text5 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+2FC text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+2FE text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+300 text5 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+305 text5 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+309 text5 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+30B text5 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+30F text5 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+311 text5 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+313 text5 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+31A text5 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+31E text5 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+31F text5 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+326 text5 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+32E text5 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+334 text5 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+335 text5 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+33C text5 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+340 text5 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+343 text5 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+348 text5 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+259 text4 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+259 text4 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+25A text4 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+25C text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+261 text4 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+263 text4 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+265 text4 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+26A text4 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+26E text4 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+270 text4 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+272 text4 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+279 text4 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+27D text4 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+27E text4 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+286 text4 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+28C text4 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+293 text4 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+297 text4 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+29A text4 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+29F text4 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+728 text3 CODE >258:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+728 text3 CODE >271:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+73B text3 CODE >272:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+741 text3 CODE >275:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+743 text3 CODE >277:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+747 text3 CODE >278:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+74E text3 CODE >281:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+752 text3 CODE >283:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+765 text3 CODE >284:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+774 text3 CODE >285:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+77A text3 CODE >281:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+77B text3 CODE >287:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+77F text3 CODE >288:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+78D text3 CODE >290:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+79F text3 CODE >293:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+7AE text3 CODE >295:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+7B9 text3 CODE >293:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1CF text2 CODE >202:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1CF text2 CODE >232:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1D9 text2 CODE >235:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1E3 text2 CODE >237:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1E7 text2 CODE >238:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1F0 text2 CODE >240:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1F7 text2 CODE >242:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1FB text2 CODE >246:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+1FF text2 CODE >252:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+209 text2 CODE >254:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+20D text2 CODE >232:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\lcd_hd44780_pic16.c
+34D text1 CODE >71:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+34D text1 CODE >83:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+34E text1 CODE >85:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+358 text1 CODE >86:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+36B text1 CODE >88:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+373 text1 CODE >89:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+381 text1 CODE >90:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+389 text1 CODE >92:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+393 text1 CODE >93:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3A6 text1 CODE >95:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3AF text1 CODE >96:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3BE text1 CODE >97:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3C7 text1 CODE >99:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3C8 maintext CODE >24:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3C8 maintext CODE >26:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3C9 maintext CODE >28:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3CA maintext CODE >30:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3D9 maintext CODE >32:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3DB maintext CODE >33:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3EA maintext CODE >35:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3ED maintext CODE >36:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3F0 maintext CODE >37:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+3F8 maintext CODE >38:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+401 maintext CODE >39:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+40C maintext CODE >40:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+415 maintext CODE >41:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+420 maintext CODE >42:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+429 maintext CODE >43:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+434 maintext CODE >44:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+43D maintext CODE >45:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+448 maintext CODE >46:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+451 maintext CODE >47:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+45C maintext CODE >48:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+465 maintext CODE >49:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+470 maintext CODE >50:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+479 maintext CODE >51:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+484 maintext CODE >52:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+48D maintext CODE >53:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+498 maintext CODE >54:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+4A1 maintext CODE >55:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+4AC maintext CODE >56:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+4B5 maintext CODE >57:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+4C0 maintext CODE >58:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+4C9 maintext CODE >59:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+4D4 maintext CODE >60:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+4DD maintext CODE >61:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+4EC maintext CODE >62:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+4EF maintext CODE >66:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+4F0 maintext CODE >67:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+4FF maintext CODE >64:D:\PIC-Stuff\XC8Projects\16F720\PoolSolar.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+___awdiv@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+ltemp0 7E 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__Lstringtext 0 0 ABS 0 stringtext -
+__Hstrings 0 0 ABS 0 strings -
+_ADON F8 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_Init F84 0 CODE 0 text12 dist/default/production\PoolSolar.X.production.obj
+_T0CS 40D 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_T0SE 40C 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_TMR0 1 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s4c0.obj
+_main 790 0 CODE 0 maintext dist/default/production\PoolSolar.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__end_of_LCDWriteInt F84 0 CODE 0 text3 dist/default/production\PoolSolar.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+start 0 0 CODE 0 init C:\Users\DAVE\AppData\Local\Temp\s4c0.obj
+ttemp 7E 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__size_of___awmod 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__size_of_Init 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__size_of_LCDByte 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__size_of_LCDInit 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__end_of_ConfigureOscillator 2C6 0 CODE 0 text13 dist/default/production\PoolSolar.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s4c0.obj
+intlevel1 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s4c0.obj
+intlevel2 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s4c0.obj
+intlevel3 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s4c0.obj
+intlevel4 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s4c0.obj
+intlevel5 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s4c0.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+_ADCON0 1F 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_ADCON1 9F 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__end_of_LCDGotoXY 2F0 0 CODE 0 text6 dist/default/production\PoolSolar.X.production.obj
+LCDWriteInt@i 2A 0 BANK0 1 cstackBANK0 dist/default/production\PoolSolar.X.production.obj
+LCDWriteInt@j 28 0 BANK0 1 cstackBANK0 dist/default/production\PoolSolar.X.production.obj
+_ANSELA 185 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_ANSELB 186 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_ANSELC 187 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__size_of_LCDGotoXY 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__size_of_LCDWriteString 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+LCDBusyLoop@status 74 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+_FVRCON 9D 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+_LCDGotoXY 2C6 0 CODE 0 text6 dist/default/production\PoolSolar.X.production.obj
+__end_of___awdiv 69A 0 CODE 0 text5 dist/default/production\PoolSolar.X.production.obj
+__end_of___awmod 548 0 CODE 0 text4 dist/default/production\PoolSolar.X.production.obj
+_LCDBusyLoop 41C 0 CODE 0 text11 dist/default/production\PoolSolar.X.production.obj
+__end_of_LCDByte 39E 0 CODE 0 text10 dist/default/production\PoolSolar.X.production.obj
+__end_of_LCDInit 5E8 0 CODE 0 text9 dist/default/production\PoolSolar.X.production.obj
+LCDWriteString@cc 21 0 BANK0 1 cstackBANK0 dist/default/production\PoolSolar.X.production.obj
+start_initialization FD0 0 CODE 0 cinit dist/default/production\PoolSolar.X.production.obj
+LCDWriteInt@str 23 0 BANK0 1 cstackBANK0 dist/default/production\PoolSolar.X.production.obj
+LCDWriteInt@val 20 0 BANK0 1 cstackBANK0 dist/default/production\PoolSolar.X.production.obj
+__CFG_FOSC$INTOSCIO 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__size_of_LCDWriteInt 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+TempCheck@tempout 30 0 BANK0 1 cstackBANK0 dist/default/production\PoolSolar.X.production.obj
+_TRISCbits 87 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_ADCInit 28A 0 CODE 0 text8 dist/default/production\PoolSolar.X.production.obj
+_ADCRead 2F0 0 CODE 0 text7 dist/default/production\PoolSolar.X.production.obj
+_GO_nDONE F9 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\PoolSolar.X.production.obj
+LCDByte@temp 7B 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s4c0.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 BANK2 1 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__stringbase A24 0 STRCODE 0 stringtext dist/default/production\PoolSolar.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+LCDWriteInt@F1072 3D 0 BANK0 1 bssBANK0 dist/default/production\PoolSolar.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 BANK2 1 bank2 -
+__Lbank3 0 0 BANK3 1 bank3 -
+__Lcinit FD0 0 CODE 0 cinit -
+LCDByte@c 7A 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_PS0 408 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_PS1 409 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_PS2 40A 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_PSA 40B 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_RC4 3C 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_RC5 3D 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_RC6 3E 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+LCDGotoXY@x 7D 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+LCDGotoXY@y 7C 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__Lintentry 0 0 CODE 0 intentry -
+__stringtab A00 0 STRCODE 0 stringtext dist/default/production\PoolSolar.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\DAVE\AppData\Local\Temp\s4c0.obj
+__pdataBANK0 35 0 BANK0 1 dataBANK0 dist/default/production\PoolSolar.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+LCDWriteInt@field_length 22 0 BANK0 1 cstackBANK0 dist/default/production\PoolSolar.X.production.obj
+___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__ptext10 32A 0 CODE 0 text10 dist/default/production\PoolSolar.X.production.obj
+__ptext11 41C 0 CODE 0 text11 dist/default/production\PoolSolar.X.production.obj
+__ptext12 F84 0 CODE 0 text12 dist/default/production\PoolSolar.X.production.obj
+__ptext13 2A4 0 CODE 0 text13 dist/default/production\PoolSolar.X.production.obj
+ADCRead@ch 71 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+___awdiv 5E8 0 CODE 0 text5 dist/default/production\PoolSolar.X.production.obj
+___awmod 4B2 0 CODE 0 text4 dist/default/production\PoolSolar.X.production.obj
+___cgram 35 0 BANK0 1 dataBANK0 dist/default/production\PoolSolar.X.production.obj
+__pmaintext 790 0 CODE 0 maintext dist/default/production\PoolSolar.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+LCDByte@hn 78 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+LCDByte@ln 79 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_LCDByte 32A 0 CODE 0 text10 dist/default/production\PoolSolar.X.production.obj
+_LCDInit 548 0 CODE 0 text9 dist/default/production\PoolSolar.X.production.obj
+_LCDWriteInt E50 0 CODE 0 text3 dist/default/production\PoolSolar.X.production.obj
+_LCDWriteString 39E 0 CODE 0 text2 dist/default/production\PoolSolar.X.production.obj
+__end_of_LCDBusyLoop 4B2 0 CODE 0 text11 dist/default/production\PoolSolar.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s4c0.obj
+stacklo 0 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s4c0.obj
+_OSCTUNE 91 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__end_of__stringtab A24 0 STRCODE 0 stringtext dist/default/production\PoolSolar.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FFC 0 CODE 0 cinit dist/default/production\PoolSolar.X.production.obj
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 77 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+?___awdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__end_ofTempCheck@tempread DDC 0 STRCODE 0 stringtext dist/default/production\PoolSolar.X.production.obj
+__ptext1 69A 0 CODE 0 text1 dist/default/production\PoolSolar.X.production.obj
+__ptext2 39E 0 CODE 0 text2 dist/default/production\PoolSolar.X.production.obj
+__ptext3 E50 0 CODE 0 text3 dist/default/production\PoolSolar.X.production.obj
+__ptext4 4B2 0 CODE 0 text4 dist/default/production\PoolSolar.X.production.obj
+__ptext5 5E8 0 CODE 0 text5 dist/default/production\PoolSolar.X.production.obj
+__ptext6 2C6 0 CODE 0 text6 dist/default/production\PoolSolar.X.production.obj
+__ptext7 2F0 0 CODE 0 text7 dist/default/production\PoolSolar.X.production.obj
+__ptext8 28A 0 CODE 0 text8 dist/default/production\PoolSolar.X.production.obj
+__ptext9 548 0 CODE 0 text9 dist/default/production\PoolSolar.X.production.obj
+__end_of_LCDWriteString 41C 0 CODE 0 text2 dist/default/production\PoolSolar.X.production.obj
+__size_of_ADCInit 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__size_of_ADCRead 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__pstringtext A00 0 STRCODE 0 stringtext dist/default/production\PoolSolar.X.production.obj
+__size_of_ConfigureOscillator 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+TempCheck@tempin 2E 0 BANK0 1 cstackBANK0 dist/default/production\PoolSolar.X.production.obj
+LCDInit@style 7C 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__end_of__initialization FFC 0 CODE 0 cinit dist/default/production\PoolSolar.X.production.obj
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+__pidataBANK0 294 0 CODE 0 idataBANK0 dist/default/production\PoolSolar.X.production.obj
+LCDWriteString@msg 7C 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__Hend_init 2 0 CODE 0 end_init -
+__end_of_TempCheck 790 0 CODE 0 text1 dist/default/production\PoolSolar.X.production.obj
+__end_of_Init FCA 0 CODE 0 text12 dist/default/production\PoolSolar.X.production.obj
+__end_of_main A00 0 CODE 0 maintext dist/default/production\PoolSolar.X.production.obj
+__size_of_TempCheck 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_ADRES 1E 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_ConfigureOscillator 2A4 0 CODE 0 text13 dist/default/production\PoolSolar.X.production.obj
+_IRCF0 484 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_IRCF1 485 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_PORTA 5 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_PORTB 6 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_PORTC 7 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+_TRISC 87 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+LCDBusyLoop@busy 72 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+LCDBusyLoop@temp 73 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+LCDByte@isdata 75 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__size_of_LCDBusyLoop 0 0 ABS 0 - dist/default/production\PoolSolar.X.production.obj
+LCDInit@__i 7D 0 COMMON 1 cstackCOMMON dist/default/production\PoolSolar.X.production.obj
+__initialization FD0 0 CODE 0 cinit dist/default/production\PoolSolar.X.production.obj
+_TempCheck 69A 0 CODE 0 text1 dist/default/production\PoolSolar.X.production.obj
+TempCheck@tempread A24 0 STRCODE 0 stringtext dist/default/production\PoolSolar.X.production.obj
+__pbssBANK0 3D 0 BANK0 1 bssBANK0 dist/default/production\PoolSolar.X.production.obj
+__Hstringtext 0 0 ABS 0 stringtext -
+__end_of_ADCInit 294 0 CODE 0 text8 dist/default/production\PoolSolar.X.production.obj
+__end_of_ADCRead 32A 0 CODE 0 text7 dist/default/production\PoolSolar.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7E8 FD0 18 2
+text1 0 34D 69A 7B 2
+text2 0 1CF 39E 3F 2
+text3 0 728 E50 BD 2
+text4 0 259 4B2 4B 2
+text5 0 2F4 5E8 59 2
+text6 0 163 2C6 15 2
+text7 0 178 2F0 1D 2
+text8 0 145 28A 5 2
+text9 0 2A4 548 50 2
+text10 0 195 32A 3A 2
+text11 0 20E 41C 4B 2
+text13 0 152 2A4 11 2
+maintext 0 3C8 790 138 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 23 1
+reset_vec 0 0 0 1 2
+stringtext 0 500 A00 228 2
+idataBANK0 0 14A 294 8 2
+config 0 2007 400E 1 2

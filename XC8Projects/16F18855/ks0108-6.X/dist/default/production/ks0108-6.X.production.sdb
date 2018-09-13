@@ -1,0 +1,155 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"5 D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+[v _main main `(v  1 e 0 0 ]
+"148 D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+[v _Text_GLCD Text_GLCD `(v  1 e 0 0 ]
+"251
+[v _Enable Enable `(v  1 e 0 0 ]
+"268
+[v _Reset_GLCD Reset_GLCD `(v  1 e 0 0 ]
+"338
+[v _Starting_Address Starting_Address `(v  1 e 0 0 ]
+"377
+[v _X_Address X_Address `(ui  1 e 2 0 ]
+"397
+[v _Display_ON Display_ON `(v  1 e 0 0 ]
+"433
+[v _Write_Byte Write_Byte `(v  1 e 0 0 ]
+"451
+[v _Clear_Display Clear_Display `(v  1 e 0 0 ]
+"480
+[v _TextBuff_GLCD TextBuff_GLCD `(v  1 e 0 0 ]
+"369 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic16f18855.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"430
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"491
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+"572
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"633
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"694
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"755
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+"816
+[v _LATB LATB `VEuc  1 e 1 @23 ]
+[s S19 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"833
+[u S28 . 1 `S19 1 . 1 0 ]
+[v _LATBbits LATBbits `VES28  1 e 1 @23 ]
+"877
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+"29277
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"29887
+[v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
+"30497
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"1 D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+[v _Matrix Matrix `[98][8]uc  1 e 784 @8288 ]
+"132
+[v _Buffer Buffer `[128]uc  1 e 128 @9072 ]
+"5 D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+[v _main main `(v  1 e 0 0 ]
+{
+"7
+[v main@Buffer Buffer `[25]uc  1 a 25 21 ]
+[v main@i i `ui  1 a 2 46 ]
+"29
+} 0
+"148 D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+[v _Text_GLCD Text_GLCD `(v  1 e 0 0 ]
+{
+"151
+[v Text_GLCD@Index Index `ui  1 a 2 19 ]
+[v Text_GLCD@Place_In_Buffer Place_In_Buffer `ui  1 a 2 17 ]
+[v Text_GLCD@Counter Counter `ui  1 a 2 13 ]
+[v Text_GLCD@k k `ui  1 a 2 11 ]
+"150
+[v Text_GLCD@Char_In_Matrix Char_In_Matrix `uc  1 a 1 16 ]
+[v Text_GLCD@Char_In_String Char_In_String `uc  1 a 1 15 ]
+"148
+[v Text_GLCD@Row Row `ui  1 p 2 0 ]
+[v Text_GLCD@Column Column `ui  1 p 2 2 ]
+[v Text_GLCD@String String `*.25DCCuc  1 p 2 4 ]
+"239
+} 0
+"480
+[v _TextBuff_GLCD TextBuff_GLCD `(v  1 e 0 0 ]
+{
+"483
+[v TextBuff_GLCD@Index Index `ui  1 a 2 19 ]
+[v TextBuff_GLCD@Place_In_Buffer Place_In_Buffer `ui  1 a 2 17 ]
+[v TextBuff_GLCD@Counter Counter `ui  1 a 2 13 ]
+[v TextBuff_GLCD@k k `ui  1 a 2 11 ]
+"482
+[v TextBuff_GLCD@Char_In_Matrix Char_In_Matrix `uc  1 a 1 16 ]
+[v TextBuff_GLCD@Char_In_String Char_In_String `uc  1 a 1 15 ]
+"480
+[v TextBuff_GLCD@Row Row `ui  1 p 2 0 ]
+[v TextBuff_GLCD@Column Column `ui  1 p 2 2 ]
+[v TextBuff_GLCD@Buff_String Buff_String `*.4uc  1 p 1 4 ]
+"571
+} 0
+"268
+[v _Reset_GLCD Reset_GLCD `(v  1 e 0 0 ]
+{
+"288
+} 0
+"397
+[v _Display_ON Display_ON `(v  1 e 0 0 ]
+{
+"403
+} 0
+"451
+[v _Clear_Display Clear_Display `(v  1 e 0 0 ]
+{
+"453
+[v Clear_Display@i i `uc  1 a 1 6 ]
+[v Clear_Display@j j `uc  1 a 1 5 ]
+"467
+} 0
+"377
+[v _X_Address X_Address `(ui  1 e 2 0 ]
+{
+[v X_Address@X X `ui  1 p 2 0 ]
+"385
+} 0
+"433
+[v _Write_Byte Write_Byte `(v  1 e 0 0 ]
+{
+[v Write_Byte@B B `uc  1 a 1 wreg ]
+[v Write_Byte@B B `uc  1 a 1 wreg ]
+"435
+[v Write_Byte@B B `uc  1 a 1 0 ]
+"439
+} 0
+"338
+[v _Starting_Address Starting_Address `(v  1 e 0 0 ]
+{
+[v Starting_Address@S S `ui  1 p 2 0 ]
+"345
+} 0
+"251
+[v _Enable Enable `(v  1 e 0 0 ]
+{
+"256
+} 0

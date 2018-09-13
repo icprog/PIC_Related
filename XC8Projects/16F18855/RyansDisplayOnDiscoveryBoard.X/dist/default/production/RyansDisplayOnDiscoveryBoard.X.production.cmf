@@ -1,0 +1,1083 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+cinit CODE 0 7EE 7EE 12 2
+text1 CODE 0 4C5 4C5 106 2
+text2 CODE 0 72 72 11 2
+text3 CODE 0 2D9 2D9 82 2
+text4 CODE 0 64 64 E 2
+text5 CODE 0 27E 27E 5B 2
+text6 CODE 0 56 56 E 2
+text7 CODE 0 48 48 E 2
+text8 CODE 0 3D 3D B 2
+text9 CODE 0 35 35 8 2
+text10 CODE 0 163 163 3B 2
+text11 CODE 0 116 116 26 2
+text12 CODE 0 C0 C0 1A 2
+text13 CODE 0 AA AA 16 2
+text14 CODE 0 96 96 14 2
+text15 CODE 0 3FC 3FC C9 2
+text16 CODE 0 19E 19E 45 2
+text17 CODE 0 22D 22D 51 2
+text18 CODE 0 1E3 1E3 4A 2
+text19 CODE 0 DA DA 1B 2
+text20 CODE 0 35B 35B A1 2
+text21 CODE 0 13C 13C 27 2
+text22 CODE 0 83 83 13 2
+text23 CODE 0 F5 F5 21 2
+maintext CODE 0 5CB 5CB 223 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 25 1
+bssBANK0 BANK0 1 45 45 15 1
+stringtext STRCODE 0 800 800 3CD 2
+idataBANK0 CODE 0 2D 2D 2 2
+dataBANK0 BANK0 1 5A 5A 2 1
+clrtext CODE 0 2F 2F 6 2
+$C:\Users\DAVE\AppData\Local\Temp\s3i4.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 2 2 2 2
+config CONFIG 0 8007 8007 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 5C-6F 1
+RAM A0-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK0 5C-6F 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 4-2C 2
+CONST BCD-1FFF 2
+ENTRY 4-2C 2
+ENTRY BCD-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 203C-23EF 1
+CODE 4-2C 2
+CODE BCD-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+EEDATA F000-F0FF 2
+STRCODE 4-2C 2
+STRCODE BCD-1FFF 2
+STRING 4-2C 2
+STRING BCD-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+7EE cinit CODE >8499:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7EE cinit CODE >8502:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7EE cinit CODE >8531:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7F1 cinit CODE >8532:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7F2 cinit CODE >8533:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7F5 cinit CODE >8534:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7F6 cinit CODE >8551:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7F7 cinit CODE >8552:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7F8 cinit CODE >8553:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7F9 cinit CODE >8554:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7FA cinit CODE >8555:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7FB cinit CODE >8556:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7FD cinit CODE >8562:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7FD cinit CODE >8564:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+7FE cinit CODE >8565:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+F5 text23 CODE >270:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+F6 text23 CODE >276:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+F9 text23 CODE >278:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+FB text23 CODE >279:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+FC text23 CODE >280:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+FC text23 CODE >282:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+FE text23 CODE >283:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+FE text23 CODE >285:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+FF text23 CODE >287:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+104 text23 CODE >288:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+104 text23 CODE >289:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+105 text23 CODE >291:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+107 text23 CODE >293:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+108 text23 CODE >294:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+108 text23 CODE >296:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+109 text23 CODE >298:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+10B text23 CODE >300:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+10C text23 CODE >287:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+114 text23 CODE >303:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+115 text23 CODE >304:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+83 text22 CODE >124:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+84 text22 CODE >126:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+8D text22 CODE >127:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+95 text22 CODE >128:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+13C text21 CODE >131:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+13C text21 CODE >134:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+144 text21 CODE >135:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+14F text21 CODE >137:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+15D text21 CODE >135:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+35B text20 CODE >307:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+35B text20 CODE >311:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+368 text20 CODE >313:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+36D text20 CODE >314:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+373 text20 CODE >311:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+382 text20 CODE >317:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+38F text20 CODE >319:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+397 text20 CODE >320:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+39F text20 CODE >317:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+3AE text20 CODE >323:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+3BB text20 CODE >325:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+3C3 text20 CODE >326:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+3CB text20 CODE >323:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+3DA text20 CODE >329:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+3E7 text20 CODE >331:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+3EF text20 CODE >332:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+3F7 text20 CODE >329:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+DA text19 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+DA text19 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+DC text19 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+DE text19 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+E2 text19 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+E7 text19 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+EC text19 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+F0 text19 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+1E3 text18 CODE >142:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+1E5 text18 CODE >154:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+1EC text18 CODE >155:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+1FC text18 CODE >156:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+200 text18 CODE >157:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+212 text18 CODE >159:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+222 text18 CODE >157:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+228 text18 CODE >161:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+22C text18 CODE >162:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+22D text17 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+22D text17 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+22E text17 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+230 text17 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+235 text17 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+237 text17 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+239 text17 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+23E text17 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+242 text17 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+244 text17 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+248 text17 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+24A text17 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+24C text17 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+251 text17 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+255 text17 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+256 text17 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+25B text17 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+263 text17 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+267 text17 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+268 text17 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+26D text17 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+271 text17 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+274 text17 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+279 text17 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+19E text16 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+19E text16 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+19F text16 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1A1 text16 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1A6 text16 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1A8 text16 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1AA text16 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1AF text16 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1B3 text16 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1B5 text16 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1B7 text16 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1BC text16 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1C0 text16 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1C1 text16 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1C9 text16 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1CD text16 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1D2 text16 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1D6 text16 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1D9 text16 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+1DE text16 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awmod.c
+3FC text15 CODE >180:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+3FC text15 CODE >182:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+40A text15 CODE >183:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+411 text15 CODE >185:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+413 text15 CODE >187:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+417 text15 CODE >188:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+41D text15 CODE >189:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+41E text15 CODE >193:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+421 text15 CODE >195:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+425 text15 CODE >199:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+42A text15 CODE >201:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+43F text15 CODE >202:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+44F text15 CODE >203:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+453 text15 CODE >199:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+454 text15 CODE >205:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+458 text15 CODE >209:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+45C text15 CODE >207:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+464 text15 CODE >214:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+474 text15 CODE >217:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+492 text15 CODE >219:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+49C text15 CODE >217:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+4A2 text15 CODE >222:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+4A6 text15 CODE >224:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+4AA text15 CODE >225:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+4B0 text15 CODE >228:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+4B5 text15 CODE >230:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+4B9 text15 CODE >231:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+4BF text15 CODE >232:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+96 text14 CODE >166:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+96 text14 CODE >168:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+9D text14 CODE >169:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+A9 text14 CODE >168:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+AA text13 CODE >32:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\pwm.c
+AA text13 CODE >34:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\pwm.c
+B5 text13 CODE >36:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\pwm.c
+BF text13 CODE >37:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\pwm.c
+C0 text12 CODE >60:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+C0 text12 CODE >62:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+C2 text12 CODE >64:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+C3 text12 CODE >66:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+C4 text12 CODE >68:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+C5 text12 CODE >70:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+C6 text12 CODE >73:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+C8 text12 CODE >81:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+C9 text12 CODE >83:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+CA text12 CODE >86:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+CC text12 CODE >88:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+CD text12 CODE >90:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+CE text12 CODE >92:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+D0 text12 CODE >94:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+D1 text12 CODE >96:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+D2 text12 CODE >98:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+D3 text12 CODE >100:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+D4 text12 CODE >102:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+D5 text12 CODE >104:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+D6 text12 CODE >106:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+D9 text12 CODE >107:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+116 text11 CODE >172:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+116 text11 CODE >175:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+123 text11 CODE >176:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+128 text11 CODE >175:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+137 text11 CODE >177:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+13B text11 CODE >178:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+163 text10 CODE >237:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+163 text10 CODE >239:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+165 text10 CODE >240:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+166 text10 CODE >241:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+167 text10 CODE >242:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+168 text10 CODE >243:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+169 text10 CODE >244:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+16A text10 CODE >245:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+16B text10 CODE >246:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+16C text10 CODE >247:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+16D text10 CODE >249:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+16E text10 CODE >251:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+176 text10 CODE >258:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+17E text10 CODE >260:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+186 text10 CODE >262:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+18E text10 CODE >264:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+196 text10 CODE >266:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+19D text10 CODE >267:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\lcd.c
+35 text9 CODE >86:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+35 text9 CODE >88:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+38 text9 CODE >89:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+39 text9 CODE >90:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+3A text9 CODE >91:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+3B text9 CODE >92:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+3C text9 CODE >93:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+3D text8 CODE >3:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\pwm.c
+3D text8 CODE >14:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\pwm.c
+40 text8 CODE >16:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\pwm.c
+41 text8 CODE >18:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\pwm.c
+42 text8 CODE >20:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\pwm.c
+47 text8 CODE >22:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\pwm.c
+48 text7 CODE >4:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\spi.c
+48 text7 CODE >13:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\spi.c
+4B text7 CODE >14:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\spi.c
+4E text7 CODE >15:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\spi.c
+51 text7 CODE >16:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\spi.c
+53 text7 CODE >17:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\spi.c
+55 text7 CODE >19:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\spi.c
+56 text6 CODE >3:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\tmr2.c
+56 text6 CODE >5:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\tmr2.c
+58 text6 CODE >7:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\tmr2.c
+5A text6 CODE >9:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\tmr2.c
+5B text6 CODE >11:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\tmr2.c
+5C text6 CODE >13:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\tmr2.c
+5E text6 CODE >15:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\tmr2.c
+5F text6 CODE >17:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\tmr2.c
+61 text6 CODE >19:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\tmr2.c
+63 text6 CODE >20:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\tmr2.c
+27E text5 CODE >37:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+27E text5 CODE >39:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+281 text5 CODE >40:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+282 text5 CODE >41:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+284 text5 CODE >43:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+287 text5 CODE >44:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+288 text5 CODE >45:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+289 text5 CODE >47:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+28B text5 CODE >48:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+28D text5 CODE >49:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+28E text5 CODE >51:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+290 text5 CODE >52:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+291 text5 CODE >53:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+292 text5 CODE >54:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+294 text5 CODE >56:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+297 text5 CODE >57:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+299 text5 CODE >58:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+29C text5 CODE >59:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+29F text5 CODE >60:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2A2 text5 CODE >61:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2A5 text5 CODE >62:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2A8 text5 CODE >63:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2B1 text5 CODE >64:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2B4 text5 CODE >65:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2BD text5 CODE >67:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2BF text5 CODE >68:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2C3 text5 CODE >69:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2C4 text5 CODE >70:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2C7 text5 CODE >71:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2C9 text5 CODE >72:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2CA text5 CODE >76:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2CD text5 CODE >80:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2D0 text5 CODE >81:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2D2 text5 CODE >82:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2D3 text5 CODE >83:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+2D8 text5 CODE >84:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\system.c
+64 text4 CODE >16:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+65 text4 CODE >18:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+68 text4 CODE >20:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+69 text4 CODE >22:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+6A text4 CODE >24:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+6B text4 CODE >26:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+6B text4 CODE >28:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+6D text4 CODE >30:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+2D9 text3 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2D9 text3 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2DB text3 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2DD text3 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2E8 text3 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2EA text3 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2EA text3 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2EC text3 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2F7 text3 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+2FB text3 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+303 text3 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+309 text3 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+30B text3 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+30D text3 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+314 text3 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+318 text3 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+319 text3 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+320 text3 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+330 text3 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+338 text3 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+339 text3 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+340 text3 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+344 text3 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+347 text3 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+352 text3 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+72 text2 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+73 text2 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+74 text2 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+76 text2 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+7A text2 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+7C text2 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+7E text2 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+81 text2 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+4C5 text1 CODE >34:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+4C5 text1 CODE >38:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+4CE text1 CODE >40:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+4D6 text1 CODE >42:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+52F text1 CODE >44:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+548 text1 CODE >46:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+595 text1 CODE >48:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+597 text1 CODE >50:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+59B text1 CODE >51:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+5A4 text1 CODE >54:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+5C5 text1 CODE >56:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\adc.c
+5CB maintext CODE >9:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+5CB maintext CODE >11:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+5CE maintext CODE >13:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+5D2 maintext CODE >15:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+5D6 maintext CODE >17:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+5DA maintext CODE >19:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+5DB maintext CODE >21:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+5DE maintext CODE >23:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+5EA maintext CODE >24:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+5F3 maintext CODE >25:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+5F7 maintext CODE >27:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+605 maintext CODE >32:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+611 maintext CODE >34:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+61C maintext CODE >36:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+642 maintext CODE >38:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+652 maintext CODE >40:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+677 maintext CODE >42:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+67B maintext CODE >43:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+67F maintext CODE >44:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+684 maintext CODE >49:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+692 maintext CODE >51:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+696 maintext CODE >53:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+699 maintext CODE >55:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+69A maintext CODE >56:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+69E maintext CODE >53:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+69F maintext CODE >59:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+6A6 maintext CODE >61:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+6B5 maintext CODE >64:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+6B8 maintext CODE >66:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+6C9 maintext CODE >68:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+6DC maintext CODE >72:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+6F1 maintext CODE >74:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+706 maintext CODE >76:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+71B maintext CODE >78:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+730 maintext CODE >80:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+745 maintext CODE >82:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+74E maintext CODE >84:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+754 maintext CODE >86:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+757 maintext CODE >89:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+76F maintext CODE >92:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+77C maintext CODE >93:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+78C maintext CODE >95:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+79C maintext CODE >97:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+7AC maintext CODE >99:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+7C3 maintext CODE >101:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+7CC maintext CODE >104:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+7D6 maintext CODE >106:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+7E2 maintext CODE >108:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+7E5 maintext CODE >109:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+7E8 maintext CODE >112:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+7ED maintext CODE >30:D:\PIC-Stuff\XC8Projects\16F18855\RyansDisplayOnDiscoveryBoard.X\main.c
+2F clrtext CODE >8540:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+2F clrtext CODE >8541:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+30 clrtext CODE >8542:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+30 clrtext CODE >8543:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+31 clrtext CODE >8544:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+32 clrtext CODE >8545:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+33 clrtext CODE >8546:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+34 clrtext CODE >8547:C:\Users\DAVE\AppData\Local\Temp\s3i4.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___awdiv@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+gotoXY@x 76 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+gotoXY@y 74 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 800C 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+_SSP1STATbits 18F 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_PWM7CON 392 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_PWM7DCH 391 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_PWM7DCL 390 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lstringtext 0 0 ABS 0 stringtext -
+main@x 3E 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__CFG_WDTCCS$SC 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_LATA 16 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_LATB 17 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_LATC 18 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_T2PR 28D 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_WPUA F39 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_WPUB F44 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_WPUC F4F 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_WPUE F65 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s3i4.obj
+_main B96 0 CODE 0 maintext dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_LCDWriteInt 98A 0 CODE 0 text15 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_PWM7_LoadDutyValue 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+start 4 0 CODE 0 init C:\Users\DAVE\AppData\Local\Temp\s3i4.obj
+ttemp 7E 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of___aldiv 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of___awmod 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_SCANE$available 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_LCDInit 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_LCDClear 22C 0 CODE 0 text11 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+_LCDWrite 1EA 0 CODE 0 text23 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+LCDWriteInt@F13679 4F 0 BANK0 1 bssBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_TMR2_Initialize AC 0 CODE 0 text6 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+readAnalog@channel 26 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_LCDClear 278 0 CODE 0 text11 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_LCDWrite 22C 0 CODE 0 text23 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s3i4.obj
+intlevel1 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s3i4.obj
+intlevel2 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s3i4.obj
+intlevel3 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s3i4.obj
+intlevel4 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s3i4.obj
+intlevel5 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s3i4.obj
+___bmul@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_ADC_Initialize 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___aldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_LCDBitmap 2C6 0 CODE 0 text21 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+main@potValue 41 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__size_of_LCDBitmap 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___aldiv@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_LCDWriteCharacter 3C6 0 CODE 0 text18 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+main@previousPotValue 3F 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDWriteInt@numPlaces 2A 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADCON0 93 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADCON1 94 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADCON2 95 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADCON3 96 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADLTHH 10F 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADLTHL 10E 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADRESH 8D 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADRESL 8C 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADSTAT 97 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADUTHH 111 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADUTHL 110 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDWrite@data 70 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDWriteInt@i 33 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDWriteInt@j 31 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ANSELA F38 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ANSELB F43 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ANSELC F4E 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_LCDBitmap 278 0 CODE 0 text21 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+PWM7_LoadDutyValue@dutyCycle7 70 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_LCDWriteString 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of___bmul 106 0 CODE 0 text2 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of___wmul 1EA 0 CODE 0 text19 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDBitmap@index 20 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+_FVRCON 90C 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___bmul@multiplier 73 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of___aldiv 6B6 0 CODE 0 text3 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of___awdiv 4FC 0 CODE 0 text17 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of___awmod 3C6 0 CODE 0 text16 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+readAnalog@analog_channel 79 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_coffee 164E 0 STRCODE 0 stringtext dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDDrawBox@j 78 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_LCDInit 33C 0 CODE 0 text10 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_gotoXY 12C 0 CODE 0 text22 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDBitmap@startLine 79 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+start_initialization FDC 0 CODE 0 cinit dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDWriteInt@str 2C 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_OSCFRQ 893 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_sampleIndex 58 0 BANK0 1 bssBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_WDTCPS$WDTCPS_31 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_LCDWriteInt 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_TRISBbits 12 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___aldiv@quotient 22 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADCRead C8 0 CODE 0 text4 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADSTPTH 113 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADSTPTL 112 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_RC2PPS F22 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_RC3PPS F23 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_RC5PPS F25 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_SYSTEM_Initialize 5B2 0 CODE 0 text5 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+clear_ram0 5E 0 CODE 0 clrtext dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_T2CLKCON 290 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_LCDDrawBox 6B6 0 CODE 0 text20 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_readAnalog 98A 0 CODE 0 text1 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDClear@index 78 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_SPI_Init 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+main@dutyCycle7 3C 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s3i4.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+_main$1062 3A 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_PWM_Initialize 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 0 config -
+LCDWriteInt@value 27 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit FDC 0 CODE 0 cinit -
+LCDBitmap@bmp_array 77 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+LCDWriteCharacter@x 20 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDWriteCharacter@z 22 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 4 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 4 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+?_ADCRead 70 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_SSP1CON1 190 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___bmul E4 0 CODE 0 text2 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___wmul 1B4 0 CODE 0 text19 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_WDTCWS$WDTCWS_7 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+readAnalog@value 7B 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_GIE 5F 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_RA5 65 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__S0 800C 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__end_of_LCDDrawBox 7F8 0 CODE 0 text20 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_readAnalog B96 0 CODE 0 text1 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_coffee 125E 0 STRCODE 0 stringtext dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_SPI_Init 90 0 CODE 0 text7 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_SYSTEM_Initialize 4FC 0 CODE 0 text5 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_SPI_Init AC 0 CODE 0 text7 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_gotoXY 106 0 CODE 0 text22 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lintentry 4 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\DAVE\AppData\Local\Temp\s3i4.obj
+_CCPTMRS1bits 21F 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__pdataBANK0 5A 0 BANK0 1 dataBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of___bmul 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+SYSTEM_Initialize@state 7C 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADC_Initialize 180 0 CODE 0 text12 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_PIE0bits 716 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext10 2C6 0 CODE 0 text10 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext11 22C 0 CODE 0 text11 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext12 180 0 CODE 0 text12 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext13 154 0 CODE 0 text13 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext14 12C 0 CODE 0 text14 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext15 7F8 0 CODE 0 text15 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext16 33C 0 CODE 0 text16 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext17 45A 0 CODE 0 text17 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext18 3C6 0 CODE 0 text18 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext19 1B4 0 CODE 0 text19 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext20 6B6 0 CODE 0 text20 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext21 278 0 CODE 0 text21 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext22 106 0 CODE 0 text22 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext23 1EA 0 CODE 0 text23 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___aldiv 5B2 0 CODE 0 text3 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___awdiv 45A 0 CODE 0 text17 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___awmod 33C 0 CODE 0 text16 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_PWM7_LoadDutyValue 180 0 CODE 0 text13 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDWriteInt@sign 2B 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext B96 0 CODE 0 maintext dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lbigram 0 0 ABS 0 bigram -
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_RSTOSC$HFINT1 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_LCDInit 2C6 0 CODE 0 text10 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_LATBbits 17 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_samples 45 0 BANK0 1 bssBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_gotoXY 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+main@count 43 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_LCDWriteInt 7F8 0 CODE 0 text15 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_LCDWriteString 12C 0 CODE 0 text14 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_totals 54 0 BANK0 1 bssBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+stackhi 23EF 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s3i4.obj
+stacklo 203C 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s3i4.obj
+_OSCCON1 88D 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_OSCCON3 88F 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_OSCTUNE 892 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_SSP1DATPPS EC6 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADCON0bits 93 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_PWM7_LoadDutyValue 154 0 CODE 0 text13 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+ADCRead@channel 73 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_LPBOREN$OFF 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_ADC_Initialize 1B4 0 CODE 0 text12 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR4bits 710 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lend_init 4 0 CODE 0 end_init -
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_CSWEN$ON 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_channels 5A 0 BANK0 1 dataBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_ZCD$OFF 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+end_of_initialization FFA 0 CODE 0 cinit dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Hintentry 4 0 CODE 0 intentry -
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_PPSLOCKbits E8F 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 77 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+?___aldiv 70 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+?___awdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDWriteInt@fieldLength 29 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_LCDWriteCharacter 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+LCDWriteCharacter@character 24 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext1 98A 0 CODE 0 text1 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext2 E4 0 CODE 0 text2 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext3 5B2 0 CODE 0 text3 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext4 C8 0 CODE 0 text4 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext5 4FC 0 CODE 0 text5 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext6 AC 0 CODE 0 text6 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext7 90 0 CODE 0 text7 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext8 7A 0 CODE 0 text8 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__ptext9 6A 0 CODE 0 text9 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_LCDWriteString 154 0 CODE 0 text14 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDBitmap@len 7A 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___aldiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_ADCRead 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__pstringtext 1000 0 STRCODE 0 stringtext dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_LCDDrawBox 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of_readAnalog 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of__initialization FFA 0 CODE 0 cinit dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+LCDWriteCharacter@base 25 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+?_readAnalog 26 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDWrite@data_or_command 72 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__pidataBANK0 5A 0 CODE 0 idataBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+_SSP1CON1bits 190 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_PWM_Initialize 7A 0 CODE 0 text8 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDWrite@i 73 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_SSP1BUF 18C 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Hend_init 8 0 CODE 0 end_init -
+___aldiv@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_main FDC 0 CODE 0 maintext dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADACQ 9D 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADACT 99 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADCAP 9B 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADCLK 98 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADPCH 9E 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADPRE 9C 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADREF 9A 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_ADRPT 10D 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_fonts 125E 0 STRCODE 0 stringtext dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_OSCEN 891 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_T2CON 28E 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_T2HLT 28F 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_T2RST 291 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_T2TMR 28C 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_TRISA 11 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_TRISB 12 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_TRISC 13 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_fonts 1000 0 STRCODE 0 stringtext dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__end_of_OSCILLATOR_Initialize 7A 0 CODE 0 text9 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+LCDWriteString@characters 78 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__initialization FDC 0 CODE 0 cinit dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___bmul@product 72 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__pbssBANK0 45 0 BANK0 1 bssBANK0 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_T2CONbits 28E 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__Hstringtext 0 0 ABS 0 stringtext -
+_PPSLOCK E8F 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_LCDClear 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_ADCRead E4 0 CODE 0 text4 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__size_of_LCDWrite 0 0 ABS 0 - dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_LCDWriteCharacter 45A 0 CODE 0 text18 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_PWM_Initialize 90 0 CODE 0 text8 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+_OSCILLATOR_Initialize 6A 0 CODE 0 text9 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+__end_of_TMR2_Initialize C8 0 CODE 0 text6 dist/default/production\RyansDisplayOnDiscoveryBoard.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7EE FDC 12 2
+text1 0 4C5 98A 106 2
+text2 0 72 E4 11 2
+text3 0 2D9 5B2 82 2
+text4 0 64 C8 E 2
+text5 0 27E 4FC 5B 2
+text6 0 56 AC E 2
+text7 0 48 90 E 2
+text8 0 3D 7A B 2
+text9 0 35 6A 8 2
+text10 0 163 2C6 3B 2
+text11 0 116 22C 26 2
+text12 0 C0 180 1A 2
+text13 0 AA 154 16 2
+text14 0 96 12C 14 2
+text15 0 3FC 7F8 C9 2
+text16 0 19E 33C 45 2
+text17 0 22D 45A 51 2
+text18 0 1E3 3C6 4A 2
+text19 0 DA 1B4 1B 2
+text20 0 35B 6B6 A1 2
+text21 0 13C 278 27 2
+text22 0 83 106 13 2
+text23 0 F5 1EA 21 2
+maintext 0 5CB B96 223 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 3C 1
+reset_vec 0 0 0 4 2
+stringtext 0 800 1000 3CD 2
+idataBANK0 0 2D 5A 2 2
+clrtext 0 2F 5E 6 2
+config 0 8007 1000E 5 2

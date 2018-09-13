@@ -1,0 +1,2049 @@
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 ;GSCOP350.ASM 02MAR01 - JOHN BECKER - EPE GRAPHICS LCD SCOPE
+                      00002         list p = 16f877
+                      00003         include <p16f877.inc>
+                      00001         LIST
+                      00002 ; P16F877.INC  Standard Header File, Version 1.00    Microchip Technology, Inc.
+                      00373         LIST
+                      00004 ;PIC16F876-20, 5MHz, WDT OFF, POR ON, XTAL XS
+                      00005 
+                      00006 ;Config register bits (all PIC TOOLKIT MK2 defaults except for oscillator)
+                      00007 ; CP1 CP0 DBG NIL WRT CPD LVP BOR CP1 CP0 POR WDT OS1 OS0
+                      00008 ;  1   1   1   1   1   1   0   0   1   1   0   0   1   0
+                      00009 ;N.B. Logic 1/0 do NOT necessarily mean that the function is On/Off
+                      00010 ;respectively - refer to PIC '87 data sheet.
+                      00011 
+                      00012 #DEFINE PAGE0   BCF $03,5   ;STATUS bit 5
+                      00013 #DEFINE PAGE1   BSF $03,5   ;STATUS bit 5
+                      00014 #DEFINE BLOCK0  BCF $03,7   ;STATUS bit 7
+                      00015 #DEFINE BLOCK1  BSF $03,7   ;STATUS bit 7
+                      00016 ;BLOCK0 used for indirect addressing to BANKS 0 & 1, clearing IRP bit
+                      00017 ;BLOCK1 used for indirect addressing to BANKS 2 & 3, setting  IRP bit
+                      00018 
+Error[122]  : Illegal opcode (.EQU)
+                      00019 INDF:    .EQU $00  ;page 0, 1, 2, 3
+Warning[203]: Found opcode in column 1. (OPTION)
+Warning[211]: Extraneous arguments on the line.
+Warning[224]: Use of this instruction is not recommended.
+0000   0062           00020 OPTION:  .EQU $01  ;page 1, 3
+Error[122]  : Illegal opcode (.EQU)
+0000   0062           00021 PCL:     .EQU $02  ;page 0, 1, 2, 3
+Error[122]  : Illegal opcode (.EQU)
+0000   0062           00022 STATUS:  .EQU $03  ;page 0, 1, 2, 3
+Error[122]  : Illegal opcode (.EQU)
+0000   0062           00023 FSR:     .EQU $04  ;page 0, 1, 2, 3
+                      00024 
+Error[122]  : Illegal opcode (.EQU)
+                      00025 PORTA:   .EQU $05  ;page 0
+Error[122]  : Illegal opcode (.EQU)
+                      00026 TRISA:   .EQU $05  ;page 1
+Error[122]  : Illegal opcode (.EQU)
+                      00027 PORTB:   .EQU $06  ;page 0, 2
+Error[122]  : Illegal opcode (.EQU)
+                      00028 TRISB:   .EQU $06  ;page 1, 3
+Error[122]  : Illegal opcode (.EQU)
+                      00029 PORTC:   .EQU $07  ;page 0
+Error[122]  : Illegal opcode (.EQU)
+                      00030 TRISC:   .EQU $07  ;page 1
+Error[122]  : Illegal opcode (.EQU)
+                      00031 PORTD:   .EQU $08  ;page 0
+Error[122]  : Illegal opcode (.EQU)
+                      00032 TRISD:   .EQU $08  ;page 1
+Error[122]  : Illegal opcode (.EQU)
+                      00033 PORTE:   .EQU $09  ;page 0
+Error[122]  : Illegal opcode (.EQU)
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00034 TRISE:   .EQU $09  ;page 1
+Error[122]  : Illegal opcode (.EQU)
+                      00035 INTCON:  .EQU $0B  ;page 0, 1, 2, 3
+Error[122]  : Illegal opcode (.EQU)
+                      00036 ADRESH:  .EQU $1E  ;page 0
+Error[122]  : Illegal opcode (.EQU)
+                      00037 ADRESL:  .EQU $1E  ;page 1
+Error[122]  : Illegal opcode (.EQU)
+                      00038 ADCON0:  .EQU $1F  ;page 0
+Error[122]  : Illegal opcode (.EQU)
+                      00039 ADCON1:  .EQU $1F  ;page 1
+                      00040 
+                      00041 ;*** VARIABLES ONLY ACCESSABLE THROUGH BLOCK 0, PAGE 0 *******
+                      00042 
+Error[122]  : Illegal opcode (.EQU)
+                      00043 ADC0:    .EQU $20  ; ADC storage set, extends to $5F (64 samples)
+                      00044 
+Error[122]  : Illegal opcode (.EQU)
+                      00045 TIMOUT0: .EQU $60  ; sync time-out counter LSB
+Error[122]  : Illegal opcode (.EQU)
+                      00046 TIMOUT1: .EQU $61  ; sync time-out counter MSB
+Error[122]  : Illegal opcode (.EQU)
+                      00047 FOSC:    .EQU $62  ; ADC sampling rate value
+Error[122]  : Illegal opcode (.EQU)
+                      00048 FRQCNT1: .EQU $63  ; freq counter LSB
+Error[122]  : Illegal opcode (.EQU)
+                      00049 FRQCNT2: .EQU $64  ; freq counter MSB
+Error[122]  : Illegal opcode (.EQU)
+                      00050 STORE:   .EQU $65  ; general store used in freq counter
+Error[122]  : Illegal opcode (.EQU)
+                      00051 STORE1:  .EQU $66  ; general store used in freq counter
+Error[122]  : Illegal opcode (.EQU)
+                      00052 STORE2:  .EQU $67  ; general store used in freq counter
+Error[122]  : Illegal opcode (.EQU)
+                      00053 MARK1:   .EQU $68  ; hi-lo flag for freq counter
+Error[122]  : Illegal opcode (.EQU)
+                      00054 MARK2:   .EQU $69  ; hi-lo flag for freq counter
+Error[122]  : Illegal opcode (.EQU)
+                      00055 MIN:     .EQU $6A  ; min val store for volts calc
+Error[122]  : Illegal opcode (.EQU)
+                      00056 MAX:     .EQU $6B  ; max val store for volts calc
+Error[122]  : Illegal opcode (.EQU)
+                      00057 ADCTEMP: .EQU $6C  ; temp val used during data config for LCD
+Error[122]  : Illegal opcode (.EQU)
+                      00058 SWITCH:  .EQU $6D  ; switch status flags
+Error[122]  : Illegal opcode (.EQU)
+                      00059 spare6E: .EQU $6E  ; spare
+Error[122]  : Illegal opcode (.EQU)
+                      00060 spare6F: .EQU $6F  ; spare
+                      00061 
+                      00062 ;******** VARIABLES ACCESSED THROUGH ALL PAGES & BLOCKS ********
+                      00063 
+Error[122]  : Illegal opcode (.EQU)
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00064 LOOPA:   .EQU $70   ; waveform byte sample counter
+Error[122]  : Illegal opcode (.EQU)
+                      00065 LOOPB:   .EQU $71   ; general loop used in SETUP
+Error[122]  : Illegal opcode (.EQU)
+                      00066 LOOPC:   .EQU $72   ; general loop used in SETUP
+Error[122]  : Illegal opcode (.EQU)
+                      00067 LOOPD:   .EQU $73   ; column counter
+Error[122]  : Illegal opcode (.EQU)
+                      00068 LOOPE:   .EQU $74   ; sample/line counter
+Error[122]  : Illegal opcode (.EQU)
+                      00069 ADCADR:  .EQU $75   ; ADC block address
+Error[122]  : Illegal opcode (.EQU)
+                      00070 CLKCNT:  .EQU $76   ; counter for PAUSE val
+Error[122]  : Illegal opcode (.EQU)
+                      00071 ADRLSB:  .EQU $77   ; LCD low address
+Error[122]  : Illegal opcode (.EQU)
+                      00072 ADRMSB:  .EQU $78   ; LCD high address
+Error[122]  : Illegal opcode (.EQU)
+                      00073 ATTRIB:  .EQU $79   ; temp store used in LCD output routines
+Error[122]  : Illegal opcode (.EQU)
+                      00074 TEMPA:   .EQU $7A   ; temp store used in LCD output routines
+Error[122]  : Illegal opcode (.EQU)
+                      00075 COLUMN:  .EQU $7B   ; column length holder
+Error[122]  : Illegal opcode (.EQU)
+                      00076 PEAKLO:  .EQU $7C   ; waveform sample min for graph
+Error[122]  : Illegal opcode (.EQU)
+                      00077 PEAKHI:  .EQU $7D   ; waveform sample max for graph
+Error[122]  : Illegal opcode (.EQU)
+                      00078 LOBIT:   .EQU $7E   ; rotating bit for 8-bit column
+Error[122]  : Illegal opcode (.EQU)
+                      00079 spare7F: .EQU $7F   ; spare
+                      00080 
+                      00081 ;******* variables in BLOCK 0, PAGE 1 ********
+                      00082 
+Error[122]  : Illegal opcode (.EQU)
+                      00083 ADC1:    .EQU $A0   ; ADC storage set for 2nd SET of 64 samples
+                      00084                     ; extends to $EF
+                      00085 
+                      00086 ;******* variables in BLOCK 2, PAGE 2 ********
+                      00087 
+Error[122]  : Illegal opcode (.EQU)
+                      00088 MEM0:    .EQU $20   ; start of memory for 64 screen line samples
+                      00089                     ; extends to $5F
+                      00090 
+                      00091 ;******* variables in BLOCK 2, PAGE 3 ********
+                      00092 
+Error[122]  : Illegal opcode (.EQU)
+                      00093 COUNTER1: .EQU $20      ;counter used in decimalisation
+Error[122]  : Illegal opcode (.EQU)
+                      00094 COUNTER2: .EQU $21      ;counter used in decimalisation
+Error[122]  : Illegal opcode (.EQU)
+                      00095 COUNT0: .EQU $22        ;holds bin val to be decimalised LSB
+Error[122]  : Illegal opcode (.EQU)
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE  4
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00096 COUNT1: .EQU $23        ;holds bin val to be decimalised NSB
+Error[122]  : Illegal opcode (.EQU)
+                      00097 COUNT2: .EQU $24        ;holds bin val to be decimalised MSB
+Error[122]  : Illegal opcode (.EQU)
+                      00098 DIGIT1: .EQU $25        ;decimalised digit 1
+Error[122]  : Illegal opcode (.EQU)
+                      00099 DIGIT2: .EQU $26        ;decimalised digit 2
+Error[122]  : Illegal opcode (.EQU)
+                      00100 DIGIT3: .EQU $27        ;decimalised digit 3
+Error[122]  : Illegal opcode (.EQU)
+                      00101 DIGIT4: .EQU $28        ;decimalised digit 4
+Error[122]  : Illegal opcode (.EQU)
+                      00102 DIGIT5: .EQU $29        ;decimalised digit 5
+Error[122]  : Illegal opcode (.EQU)
+                      00103 DIGIT6: .EQU $2A        ;decimalised digit 6
+Error[122]  : Illegal opcode (.EQU)
+                      00104 DIGIT7: .EQU $2B        ;decimalised digit 7
+Error[122]  : Illegal opcode (.EQU)
+                      00105 DIGIT8: .EQU $2C        ;decimalised digit 8
+                      00106 
+                      00107 ;******* FIXED VALUES FOR COMMANDS *********
+                      00108 
+Error[122]  : Illegal opcode (.EQU)
+                      00109 TXHOME: .EQU $40   ; text home address command
+Error[122]  : Illegal opcode (.EQU)
+                      00110 TXAREA: .EQU $41   ; text area (columns) address command
+Error[122]  : Illegal opcode (.EQU)
+                      00111 GRHOME: .EQU $42   ; graphics home address command
+Error[122]  : Illegal opcode (.EQU)
+                      00112 GRAREA: .EQU $43   ; graphic area (columns) address command
+Error[122]  : Illegal opcode (.EQU)
+                      00113 AWRON:  .EQU $B0   ; autowrite on command
+Error[122]  : Illegal opcode (.EQU)
+                      00114 AWROFF: .EQU $B2   ; autowrite off command
+Error[122]  : Illegal opcode (.EQU)
+                      00115 OFFSET: .EQU $22   ; offset command
+Error[122]  : Illegal opcode (.EQU)
+                      00116 ADPSET: .EQU $24   ; address set command
+Error[122]  : Illegal opcode (.EQU)
+                      00117 PEEK:   .EQU $E0   ; screen peek command
+Error[122]  : Illegal opcode (.EQU)
+                      00118 CSRPOS: .EQU $21   ; set cursor position command
+                      00119 
+                      00120 ;******* BIT VALUES ******
+                      00121 
+Error[122]  : Illegal opcode (.EQU)
+                      00122 W:      .EQU 0          ; working reg
+Error[122]  : Illegal opcode (.EQU)
+                      00123 F:      .EQU 1          ; file reg
+Error[122]  : Illegal opcode (.EQU)
+                      00124 Z:      .EQU 2          ; ZERO status
+Error[122]  : Illegal opcode (.EQU)
+                      00125 C:      .EQU 0          ; CARRY status
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE  5
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Error[122]  : Illegal opcode (.EQU)
+                      00126 DC:     .EQU 1          ; DIGIT CARRY status
+Error[122]  : Illegal opcode (.EQU)
+                      00127 RP0:    .EQU 5          ; STATUS BLOCK0 (BANKS0/1) reg
+Error[122]  : Illegal opcode (.EQU)
+                      00128 RP1:    .EQU 6          ; STATUS BLOCK1 (BANKS2/3) reg
+                      00129 
+Error[122]  : Illegal opcode (.EQU)
+                      00130 GIE:    .EQU 7          ; INTCON reg
+Error[122]  : Illegal opcode (.EQU)
+                      00131 GO:     .EQU 2          ; ADCON0 reg
+Error[122]  : Illegal opcode (.EQU)
+                      00132 FS:     .EQU %00000000  ; FS mode set by bit 5: 1 = 6x8, 0 = 8x8
+                      00133                         ; 8x8 needed for EPE demos
+                      00134 
+                      00135 ;..........
+                      00136 
+                      00137 ;        .ORG 0
+                      00138 ;        goto 5
+                      00139 ;        nop
+                      00140 ;        nop
+                      00141 ;        nop
+Warning[207]: Found label after column 1. (.ORG)
+Error[108]  : Illegal character ($)
+                      00142         .ORG $0004      ; Interrupt vector address
+0001   2802           00143         GOTO GIEOFF     ; Jump to interrupt routine on interrupt
+Warning[207]: Found label after column 1. (.ORG)
+Error[108]  : Illegal character ($)
+0001   2802           00144         .ORG $0005      ; Start of program memory
+                      00145 
+0002   138B           00146 GIEOFF: BCF INTCON,GIE  ; turn off global interrupts
+0003   1B8B           00147         BTFSC INTCON,GIE
+0004   2802           00148         goto GIEOFF
+0005   2829           00149         goto START
+                      00150 
+Error[113]  : Symbol not previously defined (FOSC)
+0006   0800           00151 FREQVAL: movf FOSC,W
+0007   0782           00152         addwf PCL,F     ;table for freq factor routing
+0008   28FF           00153         goto GETFREQ0
+0009   2904           00154         goto GETFREQ1
+000A   2909           00155         goto GETFREQ2
+                      00156 
+000B   0782           00157 TABLE1: ADDWF PCL,F
+000C   3447           00158         retlw 'G'
+000D   342D           00159         retlw '-'
+000E   3453           00160         retlw 'S'
+000F   3443           00161         retlw 'C'
+0010   344F           00162         retlw 'O'
+0011   3450           00163         retlw 'P'
+0012   3445           00164         retlw 'E'
+0013   3420           00165         retlw ' '
+0014   3420           00166         retlw ' '
+0015   3420           00167         retlw ' '
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE  6
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0016   3452           00168         retlw 'R'
+0017   3441           00169         retlw 'A'
+0018   3454           00170         retlw 'T'
+0019   3445           00171         retlw 'E'
+001A   3420           00172         retlw ' '
+001B   3420           00173         retlw ' '
+                      00174 
+001C   3456           00175         retlw 'V'
+001D   3470           00176         retlw 'p'
+001E   342D           00177         retlw '-'
+001F   3470           00178         retlw 'p'
+0020   3420           00179         retlw ' '
+0021   3420           00180         retlw ' '
+0022   3420           00181         retlw ' '
+0023   3420           00182         retlw ' '
+0024   3420           00183         retlw ' '
+0025   3420           00184         retlw ' '
+0026   3420           00185         retlw ' '
+0027   3448           00186         retlw 'H'
+0028   347A           00187         retlw 'z'
+                      00188 
+                      00189 ;**************
+                      00190 
+0029   1283           00191 START:  bcf STATUS,RP0
+002A   1303           00192         bcf STATUS,RP1
+Error[112]  : Missing operator
+002B   1380           00193         BLOCK0
+002C   0185           00194         clrf PORTA
+002D   0186           00195         clrf PORTB
+Error[128]  : Missing argument(s)
+002E   3000           00196         movlw %00001111     ; FS low, RST low, CD CE RD WR high
+002F   0087           00197         movwf PORTC
+0030   0188           00198         clrf PORTD
+0031   0189           00199         clrf PORTE
+Error[112]  : Missing operator
+0032   1680           00200         PAGE1
+Warning[202]: Argument out of range.  Least significant bits used.
+0033   3055           00201         movlw 255
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0034   0085           00202         movwf TRISA         ; PORTA as input
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0035   0086           00203         movwf TRISB         ; PORTB as input
+Error[113]  : Symbol not previously defined (FS)
+0036   3000           00204         movlw FS
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0037   0087           00205         movwf TRISC         ; PORTC as output GRAPHIC LCD control/FS
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0038   0188           00206         clrf TRISD          ; PORTD as output GRAPHIC LCD D0-D7
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0039   0189           00207         clrf TRISE          ; PORTE as output
+Error[128]  : Missing argument(s)
+003A   3000           00208         movlw %00000110     ; pull-up Rs on (bit 7 lo), timer 1/25 sec
+Error[113]  : Symbol not previously defined (OPTION)
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE  7
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+003B   0080           00209         movwf OPTION        ; (for 3.2768MHz xtal)
+Error[128]  : Missing argument(s)
+003C   3000           00210         movlw %00000100     ; set LHS justify, RA0, RA1, RA3 as analog inputs
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+003D   009F           00211         movwf ADCON1        ; with RA, RE digital, ref to +VE and 0V
+Error[112]  : Missing operator
+003E   1280           00212         PAGE0
+Error[128]  : Missing argument(s)
+003F   3000           00213         movlw %00011111     ; FS low,  RST CD CE RD WR high
+0040   0087           00214         movwf PORTC
+                      00215 
+Error[128]  : Missing argument(s)
+0041   3000           00216         movlw %00000001     ; set AD on, Fosc/2
+0042   009F           00217         movwf ADCON0
+                      00218 
+0043   22B8           00219         call PAUSIT         ; 1/5th sec pause
+                      00220 
+0044   3016           00221         movlw 16
+Error[113]  : Symbol not previously defined (COLUMN)
+0045   0080           00222         movwf COLUMN      ; set column length
+0046   22C1           00223         call SETUP
+                      00224 
+Error[128]  : Missing argument(s)
+0047   3000           00225         movlw %10011100   ; text on, graphic on, cursor & blink off
+0048   229D           00226         call SENDCMD      ; send command
+                      00227 
+Error[113]  : Symbol not previously defined (ADRMSB)
+0049   0180           00228 WORDS:  clrf ADRMSB       ; SHOW TEXT
+004A   3000           00229         movlw 0           ; set column
+004B   22B6           00230         call LINE0        ; set cell number for line stated
+004C   3016           00231         movlw 16          ; character quantity
+Error[113]  : Symbol not previously defined (LOOPC)
+004D   0080           00232         movwf LOOPC       ;
+Error[113]  : Symbol not previously defined (LOOPB)
+004E   0180           00233         clrf LOOPB        ; clear table loop counter
+004F   22A8           00234         call SHWTXT       ;
+                      00235 
+Error[113]  : Symbol not previously defined (ADRMSB)
+0050   0180           00236         clrf ADRMSB
+0051   3003           00237         movlw 3           ; set column
+0052   22B5           00238         call LINE7        ; set cell number for line stated
+0053   3013           00239         movlw 13          ; character quantity
+Error[113]  : Symbol not previously defined (LOOPC)
+0054   0080           00240         movwf LOOPC       ;
+0055   22A8           00241         call SHWTXT       ;
+0056   21F1           00242         call GETRATE
+                      00243 
+Error[128]  : Missing argument(s)
+0057   3000           00244         movlw %10000000
+Error[113]  : Symbol not previously defined (SWITCH)
+0058   0080           00245         movwf SWITCH
+                      00246 
+                      00247 ;............................
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE  8
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00248 
+0059   151F           00249 MAIN:    bsf ADCON0,GO     ; start data conversion
+005A   1886           00250          btfsc PORTB,1     ; is sync needed?
+005B   287F           00251          goto SAMPLE1      ; no
+Error[113]  : Symbol not previously defined (TIMOUT0)
+005C   0180           00252          clrf TIMOUT0      ; yes, clear timeout counters
+Error[113]  : Symbol not previously defined (TIMOUT1)
+005D   0180           00253          clrf TIMOUT1
+                      00254 
+                      00255 ;.........get sync
+                      00256 
+005E   191F           00257 WAITS1:  btfsc ADCON0,GO
+005F   285E           00258          goto WAITS1 
+0060   081E           00259          movf ADRESH,W     ;get ADC val
+                      00260 ;         comf ADRESH,W     ;get  & invert ADC val
+0061   151F           00261          bsf ADCON0,GO     ;start data conversion for next sample
+Error[113]  : Symbol not previously defined (TIMOUT0)
+0062   0B80           00262          decfsz TIMOUT0,F
+Error[113]  : Symbol not previously defined (TIMOUT1)
+0063   0B80           00263          decfsz TIMOUT1,F
+0064   2866           00264          goto WAITS1A
+0065   287F           00265          goto SAMPLE1
+Warning[202]: Argument out of range.  Least significant bits used.
+0066   3E14           00266 WAITS1A: addlw 114
+0067   1C03           00267          btfss STATUS,C
+0068   285E           00268          goto WAITS1
+                      00269 
+0069   191F           00270 WAITS2:  btfsc ADCON0,GO
+006A   2869           00271          goto WAITS2 
+Warning[202]: Argument out of range.  Least significant bits used.
+006B   3020           00272          movlw 120
+006C   021E           00273          subwf ADRESH,W    ;sub 120 from ADC val
+006D   151F           00274          bsf ADCON0,GO     ;start data conversion for next sample
+Error[113]  : Symbol not previously defined (TIMOUT0)
+006E   0B80           00275          decfsz TIMOUT0,F
+Error[113]  : Symbol not previously defined (TIMOUT1)
+006F   0B80           00276          decfsz TIMOUT1,F
+0070   2872           00277          goto WAITS2A
+0071   287F           00278          goto SAMPLE1
+0072   1803           00279 WAITS2A: btfsc STATUS,C
+0073   2869           00280          goto WAITS2
+                      00281 
+0074   191F           00282 WAITS3:  btfsc ADCON0,GO
+0075   2874           00283          goto WAITS3 
+                      00284 ;         movf ADRESH,W     ;get ADC val
+0076   091E           00285          comf ADRESH,W     ;get & invert ADC val
+0077   151F           00286          bsf ADCON0,GO     ;start data conversion for next sample
+Error[113]  : Symbol not previously defined (TIMOUT0)
+0078   0B80           00287          decfsz TIMOUT0,F
+Error[113]  : Symbol not previously defined (TIMOUT1)
+0079   0B80           00288          decfsz TIMOUT1,F
+007A   287C           00289          goto WAITS3A
+007B   287F           00290          goto SAMPLE1
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE  9
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[202]: Argument out of range.  Least significant bits used.
+007C   3E28           00291 WAITS3A: addlw 128
+007D   1C03           00292          btfss STATUS,C
+007E   2874           00293          goto WAITS3
+                      00294 
+                      00295 ;....... get 2 consecutive 64-byte data blocks from ADC
+                      00296 
+Error[113]  : Symbol not previously defined (ADC0)
+007F   3000           00297 SAMPLE1: movlw ADC0        ;set store address at ADC0 BLOCK0
+0080   0084           00298          movwf FSR
+0081   3064           00299          movlw 64
+Error[113]  : Symbol not previously defined (LOOPE)
+0082   0080           00300          movwf LOOPE
+                      00301 
+0083   191F           00302 WAITAD0: btfsc ADCON0,GO
+0084   2883           00303          goto WAITAD0
+                      00304 ;         movf ADRESH,W     ;get ADC val
+0085   091E           00305          comf ADRESH,W     ;get & invert ADC val
+0086   151F           00306          bsf ADCON0,GO     ;start data conversion for next sample
+0087   0080           00307          movwf INDF        ;put it out to mem
+0088   0A84           00308          incf FSR,F        ;inc store address
+Error[113]  : Symbol not previously defined (LOOPE)
+0089   0B80           00309          decfsz LOOPE,F
+008A   2883           00310          goto WAITAD0
+                      00311 
+Error[113]  : Symbol not previously defined (ADC1)
+008B   3000           00312          movlw ADC1        ;set store address at ADC1 BLOCK0
+008C   0084           00313          movwf FSR
+Error[113]  : Symbol not previously defined (LOOPE)
+008D   1700           00314          bsf LOOPE,6
+                      00315 
+008E   191F           00316 WAITAD1: btfsc ADCON0,GO
+008F   288E           00317          goto WAITAD1
+                      00318 ;         movf ADRESH,W     ; get ADC val
+0090   091E           00319          comf ADRESH,W     ;get & invert ADC val
+0091   151F           00320          bsf ADCON0,GO     ;start data conversion for next sample
+0092   0080           00321          movwf INDF        ;put it out to mem
+0093   0A84           00322          incf FSR,F        ;inc store address
+Error[113]  : Symbol not previously defined (LOOPE)
+0094   0B80           00323          decfsz LOOPE,F
+0095   288E           00324          goto WAITAD1
+                      00325 
+Error[113]  : Symbol not previously defined (LOOPA)
+0096   0180           00326          clrf LOOPA
+Error[113]  : Symbol not previously defined (LOOPD)
+0097   0180           00327          clrf LOOPD
+                      00328 
+                      00329 ;...........
+                      00330 
+Error[113]  : Symbol not previously defined (ADC0)
+0098   3000           00331          movlw ADC0        ; config & send data ADC0 BLOCK 0 to screen
+Error[113]  : Symbol not previously defined (ADCADR)
+0099   0080           00332          movwf ADCADR      ; samples need limiting to value of 63 max
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 10
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+009A   0084           00333          movwf FSR
+                      00334 
+009B   0C00           00335          rrf INDF,W        ; divide by 2
+Error[113]  : Symbol not previously defined (ADCTEMP)
+009C   0080           00336          movwf ADCTEMP
+Error[113]  : Symbol not previously defined (ADCTEMP)
+009D   0C00           00337          rrf ADCTEMP,W     ; divide by 2 again and clear bits 6&7
+Error[128]  : Missing argument(s)
+009E   3900           00338          andlw %00111111
+Error[113]  : Symbol not previously defined (PEAKLO)
+009F   0080           00339          movwf PEAKLO      ; move into PEAKLO (setting screen start val)
+                      00340 
+Error[128]  : Missing argument(s)
+00A0   3000           00341 BLK0:    movlw %10000000   ; indicates which bit of column is affected
+Error[113]  : Symbol not previously defined (LOBIT)
+00A1   0080           00342          movwf LOBIT
+00A2   20B2           00343          call SCOPE1       ; config & send to LCD
+Error[113]  : Symbol not previously defined (LOOPD)
+00A3   0A80           00344          incf LOOPD,F      ; inc to next column
+Error[113]  : Symbol not previously defined (LOOPD)
+00A4   1D80           00345          btfss LOOPD,3     ; has column 8 been reached?
+00A5   28A0           00346          goto BLK0         ; no
+                      00347 
+Error[113]  : Symbol not previously defined (ADC1)
+00A6   3000           00348          movlw ADC1        ; config & send data ADC1 BLOCK 0 to screen
+Error[113]  : Symbol not previously defined (ADCADR)
+00A7   0080           00349          movwf ADCADR
+Error[128]  : Missing argument(s)
+00A8   3000           00350 BLK1:    movlw %10000000   ; indicates which bit of column is affected
+Error[113]  : Symbol not previously defined (LOBIT)
+00A9   0080           00351          movwf LOBIT
+00AA   20B2           00352          call SCOPE1       ; config & send to LCD
+Error[113]  : Symbol not previously defined (LOOPD)
+00AB   0A80           00353          incf LOOPD,F      ; inc to next column
+Error[113]  : Symbol not previously defined (LOOPD)
+00AC   1E00           00354          btfss LOOPD,4     ; has column 16 been reached?
+00AD   28A8           00355          goto BLK1         ; no
+                      00356 
+Error[113]  : Symbol not previously defined (SWITCH)
+00AE   1B80           00357          btfsc SWITCH,7    ; is text off?
+00AF   2006           00358          call FREQVAL      ; no, show freq & volts
+00B0   21DE           00359          call TESTIT       ; get switches status
+00B1   2859           00360          goto MAIN         ; start again at screen left
+                      00361 
+                      00362 ;********** START OF SCOPE SUB-ROUTINES ***************
+                      00363 
+Error[113]  : Symbol not previously defined (LOOPA)
+00B2   0800           00364 SCOPE1: movf LOOPA,W      ; copy ADC loop val into PEAKHI
+Error[113]  : Symbol not previously defined (ADCADR)
+00B3   0700           00365         addwf ADCADR,W
+00B4   0084           00366         movwf FSR         ;
+00B5   0C00           00367         rrf INDF,W        ; divide by 2
+Error[113]  : Symbol not previously defined (ADCTEMP)
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 11
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+00B6   0080           00368         movwf ADCTEMP
+Error[113]  : Symbol not previously defined (ADCTEMP)
+00B7   0C00           00369         rrf ADCTEMP,W     ; divide by 2 again and clear bits 6&7
+Error[128]  : Missing argument(s)
+00B8   3900           00370         andlw %00111111
+Error[113]  : Symbol not previously defined (ADCTEMP)
+00B9   0080           00371         movwf ADCTEMP     ; store for later use
+Error[113]  : Symbol not previously defined (PEAKHI)
+00BA   0080           00372         movwf PEAKHI      ; and move into PEAKHI
+Error[113]  : Symbol not previously defined (PEAKLO)
+00BB   0200           00373         subwf PEAKLO,W    ; is PEAKHI > PEAKLO ? (subtract hi from lo)
+00BC   1C03           00374         btfss STATUS,C    ; is there a borrow?
+00BD   28C2           00375         goto SCOPE2       ; yes
+                      00376 
+Error[113]  : Symbol not previously defined (PEAKLO)
+00BE   0800           00377         movf PEAKLO,W     ; no, so swap lo & hi
+Error[113]  : Symbol not previously defined (PEAKHI)
+00BF   0080           00378         movwf PEAKHI
+Error[113]  : Symbol not previously defined (ADCTEMP)
+00C0   0800           00379         movf ADCTEMP,W
+Error[113]  : Symbol not previously defined (PEAKLO)
+00C1   0080           00380         movwf PEAKLO
+                      00381 
+00C2   20CD           00382 SCOPE2: call SETMEM       ; config LCD memory store
+Error[113]  : Symbol not previously defined (ADCTEMP)
+00C3   0800           00383         movf ADCTEMP,W    ; store current val into PEAKLO
+Error[113]  : Symbol not previously defined (PEAKLO)
+00C4   0080           00384         movwf PEAKLO
+Error[113]  : Symbol not previously defined (LOOPA)
+00C5   0A80           00385         incf LOOPA,F      ; inc wavform counter
+Error[113]  : Symbol not previously defined (LOOPA)
+00C6   1300           00386         bcf LOOPA,6       ; limit to 64 max
+                      00387 
+00C7   1003           00388         bcf STATUS,C
+Error[113]  : Symbol not previously defined (LOBIT)
+00C8   0C80           00389         rrf LOBIT,F       ; shift right bitting setting val
+00C9   1C03           00390         btfss STATUS,C    ; is CARRY set? (stating all 8 bits of col done)
+00CA   28B2           00391         goto SCOPE1       ; no
+00CB   20E2           00392         call SHOWMEM      ; display results on screen
+00CC   0008           00393         return
+                      00394 
+                      00395 ;************ config LCD memory store
+                      00396 
+Error[112]  : Missing operator
+00CD   1780           00397 SETMEM: BLOCK1
+Error[113]  : Symbol not previously defined (MEM0)
+00CE   3000           00398         movlw MEM0        ; set address for 1st affected LCD store memory
+Error[113]  : Symbol not previously defined (PEAKLO)
+00CF   0700           00399         addwf PEAKLO,W
+00D0   0084           00400         movwf FSR         ;
+Error[113]  : Symbol not previously defined (PEAKLO)
+00D1   0800           00401         movf PEAKLO,W     ; set loop to val of PEAKLO
+Error[113]  : Symbol not previously defined (LOOPE)
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 12
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+00D2   0080           00402         movwf LOOPE
+Error[113]  : Symbol not previously defined (LOBIT)
+00D3   0800           00403         movf LOBIT,W
+00D4   0480           00404         iorwf INDF,F      ; (MEM0) set new bit
+                      00405 
+Error[113]  : Symbol not previously defined (LOOPE)
+00D5   0800           00406 SCOPE3: movf LOOPE,W      ; is loop = peakhi?
+Error[113]  : Symbol not previously defined (PEAKHI)
+00D6   0600           00407         xorwf PEAKHI,W
+00D7   1903           00408         btfsc STATUS,Z
+00D8   28E0           00409         goto SCOPE4
+Error[113]  : Symbol not previously defined (LOBIT)
+00D9   0800           00410         movf LOBIT,W      ; no
+00DA   0480           00411         iorwf INDF,F      ; (MEM0) set new bit
+Error[113]  : Symbol not previously defined (LOOPE)
+00DB   0A80           00412         incf LOOPE,F
+Error[113]  : Symbol not previously defined (LOOPE)
+00DC   1B00           00413         btfsc LOOPE,6
+00DD   28E0           00414         goto SCOPE4
+00DE   0A84           00415         incf FSR,F
+00DF   28D5           00416         goto SCOPE3
+Error[112]  : Missing operator
+00E0   1380           00417 SCOPE4: BLOCK0
+00E1   0008           00418         return
+                      00419 
+                      00420 ;************ send 8-bit column to screen
+                      00421 
+Error[113]  : Symbol not previously defined (MEM0)
+00E2   3000           00422 SHOWMEM: movlw MEM0
+00E3   3E63           00423         addlw 63
+00E4   0084           00424         movwf FSR
+00E5   3064           00425         movlw 64
+Error[113]  : Symbol not previously defined (LOOPE)
+00E6   0080           00426         movwf LOOPE       ; set loop val (number of lines)
+00E7   3002           00427         movlw 2           ; set graphic base address ($02xx)
+Error[113]  : Symbol not previously defined (ADRMSB)
+00E8   0080           00428         movwf ADRMSB
+Error[113]  : Symbol not previously defined (LOOPD)
+00E9   0800           00429         movf LOOPD,W      ; set column
+Error[113]  : Symbol not previously defined (ADRLSB)
+00EA   0080           00430         movwf ADRLSB
+                      00431 
+00EB   221E           00432 SCOPE5: call SCREENADR    ; set screen write address
+Error[113]  : Symbol not previously defined (AWRON)
+00EC   3000           00433         movlw AWRON       ; AUTO WRITE ON
+00ED   229D           00434         call SENDCMD      ; send command
+00EE   226D           00435         call CHECK3       ; read status for DA0/DA1 = 3
+Error[112]  : Missing operator
+00EF   1780           00436         BLOCK1
+00F0   0800           00437         movf INDF,W       ; get value, clear store
+Error[108]  : Illegal character (,)
+00F1   0180           00438         clrf INDF,F
+Error[112]  : Missing operator
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 13
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+00F2   1380           00439         BLOCK0
+00F3   0384           00440         decf FSR,F
+00F4   228E           00441         call OUTDATA      ;
+Error[113]  : Symbol not previously defined (AWROFF)
+00F5   3000           00442         movlw AWROFF      ; AUTO WRITE OFF
+00F6   229D           00443         call SENDCMD      ; send command
+                      00444 
+Error[113]  : Symbol not previously defined (LOOPE)
+00F7   0380           00445         decf LOOPE,F
+00F8   1903           00446         btfsc STATUS,Z
+00F9   0008           00447         return
+Error[113]  : Symbol not previously defined (COLUMN)
+00FA   0800           00448         movf COLUMN,W     ; set for next line
+Error[113]  : Symbol not previously defined (ADRLSB)
+00FB   0780           00449         addwf ADRLSB,F
+00FC   1803           00450         btfsc STATUS,0    ; add CARRY (if any) to MSB
+Error[113]  : Symbol not previously defined (ADRMSB)
+00FD   0A80           00451         incf ADRMSB,F
+00FE   28EB           00452         goto SCOPE5       ; repeat until done
+                      00453 
+                      00454 ;.......Frequency & Volts get & display
+                      00455 
+                      00456    ;Prototype values (LSB/MSB) set with freq gen at 4000Hz, counter at 4000Hz
+                      00457    ;Fosc=0 ...70/85  Approx best max - Gen at 17007Hz counter showed 16984Hz
+                      00458    ;Fosc=1 ...110/77 Approx best max - Gen at 17007Hz counter showed 16998Hz
+                      00459    ;Fosc=2 ...128/24 Approx best max - Gen at 5827Hz counter showed 5812Hz
+                      00460 
+00FF   3070           00461 GETFREQ0: movlw 70         ;freq factor lsb ... for Fosc=0 ...70/85
+Error[113]  : Symbol not previously defined (STORE)
+0100   0080           00462          movwf STORE       ;sample counter lsb
+0101   3085           00463          movlw 85          ;freq factor msb
+Error[113]  : Symbol not previously defined (STORE1)
+0102   0080           00464          movwf STORE1      ;sample counter msb
+0103   290D           00465          goto GF0
+                      00466 
+Warning[202]: Argument out of range.  Least significant bits used.
+0104   3010           00467 GETFREQ1: movlw 110        ;freq factor lsb ... for Fosc=1 ...110/77
+Error[113]  : Symbol not previously defined (STORE)
+0105   0080           00468          movwf STORE       ;sample counter lsb
+0106   3077           00469          movlw 77          ;freq factor msb
+Error[113]  : Symbol not previously defined (STORE1)
+0107   0080           00470          movwf STORE1      ;sample counter msb
+0108   290D           00471          goto GF0
+                      00472 
+Warning[202]: Argument out of range.  Least significant bits used.
+0109   3028           00473 GETFREQ2: movlw 128        ;freq factor lsb ... for Fosc=2 ...128/24
+Error[113]  : Symbol not previously defined (STORE)
+010A   0080           00474          movwf STORE       ;sample counter lsb
+010B   3024           00475          movlw 24          ;freq factor msb
+Error[113]  : Symbol not previously defined (STORE1)
+010C   0080           00476          movwf STORE1      ;sample counter msb
+                      00477 
+010D   151F           00478 GF0:     bsf ADCON0,GO     ;start data conversion for next sample
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 14
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Error[113]  : Symbol not previously defined (FRQCNT1)
+010E   0180           00479          clrf FRQCNT1      ;freq counter lsb
+Error[113]  : Symbol not previously defined (FRQCNT2)
+010F   0180           00480          clrf FRQCNT2      ;freq counter msb
+                      00481 
+0110   191F           00482 GF1:     btfsc ADCON0,GO
+0111   2910           00483          goto GF1
+                      00484 
+                      00485 ;         movf ADRESH,W     ;get ADC val
+0112   091E           00486          comf ADRESH,W     ;get & invert ADC val
+Error[113]  : Symbol not previously defined (STORE2)
+0113   0080           00487          movwf STORE2
+0114   151F           00488          bsf ADCON0,GO     ;start data conversion for next sample
+Warning[202]: Argument out of range.  Least significant bits used.
+0115   3020           00489 CHKPOS:  movlw 120         ;is ADC >136
+Error[113]  : Symbol not previously defined (STORE2)
+0116   0700           00490          addwf STORE2,W
+0117   1C03           00491          btfss STATUS,C
+0118   291B           00492          goto CPOS1
+Error[113]  : Symbol not previously defined (MARK2)
+0119   1400           00493          bsf MARK2,0
+011A   291C           00494          goto CHKNEG
+                      00495 
+Error[113]  : Symbol not previously defined (MARK2)
+011B   1380           00496 CPOS1:   bcf MARK2,7       ;dummy action to maintain timing
+                      00497 
+Warning[202]: Argument out of range.  Least significant bits used.
+011C   3036           00498 CHKNEG:  movlw 136
+Error[113]  : Symbol not previously defined (STORE2)
+011D   0700           00499          addwf STORE2,W
+011E   1803           00500          btfsc STATUS,C
+011F   2922           00501          goto CNEG1
+Error[113]  : Symbol not previously defined (MARK2)
+0120   1000           00502          bcf MARK2,0
+0121   2923           00503          goto MARKIT
+                      00504 
+Error[113]  : Symbol not previously defined (MARK2)
+0122   1380           00505 CNEG1:   bcf MARK2,7       ;dummy action to maintain timing
+                      00506 
+Error[113]  : Symbol not previously defined (MARK2)
+0123   0800           00507 MARKIT:  movf MARK2,W      ;compare MARK1 & 2, add result (1 or 0) to count
+Error[113]  : Symbol not previously defined (MARK1)
+0124   0600           00508          xorwf MARK1,W
+Error[113]  : Symbol not previously defined (FRQCNT1)
+0125   0780           00509          addwf FRQCNT1,F
+0126   0803           00510          movf STATUS,W
+0127   3901           00511          andlw 1
+Error[113]  : Symbol not previously defined (FRQCNT2)
+0128   0780           00512          addwf FRQCNT2,F
+                      00513 
+Error[113]  : Symbol not previously defined (MARK2)
+0129   0800           00514 GF4:     movf MARK2,W
+Error[113]  : Symbol not previously defined (MARK1)
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 15
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+012A   0080           00515          movwf MARK1
+Error[113]  : Symbol not previously defined (STORE)
+012B   0B80           00516          decfsz STORE,F    ;dec counter
+012C   2910           00517          goto GF1          
+Error[113]  : Symbol not previously defined (STORE1)
+012D   0B80           00518          decfsz STORE1,F   ;dec counter
+012E   2910           00519          goto GF1          
+                      00520 
+Error[113]  : Symbol not previously defined (ADC0)
+012F   3000           00521 GETVOLTS: movlw ADC0
+0130   0084           00522          movwf FSR
+Warning[202]: Argument out of range.  Least significant bits used.
+0131   3055           00523          movlw 255
+Error[113]  : Symbol not previously defined (MIN)
+0132   0080           00524          movwf MIN
+Error[113]  : Symbol not previously defined (MAX)
+0133   0180           00525          clrf MAX
+                      00526 
+Error[112]  : Missing operator
+0134   1380           00527          BLOCK0
+0135   213A           00528          call GV1
+Error[113]  : Symbol not previously defined (ADC1)
+0136   3000           00529          movlw ADC1
+0137   0084           00530          movwf FSR
+0138   213A           00531          call GV1
+0139   294C           00532          goto GV5
+                      00533 
+                      00534 ;...........
+                      00535 
+013A   3064           00536 GV1:     movlw 64
+Error[113]  : Symbol not previously defined (LOOPE)
+013B   0080           00537          movwf LOOPE
+                      00538 
+013C   0800           00539 GV2:     movf INDF,W       ;is ADC < MIN ? (sub ADC from MIN)
+Error[113]  : Symbol not previously defined (MIN)
+013D   0200           00540          subwf MIN,W
+013E   1C03           00541          btfss STATUS,C    ;is there a borrow
+013F   2942           00542          goto GV3          ;yes
+0140   0800           00543          movf INDF,W
+Error[113]  : Symbol not previously defined (MIN)
+0141   0080           00544          movwf MIN
+Error[113]  : Symbol not previously defined (MAX)
+0142   0800           00545 GV3:     movf MAX,W        ;is ADC > MAX ? (sub MAX from ADC)
+0143   0200           00546          subwf INDF,W    
+0144   1C03           00547          btfss STATUS,C    ;is there a borrow
+0145   2948           00548          goto GV4          ;no
+0146   0800           00549          movf INDF,W
+Error[113]  : Symbol not previously defined (MAX)
+0147   0080           00550          movwf MAX
+0148   0A84           00551 GV4:     incf FSR,F
+Error[113]  : Symbol not previously defined (LOOPE)
+0149   0B80           00552          decfsz LOOPE,F
+014A   293C           00553          goto GV2
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 16
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+014B   0008           00554          return
+                      00555 
+                      00556 ;.........
+                      00557 
+Error[113]  : Symbol not previously defined (MIN)
+014C   0800           00558 GV5:     movf MIN,W       ; sub MIN from MAX
+Error[113]  : Symbol not previously defined (MAX)
+014D   0200           00559          subwf MAX,W
+                      00560 
+Error[112]  : Missing operator
+014E   1680           00561          PAGE1            ; decimalisation variables held in BANK3
+014F   1703           00562          bsf STATUS,RP1
+Error[113]  : Symbol not previously defined (COUNT0)
+0150   0080           00563          movwf COUNT0     ; move MAX-MIN val into COUNT0
+Error[113]  : Symbol not previously defined (COUNT2)
+0151   0180           00564          clrf COUNT2
+Error[113]  : Symbol not previously defined (COUNT1)
+0152   0180           00565          clrf COUNT1
+0153   1003           00566          bcf STATUS,C
+Error[113]  : Symbol not previously defined (COUNT0)
+0154   0D80           00567          rlf COUNT0,F      ; multiply by 2
+Error[113]  : Symbol not previously defined (COUNT1)
+0155   0D80           00568          rlf COUNT1,F
+0156   2195           00569          call DECIMAL
+0157   1303           00570          bcf STATUS,RP1
+Error[112]  : Missing operator
+0158   1280           00571          PAGE0
+                      00572 
+0159                  00573 SHOWVOLTS:
+Error[113]  : Symbol not previously defined (ADRMSB)
+0159   0180           00574         clrf ADRMSB
+015A   3000           00575         movlw 0            ; set column
+015B   22B5           00576         call LINE7         ; set line
+015C   221E           00577         call SCREENADR     ; set screen write address
+Error[113]  : Symbol not previously defined (AWRON)
+015D   3000           00578         movlw AWRON        ; AUTO WRITE ON
+015E   229D           00579         call SENDCMD       ; send command
+                      00580 
+Error[113]  : Symbol not previously defined (DIGIT3)
+Error[108]  : Illegal character (,)
+015F   3000           00581         movlw DIGIT3,W
+Error[128]  : Missing argument(s)
+0160   3800           00582         iorlw %10000000
+0161   0084           00583         movwf FSR
+                      00584 
+Error[112]  : Missing operator
+0162   1780           00585         BLOCK1
+0163   0800           00586         movf INDF,W        ; decimal values held in BLOCK1
+Error[112]  : Missing operator
+0164   1380           00587         BLOCK0
+0165   3816           00588         iorlw 16
+0166   2212           00589         call AUTOWRITE     ; auto write and increment
+0167   302E           00590         movlw '.'
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 17
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[202]: Argument out of range.  Least significant bits used.
+0168   3E24           00591         addlw 224
+0169   2212           00592         call AUTOWRITE     ; auto write and increment
+016A   0384           00593         decf FSR,F
+Error[112]  : Missing operator
+016B   1780           00594         BLOCK1
+016C   0800           00595         movf INDF,W        ; decimal values held in BLOCK1
+Error[112]  : Missing operator
+016D   1380           00596         BLOCK0
+016E   3816           00597         iorlw 16
+016F   2212           00598         call AUTOWRITE     ; auto write and increment
+                      00599 
+Error[113]  : Symbol not previously defined (AWROFF)
+0170   3000           00600         movlw AWROFF       ; AUTO WRITE OFF
+0171   229D           00601         call SENDCMD       ; send command
+                      00602 
+Error[113]  : Symbol not previously defined (FRQCNT1)
+0172   0800           00603 SHOWFREQ: movf FRQCNT1,W   ; BANK0 get freq val LSB
+Error[112]  : Missing operator
+0173   1680           00604          PAGE1
+0174   1703           00605          bsf STATUS,RP1
+Error[113]  : Symbol not previously defined (COUNT0)
+0175   0080           00606          movwf COUNT0      ; BANK3
+0176   1303           00607          bcf STATUS,RP1
+Error[112]  : Missing operator
+0177   1280           00608          PAGE0
+                      00609 
+Error[113]  : Symbol not previously defined (FRQCNT2)
+0178   0800           00610          movf FRQCNT2,W    ; BANK0 get freq val MSB
+Error[112]  : Missing operator
+0179   1680           00611          PAGE1
+017A   1703           00612          bsf STATUS,RP1
+Error[113]  : Symbol not previously defined (COUNT1)
+017B   0080           00613          movwf COUNT1      ; BANK3
+Error[113]  : Symbol not previously defined (COUNT2)
+017C   0180           00614          clrf COUNT2       ; BANK3
+                      00615 
+017D   2195           00616          call DECIMAL      ; BANK3
+017E   1303           00617          bcf STATUS,RP1
+Error[112]  : Missing operator
+017F   1280           00618          PAGE0
+                      00619 
+Error[113]  : Symbol not previously defined (ADRMSB)
+0180   0180           00620         clrf ADRMSB
+0181   3009           00621         movlw 9            ; set column
+0182   22B5           00622         call LINE7         ; set line
+0183   221E           00623         call SCREENADR     ; set screen write address
+Error[113]  : Symbol not previously defined (AWRON)
+0184   3000           00624         movlw AWRON        ; AUTO WRITE ON
+0185   229D           00625         call SENDCMD       ; send command
+                      00626 
+Error[113]  : Symbol not previously defined (DIGIT5)
+Error[108]  : Illegal character (,)
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 18
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0186   3000           00627         movlw DIGIT5,W
+Error[128]  : Missing argument(s)
+0187   3800           00628         iorlw %10000000
+0188   0084           00629         movwf FSR
+0189   3005           00630         movlw 5
+Error[113]  : Symbol not previously defined (LOOPE)
+018A   0080           00631         movwf LOOPE
+Error[112]  : Missing operator
+018B   1780           00632 SD1:    BLOCK1
+018C   0800           00633         movf INDF,W        ; decimal values held in BLOCK1
+Error[112]  : Missing operator
+018D   1380           00634         BLOCK0
+018E   2212           00635         call AUTOWRITE     ; auto write and increment
+018F   0384           00636         decf FSR,F
+Error[113]  : Symbol not previously defined (LOOPE)
+0190   0B80           00637         decfsz LOOPE,F
+0191   298B           00638         goto SD1
+Error[113]  : Symbol not previously defined (AWROFF)
+0192   3000           00639         movlw AWROFF       ; AUTO WRITE OFF
+0193   229D           00640         call SENDCMD       ; send command
+0194   0008           00641         return
+                      00642 
+                      00643 
+                      00644 ;............. Modified BIN-DEC ROUTINE from Peter Hemsley 07JUN00
+                      00645 ;              converts 24-bit binary (3 bytes) to decimal
+                      00646 
+0195                  00647 DECIMAL:                  ;decimalise binary number ALL VALS IN BANK3
+                      00648                           ;on entry COUNT0-2 holds number to be decimalised
+                      00649                           ;answer goes into DIGIT1-8
+Error[112]  : Missing operator
+0195   1780           00650         BLOCK1
+0196   219A           00651         call BINDEC
+0197   21C7           00652         call BLANK0       ;blank leading zeros
+Error[112]  : Missing operator
+0198   1380           00653         BLOCK0
+0199   0008           00654         return
+                      00655 
+019A   21BE           00656 BINDEC: call CLRDIG       ;reset DIGITs
+019B   3024           00657         movlw 24          ;24 bits to do
+Error[113]  : Symbol not previously defined (COUNTER1)
+019C   0080           00658         movwf COUNTER1
+019D   29AA           00659         goto SHIFT1
+                      00660 
+Error[113]  : Symbol not previously defined (DIGIT1)
+019E   3000           00661 ADJBCD  movlw DIGIT1
+Error[128]  : Missing argument(s)
+019F   3800           00662         iorlw %10000000
+01A0   0084           00663         movwf FSR         ;pointer to digits
+01A1   3007           00664         movlw 7           ;7 digits to do (Digit 8 never >4)
+Error[113]  : Symbol not previously defined (COUNTER2)
+01A2   0080           00665         movwf COUNTER2    ;if Digit > 4 then digit = digit + 3
+01A3   3003           00666         movlw 3           ;check for Digit > 4 by adding 3 to it
+01A4   0780           00667 ADJLOOP: addwf INDF,F     ;and test bit 3 of result
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 19
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+01A5   1D80           00668         btfss INDF,3      ;is it greater than 7?
+01A6   0280           00669         subwf INDF,F      ;restore to original
+01A7   0A84           00670         incf FSR,F        ;next digit
+Error[113]  : Symbol not previously defined (COUNTER2)
+01A8   0B80           00671         decfsz COUNTER2,F
+01A9   29A4           00672         goto ADJLOOP
+                      00673 
+01AA   21BA           00674 SHIFT1: call SLCNT        ;shift MSB into Carry
+                      00675 
+Error[113]  : Symbol not previously defined (DIGIT1)
+01AB   3000           00676 SLDEC:  movlw DIGIT1      ;shift Carry and Digits 1 bit left
+Error[128]  : Missing argument(s)
+01AC   3800           00677         iorlw %10000000
+01AD   0084           00678         movwf FSR         ;pointer to digits
+01AE   3008           00679         movlw 8           ;8 Digits to do
+Error[113]  : Symbol not previously defined (COUNTER2)
+01AF   0080           00680         movwf COUNTER2
+                      00681 
+01B0                  00682 SLDLOOP:                  ;after RLF if bit 4 is set then shift 1
+01B0   0D80           00683         rlf INDF,F        ;into LSB of next Digit else shift 0
+01B1   1A00           00684         btfsc INDF,4      ;test for BCD carry
+01B2   1403           00685         bsf STATUS,C      ;set Carry for next Digit (cleared by RLF)
+01B3   1200           00686         bcf INDF,4        ;clear BCD overflow (if any)
+01B4   0A84           00687         incf FSR,F        ;next Digit
+Error[113]  : Symbol not previously defined (COUNTER2)
+01B5   0B80           00688         decfsz COUNTER2,F
+01B6   29B0           00689         goto SLDLOOP
+                      00690 
+Error[113]  : Symbol not previously defined (COUNTER1)
+01B7   0B80           00691         decfsz COUNTER1,F ;next bit
+01B8   299E           00692         goto ADJBCD
+01B9   0008           00693         return
+                      00694 
+Error[113]  : Symbol not previously defined (COUNT0)
+01BA   0D80           00695 SLCNT:  rlf COUNT0,F      ;LSB
+Error[113]  : Symbol not previously defined (COUNT1)
+01BB   0D80           00696         rlf COUNT1,F      ;shift left count 0-2
+Error[113]  : Symbol not previously defined (COUNT2)
+01BC   0D80           00697         rlf COUNT2,F      ;MSB
+01BD   0008           00698         return
+                      00699 
+Error[113]  : Symbol not previously defined (DIGIT1)
+01BE   0180           00700 CLRDIG: clrf DIGIT1       ;lsd
+Error[113]  : Symbol not previously defined (DIGIT2)
+01BF   0180           00701         clrf DIGIT2
+Error[113]  : Symbol not previously defined (DIGIT3)
+01C0   0180           00702         clrf DIGIT3
+Error[113]  : Symbol not previously defined (DIGIT4)
+01C1   0180           00703         clrf DIGIT4
+Error[113]  : Symbol not previously defined (DIGIT5)
+01C2   0180           00704         clrf DIGIT5
+Error[113]  : Symbol not previously defined (DIGIT6)
+01C3   0180           00705         clrf DIGIT6
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 20
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Error[113]  : Symbol not previously defined (DIGIT7)
+01C4   0180           00706         clrf DIGIT7
+Error[113]  : Symbol not previously defined (DIGIT8)
+01C5   0180           00707         clrf DIGIT8       ;msd
+01C6   0008           00708         return
+                      00709 
+01C7   3008           00710 BLANK0: movlw 8           ; blank leading zeros
+Error[113]  : Symbol not previously defined (LOOPA)
+01C8   0080           00711         movwf LOOPA
+Error[113]  : Symbol not previously defined (DIGIT8)
+01C9   3000           00712         movlw DIGIT8
+Error[128]  : Missing argument(s)
+01CA   3800           00713         iorlw %10000000
+01CB   0084           00714         movwf FSR
+01CC   0800           00715 BLANK1: movf INDF,W
+01CD   1D03           00716         btfss STATUS,Z
+01CE   29D8           00717         goto BLANK2
+01CF   3020           00718         movlw ' '
+Warning[202]: Argument out of range.  Least significant bits used.
+01D0   3E24           00719         addlw 224
+01D1   0080           00720         movwf INDF
+01D2   0384           00721         decf FSR,F
+Error[113]  : Symbol not previously defined (LOOPA)
+01D3   0B80           00722         decfsz LOOPA,F
+01D4   29CC           00723         goto BLANK1
+01D5   3016           00724         movlw 16
+Error[113]  : Symbol not previously defined (DIGIT1)
+01D6   0480           00725         iorwf DIGIT1,F
+01D7   0008           00726         return
+                      00727 
+01D8   3016           00728 BLANK2: movlw 16
+01D9   0480           00729         iorwf INDF,F
+01DA   0384           00730         decf FSR,F
+Error[113]  : Symbol not previously defined (LOOPA)
+01DB   0B80           00731         decfsz LOOPA,F
+01DC   29D8           00732         goto BLANK2
+01DD   0008           00733         return
+                      00734 
+                      00735 ;..........
+                      00736 
+01DE   1C06           00737 TESTIT: btfss PORTB,0     ; test bit 0 of Port B, is it high?
+01DF   29E5           00738         goto TSTPRV       ; no, it's = 0 so go to TSTPRV
+Error[113]  : Symbol not previously defined (SWITCH)
+01E0   1000           00739         bcf SWITCH,0      ; clear bit 0 of SWITCH
+01E1   1D06           00740         btfss PORTB,2     ; test bit 2 of Port B, is it high?
+01E2   29FE           00741         goto TSTPRV2      ; no, it's = 0 so go to TSTPRV
+Error[113]  : Symbol not previously defined (SWITCH)
+01E3   1100           00742         bcf SWITCH,2      ; clear bit 2 of SWITCH
+01E4   0008           00743         return            ; return
+Error[113]  : Symbol not previously defined (SWITCH)
+01E5   1800           00744 TSTPRV: btfsc SWITCH,0    ; test bit 0 of SWITCH, is it clear?
+01E6   0008           00745         return            ; no, it's = 1 so return
+Error[128]  : Missing argument(s)
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 21
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+01E7   3000           00746         movlw %01000000   ; yes, it's = 0 so inc ADCON0 rate count
+01E8   079F           00747         addwf ADCON0,F    ;
+01E9   081F           00748         movf ADCON0,W     ; get COUNT
+Error[128]  : Missing argument(s)
+01EA   3900           00749         andlw %11000000
+Error[128]  : Missing argument(s)
+01EB   3A00           00750         xorlw %11000000
+01EC   1D03           00751         btfss STATUS,Z
+01ED   29F0           00752         goto TP2
+01EE   131F           00753         bcf ADCON0,6
+01EF   139F           00754         bcf ADCON0,7
+                      00755 
+Error[113]  : Symbol not previously defined (SWITCH)
+01F0   1400           00756 TP2:    bsf SWITCH,0      ; set bit 0 of SWITCH
+                      00757 
+01F1   0E1F           00758 GETRATE: swapf ADCON0,W   ; set ADC sampling rate
+Error[128]  : Missing argument(s)
+01F2   3900           00759          andlw %00001100
+Error[113]  : Symbol not previously defined (FOSC)
+01F3   0080           00760          movwf FOSC
+01F4   1003           00761          bcf STATUS,C 
+Error[113]  : Symbol not previously defined (FOSC)
+01F5   0C80           00762          rrf FOSC,F
+Error[113]  : Symbol not previously defined (FOSC)
+01F6   0C80           00763          rrf FOSC,F
+                      00764 
+Error[113]  : Symbol not previously defined (ADRMSB)
+01F7   0180           00765          clrf ADRMSB
+01F8   3015           00766          movlw 15          ; set column
+01F9   22B6           00767          call LINE0        ; set line
+Error[113]  : Symbol not previously defined (FOSC)
+01FA   0800           00768          movf FOSC,W
+01FB   3E16           00769          addlw 16
+01FC   2208           00770          call ONEWRITE
+01FD   0008           00771          return
+                      00772 
+Error[113]  : Symbol not previously defined (SWITCH)
+01FE   1900           00773 TSTPRV2: btfsc SWITCH,2    ; test bit 2 of SWITCH, is it clear?
+01FF   0008           00774         return             ; no, it's = 1 so return
+Warning[202]: Argument out of range.  Least significant bits used.
+0200   3028           00775         movlw 128          ; set toggle flag for text on/off
+Error[113]  : Symbol not previously defined (SWITCH)
+0201   0780           00776         addwf SWITCH,F
+                      00777 
+Error[128]  : Missing argument(s)
+0202   3000           00778         movlw %10011000    ; text off, graphic on, cursor & blink off
+Error[113]  : Symbol not previously defined (SWITCH)
+0203   1B80           00779         btfsc SWITCH,7
+Error[128]  : Missing argument(s)
+0204   3000           00780         movlw %10011100    ; text on, graphic on, cursor & blink off
+0205   229D           00781         call SENDCMD       ; send command
+Error[113]  : Symbol not previously defined (SWITCH)
+0206   1500           00782         bsf SWITCH,2       ; set bit 2 of SWITCH
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 22
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0207   0008           00783         return
+                      00784 
+                      00785 ;********** START OF LCD SUB-ROUTINES ***************
+                      00786 
+0208                  00787 ONEWRITE: ;  ** WRITE SINGLE BYTE **
+Error[113]  : Symbol not previously defined (ATTRIB)
+0208   0080           00788         movwf ATTRIB      ; temp store val brought in on W
+0209   221E           00789         call SCREENADR    ; set screen write address - vals preset at call
+Error[113]  : Symbol not previously defined (AWRON)
+020A   3000           00790         movlw AWRON       ; AUTO WRITE ON
+020B   229D           00791         call SENDCMD      ; send command
+020C   226D           00792         call CHECK3       ; read status for DA0/DA1 = 3
+Error[113]  : Symbol not previously defined (ATTRIB)
+020D   0800           00793         movf ATTRIB,W
+020E   228E           00794         call OUTDATA      ;
+Error[113]  : Symbol not previously defined (AWROFF)
+020F   3000           00795         movlw AWROFF      ; AUTO WRITE OFF
+0210   229D           00796         call SENDCMD      ; send command
+0211   0008           00797         return
+                      00798 ;............
+                      00799 
+0212                  00800 AUTOWRITE: ; ** AUTO WRITE ROUTINE **
+Error[113]  : Symbol not previously defined (TEMPA)
+0212   0080           00801         movwf TEMPA       ; temp store value brought in on W
+0213   227F           00802         call CHECK8       ; read status for DA3 = 8
+Error[113]  : Symbol not previously defined (TEMPA)
+0214   0800           00803         movf TEMPA,W      ; WRITE DATA
+0215   228E           00804         call OUTDATA      ;
+0216   0008           00805         return            ;
+                      00806 
+                      00807 ;..............
+                      00808 
+0217                  00809 CMDADR: ; ** SET ADDRESS FOR COMMAND SENDING **
+0217   226D           00810         call CHECK3       ; read status for DA0/DA1 = 3
+Error[113]  : Symbol not previously defined (ADRLSB)
+0218   0800           00811         movf ADRLSB,W     ; WRITE DATA D1
+0219   228E           00812         call OUTDATA      ;
+021A   226D           00813         call CHECK3       ; read status for DA0/DA1 = 3
+Error[113]  : Symbol not previously defined (ADRMSB)
+021B   0800           00814         movf ADRMSB,W     ; WRITE DATA D2
+021C   228E           00815         call OUTDATA      ;
+021D   0008           00816         return            ;
+                      00817 
+                      00818 ;.........
+                      00819 
+021E                  00820 SCREENADR: ; ** SET ADDRESS FOR WRITE/READ TO/FROM SCREEN
+021E   226D           00821         call CHECK3       ; read status for DA0/DA1 = 3
+Error[113]  : Symbol not previously defined (ADRLSB)
+021F   0800           00822         movf ADRLSB,W     ; WRITE ADDRESS LSB
+0220   228E           00823         call OUTDATA      ;
+0221   226D           00824         call CHECK3       ; read status for DA0/DA1 = 3
+Error[113]  : Symbol not previously defined (ADRMSB)
+0222   0800           00825         movf ADRMSB,W     ; WRITE ADDRESS MSB
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 23
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0223   228E           00826         call OUTDATA      ;
+Error[113]  : Symbol not previously defined (ADPSET)
+0224   3000           00827         movlw ADPSET      ; SET ADDRESS POINTER
+0225   229D           00828         call SENDCMD      ; send command
+0226   0008           00829         return            ;
+                      00830 
+                      00831 ;.............
+                      00832 
+0227                  00833 TEXTHOME: ; ** SET TEXT HOME ADDRESS **
+Error[113]  : Symbol not previously defined (ADRMSB)
+0227   0180           00834         clrf ADRMSB       ; TEXT HOME ADDRESS $0000
+Error[113]  : Symbol not previously defined (ADRLSB)
+0228   0180           00835         clrf ADRLSB       ;
+0229   2217           00836         call CMDADR       ; send command address
+Error[113]  : Symbol not previously defined (TXHOME)
+022A   3000           00837         movlw TXHOME      ;
+022B   229D           00838         call SENDCMD      ; send command
+022C   0008           00839         return
+                      00840 
+                      00841 ;...........
+                      00842 
+022D                  00843 GRAPHHOME: ;  ** SET GRAPHIC HOME ADDRESS **
+Error[112]  : Missing operator
+022D   3000           00844         movlw $02         ; GRAPHIC HOME ADDRESS $0200
+Error[113]  : Symbol not previously defined (ADRMSB)
+022E   0080           00845         movwf ADRMSB
+Error[113]  : Symbol not previously defined (ADRLSB)
+022F   0180           00846         clrf ADRLSB
+0230   2217           00847         call CMDADR       ; send command address
+Error[113]  : Symbol not previously defined (GRHOME)
+0231   3000           00848         movlw GRHOME      ;
+0232   229D           00849         call SENDCMD      ; send command
+0233   0008           00850         return
+                      00851 
+                      00852 ;...........
+                      00853 
+0234                  00854 TEXTAREA: ; ** SET TEXT AREA **
+Error[113]  : Symbol not previously defined (ADRMSB)
+0234   0180           00855         clrf ADRMSB       ;
+Error[113]  : Symbol not previously defined (COLUMN)
+0235   0800           00856         movf COLUMN,W     ; columns length
+Error[113]  : Symbol not previously defined (ADRLSB)
+0236   0080           00857         movwf ADRLSB      ;
+0237   2217           00858         call CMDADR       ; send command address
+Error[113]  : Symbol not previously defined (TXAREA)
+0238   3000           00859         movlw TXAREA      ; text area command
+0239   229D           00860         call SENDCMD      ; send command
+023A   0008           00861         return
+                      00862 
+                      00863 ;...........
+                      00864 
+023B                  00865 GRAPHAREA: ; ** SET GRAPHIC AREA **
+Error[113]  : Symbol not previously defined (ADRMSB)
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 24
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+023B   0180           00866         clrf ADRMSB       ;
+Error[113]  : Symbol not previously defined (COLUMN)
+023C   0800           00867         movf COLUMN,W     ; columns length
+Error[113]  : Symbol not previously defined (ADRLSB)
+023D   0080           00868         movwf ADRLSB      ;
+023E   2217           00869         call CMDADR       ; send command address
+Error[113]  : Symbol not previously defined (GRAREA)
+023F   3000           00870         movlw GRAREA      ; graphic area command
+0240   229D           00871         call SENDCMD      ; send command
+0241   0008           00872         return
+                      00873 
+                      00874 ;...........
+                      00875 
+0242                  00876 SETMODE: ;  ** SET MODE **
+Error[128]  : Missing argument(s)
+0242   3000           00877        movlw %10000000   ; (OR mode, Internal CG mode)
+0243   229D           00878        call SENDCMD       ; send command
+0244   0008           00879        return
+                      00880 
+                      00881 ;...........
+                      00882 
+0245                  00883 SETDISPLAY:  ;  ** DISPLAY MODE **
+Error[128]  : Missing argument(s)
+0245   3000           00884         movlw %10011100   ; text on, graphic on, cursor & blink off
+0246   229D           00885         call SENDCMD      ; send command
+0247   0008           00886         return
+                      00887 
+                      00888 ;...........
+                      00889 
+0248                  00890 CLRTXT  ;  ** CLEAR TEXT AREA ($0000) **
+Error[113]  : Symbol not previously defined (ADRMSB)
+0248   0180           00891         clrf ADRMSB       ; clear all text screen lines, length as set
+Error[113]  : Symbol not previously defined (ADRLSB)
+0249   0180           00892         clrf ADRLSB       ;
+024A   221E           00893         call SCREENADR    ; set screen write address
+Error[113]  : Symbol not previously defined (AWRON)
+024B   3000           00894         movlw AWRON       ; AUTO WRITE ON
+024C   229D           00895         call SENDCMD      ; send command
+024D   3008           00896         movlw 8           ; number of lines
+Error[113]  : Symbol not previously defined (LOOPC)
+024E   0080           00897         movwf LOOPC
+Error[113]  : Symbol not previously defined (COLUMN)
+024F   0800           00898 CLR2:   movf COLUMN,W     ; column length
+Error[113]  : Symbol not previously defined (LOOPB)
+0250   0080           00899         movwf LOOPB       ;
+0251   3000           00900 CLR3:   movlw 0           ; write 0
+0252   2212           00901         call AUTOWRITE    ; auto write and increment
+Error[113]  : Symbol not previously defined (LOOPB)
+0253   0B80           00902         decfsz LOOPB,F    ;
+0254   2A51           00903         goto CLR3         ;
+Error[113]  : Symbol not previously defined (LOOPC)
+0255   0B80           00904         decfsz LOOPC,F    ;
+0256   2A4F           00905         goto CLR2         ;
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 25
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Error[113]  : Symbol not previously defined (AWROFF)
+0257   3000           00906         movlw AWROFF      ; AUTO WRITE OFF
+0258   229D           00907         call SENDCMD      ; send command
+0259   0008           00908         return
+                      00909 
+                      00910 ;............
+                      00911 
+025A                  00912 CLRGRAPH: ; ** CLEAR GRAPH AREA ($0200) **
+Error[112]  : Missing operator
+025A   3000           00913         movlw $02
+Error[113]  : Symbol not previously defined (ADRMSB)
+025B   0080           00914         movwf ADRMSB      ;
+Error[113]  : Symbol not previously defined (ADRLSB)
+025C   0180           00915         clrf ADRLSB       ;
+025D   221E           00916         call SCREENADR    ; set screen write address
+Error[113]  : Symbol not previously defined (AWRON)
+025E   3000           00917         movlw AWRON       ; AUTO WRITE ON
+025F   229D           00918         call SENDCMD      ; send command
+0260   3064           00919         movlw 64          ; number of lines
+Error[113]  : Symbol not previously defined (LOOPC)
+0261   0080           00920         movwf LOOPC
+Error[113]  : Symbol not previously defined (COLUMN)
+0262   0800           00921 CLRG2:  movf COLUMN,W     ; column length
+Error[113]  : Symbol not previously defined (LOOPB)
+0263   0080           00922         movwf LOOPB       ;
+0264   3000           00923 CLRG3:  movlw 0           ; write 0
+0265   2212           00924         call AUTOWRITE    ; auto write and increment
+Error[113]  : Symbol not previously defined (LOOPB)
+0266   0B80           00925         decfsz LOOPB,F    ;
+0267   2A64           00926         goto CLRG3        ;
+Error[113]  : Symbol not previously defined (LOOPC)
+0268   0B80           00927         decfsz LOOPC,F    ;
+0269   2A62           00928         goto CLRG2        ;
+Error[113]  : Symbol not previously defined (AWROFF)
+026A   3000           00929         movlw AWROFF      ; AUTO RESET OFF
+026B   229D           00930         call SENDCMD      ; send command
+026C   0008           00931         return
+                      00932 ;............
+                      00933 
+Error[112]  : Missing operator
+026D   1680           00934 CHECK3: PAGE1             ; STATUS CHECK for DA0/DA1 = 3
+Warning[202]: Argument out of range.  Least significant bits used.
+026E   3055           00935         movlw 255         ;
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+026F   0088           00936         movwf TRISD       ; set PORTD as inputs
+Error[112]  : Missing operator
+0270   1280           00937         PAGE0             ; RST  CD  CE  RD  WR  
+Error[128]  : Missing argument(s)
+0271   3000           00938         movlw %00011001   ;  1   1   0   0   1  
+0272   0087           00939         movwf PORTC       ; set CE, RD low
+0273   0000           00940         nop
+0274   1C08           00941 CK3:    btfss PORTD,0     ; PORTD bit 0 set?
+0275   2A74           00942         goto CK3          ; no
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 26
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0276   1C88           00943 CK3A:   btfss PORTD,1     ; PORTD bit 1 set?
+0277   2A76           00944         goto CK3A         ; no  RST  CD  CE  RD  WR  
+Error[128]  : Missing argument(s)
+0278   3000           00945         movlw %00011111   ;      1   1   1   1   1
+0279   0087           00946         movwf PORTC       ; set controls
+027A   0000           00947         nop
+Error[112]  : Missing operator
+027B   1680           00948         PAGE1             ;
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+027C   0188           00949         clrf TRISD        ; set PORTD as outputs
+Error[112]  : Missing operator
+027D   1280           00950         PAGE0             ;
+027E   0008           00951         return
+                      00952 
+                      00953 ;............
+                      00954 
+Error[112]  : Missing operator
+027F   1680           00955 CHECK8: PAGE1             ; STATUS CHECK for DA3 = 8
+0280   1588           00956         bsf PORTD,3       ; set PORTD bit 3 as input
+Error[112]  : Missing operator
+0281   1280           00957         PAGE0             ; RST  CD  CE  RD  WR
+Error[128]  : Missing argument(s)
+0282   3000           00958         movlw %00011001   ;  1   1   0   0   1
+0283   0087           00959         movwf PORTC       ; set CE, RD low
+0284   0000           00960         nop
+0285   1D88           00961 CK8:    btfss PORTD,3     ; is PORTD,3 high?
+0286   2A85           00962         goto CK8          ; no  RST  CD  CE  RD  WR
+Error[128]  : Missing argument(s)
+0287   3000           00963         movlw %00011111   ;      1   1   1   1   1
+0288   0087           00964         movwf PORTC       ; set controls
+0289   0000           00965         nop
+Error[112]  : Missing operator
+028A   1680           00966         PAGE1             ;
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+028B   1188           00967         bcf TRISD,3       ; set PORTD bit 3 as output
+Error[112]  : Missing operator
+028C   1280           00968         PAGE0             ;
+028D   0008           00969         return
+                      00970 
+                      00971 ;........
+                      00972 
+028E                  00973 OUTDATA:  ; ** SEND DATA ROUTINE **
+Error[113]  : Symbol not previously defined (TEMPA)
+028E   0080           00974         movwf TEMPA       ; temp store val brought in on W
+                      00975                           ; RST  CD  CE  RD  WR
+Error[128]  : Missing argument(s)
+028F   3000           00976         movlw %00010111   ;  1   0   1   1   1
+0290   0087           00977         movwf PORTC       ; set CD low
+Error[113]  : Symbol not previously defined (TEMPA)
+0291   0800           00978         movf TEMPA,W      ; get stored data
+0292   0088           00979         movwf PORTD       ; send data
+0293   0000           00980         nop               ; RST  CD  CE  RD  WR
+Error[128]  : Missing argument(s)
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 27
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0294   3000           00981         movlw %00010010   ;  1   0   0   1   0
+0295   0087           00982         movwf PORTC       ; set CD, CE, WR low
+0296   0000           00983         nop               ; RST  CD  CE  RD  WR
+Error[128]  : Missing argument(s)
+0297   3000           00984         movlw %00010111   ;  1   0   1   1   1
+0298   0087           00985         movwf PORTC       ; set CE, WR high
+0299   0000           00986         nop               ; RST  CD  CE  RD  WR
+Error[128]  : Missing argument(s)
+029A   3000           00987         movlw %00011111   ;  1   1   1   1   1
+029B   0087           00988         movwf PORTC       ; set CD high
+029C   0008           00989         return
+                      00990 
+                      00991 ;..........
+                      00992 
+029D                  00993 SENDCMD: ;  ** COMMAND WRITE ROUTINE **
+Error[113]  : Symbol not previously defined (TEMPA)
+029D   0080           00994         movwf TEMPA       ; temp store val brought in on W
+029E   226D           00995         call CHECK3       ; read status for DA0/DA1 = 3
+Error[113]  : Symbol not previously defined (TEMPA)
+029F   0800           00996         movf TEMPA,W      ; WRITE COMMAND
+02A0   0088           00997         movwf PORTD       ; send stored data
+02A1   0000           00998         nop               ; RST  CD  CE  RD  WR
+Error[128]  : Missing argument(s)
+02A2   3000           00999         movlw %00011010   ;  1   1   0   1   0
+02A3   0087           01000         movwf PORTC       ; set CE, WR low
+02A4   0000           01001         nop               ; RST  CD  CE  RD  WR
+Error[128]  : Missing argument(s)
+02A5   3000           01002         movlw %00011111   ;  1   1   1   1   1
+02A6   0087           01003         movwf PORTC       ; set all high
+02A7   0008           01004         return
+                      01005 
+                      01006 ;...........
+                      01007 
+02A8                  01008 SHWTXT: ;  ** SHOW TEXT HELD IN TABLE **
+02A8   221E           01009         call SCREENADR    ; set screen write address - vals preset at call
+Error[113]  : Symbol not previously defined (AWRON)
+02A9   3000           01010         movlw AWRON       ; SET AUTO WRITE ON
+02AA   229D           01011         call SENDCMD      ; send command
+Error[113]  : Symbol not previously defined (LOOPB)
+02AB   0800           01012 SHTXT1: movf LOOPB,W      ; LOOPB val specified by calling routine
+02AC   200B           01013         call TABLE1       ; get table data and convert to graphic LCD val
+Warning[202]: Argument out of range.  Least significant bits used.
+02AD   3E24           01014         addlw 224         ; +224 is same as -32 for conversion from ASCII
+02AE   2212           01015         call AUTOWRITE    ; auto write and increment
+Error[113]  : Symbol not previously defined (LOOPB)
+02AF   0A80           01016         incf LOOPB,F      ;
+Error[113]  : Symbol not previously defined (LOOPC)
+02B0   0B80           01017         decfsz LOOPC,F    ; LOOPC val specified by calling routine
+02B1   2AAB           01018         goto SHTXT1       ;
+Error[113]  : Symbol not previously defined (AWROFF)
+02B2   3000           01019         movlw AWROFF      ; AUTO WRITE OFF
+02B3   229D           01020         call SENDCMD      ; send command
+02B4   0008           01021         return
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 28
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      01022 
+                      01023 ;............. sets line addresses for text screen
+                      01024 
+Warning[202]: Argument out of range.  Least significant bits used.
+02B5   3E12           01025 LINE7:  addlw 112         ; COLUMN set for 16 cells per line during SETUP
+Error[113]  : Symbol not previously defined (ADRLSB)
+02B6   0080           01026 LINE0:  movwf ADRLSB      ;
+02B7   0008           01027         return            ; ADRMSB is set/cleared before routine called
+                      01028 
+                      01029 ;..............
+                      01030 
+02B8   3005           01031 PAUSIT: movlw 5           ; pause routine, 1/5th sec
+Error[113]  : Symbol not previously defined (CLKCNT)
+02B9   0080           01032         movwf CLKCNT
+02BA   018B           01033         clrf INTCON
+02BB   1D0B           01034 PAUSE:  btfss INTCON,2
+02BC   2ABB           01035         goto PAUSE
+02BD   110B           01036         BCF INTCON,2
+Error[113]  : Symbol not previously defined (CLKCNT)
+02BE   0B80           01037         decfsz CLKCNT,F
+02BF   2ABB           01038         goto PAUSE
+02C0   0008           01039         return
+                      01040 
+                      01041 ;................
+                      01042 
+02C1                  01043 SETUP:                    ; RST  CD  CE  RD  WR  GENERAL SETUP
+Error[128]  : Missing argument(s)
+02C1   3000           01044         movlw %00011111   ;  1   1   1   1   1
+02C2   0087           01045         movwf PORTC       ; set controls high (off)
+02C3   2227           01046         call TEXTHOME     ; SET TEXT HOME ADDRESS
+02C4   222D           01047         call GRAPHHOME    ; SET GRAPHIC HOME ADDRESS
+02C5   2234           01048         call TEXTAREA     ; SET TEXT AREA
+02C6   223B           01049         call GRAPHAREA    ; SET GRAPHIC AREA
+02C7   2242           01050         call SETMODE      ; SET MODE (INT/EXT/AND-OR-XOR etc)
+02C8   2245           01051         call SETDISPLAY   ; DISPLAY MODE (text, graph on/off etc)
+02C9   2248           01052         call CLRTXT       ; clear text screen
+02CA   225A           01053         call CLRGRAPH     ; clear graph screen
+02CB   0008           01054         return
+                      01055 
+Warning[207]: Found label after column 1. (.END)
+02CC                  01056          .END
+                      01057 
+Error[129]  : Expected (END)
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 29
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+.END                              000002CC
+ACKDT                             00000005
+ACKEN                             00000004
+ACKSTAT                           00000006
+ADCON0                            0000001F
+ADCON1                            0000009F
+ADCS0                             00000006
+ADCS1                             00000007
+ADDEN                             00000003
+ADFM                              00000007
+ADIE                              00000006
+ADIF                              00000006
+ADJBCD                            0000019E
+ADJLOOP                           000001A4
+ADON                              00000000
+ADRESH                            0000001E
+ADRESL                            0000009E
+AUTOWRITE                         00000212
+BCLIE                             00000003
+BCLIF                             00000003
+BF                                00000000
+BINDEC                            0000019A
+BLANK0                            000001C7
+BLANK1                            000001CC
+BLANK2                            000001D8
+BLK0                              000000A0
+BLK1                              000000A8
+BLOCK0                            BCF $03,7
+BLOCK1                            BSF $03,7
+BRGH                              00000002
+C                                 00000000
+CCP1CON                           00000017
+CCP1IE                            00000002
+CCP1IF                            00000002
+CCP1M0                            00000000
+CCP1M1                            00000001
+CCP1M2                            00000002
+CCP1M3                            00000003
+CCP1X                             00000005
+CCP1Y                             00000004
+CCP2CON                           0000001D
+CCP2IE                            00000000
+CCP2IF                            00000000
+CCP2M0                            00000000
+CCP2M1                            00000001
+CCP2M2                            00000002
+CCP2M3                            00000003
+CCP2X                             00000005
+CCP2Y                             00000004
+CCPR1H                            00000016
+CCPR1L                            00000015
+CCPR2H                            0000001C
+CCPR2L                            0000001B
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 30
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+CHECK3                            0000026D
+CHECK8                            0000027F
+CHKNEG                            0000011C
+CHKPOS                            00000115
+CHS0                              00000003
+CHS1                              00000004
+CHS2                              00000005
+CK3                               00000274
+CK3A                              00000276
+CK8                               00000285
+CKE                               00000006
+CKP                               00000004
+CLR2                              0000024F
+CLR3                              00000251
+CLRDIG                            000001BE
+CLRG2                             00000262
+CLRG3                             00000264
+CLRGRAPH                          0000025A
+CLRTXT                            00000248
+CMDADR                            00000217
+CNEG1                             00000122
+CPOS1                             0000011B
+CREN                              00000004
+CSRC                              00000007
+D                                 00000005
+DATA_ADDRESS                      00000005
+DC                                00000001
+DECIMAL                           00000195
+D_A                               00000005
+EEADR                             0000010D
+EEADRH                            0000010F
+EECON1                            0000018C
+EECON2                            0000018D
+EEDATA                            0000010C
+EEDATH                            0000010E
+EEIE                              00000004
+EEIF                              00000004
+EEPGD                             00000007
+F                                 00000001
+FERR                              00000002
+FREQVAL                           00000006
+FSR                               00000004
+GCEN                              00000007
+GETFREQ0                          000000FF
+GETFREQ1                          00000104
+GETFREQ2                          00000109
+GETRATE                           000001F1
+GETVOLTS                          0000012F
+GF0                               0000010D
+GF1                               00000110
+GF4                               00000129
+GIE                               00000007
+GIEOFF                            00000002
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 31
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+GO                                00000002
+GO_DONE                           00000002
+GRAPHAREA                         0000023B
+GRAPHHOME                         0000022D
+GV1                               0000013A
+GV2                               0000013C
+GV3                               00000142
+GV4                               00000148
+GV5                               0000014C
+I2C_DATA                          00000005
+I2C_READ                          00000002
+I2C_START                         00000003
+I2C_STOP                          00000004
+IBF                               00000007
+IBOV                              00000005
+INDF                              00000000
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTF                              00000001
+IRP                               00000007
+LINE0                             000002B6
+LINE7                             000002B5
+MAIN                              00000059
+MARKIT                            00000123
+NOT_A                             00000005
+NOT_ADDRESS                       00000005
+NOT_BO                            00000000
+NOT_BOR                           00000000
+NOT_DONE                          00000002
+NOT_PD                            00000003
+NOT_POR                           00000001
+NOT_RBPU                          00000007
+NOT_RC8                           00000006
+NOT_T1SYNC                        00000002
+NOT_TO                            00000004
+NOT_TX8                           00000006
+NOT_W                             00000002
+NOT_WRITE                         00000002
+OBF                               00000006
+OERR                              00000001
+ONEWRITE                          00000208
+OPTION_REG                        00000081
+OUTDATA                           0000028E
+P                                 00000004
+PAGE0                             BCF $03,5
+PAGE1                             BSF $03,5
+PAUSE                             000002BB
+PAUSIT                            000002B8
+PCFG0                             00000000
+PCFG1                             00000001
+PCFG2                             00000002
+PCFG3                             00000003
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 32
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+PCL                               00000002
+PCLATH                            0000000A
+PCON                              0000008E
+PEIE                              00000006
+PEN                               00000002
+PIE1                              0000008C
+PIE2                              0000008D
+PIR1                              0000000C
+PIR2                              0000000D
+PORTA                             00000005
+PORTB                             00000006
+PORTC                             00000007
+PORTD                             00000008
+PORTE                             00000009
+PR2                               00000092
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+PSPIE                             00000007
+PSPIF                             00000007
+PSPMODE                           00000004
+R                                 00000002
+RBIE                              00000003
+RBIF                              00000000
+RC8_9                             00000006
+RC9                               00000006
+RCD8                              00000000
+RCEN                              00000003
+RCIE                              00000005
+RCIF                              00000005
+RCREG                             0000001A
+RCSTA                             00000018
+RD                                00000000
+READ_WRITE                        00000002
+RP0                               00000005
+RP1                               00000006
+RSEN                              00000001
+RX9                               00000006
+RX9D                              00000000
+R_W                               00000002
+S                                 00000003
+SAMPLE1                           0000007F
+SCOPE1                            000000B2
+SCOPE2                            000000C2
+SCOPE3                            000000D5
+SCOPE4                            000000E0
+SCOPE5                            000000EB
+SCREENADR                         0000021E
+SD1                               0000018B
+SEN                               00000000
+SENDCMD                           0000029D
+SETDISPLAY                        00000245
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 33
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+SETMEM                            000000CD
+SETMODE                           00000242
+SETUP                             000002C1
+SHIFT1                            000001AA
+SHOWFREQ                          00000172
+SHOWMEM                           000000E2
+SHOWVOLTS                         00000159
+SHTXT1                            000002AB
+SHWTXT                            000002A8
+SLCNT                             000001BA
+SLDEC                             000001AB
+SLDLOOP                           000001B0
+SMP                               00000007
+SPBRG                             00000099
+SPEN                              00000007
+SREN                              00000005
+SSPADD                            00000093
+SSPBUF                            00000013
+SSPCON                            00000014
+SSPCON2                           00000091
+SSPEN                             00000005
+SSPIE                             00000003
+SSPIF                             00000003
+SSPM0                             00000000
+SSPM1                             00000001
+SSPM2                             00000002
+SSPM3                             00000003
+SSPOV                             00000006
+SSPSTAT                           00000094
+START                             00000029
+STATUS                            00000003
+SYNC                              00000004
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0SE                              00000004
+T1CKPS0                           00000004
+T1CKPS1                           00000005
+T1CON                             00000010
+T1INSYNC                          00000002
+T1OSCEN                           00000003
+T1SYNC                            00000002
+T2CKPS0                           00000000
+T2CKPS1                           00000001
+T2CON                             00000012
+TABLE1                            0000000B
+TESTIT                            000001DE
+TEXTAREA                          00000234
+TEXTHOME                          00000227
+TMR0                              00000001
+TMR1CS                            00000001
+TMR1H                             0000000F
+TMR1IE                            00000000
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 34
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+TMR1IF                            00000000
+TMR1L                             0000000E
+TMR1ON                            00000000
+TMR2                              00000011
+TMR2IE                            00000001
+TMR2IF                            00000001
+TMR2ON                            00000002
+TOUTPS0                           00000003
+TOUTPS1                           00000004
+TOUTPS2                           00000005
+TOUTPS3                           00000006
+TP2                               000001F0
+TRISA                             00000085
+TRISB                             00000086
+TRISC                             00000087
+TRISD                             00000088
+TRISE                             00000089
+TRISE0                            00000000
+TRISE1                            00000001
+TRISE2                            00000002
+TRMT                              00000001
+TSTPRV                            000001E5
+TSTPRV2                           000001FE
+TX8_9                             00000006
+TX9                               00000006
+TX9D                              00000000
+TXD8                              00000000
+TXEN                              00000005
+TXIE                              00000004
+TXIF                              00000004
+TXREG                             00000019
+TXSTA                             00000098
+UA                                00000001
+W                                 00000000
+WAITAD0                           00000083
+WAITAD1                           0000008E
+WAITS1                            0000005E
+WAITS1A                           00000066
+WAITS2                            00000069
+WAITS2A                           00000072
+WAITS3                            00000074
+WAITS3A                           0000007C
+WCOL                              00000007
+WORDS                             00000049
+WR                                00000001
+WREN                              00000002
+WRERR                             00000003
+Z                                 00000002
+_BODEN_OFF                        00003FBF
+_BODEN_ON                         00003FFF
+_CPD_OFF                          00003FFF
+_CPD_ON                           00003EFF
+_CP_ALL                           00000FCF
+MPASM  5.37                        GSCOPE.ASM   5-2-2011  17:16:00         PAGE 35
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+_CP_HALF                          00001FDF
+_CP_OFF                           00003FFF
+_CP_UPPER_256                     00002FEF
+_DEBUG_OFF                        00003FFF
+_DEBUG_ON                         000037FF
+_HS_OSC                           00003FFE
+_LP_OSC                           00003FFC
+_LVP_OFF                          00003F7F
+_LVP_ON                           00003FFF
+_PWRTE_OFF                        00003FFF
+_PWRTE_ON                         00003FF7
+_RC_OSC                           00003FFF
+_WDT_OFF                          00003FFB
+_WDT_ON                           00003FFF
+_WRT_ENABLE_OFF                   00003DFF
+_WRT_ENABLE_ON                    00003FFF
+_XT_OSC                           00003FFD
+__16F877                          00000001
+__DEBUG                           1
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0040 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0080 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+00C0 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0100 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0140 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0180 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+01C0 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0200 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0240 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0280 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+02C0 : XXXXXXXXXXXX---- ---------------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:   716
+Program Memory Words Free:  7476
+
+
+Errors   :   384
+Warnings :    21 reported,     0 suppressed
+Messages :     9 reported,     0 suppressed
+
+

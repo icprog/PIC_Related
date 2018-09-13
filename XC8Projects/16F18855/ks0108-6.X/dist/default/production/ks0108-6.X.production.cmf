@@ -1,0 +1,759 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\ks0108-6.X.production.obj
+cinit CODE 0 7E5 7E5 1B 2
+text1 CODE 0 362 362 173 2
+text2 CODE 0 1F9 1F9 169 2
+text3 CODE 0 11A 11A 18 2
+text4 CODE 0 D9 D9 8 2
+text5 CODE 0 132 132 31 2
+text6 CODE 0 F6 F6 C 2
+text7 CODE 0 E1 E1 9 2
+text8 CODE 0 EA EA C 2
+text9 CODE 0 D4 D4 5 2
+idataBIGRAM CODE 0 4D5 4D5 310 2
+maintext CODE 0 163 163 96 2
+cstackCOMMON COMMON 1 70 70 8 1
+cstackBANK0 BANK0 1 20 20 30 1
+inittext CODE 0 102 102 C 2
+stringtext STRCODE 0 800 800 6A 2
+clrtext CODE 0 10E 10E C 2
+$C:\Users\DAVE\AppData\Local\Temp\s4ro.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 2 2 2 2
+config CONFIG 0 8007 8007 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 50-6F 1
+RAM A0-AF 1
+BANK0 50-6F 1
+BANK1 A0-AF 1
+CONST 4-D3 2
+CONST 86A-1FFF 2
+ENTRY 4-D3 2
+ENTRY 86A-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2030-205F 1
+CODE 4-D3 2
+CODE 86A-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BIGRAM 2000-23EF 1
+COMMON 78-7D 1
+STRCODE 4-D3 2
+STRCODE 86A-1FFF 2
+STRING 4-D3 2
+STRING 86A-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\ks0108-6.X.production.obj
+7E5 cinit CODE >3120:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7E5 cinit CODE >3123:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7E5 cinit CODE >3151:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7E6 cinit CODE >3152:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7E7 cinit CODE >3153:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7E8 cinit CODE >3154:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7E9 cinit CODE >3155:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7EA cinit CODE >3156:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7EB cinit CODE >3157:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7EC cinit CODE >3158:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7ED cinit CODE >3159:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7F0 cinit CODE >3180:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7F1 cinit CODE >3181:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7F2 cinit CODE >3182:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7F3 cinit CODE >3183:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7F4 cinit CODE >3184:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7F5 cinit CODE >3185:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7F6 cinit CODE >3186:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7F7 cinit CODE >3187:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7F8 cinit CODE >3188:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7F9 cinit CODE >3189:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7FA cinit CODE >3190:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7FB cinit CODE >3191:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7FD cinit CODE >3197:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7FD cinit CODE >3199:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+7FE cinit CODE >3200:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+D4 text9 CODE >251:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+D4 text9 CODE >253:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+D6 text9 CODE >255:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+D8 text9 CODE >256:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+EA text8 CODE >338:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+EA text8 CODE >340:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+EC text8 CODE >341:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+ED text8 CODE >342:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+EF text8 CODE >343:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+F3 text8 CODE >344:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+F5 text8 CODE >345:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+E1 text7 CODE >433:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+E2 text7 CODE >435:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+E4 text7 CODE >436:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+E5 text7 CODE >437:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+E7 text7 CODE >438:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+E9 text7 CODE >439:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+F6 text6 CODE >377:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+F6 text6 CODE >379:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+F8 text6 CODE >380:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+F9 text6 CODE >381:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+FB text6 CODE >382:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+FF text6 CODE >383:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+132 text5 CODE >451:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+132 text5 CODE >454:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+134 text5 CODE >455:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+135 text5 CODE >456:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+138 text5 CODE >457:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+13E text5 CODE >458:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+143 text5 CODE >460:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+14D text5 CODE >461:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+152 text5 CODE >463:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+156 text5 CODE >461:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+15E text5 CODE >458:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+D9 text4 CODE >397:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+D9 text4 CODE >399:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+DB text4 CODE >400:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+DC text4 CODE >401:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+DE text4 CODE >402:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+E0 text4 CODE >403:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+11A text3 CODE >268:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+11A text3 CODE >272:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+11D text3 CODE >273:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+11E text3 CODE >274:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+11F text3 CODE >276:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+121 text3 CODE >280:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+123 text3 CODE >281:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+124 text3 CODE >282:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+127 text3 CODE >283:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+127 text3 CODE >284:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+12A text3 CODE >284:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+12B text3 CODE >283:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+12C text3 CODE >285:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+12D text3 CODE >286:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+12F text3 CODE >287:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+131 text3 CODE >288:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+1F9 text2 CODE >480:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+1F9 text2 CODE >482:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+1FC text2 CODE >483:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+204 text2 CODE >485:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+20C text2 CODE >487:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+217 text2 CODE >488:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+21B text2 CODE >485:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+21C text2 CODE >495:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+221 text2 CODE >497:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+23E text2 CODE >499:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+242 text2 CODE >500:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+26A text2 CODE >502:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+295 text2 CODE >503:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+299 text2 CODE >504:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+29D text2 CODE >500:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2A2 text2 CODE >495:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2AA text2 CODE >508:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2B1 text2 CODE >509:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2B5 text2 CODE >493:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2BF text2 CODE >514:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2CA text2 CODE >515:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2CE text2 CODE >512:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2D5 text2 CODE >520:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2D6 text2 CODE >521:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2D7 text2 CODE >522:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2D9 text2 CODE >523:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2DC text2 CODE >524:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2DE text2 CODE >525:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2DF text2 CODE >526:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2E2 text2 CODE >528:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2E5 text2 CODE >529:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2E9 text2 CODE >530:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2EC text2 CODE >532:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2EF text2 CODE >533:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2F2 text2 CODE >535:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2F4 text2 CODE >537:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+2FD text2 CODE >539:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+309 text2 CODE >540:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+30C text2 CODE >537:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+318 text2 CODE >546:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+319 text2 CODE >547:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+31A text2 CODE >548:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+31C text2 CODE >549:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+31F text2 CODE >550:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+321 text2 CODE >551:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+322 text2 CODE >552:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+325 text2 CODE >554:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+328 text2 CODE >555:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+32C text2 CODE >556:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+32F text2 CODE >558:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+332 text2 CODE >559:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+335 text2 CODE >561:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+337 text2 CODE >562:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+338 text2 CODE >564:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+343 text2 CODE >566:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+34F text2 CODE >567:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+352 text2 CODE >564:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+35E text2 CODE >569:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+360 text2 CODE >570:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+361 text2 CODE >571:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+362 text1 CODE >148:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+362 text1 CODE >150:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+365 text1 CODE >151:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+36D text1 CODE >153:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+375 text1 CODE >155:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+380 text1 CODE >156:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+384 text1 CODE >153:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+385 text1 CODE >163:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+38A text1 CODE >165:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+3AC text1 CODE >167:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+3B0 text1 CODE >168:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+3D8 text1 CODE >170:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+403 text1 CODE >171:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+407 text1 CODE >172:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+40B text1 CODE >168:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+410 text1 CODE >163:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+418 text1 CODE >176:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+41F text1 CODE >177:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+423 text1 CODE >161:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+432 text1 CODE >182:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+43D text1 CODE >183:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+441 text1 CODE >180:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+448 text1 CODE >188:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+449 text1 CODE >189:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+44A text1 CODE >190:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+44C text1 CODE >191:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+44F text1 CODE >192:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+451 text1 CODE >193:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+452 text1 CODE >194:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+455 text1 CODE >196:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+458 text1 CODE >197:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+45C text1 CODE >198:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+45F text1 CODE >200:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+462 text1 CODE >201:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+465 text1 CODE >203:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+467 text1 CODE >205:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+470 text1 CODE >207:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+47C text1 CODE >208:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+47F text1 CODE >205:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+48B text1 CODE >214:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+48C text1 CODE >215:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+48D text1 CODE >216:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+48F text1 CODE >217:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+492 text1 CODE >218:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+494 text1 CODE >219:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+495 text1 CODE >220:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+498 text1 CODE >222:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+49B text1 CODE >223:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+49F text1 CODE >224:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+4A2 text1 CODE >226:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+4A5 text1 CODE >227:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+4A8 text1 CODE >229:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+4AA text1 CODE >230:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+4AB text1 CODE >232:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+4B6 text1 CODE >234:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+4C2 text1 CODE >235:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+4C5 text1 CODE >232:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+4D1 text1 CODE >237:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+4D3 text1 CODE >238:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+4D4 text1 CODE >239:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.h
+163 maintext CODE >5:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+163 maintext CODE >10:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+165 maintext CODE >11:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+166 maintext CODE >13:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+16F maintext CODE >14:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+178 maintext CODE >13:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+183 maintext CODE >15:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+18C maintext CODE >17:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+18F maintext CODE >18:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+192 maintext CODE >19:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+195 maintext CODE >20:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+1A2 maintext CODE >21:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+1B1 maintext CODE >22:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+1BF maintext CODE >23:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+1CD maintext CODE >24:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+1DB maintext CODE >25:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+1E9 maintext CODE >26:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+1F8 maintext CODE >28:D:\PIC\X8Projects\16F18855\ks0108-6.X\HiTech GLCD for pic18f4680.c
+102 inittext CODE >3163:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+102 inittext CODE >3164:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+103 inittext CODE >3165:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+103 inittext CODE >3166:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+104 inittext CODE >3167:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+105 inittext CODE >3168:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+106 inittext CODE >3169:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+107 inittext CODE >3170:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+108 inittext CODE >3171:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+109 inittext CODE >3172:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+10A inittext CODE >3173:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+10B inittext CODE >3174:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+10C inittext CODE >3176:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+10D inittext CODE >3175:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+10E clrtext CODE >3134:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+10E clrtext CODE >3135:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+10F clrtext CODE >3136:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+10F clrtext CODE >3137:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+110 clrtext CODE >3138:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+111 clrtext CODE >3139:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+112 clrtext CODE >3140:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+113 clrtext CODE >3141:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+114 clrtext CODE >3142:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+115 clrtext CODE >3143:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+116 clrtext CODE >3144:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+117 clrtext CODE >3145:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+118 clrtext CODE >3147:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+119 clrtext CODE >3146:C:\Users\DAVE\AppData\Local\Temp\s4ro.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__Hspace_0 800C 0 ABS 0 - -
+__Hspace_1 78 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+Text_GLCD@Index 33 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+Starting_Address@S 70 0 COMMON 1 cstackCOMMON dist/default/production\ks0108-6.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+TextBuff_GLCD@Column 72 0 COMMON 1 cstackCOMMON dist/default/production\ks0108-6.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__Lstringtext 0 0 ABS 0 stringtext -
+main@i 4E 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__CFG_WDTCCS$SC 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+_LATA 16 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+_LATB 17 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+_LATC 18 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s4ro.obj
+_main 2C6 0 CODE 0 maintext dist/default/production\ks0108-6.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+start 4 0 CODE 0 init C:\Users\DAVE\AppData\Local\Temp\s4ro.obj
+ttemp 7E 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__CFG_SCANE$available 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+_Display_ON 1B2 0 CODE 0 text4 dist/default/production\ks0108-6.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+TextBuff_GLCD@Char_In_Matrix 30 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s4ro.obj
+intlevel1 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s4ro.obj
+intlevel2 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s4ro.obj
+intlevel3 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s4ro.obj
+intlevel4 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s4ro.obj
+intlevel5 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s4ro.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+Text_GLCD@k 2B 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+__pidataBIGRAM 9AA 0 CODE 0 idataBIGRAM dist/default/production\ks0108-6.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+TextBuff_GLCD@Char_In_String 2F 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+_ANSELA F38 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+_ANSELB F43 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+_ANSELC F4E 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__end_of_Display_ON 1C2 0 CODE 0 text4 dist/default/production\ks0108-6.X.production.obj
+_Buffer 2370 0 ABS 1 - dist/default/production\ks0108-6.X.production.obj
+Write_Byte@B 70 0 COMMON 1 cstackCOMMON dist/default/production\ks0108-6.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+_Enable 1A8 0 CODE 0 text9 dist/default/production\ks0108-6.X.production.obj
+_Reset_GLCD 234 0 CODE 0 text3 dist/default/production\ks0108-6.X.production.obj
+__end_of_Text_GLCD 9AA 0 CODE 0 text1 dist/default/production\ks0108-6.X.production.obj
+__CFG_FEXTOSC$ECH 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__size_of_Text_GLCD 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+X_Address@X 70 0 COMMON 1 cstackCOMMON dist/default/production\ks0108-6.X.production.obj
+TextBuff_GLCD@Counter 2D 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+__LidataBIGRAM 0 0 ABS 0 idataBIGRAM -
+_Text_GLCD 6C4 0 CODE 0 text1 dist/default/production\ks0108-6.X.production.obj
+_Matrix 2060 0 ABS 1 - dist/default/production\ks0108-6.X.production.obj
+start_initialization FCA 0 CODE 0 cinit dist/default/production\ks0108-6.X.production.obj
+Text_GLCD@Place_In_Buffer 31 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+__CFG_WDTCPS$WDTCPS_31 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+_Starting_Address 1D4 0 CODE 0 text8 dist/default/production\ks0108-6.X.production.obj
+__size_of_Enable 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+clear_ram0 21C 0 CODE 0 clrtext dist/default/production\ks0108-6.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+Text_GLCD@Row 70 0 COMMON 1 cstackCOMMON dist/default/production\ks0108-6.X.production.obj
+_TextBuff_GLCD 3F2 0 CODE 0 text2 dist/default/production\ks0108-6.X.production.obj
+__end_of_Reset_GLCD 264 0 CODE 0 text3 dist/default/production\ks0108-6.X.production.obj
+_Write_Byte 1C2 0 CODE 0 text7 dist/default/production\ks0108-6.X.production.obj
+Text_GLCD@Column 72 0 COMMON 1 cstackCOMMON dist/default/production\ks0108-6.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s4ro.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 1000 0 CODE 0 cinit -
+main@Buffer 35 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit FCA 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+init_ram 204 0 CODE 0 inittext dist/default/production\ks0108-6.X.production.obj
+__Linittext 0 0 ABS 0 inittext -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 4 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 4 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__CFG_WDTCWS$WDTCWS_7 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 800C 0 ABS 0 - -
+__S1 78 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__HidataBIGRAM 0 0 ABS 0 idataBIGRAM -
+__end_of_Write_Byte 1D4 0 CODE 0 text7 dist/default/production\ks0108-6.X.production.obj
+__end_of_Starting_Address 1EC 0 CODE 0 text8 dist/default/production\ks0108-6.X.production.obj
+TextBuff_GLCD@Buff_String 74 0 COMMON 1 cstackCOMMON dist/default/production\ks0108-6.X.production.obj
+__size_of_Display_ON 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+Text_GLCD@String 74 0 COMMON 1 cstackCOMMON dist/default/production\ks0108-6.X.production.obj
+__size_of_Starting_Address 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+Clear_Display@i 76 0 COMMON 1 cstackCOMMON dist/default/production\ks0108-6.X.production.obj
+Clear_Display@j 75 0 COMMON 1 cstackCOMMON dist/default/production\ks0108-6.X.production.obj
+__Lintentry 4 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\DAVE\AppData\Local\Temp\s4ro.obj
+__size_of_TextBuff_GLCD 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+_Clear_Display 264 0 CODE 0 text5 dist/default/production\ks0108-6.X.production.obj
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 2C6 0 CODE 0 maintext dist/default/production\ks0108-6.X.production.obj
+__Lbigram 0 0 ABS 0 bigram -
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__CFG_RSTOSC$HFINT1 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__Hinittext 0 0 ABS 0 inittext -
+_LATBbits 17 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__end_of_TextBuff_GLCD 6C4 0 CODE 0 text2 dist/default/production\ks0108-6.X.production.obj
+TextBuff_GLCD@Row 70 0 COMMON 1 cstackCOMMON dist/default/production\ks0108-6.X.production.obj
+stackhi 205F 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s4ro.obj
+stacklo 2030 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s4ro.obj
+__size_of_Reset_GLCD 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__pbssBIGRAM 2370 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__CFG_LPBOREN$OFF 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 4 0 CODE 0 end_init -
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__CFG_CSWEN$ON 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__CFG_ZCD$OFF 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+end_of_initialization FFA 0 CODE 0 cinit dist/default/production\ks0108-6.X.production.obj
+Text_GLCD@Counter 2D 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+__Hintentry 4 0 CODE 0 intentry -
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__ptext1 6C4 0 CODE 0 text1 dist/default/production\ks0108-6.X.production.obj
+__ptext2 3F2 0 CODE 0 text2 dist/default/production\ks0108-6.X.production.obj
+__ptext3 234 0 CODE 0 text3 dist/default/production\ks0108-6.X.production.obj
+__ptext4 1B2 0 CODE 0 text4 dist/default/production\ks0108-6.X.production.obj
+__ptext5 264 0 CODE 0 text5 dist/default/production\ks0108-6.X.production.obj
+__ptext6 1EC 0 CODE 0 text6 dist/default/production\ks0108-6.X.production.obj
+__ptext7 1C2 0 CODE 0 text7 dist/default/production\ks0108-6.X.production.obj
+__ptext8 1D4 0 CODE 0 text8 dist/default/production\ks0108-6.X.production.obj
+__ptext9 1A8 0 CODE 0 text9 dist/default/production\ks0108-6.X.production.obj
+__size_of_Clear_Display 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__pstringtext 1000 0 STRCODE 0 stringtext dist/default/production\ks0108-6.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of_Write_Byte 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__end_of__initialization FFA 0 CODE 0 cinit dist/default/production\ks0108-6.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+__end_of_X_Address 204 0 CODE 0 text6 dist/default/production\ks0108-6.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+__size_of_X_Address 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__end_of_Clear_Display 2C6 0 CODE 0 text5 dist/default/production\ks0108-6.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\ks0108-6.X.production.obj
+TextBuff_GLCD@Place_In_Buffer 31 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+__Hend_init 8 0 CODE 0 end_init -
+__end_of_main 3F2 0 CODE 0 maintext dist/default/production\ks0108-6.X.production.obj
+_X_Address 1EC 0 CODE 0 text6 dist/default/production\ks0108-6.X.production.obj
+TextBuff_GLCD@Index 33 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+_PORTA C 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+_PORTB D 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+_PORTC E 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+Text_GLCD@Char_In_Matrix 30 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+_TRISA 11 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+_TRISB 12 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+_TRISC 13 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+TextBuff_GLCD@k 2B 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+__CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__pdataBIGRAM 2060 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__initialization FCA 0 CODE 0 cinit dist/default/production\ks0108-6.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+__Hstringtext 0 0 ABS 0 stringtext -
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\ks0108-6.X.production.obj
+Text_GLCD@Char_In_String 2F 0 BANK0 1 cstackBANK0 dist/default/production\ks0108-6.X.production.obj
+__end_of_Enable 1B2 0 CODE 0 text9 dist/default/production\ks0108-6.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+_Buffer 1 2370 0
+_Matrix 1 2060 0
+- 1 620 30
+- 1 5A0 50
+- 1 520 50
+- 1 4A0 50
+- 1 420 50
+- 1 3A0 50
+- 1 320 50
+- 1 2A0 50
+- 1 220 50
+- 1 1A0 50
+- 1 120 50
+- 1 B0 40
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7E5 FCA 1B 2
+text1 0 362 6C4 173 2
+text2 0 1F9 3F2 169 2
+text3 0 11A 234 18 2
+text4 0 D9 1B2 8 2
+text5 0 132 264 31 2
+text6 0 F6 1EC C 2
+text7 0 E1 1C2 9 2
+text8 0 EA 1D4 C 2
+text9 0 D4 1A8 5 2
+idataBIGRAM 0 4D5 9AA 310 2
+maintext 0 163 2C6 96 2
+cstackCOMMON 1 70 70 8 1
+cstackBANK0 1 20 20 30 1
+inittext 0 102 204 C 2
+reset_vec 0 0 0 4 2
+stringtext 0 800 1000 6A 2
+clrtext 0 10E 21C C 2
+config 0 8007 1000E 5 2
