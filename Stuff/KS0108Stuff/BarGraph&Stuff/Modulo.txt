@@ -1,0 +1,7 @@
+Modulo Arithmetic
+
+You might be wondering what "Partial Bytes" and "Full Bytes" are. Instead of using the modulo 8 arithmetic function, which would be far quicker but confusing for beginners, I am using the long way to calculate the number of 8 bits in any given height of the bar.
+
+If you wanted a bar that is 25 pixels (bits) in height, then 25 contains 3 full bytes and one partial byte of 1 bit. Alternatively, you could express it as (3 × 8 bits) + 1 bit. The partial byte is the leftover remainder. It is modulo arithmetic but the long and slow way. These are the lengths I go to, to make things simple…
+
+Drawing the "Full Bytes" is easy, because you simply send a byte consisting of 11111111 for each of the full bytes. However partial bytes can be any number between 0 and 8, hence I am using "If" statements to translate the partial byte into a relevant binary mask. This part of the code works faster by a register shift operation, but I think it will lose most beginners.
