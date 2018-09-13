@@ -15,64 +15,63 @@ $dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 cinit CODE 0 7B0 7B0 50 2
 text1 CODE 0 8C7 8C7 E7 2
 text2 CODE 0 169C 169C B0 2
-text3 CODE 0 1195 1195 3B 2
+text3 CODE 0 1158 1158 3B 2
 text4 CODE 0 133B 133B 60 2
-text5 CODE 0 11D0 11D0 3C 2
-text6 CODE 0 1EB4 1EB4 1E 2
+text5 CODE 0 1193 1193 3C 2
+text6 CODE 0 1EB0 1EB0 1E 2
 text7 CODE 0 9AE 9AE F6 2
 text8 CODE 0 AA4 AA4 11A 2
-text9 CODE 0 1E0A 1E0A 11 2
+text9 CODE 0 1E1A 1E1A 11 2
 text10 CODE 0 BBE BBE 13E 2
 text11 CODE 0 1467 1467 82 2
 text12 CODE 0 14E9 14E9 83 2
-text13 CODE 0 1E42 1E42 15 2
+text13 CODE 0 1E3E 1E3E 15 2
 text14 CODE 0 CFC CFC 147 2
 text15 CODE 0 1251 1251 45 2
-text16 CODE 0 1F31 1F31 21 2
+text16 CODE 0 1F2D 1F2D 21 2
 text17 CODE 0 120C 120C 45 2
 text18 CODE 0 15F3 15F3 A9 2
-text19 CODE 0 4 4 3D 2
+text19 CODE 0 11CF 11CF 3D 2
 text20 CODE 0 800 800 E 2
-text21 CODE 0 1DEC 1DEC E 2
-text22 CODE 0 1EF1 1EF1 1F 2
-text23 CODE 0 1FC9 1FC9 37 2
-text24 CODE 0 1DCB 1DCB 9 2
-text25 CODE 0 115A 115A 3B 2
-text26 CODE 0 1F77 1F77 26 2
-text27 CODE 0 1E1B 1E1B 13 2
+text21 CODE 0 114A 114A E 2
+text22 CODE 0 1EED 1EED 1F 2
+text23 CODE 0 6 6 37 2
+text24 CODE 0 1DE9 1DE9 9 2
+text25 CODE 0 1FC5 1FC5 3B 2
+text26 CODE 0 1F73 1F73 26 2
+text27 CODE 0 1E2B 1E2B 13 2
 text28 CODE 0 13FF 13FF 68 2
-text29 CODE 0 1ED2 1ED2 1F 2
-text30 CODE 0 1E83 1E83 16 2
-text31 CODE 0 1E6D 1E6D 16 2
-text32 CODE 0 1E57 1E57 16 2
-text33 CODE 0 1E2E 1E2E 14 2
-text34 CODE 0 80E 80E B9 2
-text35 CODE 0 1F9D 1F9D 2C 2
-text36 CODE 0 1296 1296 51 2
-text37 CODE 0 12E7 12E7 54 2
-text38 CODE 0 1E99 1E99 1B 2
-text39 CODE 0 1F52 1F52 25 2
-text40 CODE 0 E43 E43 1BD 2
-text41 CODE 0 156C 156C 87 2
-text42 CODE 0 174C 174C B4 2
-text43 CODE 0 1F10 1F10 21 2
-text44 CODE 0 139B 139B 64 2
-maintext CODE 0 41 41 76F 2
+text29 CODE 0 1ECE 1ECE 1F 2
+text30 CODE 0 1E7F 1E7F 16 2
+text31 CODE 0 1E69 1E69 16 2
+text32 CODE 0 1E53 1E53 16 2
+text33 CODE 0 80E 80E B9 2
+text34 CODE 0 1F99 1F99 2C 2
+text35 CODE 0 1296 1296 51 2
+text36 CODE 0 12E7 12E7 54 2
+text37 CODE 0 1E95 1E95 1B 2
+text38 CODE 0 1F4E 1F4E 25 2
+text39 CODE 0 E43 E43 1BD 2
+text40 CODE 0 156C 156C 87 2
+text41 CODE 0 174C 174C B4 2
+text42 CODE 0 1F0C 1F0C 21 2
+text43 CODE 0 139B 139B 64 2
+maintext CODE 0 3D 3D 773 2
 cstackCOMMON COMMON 1 70 70 E 1
 cstackBANK0 BANK0 1 20 20 3E 1
 cstackBANK1 BANK1 1 C8 C8 25 1
-inittext CODE 0 1DE0 1DE0 C 2
+inittext CODE 0 1DFE 1DFE C 2
 bssBANK0 BANK0 1 5E 5E 11 1
 bssBANK1 BANK1 1 A0 A0 28 1
 bssBANK2 BANK2 1 120 120 39 1
 bssBANK3 BANK3 1 1A0 1A0 28 1
-stringtext STRCODE 0 1000 1000 158 2
-idataBANK1 CODE 0 1158 1158 2 2
-idataBANK2 CODE 0 1DFA 1DFA 10 2
+stringtext STRCODE 0 1000 1000 14A 2
+idataBANK1 CODE 0 4 4 2 2
+idataBANK2 CODE 0 1E0A 1E0A 10 2
 dataBANK1 BANK1 1 ED ED 2 1
 dataBANK2 BANK2 1 159 159 10 1
-clrtext CODE 0 1DD4 1DD4 C 2
-$C:\Users\DAVE\AppData\Local\Temp\sb4.obj
+clrtext CODE 0 1DF2 1DF2 C 2
+$C:\Users\DAVE\AppData\Local\Temp\s49c.obj
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 0 8007 8007 5 2
@@ -98,8 +97,8 @@ BANK4 220-26F 1
 BANK5 2A0-2EF 1
 BANK6 320-36F 1
 BANK7 3A0-3CF 1
-CONST 1800-1DCA 2
-ENTRY 1800-1DCA 2
+CONST 1800-1DE8 2
+ENTRY 1800-1DE8 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
 SFR11 580-59F 1
@@ -124,7 +123,7 @@ SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 2118-225F 1
-CODE 1800-1DCA 2
+CODE 1800-1DE8 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -137,8 +136,8 @@ SFR8 400-41F 1
 SFR9 480-49F 1
 BIGRAM 2000-23EF 1
 EEDATA F000-F0FF 2
-STRCODE 1800-1DCA 2
-STRING 1800-1DCA 2
+STRCODE 1800-1DE8 2
+STRING 1800-1DE8 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -153,328 +152,324 @@ STRING 1800-1DCA 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-7B0 cinit CODE >11068:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7B0 cinit CODE >11071:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7B0 cinit CODE >11212:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7B1 cinit CODE >11213:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7B4 cinit CODE >11214:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7B5 cinit CODE >11215:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7B8 cinit CODE >11216:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7B9 cinit CODE >11220:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7BA cinit CODE >11221:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7BB cinit CODE >11222:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7BC cinit CODE >11223:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7BD cinit CODE >11224:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7BE cinit CODE >11225:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7BF cinit CODE >11226:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7C0 cinit CODE >11227:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7C1 cinit CODE >11228:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7C2 cinit CODE >11229:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7C3 cinit CODE >11230:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7C4 cinit CODE >11231:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7C7 cinit CODE >11254:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7C8 cinit CODE >11255:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7C9 cinit CODE >11256:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7CA cinit CODE >11257:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7CB cinit CODE >11258:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7CC cinit CODE >11259:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7CD cinit CODE >11260:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7CE cinit CODE >11261:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7CF cinit CODE >11262:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7D2 cinit CODE >11266:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7D3 cinit CODE >11267:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7D4 cinit CODE >11268:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7D5 cinit CODE >11269:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7D6 cinit CODE >11270:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7D7 cinit CODE >11271:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7D8 cinit CODE >11272:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7D9 cinit CODE >11273:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7DA cinit CODE >11274:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7DD cinit CODE >11278:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7DE cinit CODE >11279:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7DF cinit CODE >11280:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7E0 cinit CODE >11281:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7E1 cinit CODE >11282:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7E2 cinit CODE >11283:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7E3 cinit CODE >11284:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7E4 cinit CODE >11285:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7E5 cinit CODE >11286:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7E8 cinit CODE >11290:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7E9 cinit CODE >11291:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7EA cinit CODE >11292:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7EB cinit CODE >11293:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7EC cinit CODE >11294:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7ED cinit CODE >11295:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7EE cinit CODE >11296:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7EF cinit CODE >11297:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7F0 cinit CODE >11298:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7F3 cinit CODE >11302:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7F4 cinit CODE >11303:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7F5 cinit CODE >11304:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7F6 cinit CODE >11305:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7F7 cinit CODE >11306:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7F8 cinit CODE >11307:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7F9 cinit CODE >11308:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7FA cinit CODE >11309:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7FB cinit CODE >11310:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7FD cinit CODE >11316:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7FD cinit CODE >11318:C:\Users\DAVE\AppData\Local\Temp\sb4.
-7FE cinit CODE >11319:C:\Users\DAVE\AppData\Local\Temp\sb4.
-139B text44 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-139B text44 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13A3 text44 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13AA text44 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13AE text44 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13B4 text44 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13B9 text44 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13BD text44 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13C7 text44 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13CD text44 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13CD text44 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13D2 text44 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13D4 text44 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13DA text44 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13E0 text44 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13E2 text44 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13E8 text44 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13EA text44 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13FA text44 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13FD text44 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-13FE text44 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
-1F10 text43 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
-1F10 text43 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
-1F12 text43 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
-1F14 text43 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
-1F19 text43 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
-1F1B text43 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
-174C text42 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-174C text42 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-175C text42 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-1763 text42 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-1772 text42 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-1779 text42 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-177E text42 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-178E text42 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-179E text42 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17A2 text42 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17A3 text42 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17A4 text42 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17AA text42 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17B0 text42 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17B4 text42 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17B6 text42 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17BC text42 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17C2 text42 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17C8 text42 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17CC text42 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17D0 text42 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17D2 text42 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17D8 text42 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17DE text42 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17E4 text42 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-17E8 text42 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
-156C text41 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-156C text41 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-157C text41 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-1585 text41 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-1595 text41 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-1596 text41 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-159C text41 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15A3 text41 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15A5 text41 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15A7 text41 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15AC text41 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15B5 text41 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15BC text41 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15C3 text41 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15C7 text41 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15D0 text41 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15D7 text41 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15D9 text41 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15D9 text41 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15DC text41 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15DF text41 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-15EA text41 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
-E43 text40 CODE >31:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-E45 text40 CODE >33:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-E4D text40 CODE >35:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-E60 text40 CODE >37:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-E74 text40 CODE >39:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-E7F text40 CODE >40:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-E80 text40 CODE >43:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-E87 text40 CODE >45:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-E88 text40 CODE >48:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-E91 text40 CODE >49:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-E99 text40 CODE >51:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-E9A text40 CODE >52:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-EA2 text40 CODE >54:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-EDF text40 CODE >55:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-EE6 text40 CODE >57:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F03 text40 CODE >59:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F0E text40 CODE >60:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F1D text40 CODE >62:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F25 text40 CODE >63:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F2D text40 CODE >65:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F2E text40 CODE >68:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F47 text40 CODE >70:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F48 text40 CODE >71:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F60 text40 CODE >72:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F61 text40 CODE >73:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F69 text40 CODE >75:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F6F text40 CODE >77:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F77 text40 CODE >79:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F7F text40 CODE >81:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F87 text40 CODE >83:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F93 text40 CODE >84:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-F98 text40 CODE >85:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-FA0 text40 CODE >87:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-FA1 text40 CODE >90:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-FDD text40 CODE >91:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-FE5 text40 CODE >92:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-FEA text40 CODE >93:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-FEF text40 CODE >95:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-FF0 text40 CODE >97:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-FF7 text40 CODE >99:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-FFF text40 CODE >101:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-1F52 text39 CODE >281:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F53 text39 CODE >285:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F57 text39 CODE >287:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F5A text39 CODE >289:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F5C text39 CODE >290:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F5D text39 CODE >291:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F5D text39 CODE >293:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F5F text39 CODE >294:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F5F text39 CODE >296:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F60 text39 CODE >298:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F65 text39 CODE >299:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F65 text39 CODE >300:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F66 text39 CODE >302:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F68 text39 CODE >304:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F69 text39 CODE >305:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F69 text39 CODE >307:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F6A text39 CODE >309:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F6C text39 CODE >311:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F6D text39 CODE >298:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F75 text39 CODE >314:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F76 text39 CODE >315:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1E99 text38 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
-1E99 text38 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
-1E9B text38 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
-1E9D text38 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
-1EA1 text38 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
-1EA6 text38 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
-1EAB text38 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
-1EAF text38 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
-12E7 text37 CODE >140:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-12E8 text37 CODE >143:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-12EF text37 CODE >144:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-12FE text37 CODE >145:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-130E text37 CODE >146:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1322 text37 CODE >147:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1336 text37 CODE >148:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-133A text37 CODE >149:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1296 text36 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-1296 text36 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-1297 text36 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-1299 text36 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-129E text36 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12A0 text36 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12A2 text36 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12A7 text36 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12AB text36 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12AD text36 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12B1 text36 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12B3 text36 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12B5 text36 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12BA text36 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12BE text36 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12BF text36 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12C4 text36 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12CC text36 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12D0 text36 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12D1 text36 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12D6 text36 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12DA text36 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12DD text36 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-12E2 text36 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
-1F9D text35 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
-1F9D text35 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
-1FA1 text35 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
-1FA3 text35 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
-1FA5 text35 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
-1FAA text35 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
-1FAE text35 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
-1FAF text35 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
-1FB7 text35 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
-1FBB text35 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
-1FC0 text35 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
-1FC4 text35 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
-80E text34 CODE >190:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-80E text34 CODE >192:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-81D text34 CODE >193:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-822 text34 CODE >195:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-824 text34 CODE >197:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-828 text34 CODE >198:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-82E text34 CODE >199:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-82F text34 CODE >203:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-832 text34 CODE >205:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-836 text34 CODE >209:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-83B text34 CODE >211:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-850 text34 CODE >212:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-860 text34 CODE >213:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-862 text34 CODE >209:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-863 text34 CODE >215:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-867 text34 CODE >219:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-86B text34 CODE >217:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-873 text34 CODE >224:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-879 text34 CODE >227:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-894 text34 CODE >229:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-89E text34 CODE >227:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-8A4 text34 CODE >232:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-8A8 text34 CODE >234:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-8AC text34 CODE >235:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-8B2 text34 CODE >238:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-8B7 text34 CODE >240:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-8BB text34 CODE >241:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-8C1 text34 CODE >242:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1E2E text33 CODE >176:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1E2E text33 CODE >178:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1E35 text33 CODE >179:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1E41 text33 CODE >178:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1E57 text32 CODE >44:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1E57 text32 CODE >46:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1E62 text32 CODE >47:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1E6C text32 CODE >48:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1E6D text31 CODE >30:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1E6D text31 CODE >32:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1E78 text31 CODE >34:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1E82 text31 CODE >35:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1E83 text30 CODE >37:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1E83 text30 CODE >39:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1E8E text30 CODE >41:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1E98 text30 CODE >42:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1ED2 text29 CODE >138:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1ED2 text29 CODE >140:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1ED4 text29 CODE >142:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1ED5 text29 CODE >144:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1ED6 text29 CODE >146:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1ED7 text29 CODE >148:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1ED8 text29 CODE >150:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EDB text29 CODE >151:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EDE text29 CODE >158:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EE0 text29 CODE >161:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EE1 text29 CODE >164:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EE3 text29 CODE >166:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EE4 text29 CODE >168:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EE5 text29 CODE >170:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EE7 text29 CODE >172:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EE8 text29 CODE >174:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EE9 text29 CODE >176:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EEA text29 CODE >178:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EEB text29 CODE >180:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EEC text29 CODE >182:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EED text29 CODE >184:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1EF0 text29 CODE >185:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+7B0 cinit CODE >11043:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7B0 cinit CODE >11046:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7B0 cinit CODE >11187:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7B1 cinit CODE >11188:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7B4 cinit CODE >11189:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7B5 cinit CODE >11190:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7B8 cinit CODE >11191:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7B9 cinit CODE >11195:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7BA cinit CODE >11196:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7BB cinit CODE >11197:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7BC cinit CODE >11198:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7BD cinit CODE >11199:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7BE cinit CODE >11200:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7BF cinit CODE >11201:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7C0 cinit CODE >11202:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7C1 cinit CODE >11203:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7C2 cinit CODE >11204:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7C3 cinit CODE >11205:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7C4 cinit CODE >11206:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7C7 cinit CODE >11229:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7C8 cinit CODE >11230:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7C9 cinit CODE >11231:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7CA cinit CODE >11232:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7CB cinit CODE >11233:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7CC cinit CODE >11234:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7CD cinit CODE >11235:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7CE cinit CODE >11236:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7CF cinit CODE >11237:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7D2 cinit CODE >11241:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7D3 cinit CODE >11242:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7D4 cinit CODE >11243:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7D5 cinit CODE >11244:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7D6 cinit CODE >11245:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7D7 cinit CODE >11246:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7D8 cinit CODE >11247:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7D9 cinit CODE >11248:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7DA cinit CODE >11249:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7DD cinit CODE >11253:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7DE cinit CODE >11254:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7DF cinit CODE >11255:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7E0 cinit CODE >11256:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7E1 cinit CODE >11257:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7E2 cinit CODE >11258:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7E3 cinit CODE >11259:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7E4 cinit CODE >11260:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7E5 cinit CODE >11261:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7E8 cinit CODE >11265:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7E9 cinit CODE >11266:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7EA cinit CODE >11267:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7EB cinit CODE >11268:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7EC cinit CODE >11269:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7ED cinit CODE >11270:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7EE cinit CODE >11271:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7EF cinit CODE >11272:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7F0 cinit CODE >11273:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7F3 cinit CODE >11277:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7F4 cinit CODE >11278:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7F5 cinit CODE >11279:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7F6 cinit CODE >11280:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7F7 cinit CODE >11281:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7F8 cinit CODE >11282:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7F9 cinit CODE >11283:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7FA cinit CODE >11284:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7FB cinit CODE >11285:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7FD cinit CODE >11291:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7FD cinit CODE >11293:C:\Users\DAVE\AppData\Local\Temp\s49c.
+7FE cinit CODE >11294:C:\Users\DAVE\AppData\Local\Temp\s49c.
+139B text43 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+139B text43 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13A3 text43 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13AA text43 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13AE text43 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13B4 text43 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13B9 text43 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13BD text43 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13C7 text43 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13CD text43 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13CD text43 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13D2 text43 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13D4 text43 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13DA text43 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13E0 text43 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13E2 text43 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13E8 text43 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13EA text43 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13FA text43 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13FD text43 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+13FE text43 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+1F0C text42 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+1F0C text42 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+1F0E text42 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+1F10 text42 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+1F15 text42 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+1F17 text42 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+174C text41 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+174C text41 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+175C text41 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1763 text41 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1772 text41 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+1779 text41 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+177E text41 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+178E text41 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+179E text41 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17A2 text41 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17A3 text41 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17A4 text41 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17AA text41 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17B0 text41 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17B4 text41 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17B6 text41 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17BC text41 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17C2 text41 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17C8 text41 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17CC text41 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17D0 text41 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17D2 text41 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17D8 text41 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17DE text41 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17E4 text41 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+17E8 text41 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+156C text40 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+156C text40 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+157C text40 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+1585 text40 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+1595 text40 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+1596 text40 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+159C text40 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15A3 text40 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15A5 text40 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15A7 text40 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15AC text40 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15B5 text40 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15BC text40 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15C3 text40 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15C7 text40 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15D0 text40 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15D7 text40 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15D9 text40 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15D9 text40 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15DC text40 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15DF text40 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+15EA text40 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+E43 text39 CODE >31:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+E45 text39 CODE >33:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+E4D text39 CODE >35:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+E60 text39 CODE >37:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+E74 text39 CODE >39:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+E7F text39 CODE >40:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+E80 text39 CODE >43:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+E87 text39 CODE >45:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+E88 text39 CODE >48:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+E91 text39 CODE >49:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+E99 text39 CODE >51:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+E9A text39 CODE >52:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+EA2 text39 CODE >54:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+EDF text39 CODE >55:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+EE6 text39 CODE >57:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F03 text39 CODE >59:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F0E text39 CODE >60:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F1D text39 CODE >62:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F25 text39 CODE >63:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F2D text39 CODE >65:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F2E text39 CODE >68:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F47 text39 CODE >70:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F48 text39 CODE >71:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F60 text39 CODE >72:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F61 text39 CODE >73:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F69 text39 CODE >75:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F6F text39 CODE >77:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F77 text39 CODE >79:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F7F text39 CODE >81:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F87 text39 CODE >83:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F93 text39 CODE >84:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+F98 text39 CODE >85:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+FA0 text39 CODE >87:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+FA1 text39 CODE >90:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+FDD text39 CODE >91:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+FE5 text39 CODE >92:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+FEA text39 CODE >93:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+FEF text39 CODE >95:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+FF0 text39 CODE >97:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+FF7 text39 CODE >99:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+FFF text39 CODE >101:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
+1F4E text38 CODE >281:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F4F text38 CODE >285:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F53 text38 CODE >287:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F56 text38 CODE >289:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F58 text38 CODE >290:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F59 text38 CODE >291:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F59 text38 CODE >293:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F5B text38 CODE >294:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F5B text38 CODE >296:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F5C text38 CODE >298:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F61 text38 CODE >299:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F61 text38 CODE >300:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F62 text38 CODE >302:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F64 text38 CODE >304:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F65 text38 CODE >305:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F65 text38 CODE >307:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F66 text38 CODE >309:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F68 text38 CODE >311:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F69 text38 CODE >298:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F71 text38 CODE >314:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F72 text38 CODE >315:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1E95 text37 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+1E95 text37 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+1E97 text37 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+1E99 text37 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+1E9D text37 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+1EA2 text37 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+1EA7 text37 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+1EAB text37 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+12E7 text36 CODE >140:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+12E8 text36 CODE >143:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+12EF text36 CODE >144:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+12FE text36 CODE >145:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+130E text36 CODE >146:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1322 text36 CODE >147:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1336 text36 CODE >148:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+133A text36 CODE >149:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1296 text35 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+1296 text35 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+1297 text35 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+1299 text35 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+129E text35 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12A0 text35 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12A2 text35 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12A7 text35 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12AB text35 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12AD text35 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12B1 text35 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12B3 text35 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12B5 text35 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12BA text35 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12BE text35 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12BF text35 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12C4 text35 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12CC text35 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12D0 text35 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12D1 text35 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12D6 text35 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12DA text35 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12DD text35 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+12E2 text35 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+1F99 text34 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+1F99 text34 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+1F9D text34 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+1F9F text34 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+1FA1 text34 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+1FA6 text34 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+1FAA text34 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+1FAB text34 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+1FB3 text34 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+1FB7 text34 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+1FBC text34 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+1FC0 text34 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+80E text33 CODE >190:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+80E text33 CODE >192:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+81D text33 CODE >193:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+822 text33 CODE >195:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+824 text33 CODE >197:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+828 text33 CODE >198:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+82E text33 CODE >199:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+82F text33 CODE >203:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+832 text33 CODE >205:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+836 text33 CODE >209:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+83B text33 CODE >211:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+850 text33 CODE >212:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+860 text33 CODE >213:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+862 text33 CODE >209:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+863 text33 CODE >215:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+867 text33 CODE >219:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+86B text33 CODE >217:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+873 text33 CODE >224:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+879 text33 CODE >227:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+894 text33 CODE >229:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+89E text33 CODE >227:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+8A4 text33 CODE >232:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+8A8 text33 CODE >234:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+8AC text33 CODE >235:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+8B2 text33 CODE >238:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+8B7 text33 CODE >240:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+8BB text33 CODE >241:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+8C1 text33 CODE >242:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1E53 text32 CODE >44:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1E53 text32 CODE >46:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1E5E text32 CODE >47:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1E68 text32 CODE >48:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1E69 text31 CODE >30:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1E69 text31 CODE >32:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1E74 text31 CODE >34:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1E7E text31 CODE >35:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1E7F text30 CODE >37:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1E7F text30 CODE >39:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1E8A text30 CODE >41:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1E94 text30 CODE >42:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1ECE text29 CODE >138:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1ECE text29 CODE >140:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1ED0 text29 CODE >142:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1ED1 text29 CODE >144:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1ED2 text29 CODE >146:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1ED3 text29 CODE >148:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1ED4 text29 CODE >150:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1ED7 text29 CODE >151:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EDA text29 CODE >158:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EDC text29 CODE >161:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EDD text29 CODE >164:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EDF text29 CODE >166:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EE0 text29 CODE >168:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EE1 text29 CODE >170:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EE3 text29 CODE >172:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EE4 text29 CODE >174:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EE5 text29 CODE >176:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EE6 text29 CODE >178:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EE7 text29 CODE >180:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EE8 text29 CODE >182:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EE9 text29 CODE >184:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1EEC text29 CODE >185:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
 13FF text28 CODE >21:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
 1401 text28 CODE >23:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
 1409 text28 CODE >24:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
@@ -483,93 +478,93 @@ FFF text40 CODE >101:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X
 1455 text28 CODE >27:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
 145E text28 CODE >28:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
 1466 text28 CODE >29:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-1E1B text27 CODE >124:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1E1C text27 CODE >126:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1E25 text27 CODE >127:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1E2D text27 CODE >128:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F77 text26 CODE >182:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F77 text26 CODE >185:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F84 text26 CODE >186:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F89 text26 CODE >185:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F98 text26 CODE >187:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1F9C text26 CODE >188:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-115A text25 CODE >247:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-115A text25 CODE >249:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-115C text25 CODE >250:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-115D text25 CODE >251:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-115E text25 CODE >252:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-115F text25 CODE >253:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1160 text25 CODE >254:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1161 text25 CODE >255:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1162 text25 CODE >256:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1163 text25 CODE >257:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1164 text25 CODE >259:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1165 text25 CODE >261:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-116D text25 CODE >269:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1175 text25 CODE >271:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-117D text25 CODE >273:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1185 text25 CODE >275:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-118D text25 CODE >277:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1194 text25 CODE >278:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-1DCB text24 CODE >53:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-1DCB text24 CODE >55:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-1DCE text24 CODE >56:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-1DCF text24 CODE >57:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-1DD0 text24 CODE >58:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-1DD2 text24 CODE >59:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-1DD3 text24 CODE >60:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-1FC9 text23 CODE >3:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FC9 text23 CODE >5:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FCC text23 CODE >6:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FCD text23 CODE >7:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FCE text23 CODE >9:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FD0 text23 CODE >10:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FD1 text23 CODE >11:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FD2 text23 CODE >12:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FD4 text23 CODE >14:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FD6 text23 CODE >15:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FD8 text23 CODE >16:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FDA text23 CODE >18:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FDC text23 CODE >19:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FDE text23 CODE >20:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FE0 text23 CODE >23:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FE2 text23 CODE >24:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FE6 text23 CODE >25:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FE7 text23 CODE >26:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FEA text23 CODE >27:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FEC text23 CODE >28:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FED text23 CODE >30:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FF0 text23 CODE >31:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FF2 text23 CODE >32:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FF4 text23 CODE >33:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FF7 text23 CODE >34:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FF9 text23 CODE >35:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FFA text23 CODE >36:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1FFF text23 CODE >37:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
-1EF1 text22 CODE >3:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1EF1 text22 CODE >5:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1EF4 text22 CODE >7:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1EF5 text22 CODE >9:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1EF6 text22 CODE >11:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1EFB text22 CODE >14:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1EFE text22 CODE >16:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1EFF text22 CODE >18:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1F00 text22 CODE >20:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1F05 text22 CODE >23:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1F07 text22 CODE >24:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1F08 text22 CODE >25:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1F0A text22 CODE >26:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1F0F text22 CODE >27:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
-1DEC text21 CODE >3:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
-1DEC text21 CODE >5:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
-1DEE text21 CODE >7:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
-1DF0 text21 CODE >9:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
-1DF1 text21 CODE >11:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
-1DF2 text21 CODE >13:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
-1DF4 text21 CODE >18:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
-1DF5 text21 CODE >20:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
-1DF7 text21 CODE >22:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
-1DF9 text21 CODE >23:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
+1E2B text27 CODE >124:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1E2C text27 CODE >126:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1E35 text27 CODE >127:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1E3D text27 CODE >128:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F73 text26 CODE >182:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F73 text26 CODE >185:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F80 text26 CODE >186:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F85 text26 CODE >185:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F94 text26 CODE >187:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1F98 text26 CODE >188:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FC5 text25 CODE >247:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FC5 text25 CODE >249:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FC7 text25 CODE >250:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FC8 text25 CODE >251:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FC9 text25 CODE >252:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FCA text25 CODE >253:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FCB text25 CODE >254:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FCC text25 CODE >255:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FCD text25 CODE >256:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FCE text25 CODE >257:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FCF text25 CODE >259:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FD0 text25 CODE >261:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FD8 text25 CODE >269:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FE0 text25 CODE >271:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FE8 text25 CODE >273:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FF0 text25 CODE >275:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FF8 text25 CODE >277:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1FFF text25 CODE >278:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
+1DE9 text24 CODE >53:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+1DE9 text24 CODE >55:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+1DEC text24 CODE >56:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+1DED text24 CODE >57:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+1DEE text24 CODE >58:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+1DF0 text24 CODE >59:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+1DF1 text24 CODE >60:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+6 text23 CODE >3:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+6 text23 CODE >5:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+9 text23 CODE >6:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+A text23 CODE >7:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+B text23 CODE >9:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+D text23 CODE >10:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+E text23 CODE >11:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+F text23 CODE >12:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+11 text23 CODE >14:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+13 text23 CODE >15:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+15 text23 CODE >16:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+17 text23 CODE >18:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+19 text23 CODE >19:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+1B text23 CODE >20:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+1D text23 CODE >23:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+1F text23 CODE >24:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+23 text23 CODE >25:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+24 text23 CODE >26:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+27 text23 CODE >27:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+29 text23 CODE >28:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+2A text23 CODE >30:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+2D text23 CODE >31:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+2F text23 CODE >32:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+31 text23 CODE >33:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+34 text23 CODE >34:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+36 text23 CODE >35:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+37 text23 CODE >36:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+3C text23 CODE >37:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pin_manager.c
+1EED text22 CODE >3:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1EED text22 CODE >5:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1EF0 text22 CODE >7:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1EF1 text22 CODE >9:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1EF2 text22 CODE >11:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1EF7 text22 CODE >14:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1EFA text22 CODE >16:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1EFB text22 CODE >18:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1EFC text22 CODE >20:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1F01 text22 CODE >23:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1F03 text22 CODE >24:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1F04 text22 CODE >25:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1F06 text22 CODE >26:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+1F0B text22 CODE >27:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\pwm.c
+114A text21 CODE >3:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
+114A text21 CODE >5:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
+114C text21 CODE >7:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
+114E text21 CODE >9:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
+114F text21 CODE >11:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
+1150 text21 CODE >13:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
+1152 text21 CODE >18:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
+1153 text21 CODE >20:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
+1155 text21 CODE >22:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
+1157 text21 CODE >23:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
 800 text20 CODE >25:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
 800 text20 CODE >27:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
 802 text20 CODE >29:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
@@ -580,20 +575,20 @@ FFF text40 CODE >101:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X
 809 text20 CODE >41:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
 80B text20 CODE >43:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
 80D text20 CODE >44:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tmr.c
-4 text19 CODE >35:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-4 text19 CODE >37:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-7 text19 CODE >38:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-A text19 CODE >40:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-D text19 CODE >41:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-10 text19 CODE >43:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-13 text19 CODE >44:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-16 text19 CODE >45:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-1A text19 CODE >46:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-1E text19 CODE >47:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-21 text19 CODE >48:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-2F text19 CODE >49:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-32 text19 CODE >50:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
-40 text19 CODE >51:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+11CF text19 CODE >35:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+11CF text19 CODE >37:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+11D2 text19 CODE >38:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+11D5 text19 CODE >40:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+11D8 text19 CODE >41:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+11DB text19 CODE >43:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+11DE text19 CODE >44:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+11E1 text19 CODE >45:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+11E5 text19 CODE >46:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+11E9 text19 CODE >47:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+11EC text19 CODE >48:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+11FA text19 CODE >49:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+11FD text19 CODE >50:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
+120B text19 CODE >51:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\system.c
 15F3 text18 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
 15F3 text18 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
 1603 text18 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
@@ -616,21 +611,21 @@ D text19 CODE >41:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\sy
 167A text18 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
 1680 text18 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
 1684 text18 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
-120C text17 CODE >405:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-120C text17 CODE >407:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1221 text17 CODE >409:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1224 text17 CODE >410:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1225 text17 CODE >413:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1F31 text16 CODE >429:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1F31 text16 CODE >431:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1F43 text16 CODE >433:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1F46 text16 CODE >434:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1F47 text16 CODE >437:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1251 text15 CODE >441:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1251 text15 CODE >443:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1266 text15 CODE >445:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1269 text15 CODE >446:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-126A text15 CODE >449:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+120C text17 CODE >411:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+120C text17 CODE >413:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1221 text17 CODE >415:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1224 text17 CODE >416:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1225 text17 CODE >419:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1F2D text16 CODE >435:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1F2D text16 CODE >437:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1F3F text16 CODE >439:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1F42 text16 CODE >440:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1F43 text16 CODE >443:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1251 text15 CODE >447:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1251 text15 CODE >449:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1266 text15 CODE >451:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1269 text15 CODE >452:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+126A text15 CODE >455:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
 CFC text14 CODE >103:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
 CFE text14 CODE >105:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
 D1A text14 CODE >107:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
@@ -655,20 +650,20 @@ DF5 text14 CODE >141:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X
 DFE text14 CODE >142:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
 E3A text14 CODE >143:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
 E42 text14 CODE >148:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-1E42 text13 CODE >21:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E43 text13 CODE >23:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E46 text13 CODE >25:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E47 text13 CODE >27:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E48 text13 CODE >29:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E49 text13 CODE >31:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E49 text13 CODE >33:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E4B text13 CODE >35:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E4D text13 CODE >37:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E4E text13 CODE >39:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E4F text13 CODE >41:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E50 text13 CODE >43:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E50 text13 CODE >45:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E52 text13 CODE >47:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E3E text13 CODE >21:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E3F text13 CODE >23:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E42 text13 CODE >25:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E43 text13 CODE >27:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E44 text13 CODE >29:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E45 text13 CODE >31:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E45 text13 CODE >33:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E47 text13 CODE >35:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E49 text13 CODE >37:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E4A text13 CODE >39:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E4B text13 CODE >41:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E4C text13 CODE >43:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E4C text13 CODE >45:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
+1E4E text13 CODE >47:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
 14E9 text12 CODE >8:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\buttons.c
 14E9 text12 CODE >10:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\buttons.c
 14F2 text12 CODE >12:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\buttons.c
@@ -728,14 +723,14 @@ CC7 text10 CODE >93:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\
 CCB text10 CODE >94:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
 CD4 text10 CODE >97:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
 CF6 text10 CODE >99:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-1E0A text9 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
-1E0B text9 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
-1E0C text9 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
-1E0E text9 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
-1E12 text9 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
-1E14 text9 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
-1E16 text9 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
-1E19 text9 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+1E1A text9 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+1E1B text9 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+1E1C text9 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+1E1E text9 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+1E22 text9 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+1E24 text9 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+1E26 text9 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+1E29 text9 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
 AA4 text8 CODE >103:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
 AA4 text8 CODE >107:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
 AAE text8 CODE >109:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
@@ -789,18 +784,18 @@ A7A text7 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ft
 A80 text7 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
 A8A text7 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
 A8C text7 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
-1EB4 text6 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
-1EB4 text6 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
-1EBA text6 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
-1EBC text6 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
-11D0 text5 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
-11D0 text5 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
-11D3 text5 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
-11E7 text5 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
-11E9 text5 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
-11FD text5 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
-11FF text5 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
-1201 text5 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+1EB0 text6 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+1EB0 text6 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+1EB6 text6 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+1EB8 text6 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+1193 text5 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+1193 text5 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+1196 text5 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+11AA text5 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+11AC text5 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+11C0 text5 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+11C2 text5 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+11C4 text5 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
 133B text4 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
 133B text4 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
 1353 text4 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
@@ -808,16 +803,16 @@ A8C text7 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ft
 1358 text4 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
 1393 text4 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
 1394 text4 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
-1195 text3 CODE >254:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
-1195 text3 CODE >256:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
-119A text3 CODE >257:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
-11A0 text3 CODE >258:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
-11A7 text3 CODE >261:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
-11B4 text3 CODE >262:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
-11C1 text3 CODE >263:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
-11CA text3 CODE >268:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
-11CE text3 CODE >269:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
-11CF text3 CODE >273:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+1158 text3 CODE >254:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+1158 text3 CODE >256:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+115D text3 CODE >257:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+1163 text3 CODE >258:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+116A text3 CODE >261:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+1177 text3 CODE >262:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+1184 text3 CODE >263:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+118D text3 CODE >268:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+1191 text3 CODE >269:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+1192 text3 CODE >273:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
 169C text2 CODE >5:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
 169C text2 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
 16AE text2 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
@@ -839,174 +834,173 @@ A8C text7 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ft
 974 text1 CODE >13:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tempCalc.c
 98A text1 CODE >15:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tempCalc.c
 9A0 text1 CODE >18:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\tempCalc.c
-41 maintext CODE >33:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-41 maintext CODE >35:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-46 maintext CODE >36:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4A maintext CODE >39:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4B maintext CODE >40:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4F maintext CODE >41:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-53 maintext CODE >42:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-57 maintext CODE >43:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-5D maintext CODE >44:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-5F maintext CODE >45:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-61 maintext CODE >48:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-63 maintext CODE >50:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-64 maintext CODE >51:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-65 maintext CODE >52:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-66 maintext CODE >53:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-6C maintext CODE >54:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-70 maintext CODE >60:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-73 maintext CODE >62:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-76 maintext CODE >72:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-79 maintext CODE >74:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-7A maintext CODE >75:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-83 maintext CODE >76:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-88 maintext CODE >77:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-8A maintext CODE >79:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-AF maintext CODE >81:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-D3 maintext CODE >83:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-DB maintext CODE >87:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-105 maintext CODE >89:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-12F maintext CODE >91:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-159 maintext CODE >93:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-183 maintext CODE >95:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-188 maintext CODE >97:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1B2 maintext CODE >98:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1DD maintext CODE >95:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1E7 maintext CODE >102:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1EA maintext CODE >106:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1ED maintext CODE >108:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1F0 maintext CODE >110:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-24E maintext CODE >112:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-251 maintext CODE >114:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-261 maintext CODE >121:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-271 maintext CODE >132:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-281 maintext CODE >134:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-28D maintext CODE >135:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-28E maintext CODE >136:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-29F maintext CODE >138:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-2A8 maintext CODE >143:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-2AC maintext CODE >145:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-2BC maintext CODE >152:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-2BD maintext CODE >159:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-2CD maintext CODE >161:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-2D9 maintext CODE >162:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-2DA maintext CODE >163:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-2EB maintext CODE >165:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-2F4 maintext CODE >169:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-2FC maintext CODE >170:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-304 maintext CODE >171:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-306 maintext CODE >175:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-30C maintext CODE >178:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-314 maintext CODE >179:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-32A maintext CODE >180:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-341 maintext CODE >181:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-348 maintext CODE >183:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-34D maintext CODE >185:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-3B3 maintext CODE >187:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-3B8 maintext CODE >191:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-416 maintext CODE >195:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-423 maintext CODE >197:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-438 maintext CODE >199:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-43C maintext CODE >200:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-43D maintext CODE >201:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-441 maintext CODE >203:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-455 maintext CODE >205:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-45C maintext CODE >207:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-460 maintext CODE >209:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-461 maintext CODE >212:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-469 maintext CODE >213:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-469 maintext CODE >215:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-46D maintext CODE >216:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-475 maintext CODE >220:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-478 maintext CODE >222:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-47B maintext CODE >224:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-480 maintext CODE >225:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-486 maintext CODE >226:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-48C maintext CODE >229:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-494 maintext CODE >231:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-496 maintext CODE >232:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4AA maintext CODE >233:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4AC maintext CODE >235:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4B2 maintext CODE >236:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4B6 maintext CODE >238:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4B9 maintext CODE >239:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4BB maintext CODE >242:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4BF maintext CODE >243:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4C3 maintext CODE >246:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4CF maintext CODE >249:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4DB maintext CODE >250:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-4E7 maintext CODE >252:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-501 maintext CODE >254:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-505 maintext CODE >256:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-51F maintext CODE >258:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-523 maintext CODE >260:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-53D maintext CODE >261:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-541 maintext CODE >263:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-555 maintext CODE >266:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-570 maintext CODE >267:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-574 maintext CODE >270:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-58F maintext CODE >271:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-593 maintext CODE >273:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-5AE maintext CODE >274:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-5B2 maintext CODE >276:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-5CB maintext CODE >278:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-5E8 maintext CODE >280:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-5EC maintext CODE >282:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-609 maintext CODE >284:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-60D maintext CODE >286:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-62A maintext CODE >287:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-62E maintext CODE >289:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-645 maintext CODE >299:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-660 maintext CODE >300:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-664 maintext CODE >302:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-6D2 maintext CODE >304:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-6D6 maintext CODE >306:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-6F1 maintext CODE >307:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-6F5 maintext CODE >309:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-70E maintext CODE >313:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-728 maintext CODE >314:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-73F maintext CODE >315:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-743 maintext CODE >316:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-75D maintext CODE >317:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-774 maintext CODE >318:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-778 maintext CODE >319:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-793 maintext CODE >320:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-797 maintext CODE >321:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-79B maintext CODE >391:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-7A0 maintext CODE >393:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-7A4 maintext CODE >395:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-7A9 maintext CODE >397:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-7AD maintext CODE >399:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+3D maintext CODE >33:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+3D maintext CODE >35:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+42 maintext CODE >36:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+46 maintext CODE >39:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+47 maintext CODE >40:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+4B maintext CODE >41:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+4F maintext CODE >42:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+53 maintext CODE >43:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+59 maintext CODE >44:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+5B maintext CODE >45:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+5D maintext CODE >48:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+5F maintext CODE >50:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+60 maintext CODE >51:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+61 maintext CODE >52:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+62 maintext CODE >53:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+68 maintext CODE >54:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+6C maintext CODE >60:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+6F maintext CODE >62:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+72 maintext CODE >72:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+75 maintext CODE >74:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+76 maintext CODE >75:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+7F maintext CODE >76:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+84 maintext CODE >77:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+86 maintext CODE >79:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+AB maintext CODE >81:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+CF maintext CODE >83:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+D7 maintext CODE >87:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+101 maintext CODE >89:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+12B maintext CODE >91:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+155 maintext CODE >93:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+17F maintext CODE >95:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+184 maintext CODE >97:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1AE maintext CODE >98:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1D9 maintext CODE >95:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1E3 maintext CODE >102:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1E6 maintext CODE >106:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1E9 maintext CODE >108:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+1EC maintext CODE >110:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+24A maintext CODE >112:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+24D maintext CODE >114:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+25D maintext CODE >121:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+26D maintext CODE >132:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+27D maintext CODE >134:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+289 maintext CODE >135:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+28A maintext CODE >136:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+29B maintext CODE >138:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+2A4 maintext CODE >143:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+2A8 maintext CODE >145:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+2B8 maintext CODE >152:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+2B9 maintext CODE >159:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+2C9 maintext CODE >161:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+2D5 maintext CODE >162:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+2D6 maintext CODE >163:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+2E7 maintext CODE >165:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+2F0 maintext CODE >169:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+2F8 maintext CODE >170:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+300 maintext CODE >171:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+302 maintext CODE >175:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+308 maintext CODE >178:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+310 maintext CODE >179:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+326 maintext CODE >180:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+33D maintext CODE >181:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+344 maintext CODE >183:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+349 maintext CODE >185:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+3AF maintext CODE >187:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+3B4 maintext CODE >191:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+412 maintext CODE >195:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+41F maintext CODE >197:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+434 maintext CODE >199:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+438 maintext CODE >200:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+439 maintext CODE >201:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+43D maintext CODE >203:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+451 maintext CODE >205:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+458 maintext CODE >207:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+45C maintext CODE >209:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+45D maintext CODE >212:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+465 maintext CODE >213:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+465 maintext CODE >215:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+469 maintext CODE >216:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+471 maintext CODE >220:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+474 maintext CODE >222:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+477 maintext CODE >224:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+47C maintext CODE >225:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+482 maintext CODE >226:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+488 maintext CODE >229:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+490 maintext CODE >231:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+492 maintext CODE >232:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+4A6 maintext CODE >233:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+4A8 maintext CODE >235:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+4AE maintext CODE >236:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+4B2 maintext CODE >238:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+4B5 maintext CODE >239:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+4B7 maintext CODE >242:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+4BB maintext CODE >243:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+4BF maintext CODE >248:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+4D3 maintext CODE >249:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+4E7 maintext CODE >258:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+501 maintext CODE >260:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+505 maintext CODE >262:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+51F maintext CODE >264:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+523 maintext CODE >266:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+53D maintext CODE >267:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+541 maintext CODE >269:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+555 maintext CODE >272:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+570 maintext CODE >273:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+574 maintext CODE >276:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+58F maintext CODE >277:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+593 maintext CODE >279:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+5AE maintext CODE >280:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+5B2 maintext CODE >282:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+5CB maintext CODE >284:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+5E8 maintext CODE >286:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+5EC maintext CODE >288:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+609 maintext CODE >290:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+60D maintext CODE >292:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+62A maintext CODE >293:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+62E maintext CODE >295:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+645 maintext CODE >305:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+660 maintext CODE >306:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+664 maintext CODE >308:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+6D2 maintext CODE >310:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+6D6 maintext CODE >312:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+6F1 maintext CODE >313:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+6F5 maintext CODE >315:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+70E maintext CODE >319:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+728 maintext CODE >320:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+73F maintext CODE >321:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+743 maintext CODE >322:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+75D maintext CODE >323:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+774 maintext CODE >324:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+778 maintext CODE >325:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+793 maintext CODE >326:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+797 maintext CODE >327:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+79B maintext CODE >397:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+7A0 maintext CODE >399:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+7A4 maintext CODE >401:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+7A9 maintext CODE >403:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
+7AD maintext CODE >405:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
 7AF maintext CODE >70:D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-1DD4 clrtext CODE >11237:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DD4 clrtext CODE >11238:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DD5 clrtext CODE >11239:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DD5 clrtext CODE >11240:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DD6 clrtext CODE >11241:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DD7 clrtext CODE >11242:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DD8 clrtext CODE >11243:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DD9 clrtext CODE >11244:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DDA clrtext CODE >11245:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DDB clrtext CODE >11246:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DDC clrtext CODE >11247:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DDD clrtext CODE >11248:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DDE clrtext CODE >11250:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DDF clrtext CODE >11249:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DE0 inittext CODE >11195:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DE0 inittext CODE >11196:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DE1 inittext CODE >11197:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DE1 inittext CODE >11198:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DE2 inittext CODE >11199:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DE3 inittext CODE >11200:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DE4 inittext CODE >11201:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DE5 inittext CODE >11202:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DE6 inittext CODE >11203:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DE7 inittext CODE >11204:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DE8 inittext CODE >11205:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DE9 inittext CODE >11206:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DEA inittext CODE >11208:C:\Users\DAVE\AppData\Local\Temp\sb4.
-1DEB inittext CODE >11207:C:\Users\DAVE\AppData\Local\Temp\sb4.
+1DF2 clrtext CODE >11212:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DF2 clrtext CODE >11213:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DF3 clrtext CODE >11214:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DF3 clrtext CODE >11215:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DF4 clrtext CODE >11216:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DF5 clrtext CODE >11217:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DF6 clrtext CODE >11218:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DF7 clrtext CODE >11219:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DF8 clrtext CODE >11220:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DF9 clrtext CODE >11221:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DFA clrtext CODE >11222:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DFB clrtext CODE >11223:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DFC clrtext CODE >11225:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DFD clrtext CODE >11224:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DFE inittext CODE >11170:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DFE inittext CODE >11171:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DFF inittext CODE >11172:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1DFF inittext CODE >11173:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1E00 inittext CODE >11174:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1E01 inittext CODE >11175:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1E02 inittext CODE >11176:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1E03 inittext CODE >11177:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1E04 inittext CODE >11178:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1E05 inittext CODE >11179:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1E06 inittext CODE >11180:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1E07 inittext CODE >11181:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1E08 inittext CODE >11183:C:\Users\DAVE\AppData\Local\Temp\s49c.
+1E09 inittext CODE >11182:C:\Users\DAVE\AppData\Local\Temp\s49c.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1073,18 +1067,18 @@ _WPUB F44 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.o
 _WPUC F4F 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _WPUE F65 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _Vref B4 0 BANK1 1 bssBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\sb4.obj
-_main 82 0 CODE 0 maintext dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s49c.obj
+_main 7A 0 CODE 0 maintext dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_LCDWriteInt 118E 0 CODE 0 text34 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_LCDWriteInt 118E 0 CODE 0 text33 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 log@x 48 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ltemp 7E 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_PWM7_LoadDutyValue 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftadd@f1 31 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftadd@f2 34 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-start 4 0 CODE 0 init C:\Users\DAVE\AppData\Local\Temp\sb4.obj
+start 4 0 CODE 0 init C:\Users\DAVE\AppData\Local\Temp\s49c.obj
 ttemp 7E 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_PWM6_LoadDutyValue 3CDA 0 CODE 0 text31 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_PWM6_LoadDutyValue 3CD2 0 CODE 0 text31 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 wtemp 7E 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of___aldiv 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1098,17 +1092,17 @@ readIAnalog@analog_channel 79 0 COMMON 1 cstackCOMMON dist/default/production\24
 __size_of___lwmod 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_readVAnalog 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __end_of_calculateCurrent0 24A2 0 CODE 0 text17 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_calculateCurrent2 3EA4 0 CODE 0 text16 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_calculateCurrent2 3E9C 0 CODE 0 text16 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __end_of_calculateCurrent3 252C 0 CODE 0 text15 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_LCDInit 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftdiv@f1 24 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftdiv@f2 21 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftdiv@f3 2C 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_LCDClear 3EEE 0 CODE 0 text26 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_LCDClear 3EE6 0 CODE 0 text26 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __LidataBANK1 0 0 ABS 0 idataBANK1 -
 __LidataBANK2 0 0 ABS 0 idataBANK2 -
-_LCDWrite 3EA4 0 CODE 0 text39 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_LCDWrite 3E9C 0 CODE 0 text38 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _Vtotals 130 0 BANK2 1 bssBANK2 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ?_readIAnalog 26 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 PWM1_LoadDutyValue@dutyCycle1 70 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1116,7 +1110,7 @@ __Hpowerup 0 0 CODE 0 powerup -
 LCDWriteInt@F13692 150 0 BANK2 1 bssBANK2 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 log@coeff 225E 0 STRCODE 0 stringtext dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _IminCount 5E 0 BANK0 1 bssBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_TMR2_Initialize 3BD8 0 CODE 0 text21 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_TMR2_Initialize 2294 0 CODE 0 text21 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftge@ff1 31 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftge@ff2 34 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ttemp0 7E 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1125,14 +1119,14 @@ ttemp2 84 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.o
 ttemp3 87 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ttemp4 7F 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_LCDClear 3F3A 0 CODE 0 text26 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_LCDWrite 3EEE 0 CODE 0 text39 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-intlevel0 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\sb4.obj
-intlevel1 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\sb4.obj
-intlevel2 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\sb4.obj
-intlevel3 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\sb4.obj
-intlevel4 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\sb4.obj
-intlevel5 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\sb4.obj
+__end_of_LCDClear 3F32 0 CODE 0 text26 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_LCDWrite 3EE6 0 CODE 0 text38 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s49c.obj
+intlevel1 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s49c.obj
+intlevel2 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s49c.obj
+intlevel3 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s49c.obj
+intlevel4 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s49c.obj
+intlevel5 0 0 CODE 0 functab C:\Users\DAVE\AppData\Local\Temp\s49c.obj
 __end_oflog@coeff 2294 0 STRCODE 0 stringtext dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _VsampleIndex 64 0 BANK0 1 bssBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___bmul@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1150,7 +1144,7 @@ __Hfunctab 0 0 CODE 0 functab -
 __size_of_readIAnalog 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___aldiv@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 main@displayRefresh D8 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_LCDWriteCharacter 25CE 0 CODE 0 text37 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_LCDWriteCharacter 25CE 0 CODE 0 text36 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __Hclrtext 0 0 ABS 0 clrtext -
 ___ftmul@f1 21 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1180,10 +1174,9 @@ __size_of___awtoft 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.p
 _CCPR1H 30D 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _CCPR1L 30C 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 PWM7_LoadDutyValue@dutyCycle7 70 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__size_of_LCDWriteString 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of___bmul 3C36 0 CODE 0 text9 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of___ftge 2418 0 CODE 0 text5 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of___wmul 3D68 0 CODE 0 text38 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of___bmul 3C56 0 CODE 0 text9 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of___ftge 239E 0 CODE 0 text5 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of___wmul 3D60 0 CODE 0 text37 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftsub@f1 41 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftsub@f2 3E 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_PWM1_LoadDutyValue 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1196,51 +1189,51 @@ ___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_Bro
 ___lwmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of___ftpack 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __end_of___aldiv 29D2 0 CODE 0 text11 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of___awdiv 25CE 0 CODE 0 text36 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of___awdiv 25CE 0 CODE 0 text35 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __end_of___ftadd 1548 0 CODE 0 text7 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __end_of___ftdiv 2D38 0 CODE 0 text18 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of___ftmul 3000 0 CODE 0 text42 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of___ftsub 3DA4 0 CODE 0 text6 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of___fttol 2BE6 0 CODE 0 text41 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of___lwmod 3F92 0 CODE 0 text35 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_tempCalc$1305 53 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of___ftmul 3000 0 CODE 0 text41 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of___ftsub 3D9C 0 CODE 0 text6 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of___fttol 2BE6 0 CODE 0 text40 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of___lwmod 3F8A 0 CODE 0 text34 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_tempCalc$1300 53 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _calculateCurrent0 2418 0 CODE 0 text17 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_calculateCurrent2 3E62 0 CODE 0 text16 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_calculateCurrent2 3E5A 0 CODE 0 text16 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _calculateCurrent3 24A2 0 CODE 0 text15 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ?_eval_poly 3E 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 PIN_MANAGER_Initialize@state 70 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_LCDInit 232A 0 CODE 0 text25 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_LCDInit 4000 0 CODE 0 text25 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_frexp 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_gotoXY 3C5C 0 CODE 0 text27 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_gotoXY 3C7C 0 CODE 0 text27 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___lwmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_PIN_MANAGER_Initialize 3F92 0 CODE 0 text23 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_PIN_MANAGER_Initialize C 0 CODE 0 text23 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 start_initialization F60 0 CODE 0 cinit dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 LCDWriteInt@str 48 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _OSCFRQ 893 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __CFG_WDTCPS$WDTCPS_31 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-___awtoft 3E20 0 CODE 0 text43 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+___awtoft 3E18 0 CODE 0 text42 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_LCDWriteInt 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _TRISAbits 11 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___aldiv@quotient 22 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 main@tempVoltage D0 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_ADCRead 3C84 0 CODE 0 text13 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_ADCRead 3C7C 0 CODE 0 text13 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _ADSTPTH 113 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _ADSTPTL 112 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _RA6PPS F16 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _RA7PPS F17 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _RB0PPS F18 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_SYSTEM_Initialize 82 0 CODE 0 text19 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_SYSTEM_Initialize 2418 0 CODE 0 text19 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _otherState 6D 0 BANK0 1 bssBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of___awtoft 3E62 0 CODE 0 text43 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-clear_ram0 3BA8 0 CODE 0 clrtext dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of___awtoft 3E5A 0 CODE 0 text42 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+clear_ram0 3BE4 0 CODE 0 clrtext dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __pcstackBANK1 C8 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___fttol@exp1 3E 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___fttol@lval 3A 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _T2CLKCON 290 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-___ftpack 2736 0 CODE 0 text44 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+___ftpack 2736 0 CODE 0 text43 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _batteryTemp ED 0 BANK1 1 dataBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 tempCalc@steinhart 56 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _batteryState C2 0 BANK1 1 bssBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1254,9 +1247,9 @@ _Vchannels 161 0 BANK2 1 dataBANK2 dist/default/production\24V_MPPT_BrokenTraces
 main@dutyCycle1 E1 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 main@dutyCycle6 E8 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 main@dutyCycle7 EA 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\sb4.obj
+___int_sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s49c.obj
 _readVAnalog 1548 0 CODE 0 text8 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of___ftpack 27FE 0 CODE 0 text44 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of___ftpack 27FE 0 CODE 0 text43 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -1293,9 +1286,9 @@ __Hsfr29 0 0 ABS 0 sfr29 -
 __Hsfr30 0 0 ABS 0 sfr30 -
 __Hsfr31 0 0 ABS 0 sfr31 -
 __Hstack 0 0 STACK 2 stack -
-_main$1304 E5 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_main$1299 E5 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_PWM_Initialize 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-main@faultNotReset CD 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+main@faultNotReset CE 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __Hbank10 0 0 ABS 0 bank10 -
 __Hbank11 0 0 ABS 0 bank11 -
 __Hbank12 0 0 ABS 0 bank12 -
@@ -1362,7 +1355,7 @@ __Lsfr29 0 0 ABS 0 sfr29 -
 __Lsfr30 0 0 ABS 0 sfr30 -
 __Lsfr31 0 0 ABS 0 sfr31 -
 __Lstack 0 0 STACK 2 stack -
-init_ram 3BC0 0 CODE 0 inittext dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+init_ram 3BFC 0 CODE 0 inittext dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __Linittext 0 0 ABS 0 inittext -
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
@@ -1394,9 +1387,9 @@ __Lsfr9 0 0 ABS 0 sfr9 -
 __Ltext 0 0 ABS 0 text -
 ?_ADCRead 70 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 main@largerIOut DE 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-___bmul 3C14 0 CODE 0 text9 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-___ftge 23A0 0 CODE 0 text5 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-___wmul 3D32 0 CODE 0 text38 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+___bmul 3C34 0 CODE 0 text9 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+___ftge 2326 0 CODE 0 text5 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+___wmul 3D2A 0 CODE 0 text37 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __CFG_WDTCWS$WDTCWS_7 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK1 0 0 ABS 0 cstackBANK1 -
@@ -1418,13 +1411,13 @@ main@menuButton E0 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_Broken
 __end_of_readButton 2AD8 0 CODE 0 text12 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 eval_poly@res 45 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___awtoft@c 79 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_SYSTEM_Initialize 8 0 CODE 0 text19 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_SYSTEM_Initialize 239E 0 CODE 0 text19 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 readVAnalog@channel 26 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __end_of_log 2E98 0 CODE 0 text2 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_gotoXY 3C36 0 CODE 0 text27 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_gotoXY 3C56 0 CODE 0 text27 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\DAVE\AppData\Local\Temp\sb4.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\DAVE\AppData\Local\Temp\s49c.obj
 _cc_cv_mode 19F8 0 CODE 0 text14 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _CCPTMRS0bits 21E 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _CCPTMRS1bits 21F 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1439,54 +1432,53 @@ __LbssBANK2 0 0 ABS 0 bssBANK2 -
 __LbssBANK3 0 0 ABS 0 bssBANK3 -
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ?___awtoft 79 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_ADC_Initialize 3DA4 0 CODE 0 text29 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_Battery_State_Machine 2000 0 CODE 0 text40 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_ADC_Initialize 3D9C 0 CODE 0 text29 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_Battery_State_Machine 2000 0 CODE 0 text39 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _PIE0bits 716 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext10 177C 0 CODE 0 text10 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext11 28CE 0 CODE 0 text11 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext12 29D2 0 CODE 0 text12 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext13 3C84 0 CODE 0 text13 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext13 3C7C 0 CODE 0 text13 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext14 19F8 0 CODE 0 text14 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext15 24A2 0 CODE 0 text15 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext16 3E62 0 CODE 0 text16 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext16 3E5A 0 CODE 0 text16 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext17 2418 0 CODE 0 text17 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext18 2BE6 0 CODE 0 text18 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext19 8 0 CODE 0 text19 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext19 239E 0 CODE 0 text19 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext20 1000 0 CODE 0 text20 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext21 3BD8 0 CODE 0 text21 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext22 3DE2 0 CODE 0 text22 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext23 3F92 0 CODE 0 text23 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext24 3B96 0 CODE 0 text24 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext25 22B4 0 CODE 0 text25 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext26 3EEE 0 CODE 0 text26 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext27 3C36 0 CODE 0 text27 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext21 2294 0 CODE 0 text21 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext22 3DDA 0 CODE 0 text22 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext23 C 0 CODE 0 text23 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext24 3BD2 0 CODE 0 text24 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext25 3F8A 0 CODE 0 text25 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext26 3EE6 0 CODE 0 text26 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext27 3C56 0 CODE 0 text27 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext28 27FE 0 CODE 0 text28 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext29 3DA4 0 CODE 0 text29 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext30 3D06 0 CODE 0 text30 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext31 3CDA 0 CODE 0 text31 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext32 3CAE 0 CODE 0 text32 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext33 3C5C 0 CODE 0 text33 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext34 101C 0 CODE 0 text34 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext35 3F3A 0 CODE 0 text35 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext36 252C 0 CODE 0 text36 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext37 25CE 0 CODE 0 text37 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext38 3D32 0 CODE 0 text38 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext39 3EA4 0 CODE 0 text39 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext40 1C86 0 CODE 0 text40 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext41 2AD8 0 CODE 0 text41 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext42 2E98 0 CODE 0 text42 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext43 3E20 0 CODE 0 text43 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext44 2736 0 CODE 0 text44 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_PIN_MANAGER_Initialize 4000 0 CODE 0 text23 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext29 3D9C 0 CODE 0 text29 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext30 3CFE 0 CODE 0 text30 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext31 3CD2 0 CODE 0 text31 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext32 3CA6 0 CODE 0 text32 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext33 101C 0 CODE 0 text33 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext34 3F32 0 CODE 0 text34 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext35 252C 0 CODE 0 text35 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext36 25CE 0 CODE 0 text36 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext37 3D2A 0 CODE 0 text37 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext38 3E9C 0 CODE 0 text38 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext39 1C86 0 CODE 0 text39 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext40 2AD8 0 CODE 0 text40 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext41 2E98 0 CODE 0 text41 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext42 3E18 0 CODE 0 text42 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext43 2736 0 CODE 0 text43 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_PIN_MANAGER_Initialize 7A 0 CODE 0 text23 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___aldiv 28CE 0 CODE 0 text11 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-___awdiv 252C 0 CODE 0 text36 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+___awdiv 252C 0 CODE 0 text35 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftadd 135C 0 CODE 0 text7 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftdiv 2BE6 0 CODE 0 text18 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-___ftmul 2E98 0 CODE 0 text42 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-___ftsub 3D68 0 CODE 0 text6 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-___fttol 2AD8 0 CODE 0 text41 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_PWM7_LoadDutyValue 3D32 0 CODE 0 text30 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-___lwmod 3F3A 0 CODE 0 text35 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+___ftmul 2E98 0 CODE 0 text41 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+___ftsub 3D60 0 CODE 0 text6 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+___fttol 2AD8 0 CODE 0 text40 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_PWM7_LoadDutyValue 3D2A 0 CODE 0 text30 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+___lwmod 3F32 0 CODE 0 text34 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 LCDWriteInt@sign 43 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
@@ -1510,7 +1502,7 @@ __Lbank28 0 0 BANK28 1 bank28 -
 __Lbank29 0 0 BANK29 1 bank29 -
 __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext 82 0 CODE 0 maintext dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__pmaintext 7A 0 CODE 0 maintext dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _tempCalc 118E 0 CODE 0 text1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __Lbigram 0 0 ABS 0 bigram -
 __CFG_BORV$LO 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1520,21 +1512,20 @@ __Lconfig 1000E 0 CONFIG 0 config -
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __Hinittext 0 0 ABS 0 inittext -
-_LCDInit 22B4 0 CODE 0 text25 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_LCDInit 3F8A 0 CODE 0 text25 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _LATAbits 16 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_Battery_State_Machine 1C86 0 CODE 0 text40 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_Battery_State_Machine 1C86 0 CODE 0 text39 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __end_of_tempCalc 135C 0 CODE 0 text1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 main@MPPT0 DA 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 main@MPPT1 DC 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _IsampleIndex 62 0 BANK0 1 bssBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_gotoXY 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_LCDWriteInt 101C 0 CODE 0 text34 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_LCDWriteString 3C5C 0 CODE 0 text33 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_LCDWriteInt 101C 0 CODE 0 text33 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 Init_Battery_State_Machine@z 43 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _VHoldMode C0 0 BANK1 1 bssBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-stackhi 225F 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\sb4.obj
-stacklo 2118 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\sb4.obj
+stackhi 225F 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s49c.obj
+stacklo 2118 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s49c.obj
 _voltage A8 0 BANK1 1 bssBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_TMR4_Initialize 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _OSCCON1 88D 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1546,7 +1537,7 @@ _ADCON0bits 93 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.product
 __pbssBIGRAM 2260 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __end_of_cc_cv_mode 1C86 0 CODE 0 text14 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_eval_poly 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_PWM7_LoadDutyValue 3D06 0 CODE 0 text30 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_PWM7_LoadDutyValue 3CFE 0 CODE 0 text30 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
@@ -1555,8 +1546,8 @@ ADCRead@channel 73 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_Brok
 ___ftmul@cntr 2F 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __CFG_LPBOREN$OFF 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftmul@sign 30 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-main@fastLoop CF 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_ADC_Initialize 3DE2 0 CODE 0 text29 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+main@fastLoop CB 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_ADC_Initialize 3DDA 0 CODE 0 text29 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackBANK1 0 0 ABS 0 cstackBANK1 -
 _PIR4bits 710 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1592,21 +1583,20 @@ __HbssBANK1 0 0 ABS 0 bssBANK1 -
 __HbssBANK2 0 0 ABS 0 bssBANK2 -
 __HbssBANK3 0 0 ABS 0 bssBANK3 -
 LCDWriteCharacter@character 79 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-main@faultCount CB 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+main@faultCount CC 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext1 118E 0 CODE 0 text1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext2 2D38 0 CODE 0 text2 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext3 232A 0 CODE 0 text3 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext3 22B0 0 CODE 0 text3 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext4 2676 0 CODE 0 text4 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext5 23A0 0 CODE 0 text5 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext6 3D68 0 CODE 0 text6 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext5 2326 0 CODE 0 text5 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext6 3D60 0 CODE 0 text6 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext7 135C 0 CODE 0 text7 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __ptext8 1548 0 CODE 0 text8 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__ptext9 3C14 0 CODE 0 text9 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__ptext9 3C34 0 CODE 0 text9 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_Init_Battery_State_Machine 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_LCDWriteString 3C84 0 CODE 0 text33 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 readVAnalog@value 7B 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___aldiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_PWM1_LoadDutyValue 3CDA 0 CODE 0 text32 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_PWM1_LoadDutyValue 3CD2 0 CODE 0 text32 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_ADCRead 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
@@ -1630,14 +1620,14 @@ __size_of_calculateCurrent0 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenT
 __size_of_calculateCurrent2 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_calculateCurrent3 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ?_frexp 70 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__pidataBANK1 22B0 0 CODE 0 idataBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__pidataBANK2 3BF4 0 CODE 0 idataBANK2 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__pidataBANK1 8 0 CODE 0 idataBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__pidataBANK2 3C14 0 CODE 0 idataBANK2 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __CFG_SCANE$not_available 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __Lclrtext 0 0 ABS 0 clrtext -
 _readButtons 68 0 BANK0 1 bssBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_PWM_Initialize 3DE2 0 CODE 0 text22 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_PWM_Initialize 3DDA 0 CODE 0 text22 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftpack@sign 74 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_PWM1_LoadDutyValue 3CAE 0 CODE 0 text32 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_PWM1_LoadDutyValue 3CA6 0 CODE 0 text32 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ?_tempCalc 4E 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 LCDWrite@d 73 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 LCDWrite@i 74 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1664,7 +1654,7 @@ _ADRPT 10D 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.
 log@exponent 4C 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _Imode BC 0 BANK1 1 bssBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __end_of_fonts 225E 0 STRCODE 0 stringtext dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_frexp 23A0 0 CODE 0 text3 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_frexp 2326 0 CODE 0 text3 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _LATA5 B5 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _OSCEN 891 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _T2CON 28E 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1683,16 +1673,15 @@ __Lram 0 0 ABS 0 ram -
 _cc_cv C4 0 BANK1 1 bssBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _errno C6 0 BANK1 1 bssBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _fonts 2000 0 STRCODE 0 stringtext dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_frexp 232A 0 CODE 0 text3 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_frexp 22B0 0 CODE 0 text3 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___fttol@sign1 39 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_log 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __HdataBANK1 0 0 ABS 0 dataBANK1 -
 __HdataBANK2 0 0 ABS 0 dataBANK2 -
-__end_of_OSCILLATOR_Initialize 3BA8 0 CODE 0 text24 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_OSCILLATOR_Initialize 3BE4 0 CODE 0 text24 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-LCDWriteString@characters 7C 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __initialization F60 0 CODE 0 cinit dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___bmul@product 72 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 tempCalc@analogValue 4E 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
@@ -1709,15 +1698,15 @@ __CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.produc
 ___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_LCDClear 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 main@slowLoop D9 0 BANK1 1 cstackBANK1 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_ADCRead 3CAE 0 CODE 0 text13 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_PWM6_LoadDutyValue 3D06 0 CODE 0 text31 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_ADCRead 3CA6 0 CODE 0 text13 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_PWM6_LoadDutyValue 3CFE 0 CODE 0 text31 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 __size_of_LCDWrite 0 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_LCDWriteCharacter 2676 0 CODE 0 text37 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_PWM_Initialize 3E20 0 CODE 0 text22 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_LCDWriteCharacter 2676 0 CODE 0 text36 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_PWM_Initialize 3E18 0 CODE 0 text22 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 _CCP1CONbits 30E 0 ABS 0 - dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 ___ftmul@f3_as_product 2C 0 BANK0 1 cstackBANK0 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-_OSCILLATOR_Initialize 3B96 0 CODE 0 text24 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
-__end_of_TMR2_Initialize 3BF4 0 CODE 0 text21 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+_OSCILLATOR_Initialize 3BD2 0 CODE 0 text24 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
+__end_of_TMR2_Initialize 22B0 0 CODE 0 text21 dist/default/production\24V_MPPT_BrokenTraces.X.production.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1753,56 +1742,55 @@ _Isamples 1 2260 0
 cinit 0 7B0 F60 5E 2
 text1 0 8C7 118E E7 2
 text2 0 169C 2D38 B0 2
-text3 0 1195 232A 3B 2
+text3 0 1158 22B0 3B 2
 text4 0 133B 2676 60 2
-text5 0 11D0 23A0 3C 2
-text6 0 1EB4 3D68 1E 2
+text5 0 1193 2326 3C 2
+text6 0 1EB0 3D60 1E 2
 text7 0 9AE 135C F6 2
 text8 0 AA4 1548 11A 2
-text9 0 1E0A 3C14 11 2
+text9 0 1E1A 3C34 11 2
 text10 0 BBE 177C 13E 2
 text11 0 1467 28CE 82 2
 text12 0 14E9 29D2 83 2
-text13 0 1E42 3C84 15 2
+text13 0 1E3E 3C7C 15 2
 text14 0 CFC 19F8 147 2
 text15 0 1251 24A2 45 2
-text16 0 1F31 3E62 21 2
+text16 0 1F2D 3E5A 21 2
 text17 0 120C 2418 45 2
 text18 0 15F3 2BE6 A9 2
-text21 0 1DEC 3BD8 E 2
-text22 0 1EF1 3DE2 1F 2
-text23 0 1FC9 3F92 37 2
-text24 0 1DCB 3B96 9 2
-text25 0 115A 22B4 3B 2
-text26 0 1F77 3EEE 26 2
-text27 0 1E1B 3C36 13 2
+text19 0 11CF 239E 3D 2
+text21 0 114A 2294 E 2
+text22 0 1EED 3DDA 1F 2
+text23 0 6 C 37 2
+text24 0 1DE9 3BD2 9 2
+text25 0 1FC5 3F8A 3B 2
+text26 0 1F73 3EE6 26 2
+text27 0 1E2B 3C56 13 2
 text28 0 13FF 27FE 68 2
-text29 0 1ED2 3DA4 1F 2
-text30 0 1E83 3D06 16 2
-text31 0 1E6D 3CDA 16 2
-text32 0 1E57 3CAE 16 2
-text33 0 1E2E 3C5C 14 2
-text34 0 80E 101C B9 2
-text35 0 1F9D 3F3A 2C 2
-text36 0 1296 252C 51 2
-text37 0 12E7 25CE 54 2
-text38 0 1E99 3D32 1B 2
-text39 0 1F52 3EA4 25 2
-text40 0 E43 1C86 1BD 2
-text41 0 156C 2AD8 87 2
-text42 0 174C 2E98 B4 2
-text43 0 1F10 3E20 21 2
-text44 0 139B 2736 64 2
-maintext 0 41 82 76F 2
+text29 0 1ECE 3D9C 1F 2
+text30 0 1E7F 3CFE 16 2
+text31 0 1E69 3CD2 16 2
+text32 0 1E53 3CA6 16 2
+text33 0 80E 101C B9 2
+text34 0 1F99 3F32 2C 2
+text35 0 1296 252C 51 2
+text36 0 12E7 25CE 54 2
+text37 0 1E95 3D2A 1B 2
+text38 0 1F4E 3E9C 25 2
+text39 0 E43 1C86 1BD 2
+text40 0 156C 2AD8 87 2
+text41 0 174C 2E98 B4 2
+text42 0 1F0C 3E18 21 2
+text43 0 139B 2736 64 2
+maintext 0 3D 7A 773 2
 cstackCOMMON 1 70 70 E 1
 cstackBANK0 1 20 20 4F 1
-inittext 0 1DE0 3BC0 C 2
-reset_vec 0 0 0 41 2
+inittext 0 1DFE 3BFC C 2
+reset_vec 0 0 0 6 2
 bssBANK1 1 A0 A0 4F 1
 bssBANK2 1 120 120 49 1
 bssBANK3 1 1A0 1A0 28 1
-stringtext 0 1000 2000 158 2
-idataBANK1 0 1158 22B0 2 2
-idataBANK2 0 1DFA 3BF4 10 2
-clrtext 0 1DD4 3BA8 C 2
+stringtext 0 1000 2000 14A 2
+idataBANK2 0 1E0A 3C14 10 2
+clrtext 0 1DF2 3BE4 C 2
 config 0 8007 1000E 5 2

@@ -243,11 +243,17 @@ void main(void)
             Battery_State_Machine(1);
             
             
-            LCDWriteStringXY(0,0,"In:");
+//            LCDWriteStringXY(0,0,"In:");
+            
+            LCDWriteIntXY(0,0,faultCount,-1,0,0);
+            LCDWriteIntXY(32,0,faultNotReset,-1,0,0);
+            
 //            LCDWriteIntXY(26,0,IminCount[0],4,0,0);
   //          LCDWriteIntXY(52,0,IminCount[1],4,0,0);
-            LCDWriteStringXY(26,0,"Out:");
-            LCDWriteStringXY(52,0,"Ref:");
+
+
+//            LCDWriteStringXY(26,0,"Out:");
+ //           LCDWriteStringXY(52,0,"Ref:");
             
             LCDWriteIntXY(0,1,VIn0,4,2,0);
 //            LCDWriteIntXY(0,1,Vanalogs[2],4,2,0);
@@ -414,7 +420,7 @@ void calculateCurrent0(void)                                                    
     }
 }
 
-/*void calculateCurrent1(void)                                                    // I1 Out
+/*void calculateCurrent1(void)   // I1 Out Sensor is torn from board, so math functions on I1 Current Input used to calculate Out current
 {
     if(Ianalogs[1]-561<=0)
     {

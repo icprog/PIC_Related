@@ -46,8 +46,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _Battery_State_Machine `(v ~T0 @X0 0 ef1`uc ]
 "19 lcd.h
 [v _gotoXY `(v ~T0 @X0 0 ef2`uc`uc ]
-"29
-[v _LCDWriteString `(v ~T0 @X0 0 ef1`*Cuc ]
 "36
 [v _LCDWriteInt `(v ~T0 @X0 0 ef4`i`c`uc`uc ]
 "25
@@ -13352,356 +13350,347 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 243: Battery_State_Machine(1);
 "243
 [e ( _Battery_State_Machine (1 -> -> 1 `i `uc ]
-[; ;main.c: 246: { gotoXY(0,0); LCDWriteString("In:");};
-"246
+[; ;main.c: 248: { gotoXY(0,0); LCDWriteInt(faultCount,-1, 0, 0);};
+"248
 {
 [e ( _gotoXY (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-[e ( _LCDWriteString (1 :s 1C ]
+[e ( _LCDWriteInt (4 , , , -> _faultCount `i -> -U -> 1 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 249: { gotoXY(26,0); LCDWriteString("Out:");};
+[; ;main.c: 249: { gotoXY(32,0); LCDWriteInt(faultNotReset,-1, 0, 0);};
 "249
 {
-[e ( _gotoXY (2 , -> -> 26 `i `uc -> -> 0 `i `uc ]
-[e ( _LCDWriteString (1 :s 2C ]
+[e ( _gotoXY (2 , -> -> 32 `i `uc -> -> 0 `i `uc ]
+[e ( _LCDWriteInt (4 , , , -> _faultNotReset `i -> -U -> 1 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 250: { gotoXY(52,0); LCDWriteString("Ref:");};
-"250
-{
-[e ( _gotoXY (2 , -> -> 52 `i `uc -> -> 0 `i `uc ]
-[e ( _LCDWriteString (1 :s 3C ]
-}
-[; ;main.c: 252: { gotoXY(0,1); LCDWriteInt(voltage[2],4, 2, 0);};
-"252
+[; ;main.c: 258: { gotoXY(0,1); LCDWriteInt(voltage[2],4, 2, 0);};
+"258
 {
 [e ( _gotoXY (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
 [e ( _LCDWriteInt (4 , , , *U + &U _voltage * -> -> -> 2 `i `ui `ux -> -> # *U &U _voltage `ui `ux -> -> 4 `i `c -> -> 2 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 254: LCDWriteCharacter('V');
-"254
+[; ;main.c: 260: LCDWriteCharacter('V');
+"260
 [e ( _LCDWriteCharacter (1 -> -> 86 `ui `uc ]
-[; ;main.c: 256: { gotoXY(26,1); LCDWriteInt(voltage[0],4, 2, 0);};
-"256
+[; ;main.c: 262: { gotoXY(26,1); LCDWriteInt(voltage[0],4, 2, 0);};
+"262
 {
 [e ( _gotoXY (2 , -> -> 26 `i `uc -> -> 1 `i `uc ]
 [e ( _LCDWriteInt (4 , , , *U + &U _voltage * -> -> -> 0 `i `ui `ux -> -> # *U &U _voltage `ui `ux -> -> 4 `i `c -> -> 2 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 258: LCDWriteCharacter('V');
-"258
+[; ;main.c: 264: LCDWriteCharacter('V');
+"264
 [e ( _LCDWriteCharacter (1 -> -> 86 `ui `uc ]
-[; ;main.c: 260: { gotoXY(52,1); LCDWriteInt(Vref[0],4, 2, 0);};
-"260
+[; ;main.c: 266: { gotoXY(52,1); LCDWriteInt(Vref[0],4, 2, 0);};
+"266
 {
 [e ( _gotoXY (2 , -> -> 52 `i `uc -> -> 1 `i `uc ]
 [e ( _LCDWriteInt (4 , , , *U + &U _Vref * -> -> -> 0 `i `ui `ux -> -> # *U &U _Vref `ui `ux -> -> 4 `i `c -> -> 2 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 261: LCDWriteCharacter('V');
-"261
+[; ;main.c: 267: LCDWriteCharacter('V');
+"267
 [e ( _LCDWriteCharacter (1 -> -> 86 `ui `uc ]
-[; ;main.c: 263: { gotoXY(80,1); LCDWriteInt(Imode[0],1, 0, 0);};
-"263
+[; ;main.c: 269: { gotoXY(80,1); LCDWriteInt(Imode[0],1, 0, 0);};
+"269
 {
 [e ( _gotoXY (2 , -> -> 80 `i `uc -> -> 1 `i `uc ]
 [e ( _LCDWriteInt (4 , , , -> *U + &U _Imode * -> -> -> 0 `i `ui `ux -> -> # *U &U _Imode `ui `ux `i -> -> 1 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 266: { gotoXY(0,2); LCDWriteInt(current[2],3, 1, 0);};
-"266
+[; ;main.c: 272: { gotoXY(0,2); LCDWriteInt(current[2],3, 1, 0);};
+"272
 {
 [e ( _gotoXY (2 , -> -> 0 `i `uc -> -> 2 `i `uc ]
 [e ( _LCDWriteInt (4 , , , *U + &U _current * -> -> -> 2 `i `ui `ux -> -> # *U &U _current `ui `ux -> -> 3 `i `c -> -> 1 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 267: LCDWriteCharacter('A');
-"267
+[; ;main.c: 273: LCDWriteCharacter('A');
+"273
 [e ( _LCDWriteCharacter (1 -> -> 65 `ui `uc ]
-[; ;main.c: 270: { gotoXY(26,2); LCDWriteInt(current[0],3, 1, 0);};
-"270
+[; ;main.c: 276: { gotoXY(26,2); LCDWriteInt(current[0],3, 1, 0);};
+"276
 {
 [e ( _gotoXY (2 , -> -> 26 `i `uc -> -> 2 `i `uc ]
 [e ( _LCDWriteInt (4 , , , *U + &U _current * -> -> -> 0 `i `ui `ux -> -> # *U &U _current `ui `ux -> -> 3 `i `c -> -> 1 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 271: LCDWriteCharacter('A');
-"271
+[; ;main.c: 277: LCDWriteCharacter('A');
+"277
 [e ( _LCDWriteCharacter (1 -> -> 65 `ui `uc ]
-[; ;main.c: 273: { gotoXY(52,2); LCDWriteInt(Iref[0],3, 1, 0);};
-"273
+[; ;main.c: 279: { gotoXY(52,2); LCDWriteInt(Iref[0],3, 1, 0);};
+"279
 {
 [e ( _gotoXY (2 , -> -> 52 `i `uc -> -> 2 `i `uc ]
 [e ( _LCDWriteInt (4 , , , *U + &U _Iref * -> -> -> 0 `i `ui `ux -> -> # *U &U _Iref `ui `ux -> -> 3 `i `c -> -> 1 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 274: LCDWriteCharacter('A');
-"274
+[; ;main.c: 280: LCDWriteCharacter('A');
+"280
 [e ( _LCDWriteCharacter (1 -> -> 65 `ui `uc ]
-[; ;main.c: 276: { gotoXY(80,2); LCDWriteInt(batteryState[0],1, 0, 0);};
-"276
+[; ;main.c: 282: { gotoXY(80,2); LCDWriteInt(batteryState[0],1, 0, 0);};
+"282
 {
 [e ( _gotoXY (2 , -> -> 80 `i `uc -> -> 2 `i `uc ]
 [e ( _LCDWriteInt (4 , , , -> *U + &U _batteryState * -> -> -> 0 `i `ui `ux -> -> # *U &U _batteryState `ui `ux `i -> -> 1 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 278: { gotoXY(0,3); LCDWriteInt(voltage[3],4, 2, 0);};
-"278
+[; ;main.c: 284: { gotoXY(0,3); LCDWriteInt(voltage[3],4, 2, 0);};
+"284
 {
 [e ( _gotoXY (2 , -> -> 0 `i `uc -> -> 3 `i `uc ]
 [e ( _LCDWriteInt (4 , , , *U + &U _voltage * -> -> -> 3 `i `ui `ux -> -> # *U &U _voltage `ui `ux -> -> 4 `i `c -> -> 2 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 280: LCDWriteCharacter('V');
-"280
+[; ;main.c: 286: LCDWriteCharacter('V');
+"286
 [e ( _LCDWriteCharacter (1 -> -> 86 `ui `uc ]
-[; ;main.c: 282: { gotoXY(26,3); LCDWriteInt(voltage[1],4, 2, 0);};
-"282
+[; ;main.c: 288: { gotoXY(26,3); LCDWriteInt(voltage[1],4, 2, 0);};
+"288
 {
 [e ( _gotoXY (2 , -> -> 26 `i `uc -> -> 3 `i `uc ]
 [e ( _LCDWriteInt (4 , , , *U + &U _voltage * -> -> -> 1 `i `ui `ux -> -> # *U &U _voltage `ui `ux -> -> 4 `i `c -> -> 2 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 284: LCDWriteCharacter('V');
-"284
+[; ;main.c: 290: LCDWriteCharacter('V');
+"290
 [e ( _LCDWriteCharacter (1 -> -> 86 `ui `uc ]
-[; ;main.c: 286: { gotoXY(52,3); LCDWriteInt(Vref[1],4, 2, 0);};
-"286
+[; ;main.c: 292: { gotoXY(52,3); LCDWriteInt(Vref[1],4, 2, 0);};
+"292
 {
 [e ( _gotoXY (2 , -> -> 52 `i `uc -> -> 3 `i `uc ]
 [e ( _LCDWriteInt (4 , , , *U + &U _Vref * -> -> -> 1 `i `ui `ux -> -> # *U &U _Vref `ui `ux -> -> 4 `i `c -> -> 2 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 287: LCDWriteCharacter('V');
-"287
+[; ;main.c: 293: LCDWriteCharacter('V');
+"293
 [e ( _LCDWriteCharacter (1 -> -> 86 `ui `uc ]
-[; ;main.c: 289: { gotoXY(80,3); LCDWriteInt(Imode[1],1, 0, 0);};
-"289
+[; ;main.c: 295: { gotoXY(80,3); LCDWriteInt(Imode[1],1, 0, 0);};
+"295
 {
 [e ( _gotoXY (2 , -> -> 80 `i `uc -> -> 3 `i `uc ]
 [e ( _LCDWriteInt (4 , , , -> *U + &U _Imode * -> -> -> 1 `i `ui `ux -> -> # *U &U _Imode `ui `ux `i -> -> 1 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 299: { gotoXY(0,4); LCDWriteInt(current[3],3, 1, 0);};
-"299
+[; ;main.c: 305: { gotoXY(0,4); LCDWriteInt(current[3],3, 1, 0);};
+"305
 {
 [e ( _gotoXY (2 , -> -> 0 `i `uc -> -> 4 `i `uc ]
 [e ( _LCDWriteInt (4 , , , *U + &U _current * -> -> -> 3 `i `ui `ux -> -> # *U &U _current `ui `ux -> -> 3 `i `c -> -> 1 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 300: LCDWriteCharacter('A');
-"300
+[; ;main.c: 306: LCDWriteCharacter('A');
+"306
 [e ( _LCDWriteCharacter (1 -> -> 65 `ui `uc ]
-[; ;main.c: 302: { gotoXY(26,4); LCDWriteInt((int16_t)(current[3]*(voltage[3]/voltage[1]*.9)),3, 1, 0);};
-"302
+[; ;main.c: 308: { gotoXY(26,4); LCDWriteInt((int16_t)(current[3]*(voltage[3]/voltage[1]*.9)),3, 1, 0);};
+"308
 {
 [e ( _gotoXY (2 , -> -> 26 `i `uc -> -> 4 `i `uc ]
 [e ( _LCDWriteInt (4 , , , -> * -> *U + &U _current * -> -> -> 3 `i `ui `ux -> -> # *U &U _current `ui `ux `d * -> / *U + &U _voltage * -> -> -> 3 `i `ui `ux -> -> # *U &U _voltage `ui `ux *U + &U _voltage * -> -> -> 1 `i `ui `ux -> -> # *U &U _voltage `ui `ux `d .0.9 `i -> -> 3 `i `c -> -> 1 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 304: LCDWriteCharacter('A');
-"304
+[; ;main.c: 310: LCDWriteCharacter('A');
+"310
 [e ( _LCDWriteCharacter (1 -> -> 65 `ui `uc ]
-[; ;main.c: 306: { gotoXY(52,4); LCDWriteInt(Iref[1],3, 1, 0);};
-"306
+[; ;main.c: 312: { gotoXY(52,4); LCDWriteInt(Iref[1],3, 1, 0);};
+"312
 {
 [e ( _gotoXY (2 , -> -> 52 `i `uc -> -> 4 `i `uc ]
 [e ( _LCDWriteInt (4 , , , *U + &U _Iref * -> -> -> 1 `i `ui `ux -> -> # *U &U _Iref `ui `ux -> -> 3 `i `c -> -> 1 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 307: LCDWriteCharacter('A');
-"307
+[; ;main.c: 313: LCDWriteCharacter('A');
+"313
 [e ( _LCDWriteCharacter (1 -> -> 65 `ui `uc ]
-[; ;main.c: 309: { gotoXY(80,4); LCDWriteInt(batteryState[1],1, 0, 0);};
-"309
+[; ;main.c: 315: { gotoXY(80,4); LCDWriteInt(batteryState[1],1, 0, 0);};
+"315
 {
 [e ( _gotoXY (2 , -> -> 80 `i `uc -> -> 4 `i `uc ]
 [e ( _LCDWriteInt (4 , , , -> *U + &U _batteryState * -> -> -> 1 `i `ui `ux -> -> # *U &U _batteryState `ui `ux `i -> -> 1 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 313: { gotoXY(0,5); LCDWriteInt(dutyCycle6,4, 0, 0);};
-"313
+[; ;main.c: 319: { gotoXY(0,5); LCDWriteInt(dutyCycle6,4, 0, 0);};
+"319
 {
 [e ( _gotoXY (2 , -> -> 0 `i `uc -> -> 5 `i `uc ]
 [e ( _LCDWriteInt (4 , , , -> _dutyCycle6 `i -> -> 4 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 314: { gotoXY(18,5); LCDWriteInt(VHoldMode[0],1, 0, 0);};
-"314
+[; ;main.c: 320: { gotoXY(18,5); LCDWriteInt(VHoldMode[0],1, 0, 0);};
+"320
 {
 [e ( _gotoXY (2 , -> -> 18 `i `uc -> -> 5 `i `uc ]
 [e ( _LCDWriteInt (4 , , , -> *U + &U _VHoldMode * -> -> -> 0 `i `ui `ux -> -> # *U &U _VHoldMode `ui `ux `i -> -> 1 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 315: LCDWriteCharacter(' ');
-"315
+[; ;main.c: 321: LCDWriteCharacter(' ');
+"321
 [e ( _LCDWriteCharacter (1 -> -> 32 `ui `uc ]
-[; ;main.c: 316: { gotoXY(28,5); LCDWriteInt(dutyCycle7,4, 0, 0);};
-"316
+[; ;main.c: 322: { gotoXY(28,5); LCDWriteInt(dutyCycle7,4, 0, 0);};
+"322
 {
 [e ( _gotoXY (2 , -> -> 28 `i `uc -> -> 5 `i `uc ]
 [e ( _LCDWriteInt (4 , , , -> _dutyCycle7 `i -> -> 4 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 317: { gotoXY(46,5); LCDWriteInt(VHoldMode[1],1, 0, 0);};
-"317
+[; ;main.c: 323: { gotoXY(46,5); LCDWriteInt(VHoldMode[1],1, 0, 0);};
+"323
 {
 [e ( _gotoXY (2 , -> -> 46 `i `uc -> -> 5 `i `uc ]
 [e ( _LCDWriteInt (4 , , , -> *U + &U _VHoldMode * -> -> -> 1 `i `ui `ux -> -> # *U &U _VHoldMode `ui `ux `i -> -> 1 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 318: LCDWriteCharacter(' ');
-"318
+[; ;main.c: 324: LCDWriteCharacter(' ');
+"324
 [e ( _LCDWriteCharacter (1 -> -> 32 `ui `uc ]
-[; ;main.c: 319: { gotoXY(56,5); LCDWriteInt(batteryTemp,3, 1, 0);};
-"319
+[; ;main.c: 325: { gotoXY(56,5); LCDWriteInt(batteryTemp,3, 1, 0);};
+"325
 {
 [e ( _gotoXY (2 , -> -> 56 `i `uc -> -> 5 `i `uc ]
 [e ( _LCDWriteInt (4 , , , _batteryTemp -> -> 3 `i `c -> -> 1 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 320: LCDWriteCharacter(123);
-"320
+[; ;main.c: 326: LCDWriteCharacter(123);
+"326
 [e ( _LCDWriteCharacter (1 -> -> 123 `i `uc ]
-[; ;main.c: 321: LCDWriteCharacter('C');
-"321
+[; ;main.c: 327: LCDWriteCharacter('C');
+"327
 [e ( _LCDWriteCharacter (1 -> -> 67 `ui `uc ]
-[; ;main.c: 391: if(batteryState[0] > FINISHED)
-"391
-[e $ ! > -> *U + &U _batteryState * -> -> -> 0 `i `ui `ux -> -> # *U &U _batteryState `ui `ux `i -> . `E13624 2 `i 1583  ]
-[; ;main.c: 392: {
-"392
-{
-[; ;main.c: 393: cc_cv_mode(0);
-"393
-[e ( _cc_cv_mode (1 -> -> 0 `i `uc ]
-"394
-}
-[e :U 1583 ]
-[; ;main.c: 394: }
-[; ;main.c: 395: if(batteryState[1] > FINISHED)
-"395
-[e $ ! > -> *U + &U _batteryState * -> -> -> 1 `i `ui `ux -> -> # *U &U _batteryState `ui `ux `i -> . `E13624 2 `i 1584  ]
-[; ;main.c: 396: {
-"396
-{
-[; ;main.c: 397: cc_cv_mode(1);
+[; ;main.c: 397: if(batteryState[0] > FINISHED)
 "397
-[e ( _cc_cv_mode (1 -> -> 1 `i `uc ]
+[e $ ! > -> *U + &U _batteryState * -> -> -> 0 `i `ui `ux -> -> # *U &U _batteryState `ui `ux `i -> . `E13624 2 `i 1583  ]
+[; ;main.c: 398: {
 "398
-}
-[e :U 1584 ]
-[; ;main.c: 398: }
-[; ;main.c: 399: slowLoop=0;
+{
+[; ;main.c: 399: cc_cv_mode(0);
 "399
-[e = _slowLoop -> -> 0 `i `uc ]
+[e ( _cc_cv_mode (1 -> -> 0 `i `uc ]
 "400
 }
-[e :U 1569 ]
+[e :U 1583 ]
+[; ;main.c: 400: }
+[; ;main.c: 401: if(batteryState[1] > FINISHED)
 "401
+[e $ ! > -> *U + &U _batteryState * -> -> -> 1 `i `ui `ux -> -> # *U &U _batteryState `ui `ux `i -> . `E13624 2 `i 1584  ]
+[; ;main.c: 402: {
+"402
+{
+[; ;main.c: 403: cc_cv_mode(1);
+"403
+[e ( _cc_cv_mode (1 -> -> 1 `i `uc ]
+"404
+}
+[e :U 1584 ]
+[; ;main.c: 404: }
+[; ;main.c: 405: slowLoop=0;
+"405
+[e = _slowLoop -> -> 0 `i `uc ]
+"406
+}
+[e :U 1569 ]
+"407
 }
 [e :U 1520 ]
 "70
 [e $U 1521  ]
 [e :U 1522 ]
-[; ;main.c: 400: }
-[; ;main.c: 401: }
-[; ;main.c: 402: }
-"402
+[; ;main.c: 406: }
+[; ;main.c: 407: }
+[; ;main.c: 408: }
+"408
 [e :UE 1519 ]
 }
-"405
-[v _calculateCurrent0 `(v ~T0 @X0 1 ef ]
-"406
-{
-[; ;main.c: 405: void calculateCurrent0(void)
-[; ;main.c: 406: {
-[e :U _calculateCurrent0 ]
-[f ]
-[; ;main.c: 407: if(Ianalogs[0]-562<=0)
-"407
-[e $ ! <= - *U + &U _Ianalogs * -> -> -> 0 `i `ui `ux -> -> # *U &U _Ianalogs `ui `ux -> 562 `i -> 0 `i 1586  ]
-[; ;main.c: 408: {
-"408
-{
-[; ;main.c: 409: current[0]=0;
-"409
-[e = *U + &U _current * -> -> -> 0 `i `ui `ux -> -> # *U &U _current `ui `ux -> 0 `i ]
-"410
-}
-[; ;main.c: 410: }
-[e $U 1587  ]
 "411
-[e :U 1586 ]
-[; ;main.c: 411: else
-[; ;main.c: 412: {
+[v _calculateCurrent0 `(v ~T0 @X0 1 ef ]
 "412
 {
-[; ;main.c: 413: current[0]=(int16_t)((Ianalogs[0]-562)/2.9943);
+[; ;main.c: 411: void calculateCurrent0(void)
+[; ;main.c: 412: {
+[e :U _calculateCurrent0 ]
+[f ]
+[; ;main.c: 413: if(Ianalogs[0]-562<=0)
 "413
-[e = *U + &U _current * -> -> -> 0 `i `ui `ux -> -> # *U &U _current `ui `ux -> / -> - *U + &U _Ianalogs * -> -> -> 0 `i `ui `ux -> -> # *U &U _Ianalogs `ui `ux -> 562 `i `d .2.9943 `i ]
+[e $ ! <= - *U + &U _Ianalogs * -> -> -> 0 `i `ui `ux -> -> # *U &U _Ianalogs `ui `ux -> 562 `i -> 0 `i 1586  ]
+[; ;main.c: 414: {
 "414
+{
+[; ;main.c: 415: current[0]=0;
+"415
+[e = *U + &U _current * -> -> -> 0 `i `ui `ux -> -> # *U &U _current `ui `ux -> 0 `i ]
+"416
+}
+[; ;main.c: 416: }
+[e $U 1587  ]
+"417
+[e :U 1586 ]
+[; ;main.c: 417: else
+[; ;main.c: 418: {
+"418
+{
+[; ;main.c: 419: current[0]=(int16_t)((Ianalogs[0]-562)/2.9943);
+"419
+[e = *U + &U _current * -> -> -> 0 `i `ui `ux -> -> # *U &U _current `ui `ux -> / -> - *U + &U _Ianalogs * -> -> -> 0 `i `ui `ux -> -> # *U &U _Ianalogs `ui `ux -> 562 `i `d .2.9943 `i ]
+"420
 }
 [e :U 1587 ]
-[; ;main.c: 414: }
-[; ;main.c: 415: }
-"415
+[; ;main.c: 420: }
+[; ;main.c: 421: }
+"421
 [e :UE 1585 ]
 }
-"429
-[v _calculateCurrent2 `(v ~T0 @X0 1 ef ]
-"430
-{
-[; ;main.c: 429: void calculateCurrent2(void)
-[; ;main.c: 430: {
-[e :U _calculateCurrent2 ]
-[f ]
-[; ;main.c: 431: if(Ianalogs[2]-570<=0)
-"431
-[e $ ! <= - *U + &U _Ianalogs * -> -> -> 2 `i `ui `ux -> -> # *U &U _Ianalogs `ui `ux -> 570 `i -> 0 `i 1589  ]
-[; ;main.c: 432: {
-"432
-{
-[; ;main.c: 433: current[2]=0;
-"433
-[e = *U + &U _current * -> -> -> 2 `i `ui `ux -> -> # *U &U _current `ui `ux -> 0 `i ]
-"434
-}
-[; ;main.c: 434: }
-[e $U 1590  ]
 "435
-[e :U 1589 ]
-[; ;main.c: 435: else
-[; ;main.c: 436: {
+[v _calculateCurrent2 `(v ~T0 @X0 1 ef ]
 "436
 {
-[; ;main.c: 437: current[2]=(int16_t)(Ianalogs[2]-570);
+[; ;main.c: 435: void calculateCurrent2(void)
+[; ;main.c: 436: {
+[e :U _calculateCurrent2 ]
+[f ]
+[; ;main.c: 437: if(Ianalogs[2]-570<=0)
 "437
-[e = *U + &U _current * -> -> -> 2 `i `ui `ux -> -> # *U &U _current `ui `ux - *U + &U _Ianalogs * -> -> -> 2 `i `ui `ux -> -> # *U &U _Ianalogs `ui `ux -> 570 `i ]
+[e $ ! <= - *U + &U _Ianalogs * -> -> -> 2 `i `ui `ux -> -> # *U &U _Ianalogs `ui `ux -> 570 `i -> 0 `i 1589  ]
+[; ;main.c: 438: {
 "438
-}
-[e :U 1590 ]
-[; ;main.c: 438: }
-[; ;main.c: 439: }
+{
+[; ;main.c: 439: current[2]=0;
 "439
-[e :UE 1588 ]
+[e = *U + &U _current * -> -> -> 2 `i `ui `ux -> -> # *U &U _current `ui `ux -> 0 `i ]
+"440
 }
+[; ;main.c: 440: }
+[e $U 1590  ]
 "441
-[v _calculateCurrent3 `(v ~T0 @X0 1 ef ]
+[e :U 1589 ]
+[; ;main.c: 441: else
+[; ;main.c: 442: {
 "442
 {
-[; ;main.c: 441: void calculateCurrent3(void)
-[; ;main.c: 442: {
-[e :U _calculateCurrent3 ]
-[f ]
-[; ;main.c: 443: if(Ianalogs[3]-570<=0)
+[; ;main.c: 443: current[2]=(int16_t)(Ianalogs[2]-570);
 "443
-[e $ ! <= - *U + &U _Ianalogs * -> -> -> 3 `i `ui `ux -> -> # *U &U _Ianalogs `ui `ux -> 570 `i -> 0 `i 1592  ]
-[; ;main.c: 444: {
+[e = *U + &U _current * -> -> -> 2 `i `ui `ux -> -> # *U &U _current `ui `ux - *U + &U _Ianalogs * -> -> -> 2 `i `ui `ux -> -> # *U &U _Ianalogs `ui `ux -> 570 `i ]
 "444
-{
-[; ;main.c: 445: current[3]=0;
-"445
-[e = *U + &U _current * -> -> -> 3 `i `ui `ux -> -> # *U &U _current `ui `ux -> 0 `i ]
-"446
 }
-[; ;main.c: 446: }
-[e $U 1593  ]
+[e :U 1590 ]
+[; ;main.c: 444: }
+[; ;main.c: 445: }
+"445
+[e :UE 1588 ]
+}
 "447
-[e :U 1592 ]
-[; ;main.c: 447: else
-[; ;main.c: 448: {
+[v _calculateCurrent3 `(v ~T0 @X0 1 ef ]
 "448
 {
-[; ;main.c: 449: current[3]=(int16_t)((Ianalogs[3]-570)/2.8);
+[; ;main.c: 447: void calculateCurrent3(void)
+[; ;main.c: 448: {
+[e :U _calculateCurrent3 ]
+[f ]
+[; ;main.c: 449: if(Ianalogs[3]-570<=0)
 "449
-[e = *U + &U _current * -> -> -> 3 `i `ui `ux -> -> # *U &U _current `ui `ux -> / -> - *U + &U _Ianalogs * -> -> -> 3 `i `ui `ux -> -> # *U &U _Ianalogs `ui `ux -> 570 `i `d .2.8 `i ]
+[e $ ! <= - *U + &U _Ianalogs * -> -> -> 3 `i `ui `ux -> -> # *U &U _Ianalogs `ui `ux -> 570 `i -> 0 `i 1592  ]
+[; ;main.c: 450: {
 "450
+{
+[; ;main.c: 451: current[3]=0;
+"451
+[e = *U + &U _current * -> -> -> 3 `i `ui `ux -> -> # *U &U _current `ui `ux -> 0 `i ]
+"452
+}
+[; ;main.c: 452: }
+[e $U 1593  ]
+"453
+[e :U 1592 ]
+[; ;main.c: 453: else
+[; ;main.c: 454: {
+"454
+{
+[; ;main.c: 455: current[3]=(int16_t)((Ianalogs[3]-570)/2.8);
+"455
+[e = *U + &U _current * -> -> -> 3 `i `ui `ux -> -> # *U &U _current `ui `ux -> / -> - *U + &U _Ianalogs * -> -> -> 3 `i `ui `ux -> -> # *U &U _Ianalogs `ui `ux -> 570 `i `d .2.8 `i ]
+"456
 }
 [e :U 1593 ]
-[; ;main.c: 450: }
-[; ;main.c: 451: }
-"451
+[; ;main.c: 456: }
+[; ;main.c: 457: }
+"457
 [e :UE 1591 ]
 }
-[a 2C 79 117 116 58 0 ]
-[a 1C 73 110 58 0 ]
-[a 3C 82 101 102 58 0 ]

@@ -17049,12 +17049,12 @@ Battery_State_Machine(0);
 Battery_State_Machine(1);
 
 
-{ gotoXY(0,0); LCDWriteString("In:");};
 
 
-{ gotoXY(26,0); LCDWriteString("Out:");};
-{ gotoXY(52,0); LCDWriteString("Ref:");};
+{ gotoXY(0,0); LCDWriteInt(faultCount,-1, 0, 0);};
+{ gotoXY(32,0); LCDWriteInt(faultNotReset,-1, 0, 0);};
 
+# 258
 { gotoXY(0,1); LCDWriteInt(voltage[2],4, 2, 0);};
 
 LCDWriteCharacter('V');
@@ -17094,7 +17094,7 @@ LCDWriteCharacter('V');
 
 { gotoXY(80,3); LCDWriteInt(Imode[1],1, 0, 0);};
 
-# 299
+# 305
 { gotoXY(0,4); LCDWriteInt(current[3],3, 1, 0);};
 LCDWriteCharacter('A');
 
@@ -17119,7 +17119,7 @@ LCDWriteCharacter(' ');
 LCDWriteCharacter(123);
 LCDWriteCharacter('C');
 
-# 391
+# 397
 if(batteryState[0] > FINISHED)
 {
 cc_cv_mode(0);
@@ -17146,7 +17146,7 @@ current[0]=(int16_t)((Ianalogs[0]-562)/2.9943);
 }
 }
 
-# 429
+# 435
 void calculateCurrent2(void)
 {
 if(Ianalogs[2]-570<=0)
