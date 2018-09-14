@@ -1,5 +1,6 @@
 *.bash
 *.cmf
+*.elf
 *.hxl
 *.lst
 *.map
