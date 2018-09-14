@@ -5,6 +5,7 @@
         <group>
             <file>file:/D:/PIC_Related/XC8Projects/16F18855/24V_MPPT_BrokenTraces.X/main.c</file>
             <file>file:/D:/PIC_Related/XC8Projects/16F18855/24V_MPPT_BrokenTraces.X/lcd.c</file>
+            <file>file:/D:/PIC_Related/XC8Projects/16F18855/24V_MPPT_BrokenTraces.X/battery_charger.c</file>
         </group>
     </open-files>
 </project-private>
