@@ -13,6 +13,8 @@ int8_t              VHoldMode[2]    =   0;
 int16_t             voltage[4]      =   {0};                // Store calculated Voltage values
 int16_t             Vref[2];                                // setpoint for voltage output
 uint8_t             x               =   0;                  // Counter for lowering Charge Voltage
+uint8_t             otherState;
+uint8_t             floatCount[2]   =   0;                  // Counter to prevent one channel going to FLOAT, if other channel is in CHARGE
 
 
 void Init_Battery_State_Machine(uint8_t z)
@@ -66,13 +68,35 @@ void Battery_State_Machine(uint8_t z)
 			}
 		}
         else if(IminCount[z]<IminUpdate)IminCount[z]+=1;    // Keep us from going into Float because of sporadic sun
-	} 
+	}
     else if(batteryState[z] == FLOAT)
+	{
+        otherState=(uint8_t)(1-z);                          // otherState is the Opposite Channel Number to the one we are currently looking at
+        
+        if(batteryState[otherState]==CHARGE)                // If the other Channel is still in CHARGE,while this channel is in FLOAT
+        {
+            floatCount[z]+=1;
+            
+            if(floatCount[z]>5)
+            {
+                IminCount[z]=IminCount[otherState];         // Set current IminCount value to same as Opposite Channel IminCount
+                floatCount[z]=0;                            // And, Reset the floatCount
+                batteryState[z] = CHARGE;                   // Switch Back to CHARGE State
+            }
+        }
+        else
+        {
+            Vref[z]=FLOATING_VOLTAGE;
+        	Iref[z]=IFLOAT;                                 // Set Current sets IRef value
+            Imode[z]=0;
+            floatCount[z]=0;
+        }
+    }                               /*    else if(batteryState[z] == FLOAT)
 	{
         Vref[z]=FLOATING_VOLTAGE;
     	Iref[z]=IFLOAT;                                     // Set Current sets IRef value
         Imode[z]=0;
-    }
+    }*/        // Old Code, Unused
 	else
 	if(batteryState[z] == FAULT)
 	{
@@ -104,7 +128,7 @@ void cc_cv_mode(uint8_t z)                                  // Function determin
         VHoldMode[z]-=1;                                    // VHoldMode switches us between Current or Voltage mode (Current mode at -VHoldMode)
         if(VHoldMode[z]<(CURRENT_MODE*-1))
         {
-            batteryState[z]=CHARGE;
+//            batteryState[z]=CHARGE;
             Imode[z]=1;                                     // switch to "Current Mode"
             cc_cv[z]=(CURRENT_MODE*2);                      // and, set the cc_cv to count "CURRENT_MODE" number of slowLoop iterations, before allowing a return to "VOLTAGE Mode"
             VHoldMode[z]=(CURRENT_MODE*-1);

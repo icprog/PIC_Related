@@ -4,7 +4,7 @@
 [d chip 16F18855 ]
 [d frameptr 6 ]
 "22 D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
-[e E13615 . `uc
+[e E14315 . `uc
 POT 4
 channel_VSS 60
 channel_Temp 61
@@ -12,7 +12,7 @@ channel_DAC1 62
 channel_FVR 63
 ]
 "23 D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
-[e E13624 charge_states `uc
+[e E14324 charge_states `uc
 IDLE 0
 FAULT 1
 FINISHED 2
@@ -21,7 +21,7 @@ CHARGE 4
 FLOAT 5
 ]
 "10 D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\buttons.c
-[e E13559 . `uc
+[e E14259 . `uc
 POT 4
 channel_VSS 60
 channel_Temp 61
@@ -29,7 +29,7 @@ channel_DAC1 62
 channel_FVR 63
 ]
 "225 D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
-[e E13624 charge_states `uc
+[e E14324 charge_states `uc
 IDLE 0
 FAULT 1
 FINISHED 2
@@ -38,7 +38,7 @@ CHARGE 4
 FLOAT 5
 ]
 "232
-[e E13559 . `uc
+[e E14259 . `uc
 POT 4
 channel_VSS 60
 channel_Temp 61
@@ -61,41 +61,39 @@ channel_FVR 63
 [v _cc_cv_mode cc_cv_mode `(v  1 e 1 0 ]
 "8 D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\buttons.c
 [v _readButton readButton `(uc  1 e 1 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
-"32 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+"32 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awtoft.c
 [v ___awtoft __awtoft `(f  1 e 3 0 ]
-"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\evalpoly.c
 [v _eval_poly eval_poly `(d  1 e 3 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
-"254 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+"254 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\frexp.c
 [v _frexp frexp `(d  1 e 3 0 ]
-"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+"86 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
-"56 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+"56 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftge.c
 [v ___ftge __ftge `(b  1 e 0 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 3 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftneg.c
-[v ___ftneg __ftneg `(f  1 e 3 0 ]
-"18 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+"18 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
-"44 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+"44 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\fttol.c
 [v ___fttol __fttol `(l  1 e 4 0 ]
-"5 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+"5 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\log.c
 [v _log log `(d  1 e 3 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
-"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul8.c
 [v ___bmul __bmul `(uc  1 e 1 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\pic\eeprom.c
 [v _eecpymem eecpymem `(v  1 e 1 0 ]
 "39
 [v _memcpyee memcpyee `(v  1 e 1 0 ]
@@ -189,9 +187,9 @@ channel_FVR 63
 [v _lastButton lastButton `uc  1 e 1 0 ]
 "6
 [v _j j `c  1 e 1 0 ]
-"572 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic16f18855.h
+"589 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic16f18855.h
 [v _TRISA TRISA `VEuc  1 e 1 @17 ]
-[s S174 . 1 `uc 1 TRISA0 1 0 :1:0 
+[s S184 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
 `uc 1 TRISA3 1 0 :1:3 
@@ -200,16 +198,16 @@ channel_FVR 63
 `uc 1 TRISA6 1 0 :1:6 
 `uc 1 TRISA7 1 0 :1:7 
 ]
-"589
-[u S183 . 1 `S174 1 . 1 0 ]
-[v _TRISAbits TRISAbits `VES183  1 e 1 @17 ]
-"633
+"606
+[u S193 . 1 `S184 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES193  1 e 1 @17 ]
+"651
 [v _TRISB TRISB `VEuc  1 e 1 @18 ]
-"694
+"713
 [v _TRISC TRISC `VEuc  1 e 1 @19 ]
-"755
+"775
 [v _LATA LATA `VEuc  1 e 1 @22 ]
-[s S195 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S205 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -218,18 +216,18 @@ channel_FVR 63
 `uc 1 LATA6 1 0 :1:6 
 `uc 1 LATA7 1 0 :1:7 
 ]
-"772
-[u S204 . 1 `S195 1 . 1 0 ]
-[v _LATAbits LATAbits `VES204  1 e 1 @22 ]
-"816
+"792
+[u S214 . 1 `S205 1 . 1 0 ]
+[v _LATAbits LATAbits `VES214  1 e 1 @22 ]
+"837
 [v _LATB LATB `VEuc  1 e 1 @23 ]
-"877
+"899
 [v _LATC LATC `VEuc  1 e 1 @24 ]
-"1508
+"1536
 [v _ADRESL ADRESL `VEuc  1 e 1 @140 ]
-"1527
+"1556
 [v _ADRESH ADRESH `VEuc  1 e 1 @141 ]
-"1821
+"1857
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @147 ]
 [s S26 . 1 `uc 1 ADGO 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
@@ -239,63 +237,68 @@ channel_FVR 63
 `uc 1 ADCONT 1 0 :1:6 
 `uc 1 ADON 1 0 :1:7 
 ]
-"1852
+"1893
 [s S34 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM 1 0 :2:2 
 ]
-[s S36 . 1 `uc 1 nDONE 1 0 :1:0 
+[s S38 . 1 `uc 1 nDONE 1 0 :1:0 
 ]
-[s S38 . 1 `uc 1 GO 1 0 :1:0 
+[s S40 . 1 `uc 1 GO 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 ADFM0 1 0 :1:2 
 `uc 1 ADFM1 1 0 :1:3 
 ]
-[s S43 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+[s S45 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM0 1 0 :1:2 
+`uc 1 ADFRM1 1 0 :1:3 
 ]
-[u S45 . 1 `S26 1 . 1 0 `S34 1 . 1 0 `S36 1 . 1 0 `S38 1 . 1 0 `S43 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES45  1 e 1 @147 ]
-"1911
+[u S50 . 1 `S26 1 . 1 0 `S34 1 . 1 0 `S38 1 . 1 0 `S40 1 . 1 0 `S45 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES50  1 e 1 @147 ]
+"1968
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @148 ]
-"1949
+"2007
 [v _ADCON2 ADCON2 `VEuc  1 e 1 @149 ]
-"2025
+"2084
 [v _ADCON3 ADCON3 `VEuc  1 e 1 @150 ]
-"2095
+"2155
 [v _ADSTAT ADSTAT `VEuc  1 e 1 @151 ]
-"2164
+"2225
 [v _ADCLK ADCLK `VEuc  1 e 1 @152 ]
-"2221
+"2283
 [v _ADACT ADACT `VEuc  1 e 1 @153 ]
-"2272
+"2335
 [v _ADREF ADREF `VEuc  1 e 1 @154 ]
-"2312
+"2376
 [v _ADCAP ADCAP `VEuc  1 e 1 @155 ]
-"2363
+"2428
 [v _ADPRE ADPRE `VEuc  1 e 1 @156 ]
-"2432
+"2498
 [v _ADACQ ADACQ `VEuc  1 e 1 @157 ]
-"2501
+"2568
 [v _ADPCH ADPCH `VEuc  1 e 1 @158 ]
-"2627
+"2696
 [v _ADRPT ADRPT `VEuc  1 e 1 @269 ]
-"2702
+"2773
 [v _ADLTHL ADLTHL `VEuc  1 e 1 @270 ]
-"2771
+"2843
 [v _ADLTHH ADLTHH `VEuc  1 e 1 @271 ]
-"2846
+"2920
 [v _ADUTHL ADUTHL `VEuc  1 e 1 @272 ]
-"2915
-[v _ADUTHH ADUTHH `VEuc  1 e 1 @273 ]
 "2990
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @273 ]
+"3067
 [v _ADSTPTL ADSTPTL `VEuc  1 e 1 @274 ]
-"3059
+"3137
 [v _ADSTPTH ADSTPTH `VEuc  1 e 1 @275 ]
-[s S387 . 1 `uc 1 C1TSEL 1 0 :2:0 
+[s S406 . 1 `uc 1 C1TSEL 1 0 :2:0 
 `uc 1 C2TSEL 1 0 :2:2 
 `uc 1 C3TSEL 1 0 :2:4 
 `uc 1 C4TSEL 1 0 :2:6 
 ]
-"7435
-[s S392 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+"8946
+[s S411 . 1 `uc 1 C1TSEL0 1 0 :1:0 
 `uc 1 C1TSEL1 1 0 :1:1 
 `uc 1 C2TSEL0 1 0 :1:2 
 `uc 1 C2TSEL1 1 0 :1:3 
@@ -304,38 +307,38 @@ channel_FVR 63
 `uc 1 C4TSEL0 1 0 :1:6 
 `uc 1 C4TSEL1 1 0 :1:7 
 ]
-[u S401 . 1 `S387 1 . 1 0 `S392 1 . 1 0 ]
-[v _CCPTMRS0bits CCPTMRS0bits `VES401  1 e 1 @542 ]
-[s S308 . 1 `uc 1 C5TSEL 1 0 :2:0 
+[u S420 . 1 `S406 1 . 1 0 `S411 1 . 1 0 ]
+[v _CCPTMRS0bits CCPTMRS0bits `VES420  1 e 1 @542 ]
+[s S318 . 1 `uc 1 C5TSEL 1 0 :2:0 
 `uc 1 P6TSEL 1 0 :2:2 
 `uc 1 P7TSEL 1 0 :2:4 
 ]
-"7519
-[s S312 . 1 `uc 1 C5TSEL0 1 0 :1:0 
+"9031
+[s S322 . 1 `uc 1 C5TSEL0 1 0 :1:0 
 `uc 1 C5TSEL1 1 0 :1:1 
 `uc 1 P6TSEL0 1 0 :1:2 
 `uc 1 P6TSEL1 1 0 :1:3 
 `uc 1 P7TSEL0 1 0 :1:4 
 `uc 1 P7TSEL1 1 0 :1:5 
 ]
-[u S319 . 1 `S308 1 . 1 0 `S312 1 . 1 0 ]
-[v _CCPTMRS1bits CCPTMRS1bits `VES319  1 e 1 @543 ]
-"7568
+[u S329 . 1 `S318 1 . 1 0 `S322 1 . 1 0 ]
+[v _CCPTMRS1bits CCPTMRS1bits `VES329  1 e 1 @543 ]
+"9081
 [v _T2TMR T2TMR `VEuc  1 e 1 @652 ]
-"7605
+"9119
 [v _T2PR T2PR `VEuc  1 e 1 @653 ]
-"7642
+"9157
 [v _T2CON T2CON `VEuc  1 e 1 @654 ]
-[s S505 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S524 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 CKPS 1 0 :3:4 
 `uc 1 ON 1 0 :1:7 
 ]
-"7678
-[s S509 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+"9193
+[s S528 . 1 `uc 1 T2OUTPS 1 0 :4:0 
 `uc 1 T2CKPS 1 0 :3:4 
 `uc 1 T2ON 1 0 :1:7 
 ]
-[s S513 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+[s S532 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
 `uc 1 T2OUTPS1 1 0 :1:1 
 `uc 1 T2OUTPS2 1 0 :1:2 
 `uc 1 T2OUTPS3 1 0 :1:3 
@@ -343,7 +346,7 @@ channel_FVR 63
 `uc 1 T2CKPS1 1 0 :1:5 
 `uc 1 T2CKPS2 1 0 :1:6 
 ]
-[s S521 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S540 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
@@ -352,26 +355,26 @@ channel_FVR 63
 `uc 1 CKPS2 1 0 :1:6 
 `uc 1 TMR2ON 1 0 :1:7 
 ]
-[u S530 . 1 `S505 1 . 1 0 `S509 1 . 1 0 `S513 1 . 1 0 `S521 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES530  1 e 1 @654 ]
-"7787
+[u S549 . 1 `S524 1 . 1 0 `S528 1 . 1 0 `S532 1 . 1 0 `S540 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES549  1 e 1 @654 ]
+"9303
 [v _T2HLT T2HLT `VEuc  1 e 1 @655 ]
-"7919
+"9436
 [v _T2CLKCON T2CLKCON `VEuc  1 e 1 @656 ]
-"8071
+"9589
 [v _T2RST T2RST `VEuc  1 e 1 @657 ]
-"8162
+"9681
 [v _T4TMR T4TMR `VEuc  1 e 1 @658 ]
-"8199
+"9719
 [v _T4PR T4PR `VEuc  1 e 1 @659 ]
-"8236
+"9757
 [v _T4CON T4CON `VEuc  1 e 1 @660 ]
-"8272
-[s S571 . 1 `uc 1 T4OUTPS 1 0 :4:0 
+"9793
+[s S590 . 1 `uc 1 T4OUTPS 1 0 :4:0 
 `uc 1 T4CKPS 1 0 :3:4 
 `uc 1 T4ON 1 0 :1:7 
 ]
-[s S575 . 1 `uc 1 T4OUTPS0 1 0 :1:0 
+[s S594 . 1 `uc 1 T4OUTPS0 1 0 :1:0 
 `uc 1 T4OUTPS1 1 0 :1:1 
 `uc 1 T4OUTPS2 1 0 :1:2 
 `uc 1 T4OUTPS3 1 0 :1:3 
@@ -379,7 +382,7 @@ channel_FVR 63
 `uc 1 T4CKPS1 1 0 :1:5 
 `uc 1 T4CKPS2 1 0 :1:6 
 ]
-[s S583 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S602 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
@@ -388,122 +391,126 @@ channel_FVR 63
 `uc 1 CKPS2 1 0 :1:6 
 `uc 1 TMR4ON 1 0 :1:7 
 ]
-[u S592 . 1 `S505 1 . 1 0 `S571 1 . 1 0 `S575 1 . 1 0 `S583 1 . 1 0 ]
-[v _T4CONbits T4CONbits `VES592  1 e 1 @660 ]
-"8381
+[u S611 . 1 `S524 1 . 1 0 `S590 1 . 1 0 `S594 1 . 1 0 `S602 1 . 1 0 ]
+[v _T4CONbits T4CONbits `VES611  1 e 1 @660 ]
+"9903
 [v _T4HLT T4HLT `VEuc  1 e 1 @661 ]
-"8513
+"10036
 [v _T4CLKCON T4CLKCON `VEuc  1 e 1 @662 ]
-"8665
+"10189
 [v _T4RST T4RST `VEuc  1 e 1 @663 ]
-"9356
+"10888
 [v _CCPR1L CCPR1L `VEuc  1 e 1 @780 ]
-"9375
+"10908
 [v _CCPR1H CCPR1H `VEuc  1 e 1 @781 ]
-[s S337 . 1 `uc 1 MODE 1 0 :4:0 
+[s S347 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 FMT 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 OE 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
-"9427
-[s S343 . 1 `uc 1 MODE0 1 0 :1:0 
+"10966
+[s S353 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 ]
-[s S348 . 1 `uc 1 CCP1MODE 1 0 :4:0 
+[s S358 . 1 `uc 1 CCP1MODE 1 0 :4:0 
 `uc 1 CCP1FMT 1 0 :1:4 
 `uc 1 CCP1OUT 1 0 :1:5 
 `uc 1 CCP1OE 1 0 :1:6 
 `uc 1 CCP1EN 1 0 :1:7 
 ]
-[s S354 . 1 `uc 1 CCP1MODE0 1 0 :1:0 
+[s S364 . 1 `uc 1 CCP1MODE0 1 0 :1:0 
 `uc 1 CCP1MODE1 1 0 :1:1 
 `uc 1 CCP1MODE2 1 0 :1:2 
 `uc 1 CCP1MODE3 1 0 :1:3 
 ]
-[u S359 . 1 `S337 1 . 1 0 `S343 1 . 1 0 `S348 1 . 1 0 `S354 1 . 1 0 ]
-[v _CCP1CONbits CCP1CONbits `VES359  1 e 1 @782 ]
-"10540
+[s S369 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 P1M0 1 0 :1:6 
+`uc 1 P1M1 1 0 :1:7 
+]
+[u S373 . 1 `S347 1 . 1 0 `S353 1 . 1 0 `S358 1 . 1 0 `S364 1 . 1 0 `S369 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES373  1 e 1 @782 ]
+"12171
 [v _PWM6DCL PWM6DCL `VEuc  1 e 1 @908 ]
-"10605
+"12237
 [v _PWM6DCH PWM6DCH `VEuc  1 e 1 @909 ]
-"10774
+"12407
 [v _PWM6CON PWM6CON `VEuc  1 e 1 @910 ]
-"10839
+"12473
 [v _PWM7DCL PWM7DCL `VEuc  1 e 1 @912 ]
-"10904
+"12539
 [v _PWM7DCH PWM7DCH `VEuc  1 e 1 @913 ]
-"11073
+"12709
 [v _PWM7CON PWM7CON `VEuc  1 e 1 @914 ]
-[s S488 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[s S507 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 TMR3IF 1 0 :1:2 
 `uc 1 TMR4IF 1 0 :1:3 
 `uc 1 TMR5IF 1 0 :1:4 
 `uc 1 TMR6IF 1 0 :1:5 
 ]
-"19557
-[u S495 . 1 `S488 1 . 1 0 ]
-[v _PIR4bits PIR4bits `VES495  1 e 1 @1808 ]
-[s S273 . 1 `uc 1 INTE 1 0 :1:0 
+"21299
+[u S514 . 1 `S507 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES514  1 e 1 @1808 ]
+[s S283 . 1 `uc 1 INTE 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIE 1 0 :1:4 
 `uc 1 TMR0IE 1 0 :1:5 
 ]
-"19817
-[u S278 . 1 `S273 1 . 1 0 ]
-[v _PIE0bits PIE0bits `VES278  1 e 1 @1814 ]
-"21546
+"21564
+[u S288 . 1 `S283 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES288  1 e 1 @1814 ]
+"23324
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
-"21684
+"23464
 [v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
-"21779
+"23561
 [v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
-"21829
+"23612
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
-"21886
+"23670
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
-"22252
+"24044
 [v _FVRCON FVRCON `VEuc  1 e 1 @2316 ]
-"27917
+"29763
 [v _PPSLOCK PPSLOCK `VEuc  1 e 1 @3727 ]
-[s S288 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+[s S298 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
 ]
-"27927
-[u S290 . 1 `S288 1 . 1 0 ]
-[v _PPSLOCKbits PPSLOCKbits `VES290  1 e 1 @3727 ]
-"30205
+"29773
+[u S300 . 1 `S298 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES300  1 e 1 @3727 ]
+"32091
 [v _RA6PPS RA6PPS `VEuc  1 e 1 @3862 ]
-"30254
+"32141
 [v _RA7PPS RA7PPS `VEuc  1 e 1 @3863 ]
-"30303
+"32191
 [v _RB0PPS RB0PPS `VEuc  1 e 1 @3864 ]
-"31087
+"32991
 [v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
-"31148
+"33053
 [v _WPUA WPUA `VEuc  1 e 1 @3897 ]
-"31697
+"33611
 [v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
-"31758
+"33673
 [v _WPUB WPUB `VEuc  1 e 1 @3908 ]
-"32307
+"34231
 [v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
-"32368
+"34293
 [v _WPUC WPUC `VEuc  1 e 1 @3919 ]
-"32917
+"34851
 [v _WPUE WPUE `VEuc  1 e 1 @3941 ]
-"34694
+"36757
 [v _GIE GIE `VEb  1 e 0 @95 ]
-"35020
+"37095
 [v _LATA5 LATA5 `VEb  1 e 0 @181 ]
-"36282
+"38413
 [v _RB2 RB2 `VEb  1 e 0 @106 ]
-"3 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\errno.c
+"3 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\errno.c
 [v _errno errno `i  1 e 2 0 ]
 "17 D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
-[v _fonts fonts `DCC[303]uc  1 e 303 0 ]
+[v _fonts fonts `DC[303]uc  1 e 303 0 ]
 "26 D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\main.c
 [v _Vanalogs Vanalogs `[4]i  1 e 8 0 ]
 "27
@@ -557,7 +564,7 @@ channel_FVR 63
 [v tempCalc@analogValue analogValue `i  1 p 2 46 ]
 "19
 } 0
-"5 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\log.c
+"5 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\log.c
 [v _log log `(d  1 e 3 0 ]
 {
 "7
@@ -565,42 +572,42 @@ channel_FVR 63
 "5
 [v log@x x `d  1 p 3 40 ]
 "9
-[v log@coeff coeff `DCC[9]d  1 s 27 coeff ]
+[v log@coeff coeff `DC[9]d  1 s 27 coeff ]
 "36
 } 0
-"254 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\frexp.c
+"254 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\frexp.c
 [v _frexp frexp `(d  1 e 3 0 ]
 {
 [v frexp@value value `d  1 p 3 0 ]
 [v frexp@eptr eptr `*.4i  1 p 1 3 ]
 "274
 } 0
-"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\evalpoly.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\evalpoly.c
 [v _eval_poly eval_poly `(d  1 e 3 0 ]
 {
 "6
 [v eval_poly@res res `d  1 a 3 37 ]
 "4
 [v eval_poly@x x `d  1 p 3 30 ]
-[v eval_poly@d d `*.25DCCd  1 p 2 33 ]
+[v eval_poly@d d `*.25DCd  1 p 2 33 ]
 [v eval_poly@n n `i  1 p 2 35 ]
 "12
 } 0
-"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftge.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftge.c
 [v ___ftge __ftge `(b  1 e 0 0 ]
 {
 [v ___ftge@ff1 ff1 `f  1 p 3 17 ]
 [v ___ftge@ff2 ff2 `f  1 p 3 20 ]
 "13
 } 0
-"18 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+"18 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
 {
 [v ___ftsub@f2 f2 `f  1 p 3 30 ]
 [v ___ftsub@f1 f1 `f  1 p 3 33 ]
 "27
 } 0
-"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+"86 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
 {
 "88
@@ -623,7 +630,7 @@ channel_FVR 63
 [v readVAnalog@channel channel `ui  1 p 2 6 ]
 "126
 } 0
-"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul8.c
 [v ___bmul __bmul `(uc  1 e 1 0 ]
 {
 [v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
@@ -647,7 +654,7 @@ channel_FVR 63
 [v readIAnalog@channel channel `ui  1 p 2 6 ]
 "100
 } 0
-"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\aldiv.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
 {
 "11
@@ -668,10 +675,10 @@ channel_FVR 63
 "21 D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\adc.c
 [v _ADCRead ADCRead `(i  1 e 2 0 ]
 {
-[v ADCRead@channel channel `E13615  1 a 1 wreg ]
-[v ADCRead@channel channel `E13615  1 a 1 wreg ]
+[v ADCRead@channel channel `E14315  1 a 1 wreg ]
+[v ADCRead@channel channel `E14315  1 a 1 wreg ]
 "23
-[v ADCRead@channel channel `E13615  1 a 1 3 ]
+[v ADCRead@channel channel `E14315  1 a 1 3 ]
 "48
 } 0
 "103 D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\battery_charger.c
@@ -698,7 +705,7 @@ channel_FVR 63
 {
 "421
 } 0
-"56 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+"56 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
 {
 "60
@@ -812,10 +819,10 @@ channel_FVR 63
 [v LCDWriteInt@numPlaces numPlaces `uc  1 p 1 34 ]
 [v LCDWriteInt@sign sign `uc  1 p 1 35 ]
 "191
-[v LCDWriteInt@F13692 F13692 `[5]uc  1 s 5 F13692 ]
+[v LCDWriteInt@F14392 F14392 `[5]uc  1 s 5 F14392 ]
 "244
 } 0
-"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
 {
 "11
@@ -825,7 +832,7 @@ channel_FVR 63
 [v ___lwmod@dividend dividend `ui  1 p 2 2 ]
 "26
 } 0
-"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "11
@@ -841,16 +848,16 @@ channel_FVR 63
 "140 D:\PIC_Related\XC8Projects\16F18855\24V_MPPT_BrokenTraces.X\lcd.c
 [v _LCDWriteCharacter LCDWriteCharacter `(v  1 e 1 0 ]
 {
-[v LCDWriteCharacter@character character `DCCuc  1 a 1 wreg ]
+[v LCDWriteCharacter@character character `DCuc  1 a 1 wreg ]
 "142
 [v LCDWriteCharacter@base base `ui  1 a 2 10 ]
 "140
-[v LCDWriteCharacter@character character `DCCuc  1 a 1 wreg ]
+[v LCDWriteCharacter@character character `DCuc  1 a 1 wreg ]
 "143
-[v LCDWriteCharacter@character character `DCCuc  1 a 1 9 ]
+[v LCDWriteCharacter@character character `DCuc  1 a 1 9 ]
 "149
 } 0
-"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
@@ -883,7 +890,7 @@ channel_FVR 63
 [v Battery_State_Machine@z z `uc  1 a 1 36 ]
 "101
 } 0
-"44 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\fttol.c
+"44 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\fttol.c
 [v ___fttol __fttol `(l  1 e 4 0 ]
 {
 "47
@@ -895,7 +902,7 @@ channel_FVR 63
 [v ___fttol@f1 f1 `f  1 p 3 17 ]
 "73
 } 0
-"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 3 0 ]
 {
 "65
@@ -909,7 +916,7 @@ channel_FVR 63
 [v ___ftmul@f2 f2 `f  1 p 3 4 ]
 "157
 } 0
-"32 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awtoft.c
+"32 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awtoft.c
 [v ___awtoft __awtoft `(f  1 e 3 0 ]
 {
 "34
@@ -918,7 +925,7 @@ channel_FVR 63
 [v ___awtoft@c c `i  1 p 2 9 ]
 "42
 } 0
-"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
 {
 [v ___ftpack@arg arg `um  1 p 3 0 ]
