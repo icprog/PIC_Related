@@ -30,3 +30,17 @@
 *.xml
 *.mk
 *.bash
+*.xml
+*.sym
+*.rlf
+*.obj
+*.map
+*.lst
+*.cmf
+XC8Projects/16F18855/BinaryClock.X/dist/default/production/BinaryClock.X.production.cmf
+XC8Projects/16F18855/BinaryClock.X/dist/default/production/BinaryClock.X.production.lst
+XC8Projects/16F18855/BinaryClock.X/dist/default/production/BinaryClock.X.production.map
+XC8Projects/16F18855/BinaryClock.X/dist/default/production/BinaryClock.X.production.obj
+XC8Projects/16F18855/BinaryClock.X/dist/default/production/BinaryClock.X.production.rlf
+XC8Projects/16F18855/BinaryClock.X/dist/default/production/BinaryClock.X.production.sym
+XC8Projects/16F18855/BinaryClock.X/nbproject/private/private.xml

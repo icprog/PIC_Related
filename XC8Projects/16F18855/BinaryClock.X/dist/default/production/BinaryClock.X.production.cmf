@@ -20,7 +20,7 @@ text4 CODE 0 5CB 5CB 8 2
 maintext CODE 0 61C 61C 1E0 2
 cstackCOMMON COMMON 1 70 70 B 1
 bitbssCOMMON COMMON 1 3D8 7B 1 1
-$C:\Users\DAVE\AppData\Local\Temp\sqc.obj
+$C:\Users\DAVE\AppData\Local\Temp\s2gs.obj
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 0 8007 8007 5 2
@@ -117,12 +117,12 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\BinaryClock.X.production.obj
-7FC cinit CODE >3286:C:\Users\DAVE\AppData\Local\Temp\sqc.
-7FC cinit CODE >3289:C:\Users\DAVE\AppData\Local\Temp\sqc.
-7FC cinit CODE >3301:C:\Users\DAVE\AppData\Local\Temp\sqc.
-7FD cinit CODE >3307:C:\Users\DAVE\AppData\Local\Temp\sqc.
-7FD cinit CODE >3309:C:\Users\DAVE\AppData\Local\Temp\sqc.
-7FE cinit CODE >3310:C:\Users\DAVE\AppData\Local\Temp\sqc.
+7FC cinit CODE >3286:C:\Users\DAVE\AppData\Local\Temp\s2gs.
+7FC cinit CODE >3289:C:\Users\DAVE\AppData\Local\Temp\s2gs.
+7FC cinit CODE >3301:C:\Users\DAVE\AppData\Local\Temp\s2gs.
+7FD cinit CODE >3307:C:\Users\DAVE\AppData\Local\Temp\s2gs.
+7FD cinit CODE >3309:C:\Users\DAVE\AppData\Local\Temp\s2gs.
+7FE cinit CODE >3310:C:\Users\DAVE\AppData\Local\Temp\s2gs.
 5CB text4 CODE >83:D:\PIC_Related\XC8Projects\16F18855\BinaryClock.X\system.c
 5CB text4 CODE >85:D:\PIC_Related\XC8Projects\16F18855\BinaryClock.X\system.c
 5CE text4 CODE >87:D:\PIC_Related\XC8Projects\16F18855\BinaryClock.X\system.c
@@ -279,22 +279,22 @@ _WPUA F39 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
 _WPUB F44 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
 _WPUC F4F 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
 _WPUE F65 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\sqc.obj
+___sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s2gs.obj
 _main C38 0 CODE 0 maintext dist/default/production\BinaryClock.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
-start 4 0 CODE 0 init C:\Users\DAVE\AppData\Local\Temp\sqc.obj
+start 4 0 CODE 0 init C:\Users\DAVE\AppData\Local\Temp\s2gs.obj
 __CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
 __CFG_SCANE$available 0 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
 __pbitbssCOMMON 3D8 -35D COMMON 1 bitbssCOMMON dist/default/production\BinaryClock.X.production.obj
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\DAVE\AppData\Local\Temp\sqc.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\DAVE\AppData\Local\Temp\sqc.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\DAVE\AppData\Local\Temp\sqc.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\DAVE\AppData\Local\Temp\sqc.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\DAVE\AppData\Local\Temp\sqc.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\DAVE\AppData\Local\Temp\sqc.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\DAVE\AppData\Local\Temp\s2gs.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\DAVE\AppData\Local\Temp\s2gs.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\DAVE\AppData\Local\Temp\s2gs.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\DAVE\AppData\Local\Temp\s2gs.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\DAVE\AppData\Local\Temp\s2gs.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\DAVE\AppData\Local\Temp\s2gs.obj
 wtemp0 7E 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
@@ -318,7 +318,7 @@ __end_of_SYSTEM_Initialize BD6 0 CODE 0 text1 dist/default/production\BinaryCloc
 _T0CON0 1E 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
 _T0CON1 1F 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
 _TMR0IF 3865 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\sqc.obj
+___int_sp 0 0 STACK 2 stack C:\Users\DAVE\AppData\Local\Temp\s2gs.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -457,7 +457,7 @@ __S3 0 0 ABS 0 - -
 main@MIN_COUNT 7A 0 COMMON 1 cstackCOMMON dist/default/production\BinaryClock.X.production.obj
 _SYSTEM_Initialize BBE 0 CODE 0 text1 dist/default/production\BinaryClock.X.production.obj
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\DAVE\AppData\Local\Temp\sqc.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\DAVE\AppData\Local\Temp\s2gs.obj
 main@HOUR_COUNT 79 0 COMMON 1 cstackCOMMON dist/default/production\BinaryClock.X.production.obj
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
 __end_of_PIN_MANAGER_Initialize C38 0 CODE 0 text3 dist/default/production\BinaryClock.X.production.obj
@@ -491,8 +491,8 @@ __CFG_RSTOSC$HFINT1 0 0 ABS 0 - dist/default/production\BinaryClock.X.production
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 1000E 0 CONFIG 0 config -
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
-stackhi 23EF 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\sqc.obj
-stacklo 2000 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\sqc.obj
+stackhi 23EF 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s2gs.obj
+stacklo 2000 0 ABS 0 - C:\Users\DAVE\AppData\Local\Temp\s2gs.obj
 _OSCCON1 88D 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
 _OSCCON3 88F 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj
 _OSCTUNE 892 0 ABS 0 - dist/default/production\BinaryClock.X.production.obj

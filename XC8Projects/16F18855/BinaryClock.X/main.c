@@ -6,7 +6,7 @@ void main(void)
     SYSTEM_Initialize();                        // Initialize the device
     
     char sec = 0, SEC_COUNT, MIN_COUNT, HOUR_COUNT;
-    char DEBOUNCE = 0;                           // Button debouncing
+    char DEBOUNCE = 0;                          // Button debouncing
     long int CORRECTION_COUNTER = 0;
     static bit INCREMENT;
     
