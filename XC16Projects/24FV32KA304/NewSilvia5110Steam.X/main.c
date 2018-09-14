@@ -134,7 +134,7 @@ int main(void)
     
     int bits[9]             = {0,0,0,0,0,0,0,0,0};
  
-    //    int internalBGV;
+    //int internalBGV;
     
     int PIDValue[]          = {0,0,0};                  // PID calculated values (Water, Steam and Group)
     
