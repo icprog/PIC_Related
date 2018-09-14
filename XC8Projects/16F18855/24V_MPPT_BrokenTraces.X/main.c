@@ -95,7 +95,7 @@ void main(void)
             for(j=0;j<4;j++)
             {
                 if(tempVoltage[j]>voltage[j])voltage[j]+=1;
-                else if(tempVoltage[j]>voltage[j])voltage[j]-=1;
+                else if(tempVoltage[j]<voltage[j])voltage[j]-=1;
                 else voltage[j]=voltage[j];
             }
         
@@ -245,8 +245,8 @@ void main(void)
             
 //            LCDWriteStringXY(0,0,"In:");
             
-            LCDWriteIntXY(0,0,faultCount,-1,0,0);
-            LCDWriteIntXY(32,0,faultNotReset,-1,0,0);
+            LCDWriteIntXY(0,0,faultCount,5,0,0);
+            LCDWriteIntXY(32,0,faultNotReset,5,0,0);
             
 //            LCDWriteIntXY(26,0,IminCount[0],4,0,0);
   //          LCDWriteIntXY(52,0,IminCount[1],4,0,0);

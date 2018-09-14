@@ -12905,8 +12905,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $U 1535  ]
 "98
 [e :U 1534 ]
-[; ;main.c: 98: else if(tempVoltage[j]>voltage[j])voltage[j]-=1;
-[e $ ! > *U + &U _tempVoltage * -> _j `ux -> -> # *U &U _tempVoltage `ui `ux *U + &U _voltage * -> _j `ux -> -> # *U &U _voltage `ui `ux 1536  ]
+[; ;main.c: 98: else if(tempVoltage[j]<voltage[j])voltage[j]-=1;
+[e $ ! < *U + &U _tempVoltage * -> _j `ux -> -> # *U &U _tempVoltage `ui `ux *U + &U _voltage * -> _j `ux -> -> # *U &U _voltage `ui `ux 1536  ]
 [e =- *U + &U _voltage * -> _j `ux -> -> # *U &U _voltage `ui `ux -> 1 `i ]
 [e $U 1537  ]
 "99
@@ -13350,17 +13350,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 243: Battery_State_Machine(1);
 "243
 [e ( _Battery_State_Machine (1 -> -> 1 `i `uc ]
-[; ;main.c: 248: { gotoXY(0,0); LCDWriteInt(faultCount,-1, 0, 0);};
+[; ;main.c: 248: { gotoXY(0,0); LCDWriteInt(faultCount,5, 0, 0);};
 "248
 {
 [e ( _gotoXY (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-[e ( _LCDWriteInt (4 , , , -> _faultCount `i -> -U -> 1 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
+[e ( _LCDWriteInt (4 , , , -> _faultCount `i -> -> 5 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
 }
-[; ;main.c: 249: { gotoXY(32,0); LCDWriteInt(faultNotReset,-1, 0, 0);};
+[; ;main.c: 249: { gotoXY(32,0); LCDWriteInt(faultNotReset,5, 0, 0);};
 "249
 {
 [e ( _gotoXY (2 , -> -> 32 `i `uc -> -> 0 `i `uc ]
-[e ( _LCDWriteInt (4 , , , -> _faultNotReset `i -> -U -> 1 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
+[e ( _LCDWriteInt (4 , , , -> _faultNotReset `i -> -> 5 `i `c -> -> 0 `i `uc -> -> 0 `i `uc ]
 }
 [; ;main.c: 258: { gotoXY(0,1); LCDWriteInt(voltage[2],4, 2, 0);};
 "258

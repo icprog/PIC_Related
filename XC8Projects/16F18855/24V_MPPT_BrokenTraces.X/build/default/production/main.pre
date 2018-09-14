@@ -16901,7 +16901,7 @@ tempVoltage[3]=(int16_t)(Vanalogs[3]/.207755);
 for(j=0;j<4;j++)
 {
 if(tempVoltage[j]>voltage[j])voltage[j]+=1;
-else if(tempVoltage[j]>voltage[j])voltage[j]-=1;
+else if(tempVoltage[j]<voltage[j])voltage[j]-=1;
 else voltage[j]=voltage[j];
 }
 
@@ -17051,8 +17051,8 @@ Battery_State_Machine(1);
 
 
 
-{ gotoXY(0,0); LCDWriteInt(faultCount,-1, 0, 0);};
-{ gotoXY(32,0); LCDWriteInt(faultNotReset,-1, 0, 0);};
+{ gotoXY(0,0); LCDWriteInt(faultCount,5, 0, 0);};
+{ gotoXY(32,0); LCDWriteInt(faultNotReset,5, 0, 0);};
 
 # 258
 { gotoXY(0,1); LCDWriteInt(voltage[2],4, 2, 0);};
