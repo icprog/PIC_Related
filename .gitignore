@@ -1,0 +1,15 @@
+*.bash
+*.cmf
+*.hxl
+*.lst
+*.map
+*.mk
+*.mum
+*.obj
+*.p1
+*.p1.d
+*.pre
+*.rlf
+*.sdb
+*.sym
+*.xml
