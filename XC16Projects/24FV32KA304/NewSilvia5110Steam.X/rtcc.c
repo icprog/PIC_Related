@@ -85,9 +85,13 @@ void RTCC_Initialize(void)
 //    RTCPWC = 0x0400;                            // PWCPOL disabled; PWCEN disabled; RTCLK LPRC; PWCPRE disabled; RTCOUT Alarm Pulse; PWSPRE disabled;
     RTCPWC = 0x0000;                            // PWCPOL disabled; PWCEN disabled; RTCLK ExtOsc; PWCPRE disabled; RTCOUT Alarm Pulse; PWSPRE disabled;
 
+//  The larger the number, faster it runs (Makes no difference if Positive or Negative numbers, larger is faster)  
+//  01111111 = Max Pos adjust( +508 pulses), 00000001 = Min pos adjust(+4 pulses), 00000000 = no adjustment,
+//  11111111 = Min Neg adjustment (-4 pulses), 11111110 = -8 pulses ..., 10000000 = Max Neg Adjust (-512 pulses)  
+
     RCFGCALbits.CAL7 = 1;                      // Enable RTCC Calibration
     RCFGCALbits.CAL6 = 0;                      // Enable RTCC Calibration
-    RCFGCALbits.CAL5 = 0;                      // Enable RTCC Calibration
+    RCFGCALbits.CAL5 = 1;                      // Enable RTCC Calibration   Still slow, so changed this to a 1
     RCFGCALbits.CAL4 = 1;                      // Enable RTCC Calibration
     RCFGCALbits.CAL3 = 1;                      // Enable RTCC Calibration
     RCFGCALbits.CAL2 = 1;                      // Enable RTCC Calibration

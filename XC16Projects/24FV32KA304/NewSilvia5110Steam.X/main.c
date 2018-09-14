@@ -400,18 +400,13 @@ int main(void)
 // *************** Drive PID Outputs *******************************************
             groupPeriodCounter+=1;
             
-            LCDWriteIntXY(0,0,(groupHeadSetpoint-groupHeadTemp),4,1,0);
-            LCDWriteCharacter(' ');
-            
-            LCDWriteIntXY(34,0,(groupOutput),1,0,0);
-            
-            LCDWriteIntXY(42,0,(groupPeriodCounter),3,0,0);
-            
-            LCDWriteCharacter(' ');
-
-            LCDWriteIntXY(64,0,(groupHeadPID),3,0,0);
-            LCDWriteCharacter(' ');
-            
+//            LCDWriteIntXY(0,0,(groupHeadSetpoint-groupHeadTemp),4,1,0);
+  //          LCDWriteCharacter(' ');
+    //        LCDWriteIntXY(34,0,(groupOutput),1,0,0);
+      //      LCDWriteIntXY(42,0,(groupPeriodCounter),3,0,0);
+        //    LCDWriteCharacter(' ');
+          //  LCDWriteIntXY(64,0,(groupHeadPID),3,0,0);
+            //LCDWriteCharacter(' ');
         
             if(groupPeriodCounter >= PIDDuration)
             {
