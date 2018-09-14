@@ -6,6 +6,8 @@
 *.map
 *.mk
 *.mum
+*.o
+*.o.d
 *.obj
 *.p1
 *.p1.d
