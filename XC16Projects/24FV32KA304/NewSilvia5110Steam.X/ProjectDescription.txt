@@ -16,8 +16,7 @@ Boiler Temp (PID)                                                               
 Tank Water level Indication using 0-10" Pressure sensor and 5V air pump to
  measure level                                                                  ?? Done
 
-Grouphead Temperature control, using PID and PTC heaters (On/Off control until                      Dec 17/2017
-within 10 Deg F of Setpoint)                                                              ?? Done
+Grouphead Temperature control, using PID and PTC heaters                                            Dec 17/2017
 
 Countersink Screw holding Shower screen to Grouphead                            May-06/16           May 06/16
 
@@ -28,8 +27,8 @@ Still need to add ESC Key to user settings menus
 Need to add EEPROM storage for user selectable coffee profiles (Temp setpoints, pre-infusion time, soak time, etc...)
 
 
-Tuning Group Settings Gain .4, Integral 0.0, Derivative 1.5                                         Dec 17/2017
-Tuning Boiler Settings Gain 3.0, Integral 1.0, Derivative 30.0
+Tuning Group Settings Gain .5, Integral 0.1, Derivative 0.0                                         Dec 17/2017
+Tuning Boiler Settings Gain 3.0(now 15), Integral 1.0 (Now 5.0), Derivative 30.0 (Now 2.0)
 
 
 Add tuning Screen, with User interface, to see all variables                    Dec 17/2017         Sep 12/2018

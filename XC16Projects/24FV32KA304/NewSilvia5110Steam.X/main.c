@@ -68,7 +68,7 @@
 #define groupPeriodCounter      counter[5]              // Group PID Period Counter
 #define lowWaterReminder        counter[6]              // Remind User level is Low when below 25%
 #define numSamples              10                      // Number of samples to average for temp[] readings 
-#define PIDDuration             205                     // Number of Program cycles (Period) for Group Head PID
+#define PIDDuration             100                     // Number of Program cycles (Period) for Group Head PID
     
 
 // *************** Global Variables ********************************************
@@ -86,7 +86,7 @@ int const Kd[]          =   {18,20,22};
 
 char *desc[]            =   {"Water Temp:","Steam Temp:","Group Temp:"};
 
-int powerFail           =   1;                          //Setting powerFail to 1, instructs the user to set the time
+int powerFail           =   0;                          //Setting powerFail to 1, instructs the user to set the time
 
 extern int run;
 
@@ -145,6 +145,8 @@ int main(void)
     uint16_t level          = 0;
     
     static char ONTimer     = 0;                        // Bit to enable Auto Start of Machine
+    
+    int8_t groupPulse       = 0;  
     
 //    extern int pidIntegral;
     
@@ -382,30 +384,7 @@ int main(void)
         }
         
         there:
-/*        if(tuning[0])
-        {
-            LCDWriteStringXY(2,0,desc[0]);
-            LCDWriteIntXY(48,0,boilerTemperature,4,1,0);
-            LCDWriteCharacter(123);         // generate degree symbol in font list
-            LCDWriteCharacter(70);
-        }           
-        
-        if(tuning[1])
-        {
-            LCDWriteStringXY(2,0,desc[1]);
-            LCDWriteIntXY(48,0,steamTemperature,4,1,0);
-            LCDWriteCharacter(123);         // generate degree symbol in font list
-            LCDWriteCharacter(70);
-        }
-        
-        if(tuning[2])
-        {
-            LCDWriteStringXY(2,0,desc[2]);
-            LCDWriteIntXY(48,0,groupHeadTemp,4,1,0);
-            LCDWriteCharacter(123);         // generate degree symbol in font list
-            LCDWriteCharacter(70);
-        }
-  */          
+
 // *************** Run Air Pump once an hour for Level transmitter *************
         if(powerSwitch)
         {
@@ -422,10 +401,19 @@ int main(void)
             groupPeriodCounter+=1;
             
             LCDWriteIntXY(0,0,(groupHeadSetpoint-groupHeadTemp),4,1,0);
+            LCDWriteCharacter(' ');
             
             LCDWriteIntXY(34,0,(groupOutput),1,0,0);
+            
+            LCDWriteIntXY(42,0,(groupPeriodCounter),3,0,0);
+            
+            LCDWriteCharacter(' ');
+
+            LCDWriteIntXY(64,0,(groupHeadPID),3,0,0);
+            LCDWriteCharacter(' ');
+            
         
-            if(groupPeriodCounter > PIDDuration)
+            if(groupPeriodCounter >= PIDDuration)
             {
                 groupPeriodCounter = 0;
             }
@@ -436,7 +424,18 @@ int main(void)
             }
             else
             {
-                if(groupHeadTemp+100<groupHeadSetpoint)
+                groupPulse-=1;
+                if(groupPulse<0)groupPulse=0;
+
+                if(!groupPulse)
+                {
+                    if(groupHeadTemp+10<groupHeadSetpoint)
+                    {
+                        groupPulse=100;
+                    }
+                }
+            
+                if(groupPulse>90)
                 {
                     groupOutput=1;
                 }

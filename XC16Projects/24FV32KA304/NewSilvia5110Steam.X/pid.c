@@ -9,11 +9,11 @@ static float pidIntegrated[3]   = {    0,    0,   0};
 long pidPrevError[3]            = {    0,    0,   0};
 long pidPrevInput[3]            = {    0,    0,   0};
 int integralMinOutput[3]        = {    0,    0,   0};
-int integralMaxOutput[3]        = {   50,  100,  40};   
+int integralMaxOutput[3]        = {   50,  100,  25};   
 int pMinOutput[3]               = {-7811, -575,   0};   // Minimum output limit of Proportional Action
 int pidMinOutput[3]             = { -275,    0,   0};   // Minimum output limit of Controller
-int pidMaxOutput[3]             = { 7811, 1812, 205};   // Max limit of Controller (If steamSwitch is on, OC3R has 6000 summed to its output, so 1812+6000=7812 Out)
-int16_t bias[3]                 = {  275,    0,  22};   // Value summed onto Output(Should be Output required to maintain Setpoint with no external upsets) 
+int pidMaxOutput[3]             = { 7811, 1812,  99};   // Max limit of Controller (If steamSwitch is on, OC3R has 6000 summed to its output, so 1812+6000=7812 Out)
+int16_t bias[3]                 = {  275,    0,   7};   // Value summed onto Output(Should be Output required to maintain Setpoint with no external upsets) 
 extern int8_t tuning[3];                                // Set to a 1 when tuning    
 
 
@@ -67,13 +67,15 @@ int PID_Calculate(unsigned char controller, unsigned int setpoint, unsigned int 
 // *************** Calculate Final Output **************************************    
     result=(int)errorValue+(int)pidIntegrated[controller]+(int)derivativeValue; // Calculate total to send to Output
     
+    result+=bias[controller];
+    
     if (result<pidMinOutput[controller])result=pidMinOutput[controller];        // limit output minimum value
     
     if (result>pidMaxOutput[controller])result=pidMaxOutput[controller];        // limit output maximum value 
     
-    if(result+bias[controller]<pidMaxOutput[controller])result+=bias[controller];
+//    if(result+bias[controller]<pidMaxOutput[controller])result+=bias[controller];
 
-    else result=pidMaxOutput[controller];
+  //  else result=pidMaxOutput[controller];
 
     if(tuning[0] || tuning[1] || tuning[2])
     {
