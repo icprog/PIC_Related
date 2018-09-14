@@ -23,9 +23,6 @@ __CFG_CSWEN$ON 0 0 ABS 0
 _main 61C 0 CODE 0
 ___sp 0 0 STACK 2
 btemp 7E 0 ABS 0
-ltemp 7E 0 ABS 0
-ttemp 7E 0 ABS 0
-wtemp 7E 0 ABS 0
 start 2 0 CODE 0
 _LATA0 B0 0 ABS 0
 _LATB0 B8 0 ABS 0
@@ -51,22 +48,7 @@ _TRISB 12 0 ABS 0
 _TRISC 13 0 ABS 0
 reset_vec 0 0 CODE 0
 _OSCEN 891 0 ABS 0
-ltemp0 7E 0 ABS 0
-ttemp0 7E 0 ABS 0
 wtemp0 7E 0 ABS 0
-ltemp1 82 0 ABS 0
-ttemp1 81 0 ABS 0
-wtemp1 80 0 ABS 0
-ltemp2 86 0 ABS 0
-ttemp2 84 0 ABS 0
-wtemp2 82 0 ABS 0
-ltemp3 80 0 ABS 0
-ttemp3 87 0 ABS 0
-wtemp3 84 0 ABS 0
-ttemp4 7F 0 ABS 0
-wtemp4 86 0 ABS 0
-wtemp5 88 0 ABS 0
-wtemp6 7F 0 ABS 0
 __Hconfig 800C 0 CONFIG 0
 __Lconfig 8007 0 CONFIG 0
 main@SEC_COUNT 78 0 COMMON 1
@@ -76,8 +58,8 @@ __Hram 0 0 ABS 0
 __Lram 0 0 ABS 0
 __CFG_STVREN$ON 0 0 ABS 0
 main@MIN_COUNT 7A 0 COMMON 1
-__Hfunctab 0 0 CODE 0
-__Lfunctab 0 0 CODE 0
+__Hfunctab 0 0 ENTRY 0
+__Lfunctab 0 0 ENTRY 0
 _T0CON0 1E 0 ABS 0
 _T0CON1 1F 0 ABS 0
 __Hcommon 0 0 ABS 0
@@ -297,12 +279,12 @@ _OSCILLATOR_Initialize 5CB 0 CODE 0
 __Hreset_vec 2 0 CODE 0
 __Lreset_vec 0 0 CODE 0
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0
-intlevel0 0 0 CODE 0
-intlevel1 0 0 CODE 0
-intlevel2 0 0 CODE 0
-intlevel3 0 0 CODE 0
-intlevel4 0 0 CODE 0
-intlevel5 0 0 CODE 0
+intlevel0 0 0 ENTRY 0
+intlevel1 0 0 ENTRY 0
+intlevel2 0 0 ENTRY 0
+intlevel3 0 0 ENTRY 0
+intlevel4 0 0 ENTRY 0
+intlevel5 0 0 ENTRY 0
 __HcstackCOMMON 0 0 ABS 0
 __LcstackCOMMON 0 0 ABS 0
 __pcstackCOMMON 70 0 COMMON 1
@@ -335,13 +317,13 @@ text2 BA6 BBD CODE BA6 0
 text4 B96 BA5 CODE B96 0
 %locals
 dist/default/production\BinaryClock.X.production.obj
-C:\Users\DAVE\AppData\Local\Temp\s3d0.
-3291 7FC 0 CODE 0
-3294 7FC 0 CODE 0
-3306 7FC 0 CODE 0
-3312 7FD 0 CODE 0
-3314 7FD 0 CODE 0
-3315 7FE 0 CODE 0
+C:\Users\DAVE\AppData\Local\Temp\sqc.
+3286 7FC 0 CODE 0
+3289 7FC 0 CODE 0
+3301 7FC 0 CODE 0
+3307 7FD 0 CODE 0
+3309 7FD 0 CODE 0
+3310 7FE 0 CODE 0
 main.c
 4 61C 0 CODE 0
 6 61C 0 CODE 0

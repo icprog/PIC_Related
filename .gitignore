@@ -16,3 +16,17 @@
 *.mk
 *.bash
 *.xml
+*.p1
+*.pre
+*.cmf
+*.elf
+*.lst
+*.map
+*.mum
+*.obj
+*.rlf
+*.sdb
+*.sym
+*.xml
+*.mk
+*.bash

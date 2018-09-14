@@ -1,11 +1,11 @@
-Microchip MPLAB XC8 Compiler V1.38 ()
+Microchip MPLAB XC8 Compiler V1.44 ()
 
 Linker command line:
 
--W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.38\dat\en_msgs.txt -cs \
+-W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.44\dat\en_msgs.txt -cs \
   -h+dist/default/production\BinaryClock.X.production.sym \
   --cmf=dist/default/production\BinaryClock.X.production.cmf -z -Q16F18855 \
-  -oC:\Users\DAVE\AppData\Local\Temp\s3d0.2 \
+  -oC:\Users\DAVE\AppData\Local\Temp\sqc.2 \
   -Mdist/default/production/BinaryClock.X.production.map -E1 -ver=XC8 \
   -ASTACK=02000h-023efh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -28,11 +28,11 @@ Linker command line:
   -ASFR25=0C80h-0CEFh -ASFR26=0D00h-0D6Fh -ASFR27=0D80h-0DEFh \
   -ASFR28=0E00h-0E6Fh -ASFR29=0E80h-0EEFh -ASFR30=0F00h-0F6Fh \
   -ASFR31=0F80h-0FEFh -preset_vec=00h,intentry,init,end_init -ppowerup=CODE \
-  -pcinit=CODE -pfunctab=CODE -ACONFIG=08007h-0800Bh -pconfig=CONFIG \
+  -pcinit=CODE -pfunctab=ENTRY -ACONFIG=08007h-0800Bh -pconfig=CONFIG \
   -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\DAVE\AppData\Local\Temp\s3d0.obj \
+  C:\Users\DAVE\AppData\Local\Temp\sqc.obj \
   dist/default/production\BinaryClock.X.production.obj 
 
 Object code version is 3.11
@@ -42,7 +42,7 @@ Machine type is 16F18855
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\DAVE\AppData\Local\Temp\s3d0.obj
+C:\Users\DAVE\AppData\Local\Temp\sqc.obj
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        5    1000E       0
@@ -611,11 +611,6 @@ intlevel2                        functab      00000
 intlevel3                        functab      00000
 intlevel4                        functab      00000
 intlevel5                        functab      00000
-ltemp                            (abs)        0007E
-ltemp0                           (abs)        0007E
-ltemp1                           (abs)        00082
-ltemp2                           (abs)        00086
-ltemp3                           (abs)        00080
 main@CORRECTION_COUNTER          cstackCOMMON 00073
 main@DEBOUNCE                    cstackCOMMON 00077
 main@HOUR_COUNT                  cstackCOMMON 00079
@@ -628,20 +623,7 @@ stackhi                          (abs)        023EF
 stacklo                          (abs)        02000
 start                            init         00002
 start_initialization             cinit        007FC
-ttemp                            (abs)        0007E
-ttemp0                           (abs)        0007E
-ttemp1                           (abs)        00081
-ttemp2                           (abs)        00084
-ttemp3                           (abs)        00087
-ttemp4                           (abs)        0007F
-wtemp                            (abs)        0007E
 wtemp0                           (abs)        0007E
-wtemp1                           (abs)        00080
-wtemp2                           (abs)        00082
-wtemp3                           (abs)        00084
-wtemp4                           (abs)        00086
-wtemp5                           (abs)        00088
-wtemp6                           (abs)        0007F
 
 
 FUNCTION INFORMATION:

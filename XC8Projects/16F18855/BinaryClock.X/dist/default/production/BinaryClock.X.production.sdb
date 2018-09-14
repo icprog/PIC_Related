@@ -3,41 +3,41 @@
 [d edition pro ]
 [d chip 16F18855 ]
 [d frameptr 6 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
-"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+"86 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\pic\eeprom.c
 [v _eecpymem eecpymem `(v  1 e 1 0 ]
 "39
 [v _memcpyee memcpyee `(v  1 e 1 0 ]
-"4 D:\PIC-Stuff\XC8Projects\16F18855\BinaryClock.X\main.c
+"4 D:\PIC_Related\XC8Projects\16F18855\BinaryClock.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"37 D:\PIC-Stuff\XC8Projects\16F18855\BinaryClock.X\system.c
+"37 D:\PIC_Related\XC8Projects\16F18855\BinaryClock.X\system.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "75
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "83
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"4 D:\PIC-Stuff\XC8Projects\16F18855\BinaryClock.X\tmr0.c
+"4 D:\PIC_Related\XC8Projects\16F18855\BinaryClock.X\tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
-"572 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic16f18855.h
+"589 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic16f18855.h
 [v _TRISA TRISA `VEuc  1 e 1 @17 ]
-"633
+"651
 [v _TRISB TRISB `VEuc  1 e 1 @18 ]
-"694
+"713
 [v _TRISC TRISC `VEuc  1 e 1 @19 ]
-"755
+"775
 [v _LATA LATA `VEuc  1 e 1 @22 ]
-"816
+"837
 [v _LATB LATB `VEuc  1 e 1 @23 ]
-"877
+"899
 [v _LATC LATC `VEuc  1 e 1 @24 ]
-"938
+"961
 [v _TMR0L TMR0L `VEuc  1 e 1 @28 ]
-"1075
+"1099
 [v _TMR0H TMR0H `VEuc  1 e 1 @29 ]
-"1328
+"1353
 [v _T0CON0 T0CON0 `VEuc  1 e 1 @30 ]
 [s S36 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T016BIT 1 0 :1:4 
@@ -45,7 +45,7 @@
 `uc 1 . 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
-"1348
+"1373
 [s S42 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
 `uc 1 T0OUTPS1 1 0 :1:1 
 `uc 1 T0OUTPS2 1 0 :1:2 
@@ -53,38 +53,38 @@
 ]
 [u S47 . 1 `S36 1 . 1 0 `S42 1 . 1 0 ]
 [v _T0CON0bits T0CON0bits `VES47  1 e 1 @30 ]
-"1392
+"1418
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @31 ]
 [s S23 . 1 `uc 1 INTF 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIF 1 0 :1:4 
 `uc 1 TMR0IF 1 0 :1:5 
 ]
-"19404
+"21142
 [u S28 . 1 `S23 1 . 1 0 ]
 [v _PIR0bits PIR0bits `VES28  1 e 1 @1804 ]
-"21490
+"23267
 [v _CPUDOZE CPUDOZE `VEuc  1 e 1 @2188 ]
-"21546
+"23324
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
-"21684
+"23464
 [v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
-"21779
+"23561
 [v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
-"21829
+"23612
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
-"21886
+"23670
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
-"27917
+"29763
 [v _PPSLOCK PPSLOCK `VEuc  1 e 1 @3727 ]
 [s S90 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
 ]
-"27927
+"29773
 [u S92 . 1 `S90 1 . 1 0 ]
 [v _PPSLOCKbits PPSLOCKbits `VES92  1 e 1 @3727 ]
 [s S97 . 1 `uc 1 T0CKIPPS 1 0 :4:0 
 ]
-"27997
+"29845
 [s S99 . 1 `uc 1 T0CKIPPS0 1 0 :1:0 
 `uc 1 T0CKIPPS1 1 0 :1:1 
 `uc 1 T0CKIPPS2 1 0 :1:2 
@@ -92,70 +92,70 @@
 ]
 [u S104 . 1 `S97 1 . 1 0 `S99 1 . 1 0 ]
 [v _T0CKIPPSbits T0CKIPPSbits `VES104  1 e 1 @3729 ]
-"31087
+"32991
 [v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
-"31148
+"33053
 [v _WPUA WPUA `VEuc  1 e 1 @3897 ]
-"31209
+"33115
 [v _ODCONA ODCONA `VEuc  1 e 1 @3898 ]
-"31697
+"33611
 [v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
-"31758
+"33673
 [v _WPUB WPUB `VEuc  1 e 1 @3908 ]
-"31819
+"33735
 [v _ODCONB ODCONB `VEuc  1 e 1 @3909 ]
-"32307
+"34231
 [v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
-"32368
+"34293
 [v _WPUC WPUC `VEuc  1 e 1 @3919 ]
-"32429
+"34355
 [v _ODCONC ODCONC `VEuc  1 e 1 @3920 ]
-"32917
+"34851
 [v _WPUE WPUE `VEuc  1 e 1 @3941 ]
-"34694
-"34694
+"36757
+"36757
 [v _GIE GIE `VEb  1 e 0 @95 ]
-"35010
+"37085
 [v _LATA0 LATA0 `VEb  1 e 0 @176 ]
-"35012
+"37087
 [v _LATA1 LATA1 `VEb  1 e 0 @177 ]
-"35014
+"37089
 [v _LATA2 LATA2 `VEb  1 e 0 @178 ]
-"35016
+"37091
 [v _LATA3 LATA3 `VEb  1 e 0 @179 ]
-"35020
+"37095
 [v _LATA5 LATA5 `VEb  1 e 0 @181 ]
-"35022
+"37097
 [v _LATA6 LATA6 `VEb  1 e 0 @182 ]
-"35024
+"37099
 [v _LATA7 LATA7 `VEb  1 e 0 @183 ]
-"35026
+"37101
 [v _LATB0 LATB0 `VEb  1 e 0 @184 ]
-"35028
+"37103
 [v _LATB1 LATB1 `VEb  1 e 0 @185 ]
-"35030
+"37105
 [v _LATB2 LATB2 `VEb  1 e 0 @186 ]
-"35032
+"37107
 [v _LATB3 LATB3 `VEb  1 e 0 @187 ]
-"35034
+"37109
 [v _LATB4 LATB4 `VEb  1 e 0 @188 ]
-"35042
+"37117
 [v _LATC0 LATC0 `VEb  1 e 0 @192 ]
-"35044
+"37119
 [v _LATC1 LATC1 `VEb  1 e 0 @193 ]
-"35046
+"37121
 [v _LATC2 LATC2 `VEb  1 e 0 @194 ]
-"35048
+"37123
 [v _LATC3 LATC3 `VEb  1 e 0 @195 ]
-"35050
+"37125
 [v _LATC4 LATC4 `VEb  1 e 0 @196 ]
-"36450
+"38581
 [v _RC6 RC6 `VEb  1 e 0 @118 ]
-"36464
+"38595
 [v _RC7 RC7 `VEb  1 e 0 @119 ]
-"37774
+"39975
 [v _TMR0IF TMR0IF `VEb  1 e 0 @14437 ]
-"4 D:\PIC-Stuff\XC8Projects\16F18855\BinaryClock.X\main.c
+"4 D:\PIC_Related\XC8Projects\16F18855\BinaryClock.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "10
@@ -172,17 +172,17 @@
 [v main@INCREMENT INCREMENT `b  1 s 0 INCREMENT ]
 "130
 } 0
-"75 D:\PIC-Stuff\XC8Projects\16F18855\BinaryClock.X\system.c
+"75 D:\PIC_Related\XC8Projects\16F18855\BinaryClock.X\system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "81
 } 0
-"4 D:\PIC-Stuff\XC8Projects\16F18855\BinaryClock.X\tmr0.c
+"4 D:\PIC_Related\XC8Projects\16F18855\BinaryClock.X\tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 {
 "17
 } 0
-"37 D:\PIC-Stuff\XC8Projects\16F18855\BinaryClock.X\system.c
+"37 D:\PIC_Related\XC8Projects\16F18855\BinaryClock.X\system.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "60
