@@ -86,7 +86,7 @@ int const Kd[]          =   {18,20,22};
 
 char *desc[]            =   {"Water Temp:","Steam Temp:","Group Temp:"};
 
-int powerFail           =   0;                          //Setting powerFail to 1, instructs the user to set the time
+int powerFail           =   1;                          //Setting powerFail to 1, instructs the user to set the time
 
 extern int run;
 
