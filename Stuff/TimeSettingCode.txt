@@ -1,0 +1,215 @@
+
+
+The following 23 lines of New Code replace 157 lines of Old Code!!! (and works exactly the same, saving nearly 300 bytes of program space!!)
+
+New Code:
+
+unsigned int timeSetField[]     =   {time.year, time.month, time.day, time.weekday, time.hour, time.minute, time.second};
+unsigned char timeSetMin[]      =   {00,01,01, 0,00,00,00}; 
+unsigned char timeSetMax[]      =   {99,12,31, 6,23,59,59};
+
+            case Up:
+                
+                if(timeSetField[sel]==timeSetMax[sel])
+                {
+                    timeSetField[sel]=timeSetMin[sel];
+                }
+                else
+                {
+                    timeSetField[sel]+=1;
+                }
+                
+            break;
+            
+            case Down:
+                
+                if(timeSetField[sel]==timeSetMin[sel])
+                {
+                    timeSetField[sel]=timeSetMax[sel];
+                }
+                else
+                {
+                    timeSetField[sel]-=1;
+                }
+                
+            break;
+
+
+
+
+Old Code:
+
+
+            case Up:
+                if(sel==0)
+                {
+                    if (time.year == 99)
+                    {
+                        time.year = 00;
+                    }
+                    else
+                    {
+                        time.year += 1;
+                    }
+                }
+                
+                if(sel==1)
+                {
+                    if (time.month == 12)
+                    {
+                        time.month = 1;
+                    }
+                    else
+                    {
+                        time.month += 1;
+                    }
+                }
+                
+                if(sel==2)
+                {
+                    if (time.day == 31)
+                    {
+                        time.day = 1;
+                    }
+                    else
+                    {
+                        time.day +=1;
+                    }
+                }
+
+                if(sel==3)
+                {
+                    if (time.weekday == 6)
+                    {
+                        time.weekday = 0;
+                    }
+                    else
+                    {
+                        time.weekday += 1;
+                    }
+                }
+
+                if(sel==4)
+                {
+                    if (time.hour == 23)
+                    {
+                        time.hour = 0;
+                    }
+                    else
+                    {
+                        time.hour += 1;
+                    }
+                }
+                
+                if(sel == 5)    
+                {
+                    if(time.minute == 59)
+                    {
+                        time.minute = 0;
+                    }
+                    else
+                    {
+                        time.minute += 1;
+                    }
+                }
+                
+                if (sel == 6)
+                {
+                    if (time.second == 59)
+                    {
+                        time.second = 0;
+                    }
+                    else
+                    {
+                        time.second += 1;
+                    }
+                }
+            break;
+            
+            case Down:
+                if(sel == 0)
+                {
+                    if (time.year == 0)
+                    {
+                        time.year = 99;
+                    }
+                    else
+                    {
+                        time.year -= 1;
+                    }
+                }
+                
+                if(sel == 1)
+                {
+                    if (time.month == 1)
+                    {
+                        time.month = 12;
+                    }
+                    else
+                    {
+                        time.month -= 1;
+                    }
+                }
+                
+                if(sel == 2)
+                {
+                    if (time.day == 1)
+                    {
+                        time.day = 31;
+                    }
+                    else
+                    {
+                        time.day -= 1;
+                    }
+                }
+
+                if(sel == 3)
+                {
+                    if (time.weekday == 0)
+                    {
+                        time.weekday = 6;
+                    }
+                    else
+                    {
+                        time.weekday -= 1;
+                    }
+                }
+
+                if(sel == 4)
+                {
+                    if (time.hour == 0)
+                    {
+                        time.hour = 23;
+                    }
+                    else
+                    {
+                        time.hour -= 1;
+                    }
+                }
+                
+                if(sel == 5)    
+                {
+                    if(time.minute == 0)
+                    {
+                        time.minute = 59;
+                    }
+                    else
+                    {
+                        time.minute -= 1;
+                    }
+                }
+                
+                if (sel == 6)
+                {
+                    if (time.second == 0)
+                    {
+                        time.second = 59;
+                    }
+                    else
+                    {
+                        time.second -= 1;
+                    }
+                }
+            break;
+                
+
