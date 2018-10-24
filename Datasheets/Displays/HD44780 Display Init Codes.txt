@@ -1,0 +1,14 @@
+
+#define LCD_COMMAND_CLEAR_SCREEN        0x01
+#define LCD_COMMAND_RETURN_HOME         0x02
+#define LCD_COMMAND_ENTER_DATA_MODE     0x06
+#define LCD_COMMAND_CURSOR_OFF          0x0C
+#define LCD_COMMAND_CURSOR_ON           0x0F
+#define LCD_COMMAND_MOVE_CURSOR_LEFT    0x10
+#define LCD_COMMAND_MOVE_CURSOR_RIGHT   0x14
+#define LCD_COMMAND_SET_MODE_4_BIT      0x28
+#define LCD_COMMAND_SET_MODE_8_BIT      0x38
+#define LCD_COMMAND_ROW_0_HOME          0x80
+#define LCD_COMMAND_ROW_1_HOME          0xC0
+#define LCD_START_UP_COMMAND_1          0x33    
+#define LCD_START_UP_COMMAND_2          0x32    
