@@ -1,5 +1,13 @@
 Typically headers contain one or more of the following:
     
+     	class and struct definitions
+    	typedefs
+    	function prototypes
+    	global variables (but see below)
+    	constants
+    	#defined macros
+    	#pragma directives 
+
 	Function declaration (except statics)
     	Variable declaration (typically global)
     	User defined type declaration (read struct, union etc.)
